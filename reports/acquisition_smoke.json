@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "query_stock": "003032",
+  "query_date": "2025-04-22",
+  "pages": 1,
+  "retrieved_at": "2026-09-08T22:55:32.039679+00:00",
+  "confirmed_document_id": "1223197666",
+  "result_count": 1,
+  "scope": "Read-only one-day live API check; not a historical coverage certification"
+}

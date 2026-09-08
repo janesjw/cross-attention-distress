@@ -1,0 +1,51 @@
+{
+  "version": "incident-v1.1-2026-09-08",
+  "status": "reconstruction_not_original_data",
+  "confirmed": {
+    "origin": "May 1 00:00:00 Asia/Shanghai",
+    "feature_cutoff": "April 30 23:59:59 Asia/Shanghai",
+    "followup": "[May 1 Y, May 1 Y+1)",
+    "profit_scope": "consolidated_including_minority",
+    "nonstandard_audit": "financial_statement_opinion_other_than_standard_unqualified",
+    "exclude_baseline_distress": true,
+    "unknown_is_negative": false,
+    "missingness_denominator": "each_branch_90_32"
+  },
+  "annual_offsets": [-5, -4, -3, -2, -1],
+  "quarter_change_periods": ["Y-1Q2", "Y-1Q3", "Y-1Q4", "YQ1"],
+  "quarter_base_periods": ["Y-1Q1", "Y-1Q2", "Y-1Q3", "Y-1Q4", "YQ1"],
+  "split_years": {"train": [2017, 2021], "validation": [2022, 2023], "test": [2024, 2025]},
+  "training_labels_available_before": "2022-05-01",
+  "model_selection_labels_available_before": "2024-05-01",
+  "threshold": 0.5,
+  "missingness": {
+    "maximum_fraction": 0.3,
+    "denominator": "each_branch_90_32",
+    "confirmed_by_user": true,
+    "annual_input_count": 90,
+    "quarterly_input_count": 32,
+    "maximum_missing_annual": 27,
+    "maximum_missing_quarterly": 9,
+    "exclusion": "annual_missing >= 28 OR quarterly_missing >= 10",
+    "stage": "after source review and feature construction, before imputation",
+    "scope": "one firm at one prediction origin; exclude the whole firm-origin record if either branch exceeds 30%",
+    "incomplete_collection": "unresolved; not verified issuer missingness and not a missingness exclusion"
+  },
+  "pending_before_full_dataset": [
+    "Complete historical Shanghai/Shenzhen A-share membership, listing/delisting and industry histories",
+    "Verified complete ST/*ST implementation and removal coverage"
+  ],
+  "historical_pretraining_availability": "unassessed; Chinese FinBERT repository created 2024-02-06; pretraining/finetuning corpus cutoff unknown",
+  "reentry": "Record-level eligibility: prior distress is not a lifetime ban; all three baseline components must be verified absent at the new origin. The target is a new episode relative to this origin, not first-ever lifetime distress.",
+  "new_implementation_choices": {
+    "zero_denominators": "missing, never infinity",
+    "qoq": "(current-prior)/prior; signed denominator; includes ratios",
+    "average_balance": "arithmetic mean of beginning and ending balances",
+    "EBIT": "profit_before_tax + expensed_interest",
+    "L08": "consolidated_net_profit / period_end_total_shares; manuscript proxy, not reported basic EPS",
+    "winsorization": "train-only pooled per-indicator 1st and 99th percentiles",
+    "imputation": "train-only industry median; train-global fallback; all-missing training feature raises error",
+    "standardization": "train-only mean and population standard deviation after imputation",
+    "text": "MD&A then board-report; exact duplicate sentences removed; >=10 non-whitespace characters; longest leading complete-sentence prefix fitting 510 content tokens"
+  }
+}

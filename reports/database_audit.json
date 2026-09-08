@@ -1,0 +1,1232 @@
+{
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "firms": 2,
+    "documents": 26,
+    "facts": 142,
+    "derived_values": 45,
+    "lineage": 74,
+    "events": 2,
+    "audit_opinions": 3,
+    "sample_register": 4,
+    "text_sections": 0,
+    "training_runs": 0,
+    "predictions": 0,
+    "analytical_eligible": 0
+  },
+  "quarter_controls": [
+    {
+      "control_fact_id": "1222951181:ocf:2024-03-31:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1222951181:ocf:2024-06-30:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1222951181:ocf:2024-09-30:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1222951181:ocf:2024-12-31:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1225065145:ocf:2025-03-31:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1225065145:ocf:2025-06-30:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1225065145:ocf:2025-09-30:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1225065145:ocf:2025-12-31:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1222951181:parent_profit:2024-03-31:QUARTER:parent_attributable",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1222951181:parent_profit:2024-06-30:QUARTER:parent_attributable",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1222951181:parent_profit:2024-09-30:QUARTER:parent_attributable",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1222951181:parent_profit:2024-12-31:QUARTER:parent_attributable",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1225065145:parent_profit:2025-03-31:QUARTER:parent_attributable",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1225065145:parent_profit:2025-06-30:QUARTER:parent_attributable",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1225065145:parent_profit:2025-09-30:QUARTER:parent_attributable",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1225065145:parent_profit:2025-12-31:QUARTER:parent_attributable",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1222951181:revenue:2024-03-31:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1222951181:revenue:2024-06-30:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1222951181:revenue:2024-09-30:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1222951181:revenue:2024-12-31:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1225065145:revenue:2025-03-31:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1225065145:revenue:2025-06-30:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1225065145:revenue:2025-09-30:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1225065145:revenue:2025-12-31:QUARTER:consolidated",
+      "difference_cny": "0",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1223197724:ocf:2024-03-31:QUARTER:consolidated",
+      "difference_cny": "0.00",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1223197724:ocf:2024-06-30:QUARTER:consolidated",
+      "difference_cny": "0.00",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1223197724:ocf:2024-09-30:QUARTER:consolidated",
+      "difference_cny": "0.00",
+      "status": "pass"
+    },
+    {
+      "control_fact_id": "1223197724:ocf:2024-12-31:QUARTER:consolidated",
+      "difference_cny": "0.00",
+      "status": "pass"
+    }
+  ],
+  "annual_2024_midea": {
+    "liabilities_assets": {
+      "value": "0.6232866832957323620549898438",
+      "fact_ids": [
+        "1222951181:assets:2024-12-31:END:consolidated",
+        "1222951181:liabilities:2024-12-31:END:consolidated"
+      ]
+    },
+    "current_ratio": {
+      "value": "1.105860953149408535572894950",
+      "fact_ids": [
+        "1222951181:current_assets:2024-12-31:END:consolidated",
+        "1222951181:current_liabilities:2024-12-31:END:consolidated"
+      ]
+    },
+    "quick_ratio": {
+      "value": "0.9258279165784088915107866326",
+      "fact_ids": [
+        "1222951181:current_assets:2024-12-31:END:consolidated",
+        "1222951181:current_liabilities:2024-12-31:END:consolidated",
+        "1222951181:inventory:2024-12-31:END:consolidated"
+      ]
+    },
+    "interest_coverage": {
+      "value": "20.03093185226307909842864544",
+      "fact_ids": [
+        "1222951181:interest_expense:2024-12-31:YTD:consolidated",
+        "1222951181:profit_before_tax:2024-12-31:YTD:consolidated"
+      ]
+    },
+    "return_assets": {
+      "value": "0.07108871630308192186829381311",
+      "fact_ids": [
+        "1222951181:assets:2023-12-31:END:consolidated",
+        "1222951181:assets:2024-12-31:END:consolidated",
+        "1222951181:net_profit:2024-12-31:YTD:consolidated"
+      ]
+    },
+    "return_equity": {
+      "value": "0.1928377709774413344934947900",
+      "fact_ids": [
+        "1222951181:equity:2023-12-31:END:consolidated",
+        "1222951181:equity:2024-12-31:END:consolidated",
+        "1222951181:net_profit:2024-12-31:YTD:consolidated"
+      ]
+    },
+    "operating_margin": {
+      "value": "0.1139476791822956475948889548",
+      "fact_ids": [
+        "1222951181:operating_profit:2024-12-31:YTD:consolidated",
+        "1222951181:revenue:2024-12-31:YTD:consolidated"
+      ]
+    },
+    "net_profit_end_share_proxy": {
+      "value": "5.062361198561781210828327862",
+      "fact_ids": [
+        "1222951181:net_profit:2024-12-31:YTD:consolidated",
+        "1222951181:shares:2024-12-31:END:total_shares"
+      ]
+    },
+    "receivables_turnover": {
+      "value": "11.85578304422767592660577334",
+      "fact_ids": [
+        "1222951181:receivables:2023-12-31:END:consolidated",
+        "1222951181:receivables:2024-12-31:END:consolidated",
+        "1222951181:revenue:2024-12-31:YTD:consolidated"
+      ]
+    },
+    "inventory_turnover": {
+      "value": "5.413609495753387134294977388",
+      "fact_ids": [
+        "1222951181:cogs:2024-12-31:YTD:consolidated",
+        "1222951181:inventory:2023-12-31:END:consolidated",
+        "1222951181:inventory:2024-12-31:END:consolidated"
+      ]
+    },
+    "assets_turnover": {
+      "value": "0.7467962585575238523570625765",
+      "fact_ids": [
+        "1222951181:assets:2023-12-31:END:consolidated",
+        "1222951181:assets:2024-12-31:END:consolidated",
+        "1222951181:revenue:2024-12-31:YTD:consolidated"
+      ]
+    },
+    "revenue_growth": {
+      "value": "0.09437849884291165659527453808",
+      "fact_ids": [
+        "1222951181:revenue:2023-12-31:YTD:consolidated",
+        "1222951181:revenue:2024-12-31:YTD:consolidated"
+      ]
+    },
+    "net_profit_growth": {
+      "value": "0.1485200687786572799714757754",
+      "fact_ids": [
+        "1222951181:net_profit:2023-12-31:YTD:consolidated",
+        "1222951181:net_profit:2024-12-31:YTD:consolidated"
+      ]
+    },
+    "assets_growth": {
+      "value": "0.2434246380115682433707718733",
+      "fact_ids": [
+        "1222951181:assets:2023-12-31:END:consolidated",
+        "1222951181:assets:2024-12-31:END:consolidated"
+      ]
+    },
+    "ocf_current_liabilities": {
+      "value": "0.1719959222534503927274634447",
+      "fact_ids": [
+        "1222951181:current_liabilities:2024-12-31:END:consolidated",
+        "1222951181:ocf:2024-12-31:YTD:consolidated"
+      ]
+    },
+    "ocf_interest_expense": {
+      "value": "24.66476478594059333298279381",
+      "fact_ids": [
+        "1222951181:interest_expense:2024-12-31:YTD:consolidated",
+        "1222951181:ocf:2024-12-31:YTD:consolidated"
+      ]
+    },
+    "ocf_per_share": {
+      "value": "7.903855890074490911221986727",
+      "fact_ids": [
+        "1222951181:ocf:2024-12-31:YTD:consolidated",
+        "1222951181:shares:2024-12-31:END:total_shares"
+      ]
+    },
+    "free_cash_flow": {
+      "value": "52671936000",
+      "fact_ids": [
+        "1222951181:capex_cash:2024-12-31:YTD:consolidated",
+        "1222951181:ocf:2024-12-31:YTD:consolidated"
+      ]
+    }
+  },
+  "feature_completeness": {
+    "000333.SZ:2024": {
+      "annual": [
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.8582362466275566,
+          0.02158478172735828,
+          null,
+          0.19349606042340972,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.9119874857346613,
+          0.2005900656639504,
+          null,
+          0.0764839944285546,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.848653792098274,
+          0.007866535076504044,
+          null,
+          0.08921126579995246,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.8189301377652126,
+          0.08176305790006384,
+          null,
+          0.15023577259066564,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "quarterly": [
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "annual_names": [
+        "liabilities_assets",
+        "current_ratio",
+        "quick_ratio",
+        "interest_coverage",
+        "return_assets",
+        "return_equity",
+        "operating_margin",
+        "net_profit_end_share_proxy",
+        "receivables_turnover",
+        "inventory_turnover",
+        "assets_turnover",
+        "revenue_growth",
+        "net_profit_growth",
+        "assets_growth",
+        "ocf_current_liabilities",
+        "ocf_interest_expense",
+        "ocf_per_share",
+        "free_cash_flow"
+      ],
+      "quarterly_names": [
+        "qoq_revenue",
+        "qoq_net_profit",
+        "qoq_ocf",
+        "qoq_debt_ratio",
+        "qoq_receivables",
+        "qoq_inventory",
+        "qoq_gross_margin",
+        "qoq_management_expense_ratio"
+      ],
+      "fact_ids": [
+        "1207684829:assets:2019-12-31:END:consolidated",
+        "1207684829:ocf:2019-12-31:YTD:consolidated",
+        "1207684829:revenue:2019-12-31:YTD:consolidated",
+        "1209870336:assets:2020-12-31:END:consolidated",
+        "1209870336:ocf:2020-12-31:YTD:consolidated",
+        "1209870336:revenue:2020-12-31:YTD:consolidated",
+        "1213264815:assets:2021-12-31:END:consolidated",
+        "1213264815:ocf:2021-12-31:YTD:consolidated",
+        "1213264815:revenue:2021-12-31:YTD:consolidated",
+        "1216695045:assets:2022-12-31:END:consolidated",
+        "1216695045:ocf:2022-12-31:YTD:consolidated",
+        "1216695045:revenue:2022-12-31:YTD:consolidated",
+        "1219429374:assets:2023-12-31:END:consolidated",
+        "1219429374:ocf:2023-12-31:YTD:consolidated",
+        "1219429374:revenue:2023-12-31:YTD:consolidated",
+        "1219910111:assets:2024-03-31:END:consolidated",
+        "1219910111:cogs:2024-03-31:YTD:consolidated",
+        "1219910111:net_profit:2024-03-31:YTD:consolidated",
+        "1219910111:ocf:2024-03-31:YTD:consolidated",
+        "1219910111:revenue:2024-03-31:YTD:consolidated"
+      ],
+      "missing_annual": 78,
+      "missing_quarterly": 32,
+      "status": "candidate_features_not_analytical_eligibility"
+    },
+    "000333.SZ:2025": {
+      "annual": [
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.8582362466275566,
+          0.02158478172735828,
+          null,
+          0.19349606042340972,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.9119874857346613,
+          0.2005900656639504,
+          null,
+          0.0764839944285546,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.848653792098274,
+          0.007866535076504044,
+          null,
+          0.08921126579995246,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          0.6413869223904433,
+          1.119704562053019,
+          0.9312864078588626,
+          15.343187787916687,
+          0.07428042093602984,
+          null,
+          0.10836935750094721,
+          null,
+          null,
+          null,
+          0.8189301377652126,
+          0.08176305790006384,
+          null,
+          0.15023577259066564,
+          0.23046207819794073,
+          20.619824265767935,
+          null,
+          51588560000.0
+        ],
+        [
+          0.6232866832957323,
+          1.1058609531494086,
+          0.9258279165784089,
+          20.03093185226308,
+          0.07108871630308192,
+          0.19283777097744134,
+          0.11394767918229565,
+          5.062361198561781,
+          11.855783044227676,
+          5.413609495753387,
+          0.7467962585575239,
+          0.09437849884291166,
+          0.14852006877865728,
+          0.24342463801156825,
+          0.1719959222534504,
+          24.664764785940594,
+          7.903855890074491,
+          52671936000.0
+        ]
+      ],
+      "quarterly": [
+        [
+          0.04779250667746688,
+          null,
+          0.4042207759574548,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          -0.08520003791586037,
+          null,
+          0.3689428057152668,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          -0.13299468562493377,
+          null,
+          -0.9907418760373985,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          0.4498284824444279,
+          null,
+          56.77123009709913,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "annual_names": [
+        "liabilities_assets",
+        "current_ratio",
+        "quick_ratio",
+        "interest_coverage",
+        "return_assets",
+        "return_equity",
+        "operating_margin",
+        "net_profit_end_share_proxy",
+        "receivables_turnover",
+        "inventory_turnover",
+        "assets_turnover",
+        "revenue_growth",
+        "net_profit_growth",
+        "assets_growth",
+        "ocf_current_liabilities",
+        "ocf_interest_expense",
+        "ocf_per_share",
+        "free_cash_flow"
+      ],
+      "quarterly_names": [
+        "qoq_revenue",
+        "qoq_net_profit",
+        "qoq_ocf",
+        "qoq_debt_ratio",
+        "qoq_receivables",
+        "qoq_inventory",
+        "qoq_gross_margin",
+        "qoq_management_expense_ratio"
+      ],
+      "fact_ids": [
+        "1207684829:assets:2019-12-31:END:consolidated",
+        "1207684829:revenue:2019-12-31:YTD:consolidated",
+        "1209870336:assets:2020-12-31:END:consolidated",
+        "1209870336:ocf:2020-12-31:YTD:consolidated",
+        "1209870336:revenue:2020-12-31:YTD:consolidated",
+        "1213264815:assets:2021-12-31:END:consolidated",
+        "1213264815:ocf:2021-12-31:YTD:consolidated",
+        "1213264815:revenue:2021-12-31:YTD:consolidated",
+        "1216695045:assets:2022-12-31:END:consolidated",
+        "1216695045:ocf:2022-12-31:YTD:consolidated",
+        "1216695045:revenue:2022-12-31:YTD:consolidated",
+        "1219910111:assets:2024-03-31:END:consolidated",
+        "1219910111:ocf:2024-03-31:YTD:consolidated",
+        "1220909926:assets:2024-06-30:END:consolidated",
+        "1220909926:ocf:2024-06-30:YTD:consolidated",
+        "1220909926:revenue:2024-06-30:YTD:consolidated",
+        "1221570980:assets:2024-09-30:END:consolidated",
+        "1221570980:ocf:2024-09-30:YTD:consolidated",
+        "1221570980:revenue:2024-09-30:YTD:consolidated",
+        "1222951181:assets:2023-12-31:END:consolidated",
+        "1222951181:assets:2024-12-31:END:consolidated",
+        "1222951181:capex_cash:2023-12-31:YTD:consolidated",
+        "1222951181:capex_cash:2024-12-31:YTD:consolidated",
+        "1222951181:cogs:2023-12-31:YTD:consolidated",
+        "1222951181:cogs:2024-12-31:YTD:consolidated",
+        "1222951181:current_assets:2023-12-31:END:consolidated",
+        "1222951181:current_assets:2024-12-31:END:consolidated",
+        "1222951181:current_liabilities:2023-12-31:END:consolidated",
+        "1222951181:current_liabilities:2024-12-31:END:consolidated",
+        "1222951181:equity:2023-12-31:END:consolidated",
+        "1222951181:equity:2024-12-31:END:consolidated",
+        "1222951181:interest_expense:2023-12-31:YTD:consolidated",
+        "1222951181:interest_expense:2024-12-31:YTD:consolidated",
+        "1222951181:inventory:2023-12-31:END:consolidated",
+        "1222951181:inventory:2024-12-31:END:consolidated",
+        "1222951181:liabilities:2023-12-31:END:consolidated",
+        "1222951181:liabilities:2024-12-31:END:consolidated",
+        "1222951181:net_profit:2023-12-31:YTD:consolidated",
+        "1222951181:net_profit:2024-12-31:YTD:consolidated",
+        "1222951181:ocf:2023-12-31:YTD:consolidated",
+        "1222951181:ocf:2024-12-31:YTD:consolidated",
+        "1222951181:operating_profit:2023-12-31:YTD:consolidated",
+        "1222951181:operating_profit:2024-12-31:YTD:consolidated",
+        "1222951181:profit_before_tax:2023-12-31:YTD:consolidated",
+        "1222951181:profit_before_tax:2024-12-31:YTD:consolidated",
+        "1222951181:receivables:2023-12-31:END:consolidated",
+        "1222951181:receivables:2024-12-31:END:consolidated",
+        "1222951181:revenue:2023-12-31:YTD:consolidated",
+        "1222951181:revenue:2024-12-31:YTD:consolidated",
+        "1222951181:shares:2024-12-31:END:total_shares",
+        "1223412432:assets:2025-03-31:END:consolidated",
+        "1223412432:cogs:2024-03-31:YTD:consolidated",
+        "1223412432:net_profit:2024-03-31:YTD:consolidated",
+        "1223412432:ocf:2025-03-31:YTD:consolidated",
+        "1223412432:revenue:2024-03-31:YTD:consolidated",
+        "1223412432:revenue:2025-03-31:YTD:consolidated"
+      ],
+      "missing_annual": 51,
+      "missing_quarterly": 24,
+      "status": "candidate_features_not_analytical_eligibility"
+    },
+    "003032.SZ:2024": {
+      "annual": [
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "quarterly": [
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          -0.8143131159139696,
+          0.1371837481951413,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "annual_names": [
+        "liabilities_assets",
+        "current_ratio",
+        "quick_ratio",
+        "interest_coverage",
+        "return_assets",
+        "return_equity",
+        "operating_margin",
+        "net_profit_end_share_proxy",
+        "receivables_turnover",
+        "inventory_turnover",
+        "assets_turnover",
+        "revenue_growth",
+        "net_profit_growth",
+        "assets_growth",
+        "ocf_current_liabilities",
+        "ocf_interest_expense",
+        "ocf_per_share",
+        "free_cash_flow"
+      ],
+      "quarterly_names": [
+        "qoq_revenue",
+        "qoq_net_profit",
+        "qoq_ocf",
+        "qoq_debt_ratio",
+        "qoq_receivables",
+        "qoq_inventory",
+        "qoq_gross_margin",
+        "qoq_management_expense_ratio"
+      ],
+      "fact_ids": [
+        "1218197346:net_profit:2023-09-30:YTD:consolidated",
+        "1218197346:ocf:2023-09-30:YTD:consolidated",
+        "1219619115:net_profit:2023-12-31:YTD:consolidated",
+        "1219619115:ocf:2023-12-31:YTD:consolidated",
+        "1219815453:net_profit:2024-03-31:YTD:consolidated",
+        "1219815453:ocf:2024-03-31:YTD:consolidated"
+      ],
+      "missing_annual": 90,
+      "missing_quarterly": 30,
+      "status": "candidate_features_not_analytical_eligibility"
+    },
+    "003032.SZ:2025": {
+      "annual": [
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          -9.568478519520902,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "quarterly": [
+        [
+          null,
+          0.13816275498497962,
+          -0.48548796986997406,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          -0.6161030031182168,
+          -1.8701770274532754,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          12.255149959424779,
+          -3.2586259391602335,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          -0.9413948309699518,
+          -1.1631218356553013,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "annual_names": [
+        "liabilities_assets",
+        "current_ratio",
+        "quick_ratio",
+        "interest_coverage",
+        "return_assets",
+        "return_equity",
+        "operating_margin",
+        "net_profit_end_share_proxy",
+        "receivables_turnover",
+        "inventory_turnover",
+        "assets_turnover",
+        "revenue_growth",
+        "net_profit_growth",
+        "assets_growth",
+        "ocf_current_liabilities",
+        "ocf_interest_expense",
+        "ocf_per_share",
+        "free_cash_flow"
+      ],
+      "quarterly_names": [
+        "qoq_revenue",
+        "qoq_net_profit",
+        "qoq_ocf",
+        "qoq_debt_ratio",
+        "qoq_receivables",
+        "qoq_inventory",
+        "qoq_gross_margin",
+        "qoq_management_expense_ratio"
+      ],
+      "fact_ids": [
+        "1219619115:net_profit:2023-12-31:YTD:consolidated",
+        "1219619115:ocf:2023-12-31:YTD:consolidated",
+        "1219815453:net_profit:2024-03-31:YTD:consolidated",
+        "1219815453:ocf:2024-03-31:YTD:consolidated",
+        "1221024255:net_profit:2024-06-30:YTD:consolidated",
+        "1221024255:ocf:2024-06-30:YTD:consolidated",
+        "1221568311:net_profit:2024-09-30:YTD:consolidated",
+        "1221568311:ocf:2024-09-30:YTD:consolidated",
+        "1223197724:net_profit:2024-12-31:YTD:consolidated",
+        "1223197724:ocf:2024-12-31:YTD:consolidated",
+        "1223406438:assets:2025-03-31:END:consolidated",
+        "1223406438:net_profit:2025-03-31:YTD:consolidated",
+        "1223406438:ocf:2025-03-31:YTD:consolidated",
+        "1223406438:revenue:2025-03-31:YTD:consolidated"
+      ],
+      "missing_annual": 89,
+      "missing_quarterly": 24,
+      "status": "candidate_features_not_analytical_eligibility"
+    }
+  },
+  "missingness_assessments": {
+    "000333.SZ:2024": {
+      "annual_missing": 78,
+      "annual_total": 90,
+      "quarterly_missing": 32,
+      "quarterly_total": 32,
+      "denominator": "each_branch_90_32",
+      "maximum_fraction": 0.3,
+      "evaluated_before_imputation": true,
+      "source_review_complete": false,
+      "status": "pending_collection",
+      "exclude_for_missingness": null
+    },
+    "000333.SZ:2025": {
+      "annual_missing": 51,
+      "annual_total": 90,
+      "quarterly_missing": 24,
+      "quarterly_total": 32,
+      "denominator": "each_branch_90_32",
+      "maximum_fraction": 0.3,
+      "evaluated_before_imputation": true,
+      "source_review_complete": false,
+      "status": "pending_collection",
+      "exclude_for_missingness": null
+    },
+    "003032.SZ:2024": {
+      "annual_missing": 90,
+      "annual_total": 90,
+      "quarterly_missing": 30,
+      "quarterly_total": 32,
+      "denominator": "each_branch_90_32",
+      "maximum_fraction": 0.3,
+      "evaluated_before_imputation": true,
+      "source_review_complete": false,
+      "status": "pending_collection",
+      "exclude_for_missingness": null
+    },
+    "003032.SZ:2025": {
+      "annual_missing": 89,
+      "annual_total": 90,
+      "quarterly_missing": 24,
+      "quarterly_total": 32,
+      "denominator": "each_branch_90_32",
+      "maximum_fraction": 0.3,
+      "evaluated_before_imputation": true,
+      "source_review_complete": false,
+      "status": "pending_collection",
+      "exclude_for_missingness": null
+    }
+  },
+  "samples": [
+    {
+      "sample_id": "000333.SZ:2024",
+      "firm_id": "000333.SZ",
+      "origin": "2024-05-01",
+      "followup_end_exclusive": "2025-05-01",
+      "baseline_st": null,
+      "baseline_quarter": 0,
+      "baseline_audit": null,
+      "baseline_status": "unresolved",
+      "feature_status": "incomplete",
+      "outcome": null,
+      "label_available_date": null,
+      "outcome_status": "unresolved",
+      "analytical_eligible": 0,
+      "note": "Verification case only; not evidence of original sample membership. Missing ST history is unresolved."
+    },
+    {
+      "sample_id": "000333.SZ:2025",
+      "firm_id": "000333.SZ",
+      "origin": "2025-05-01",
+      "followup_end_exclusive": "2026-05-01",
+      "baseline_st": null,
+      "baseline_quarter": 0,
+      "baseline_audit": 0,
+      "baseline_status": "unresolved",
+      "feature_status": "incomplete",
+      "outcome": null,
+      "label_available_date": null,
+      "outcome_status": "unresolved",
+      "analytical_eligible": 0,
+      "note": "Verification case only; not evidence of original sample membership. Missing ST history is unresolved."
+    },
+    {
+      "sample_id": "003032.SZ:2024",
+      "firm_id": "003032.SZ",
+      "origin": "2024-05-01",
+      "followup_end_exclusive": "2025-05-01",
+      "baseline_st": null,
+      "baseline_quarter": 1,
+      "baseline_audit": 0,
+      "baseline_status": "excluded",
+      "feature_status": "incomplete",
+      "outcome": null,
+      "label_available_date": null,
+      "outcome_status": "not_applicable_excluded",
+      "analytical_eligible": 0,
+      "note": "Verification case only; not evidence of original sample membership. Missing ST history is unresolved."
+    },
+    {
+      "sample_id": "003032.SZ:2025",
+      "firm_id": "003032.SZ",
+      "origin": "2025-05-01",
+      "followup_end_exclusive": "2026-05-01",
+      "baseline_st": 1,
+      "baseline_quarter": 0,
+      "baseline_audit": 0,
+      "baseline_status": "excluded",
+      "feature_status": "incomplete",
+      "outcome": null,
+      "label_available_date": null,
+      "outcome_status": "not_applicable_excluded",
+      "analytical_eligible": 0,
+      "note": "Verification case only; not evidence of original sample membership. Missing ST history is unresolved."
+    }
+  ]
+}
