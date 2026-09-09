@@ -17,7 +17,8 @@ def archive(root,output):
         raise ValueError('Source archive exceeds repository file budget; retain workflow artifacts')
     temp.replace(output)
     manifest_path=Path('file_manifest.json');manifest=json.loads(manifest_path.read_text())
-    manifest[output.as_posix()]=hashlib.sha256(output.read_bytes()).hexdigest()
+    for path in [output,Path('data/derived/filing_summary.json'),Path('data/derived/report_batch.json')]:
+        if path.exists():manifest[path.as_posix()]=hashlib.sha256(path.read_bytes()).hexdigest()
     manifest_path.write_text(json.dumps(dict(sorted(manifest.items())),indent=2)+'\n')
     print(json.dumps(dict(files=len(files),archive=str(output),bytes=output.stat().st_size)))
 

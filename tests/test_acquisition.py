@@ -10,7 +10,7 @@ FIRM=dict(firm_id='000333.SZ',stock_code='000333',org_id='fixture')
 
 class AcquisitionTests(unittest.TestCase):
     def test_large_query_splits_without_gaps(self):
-        def query(firm,start,end,cache):
+        def query(firm,start,end,cache,category):
             n=31 if (start,end)==('2017-01-01','2017-01-04') else 0
             return {'totalAnnouncement':n,'announcements':[],'hasMore':n>0},'a'*64
         with patch.object(collector,'get_query',side_effect=query):
@@ -27,6 +27,25 @@ class AcquisitionTests(unittest.TestCase):
 
     def test_overfull_day_is_not_silently_paginated(self):
         with patch.object(collector,'get_query',return_value=({'totalAnnouncement':31,'announcements':[],'hasMore':True},'a'*64)):
+            with self.assertRaises(ValueError):collector.collect_firm(FIRM,'2017-01-01','2017-01-01',None)
+
+    def test_category_partition_reconciles_all_reports(self):
+        def query(firm,start,end,cache,category):
+            if category==collector.CATEGORY:return {'totalAnnouncement':31,'announcements':[],'hasMore':True},'a'*64
+            count=20 if category.startswith('category_ndbg') else 11 if category.startswith('category_bndbg') else 0
+            rows=[{'announcementId':category+str(i),'orgId':'fixture'} for i in range(count)]
+            return {'totalAnnouncement':count,'announcements':rows,'hasMore':False},'a'*64
+        with patch.object(collector,'get_query',side_effect=query):
+            rows=collector.collect_firm(FIRM,'2017-01-01','2017-01-01',None)
+        self.assertEqual(sum(len(r[3]) for r in rows),31)
+        self.assertEqual(len({r[5] for r in rows}),4)
+
+    def test_overlapping_categories_do_not_hide_a_gap(self):
+        def query(firm,start,end,cache,category):
+            if category==collector.CATEGORY:return {'totalAnnouncement':31,'announcements':[],'hasMore':True},'a'*64
+            rows=[{'announcementId':str(i),'orgId':'fixture'} for i in range(10)]
+            return {'totalAnnouncement':10,'announcements':rows,'hasMore':False},'a'*64
+        with patch.object(collector,'get_query',side_effect=query):
             with self.assertRaises(ValueError):collector.collect_firm(FIRM,'2017-01-01','2017-01-01',None)
 
 if __name__=='__main__':unittest.main()

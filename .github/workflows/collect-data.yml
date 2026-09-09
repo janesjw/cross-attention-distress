@@ -23,6 +23,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Restore saved collection
+        run: python analysis/restore_disclosures.py --bucket ${{ matrix.bucket }}
       - name: Collect and verify announcement pages
         run: python analysis/collect_disclosures.py --bucket ${{ matrix.bucket }} --buckets 8 --workers 2
       - name: Save source responses and disclosure index
@@ -52,9 +54,10 @@ jobs:
           path: collected
       - name: Preserve collected sources in the private repository
         run: |
+          python analysis/summarize_disclosures.py collected
           python analysis/archive_disclosures.py collected data/raw/filing_sources.zip
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/raw/filing_sources.zip file_manifest.json
+          git add data/raw/filing_sources.zip data/derived/filing_summary.json data/derived/report_batch.json file_manifest.json
           git commit -m 'Save collected periodic-disclosure sources'
           git push origin HEAD:main

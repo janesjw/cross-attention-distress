@@ -21,16 +21,17 @@ HEADERS={'User-Agent':'Mozilla/5.0','Referer':'https://www.cninfo.com.cn/',
 CATEGORY='category_ndbg_szsh;category_bndbg_szsh;category_yjdbg_szsh;category_sjdbg_szsh;'
 
 
-def get_query(firm,start,end,cache):
+def get_query(firm,start,end,cache,category=CATEGORY):
     payload=dict(pageNum='1',pageSize='30',column='szse',tabName='fulltext',
                  stock=firm['stock_code']+','+firm['org_id'],searchkey='',secid='',
-                 plate='',category=CATEGORY,trade='',seDate=f'{start}~{end}',
+                 plate='',category=category,trade='',seDate=f'{start}~{end}',
                  sortName='time',sortType='asc',isHLtitle='false')
-    path=cache/f"{firm['firm_id']}_{start}_{end}.json"
+    suffix="" if category==CATEGORY else "_"+hashlib.sha256(category.encode()).hexdigest()[:12]
+    path=cache/f"{firm['firm_id']}_{start}_{end}{suffix}.json"
     if path.exists(): raw=path.read_bytes()
     else:
         req=urllib.request.Request(URL,data=urllib.parse.urlencode(payload).encode(),headers=HEADERS)
-        for attempt in range(3):
+        for attempt in range(4):
             try:
                 with urllib.request.urlopen(req,timeout=25) as response:raw=response.read()
                 data=json.loads(raw)
@@ -39,28 +40,37 @@ def get_query(firm,start,end,cache):
                 tmp=path.with_suffix('.tmp');tmp.write_bytes(raw);tmp.replace(path)
                 break
             except Exception:
-                if attempt==2:raise
-                time.sleep(attempt+1)
+                if attempt==3:raise
+                time.sleep([5,15,45][attempt])
         time.sleep(0.2)
     data=json.loads(raw)
     return data,hashlib.sha256(raw).hexdigest()
 
 
-def collect_firm(firm,start,end,cache):
-    data,digest=get_query(firm,start,end,cache)
+def collect_firm(firm,start,end,cache,category=CATEGORY):
+    data,digest=get_query(firm,start,end,cache,category)
     total=data['totalAnnouncement']
     if total>30:
         lo,hi=dt.date.fromisoformat(start),dt.date.fromisoformat(end)
-        if lo==hi:raise ValueError('More than 30 reports on one day; manual source partition required')
+        if lo==hi:
+            if category!=CATEGORY:
+                raise ValueError(f'More than 30 reports on {start} in {category}; further source review required')
+            ranges=[]
+            for part in CATEGORY.strip(';').split(';'):
+                ranges.extend(collect_firm(firm,start,end,cache,part+';'))
+            identities={r['announcementId'] for item in ranges for r in item[3]}
+            if len(identities)!=total:
+                raise ValueError(f'Category union does not reconcile on {start}: {len(identities)} != {total}')
+            return ranges
         mid=lo+(hi-lo)//2
-        return collect_firm(firm,start,mid.isoformat(),cache)+collect_firm(firm,(mid+dt.timedelta(days=1)).isoformat(),end,cache)
+        return collect_firm(firm,start,mid.isoformat(),cache,category)+collect_firm(firm,(mid+dt.timedelta(days=1)).isoformat(),end,cache,category)
     rows=data['announcements'] or []
     if len(rows)!=total or data.get('hasMore'):
         raise ValueError('Single-page query is incomplete')
     for row in rows:
         if row.get('orgId')!=firm['org_id']:
             raise ValueError('Query returned a different issuer')
-    return [(firm,start,end,rows,digest)]
+    return [(firm,start,end,rows,digest,category)]
 
 
 def initialize(path):
@@ -76,15 +86,21 @@ def initialize(path):
     CREATE TABLE IF NOT EXISTS collection_status(
       firm_id TEXT PRIMARY KEY, start TEXT, end TEXT, status TEXT, error TEXT);
     ''')
+    con.execute("""CREATE TABLE IF NOT EXISTS query_partitions(
+      firm_id TEXT, start TEXT, end TEXT, category TEXT, response_sha256 TEXT,
+      returned_records INTEGER, PRIMARY KEY(firm_id,start,end,category))""")
     return con
 
 
 def save_firm(con,firm,start,end,ranges):
     tz=dt.timezone(dt.timedelta(hours=8))
     with con:
-        for _,lo,hi,rows,digest in ranges:
-            con.execute('INSERT OR REPLACE INTO query_ranges VALUES (?,?,?,?,?)',
-                        (firm['firm_id'],lo,hi,digest,len(rows)))
+        for _,lo,hi,rows,digest,category in ranges:
+            con.execute('INSERT OR REPLACE INTO query_partitions VALUES (?,?,?,?,?,?)',
+                        (firm['firm_id'],lo,hi,category,digest,len(rows)))
+            if category==CATEGORY:
+                con.execute('INSERT OR REPLACE INTO query_ranges VALUES (?,?,?,?,?)',
+                            (firm['firm_id'],lo,hi,digest,len(rows)))
             for r in rows:
                 date=dt.datetime.fromtimestamp(r['announcementTime']/1000,tz).date().isoformat()
                 if not lo<=date<=hi:raise ValueError('Disclosure date outside query window')
