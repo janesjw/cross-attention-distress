@@ -1,7 +1,9 @@
 {
   ".github/workflows/collect-data.yml": "07794afb2a91279bbaf6099b32a4d5a9d220fc4be45a4b5a5ffd26092b00c7c0",
+  ".github/workflows/research-pipeline.yml": "2464dd822df4b72e4e3f50d3704e36ff4c84b2a6c695b0fef3b0d9669a7e095d",
   ".github/workflows/tests.yml": "0c3625e9f93059351de019d3de020e62df536dd444dc3eab1762883e4271c030",
-  ".gitignore": "6a73596dfaa20bc9bb37dcc641b36c09d5e75fbfc4cf700ee17237926e15b3f4",
+  ".gitignore": "6ba54dc878d2c4ac3eaa272d39a77d59be95c2208f8d04e2066e4355aaedc35c",
+  "AUTOMATION.md": "f35c9830810a8e62663f351a1ebdf92b042ca48cb1d56e017997e4187dffce2b",
   "DATA_SOURCES.md": "74f60a906cfcd0ce3c96f26bffb31f8af2a16f4cbb8ec2b916dd9c05fca83608",
   "README.md": "bbc939f784ffb29ddb63ce538eb3b7fabb3d5101124d8c08bebc4a78fbb535ff",
   "analysis/archive_disclosures.py": "b60c26b481e2e7d29b4cee7ce6917541fbb92f3feede19e827f4a823b348d13c",
@@ -9,6 +11,7 @@
   "analysis/collect_disclosures.py": "e8946116bcb6c4cce95d73ba5a1adc44fe9eb30deb03e8ef8edcb8bfacfcae8c",
   "analysis/import_market.py": "aec2a0719bbf2abf1702989bbe412de0d28da3d03d1bee7693a416965ab64b1b",
   "analysis/restore_disclosures.py": "1849219477fd259b9c1e44d33525a41ae3bc71b8a2f626065bf2d6e95b89ef6f",
+  "analysis/run_pipeline.py": "a05d60f4c9208563705abe09cb0174fde897ffdc09e567648ba74b77a765c403",
   "analysis/summarize_disclosures.py": "5a29ee8770e4f7f477df4b1d7c0a82acda758d15c1107cb720c4937689eb6a99",
   "analysis/verify_package.py": "c5138763d9d126154b0dec793180270869bf9e273fd5d91fa01d76839dc03281",
   "analysis/verify_pretrained.py": "da086289d1e5cdc3cab393a23d502f66949e02e8cef2c9ac7a3d8512a30402c7",
@@ -46,5 +49,6 @@
   "tests/test_database.py": "e183d8a9512dba9eff2e4f41ab06db72c1ff5e1f4a38bafab3a8624f7c371fcf",
   "tests/test_market.py": "266cfea716fa39ea6d4f37e3f03e645abc872d623b9c5847ed0a6e5946ca996a",
   "tests/test_model.py": "b828807b3d6e3b25b3c683da911882f12ed5e7551a1ce12fcf3e51f5a4cec957",
+  "tests/test_pipeline.py": "677311d24fa30dfeeb4197b7a44e592de08d8dd330109504d21f308ebf5e9a83",
   "tests/test_reproducibility.py": "b9640785bae5e4047a9a7591a422518e8b1a648e78e8c8cfa053f68ba91b84f1"
 }

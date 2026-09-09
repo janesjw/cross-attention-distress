@@ -17,3 +17,4 @@ runs/
 *.safetensors
 build/
 dist/
+data/automation_downloads/
