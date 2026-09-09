@@ -1,0 +1,59 @@
+{
+  "expected_issuers": 4769,
+  "registered_issuers": 4769,
+  "complete_issuers": 4769,
+  "filings": 375397,
+  "buckets": [
+    {
+      "bucket": "filings-0",
+      "issuers": 597,
+      "complete": 597,
+      "filings": 46591
+    },
+    {
+      "bucket": "filings-1",
+      "issuers": 596,
+      "complete": 596,
+      "filings": 47124
+    },
+    {
+      "bucket": "filings-2",
+      "issuers": 596,
+      "complete": 596,
+      "filings": 47072
+    },
+    {
+      "bucket": "filings-3",
+      "issuers": 596,
+      "complete": 596,
+      "filings": 46985
+    },
+    {
+      "bucket": "filings-4",
+      "issuers": 596,
+      "complete": 596,
+      "filings": 46848
+    },
+    {
+      "bucket": "filings-5",
+      "issuers": 596,
+      "complete": 596,
+      "filings": 46636
+    },
+    {
+      "bucket": "filings-6",
+      "issuers": 596,
+      "complete": 596,
+      "filings": 47116
+    },
+    {
+      "bucket": "filings-7",
+      "issuers": 596,
+      "complete": 596,
+      "filings": 47025
+    }
+  ],
+  "incomplete": [],
+  "formal_sample_ready": false,
+  "training_completed": false
+}
