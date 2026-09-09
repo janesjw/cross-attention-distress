@@ -92,3 +92,30 @@ CREATE TABLE predictions(
  split TEXT NOT NULL, probability REAL NOT NULL CHECK(probability>=0 AND probability<=1),
  label INTEGER NOT NULL CHECK(label IN(0,1)), PRIMARY KEY(run_id,sample_id)
 );
+CREATE TABLE market_sources(
+ source_id TEXT PRIMARY KEY, url TEXT NOT NULL, sha256 TEXT NOT NULL,
+ bytes INTEGER NOT NULL, retrieved_date TEXT NOT NULL, format TEXT NOT NULL
+);
+CREATE TABLE listing_records(
+ firm_id TEXT PRIMARY KEY, exchange TEXT NOT NULL,
+ source_id TEXT NOT NULL REFERENCES market_sources, source_row INTEGER NOT NULL,
+ name_en TEXT, name_original TEXT, listing_date TEXT, delisting_date TEXT,
+ industry_code_snapshot TEXT, snapshot_status TEXT NOT NULL
+);
+CREATE TABLE name_changes(
+ firm_id TEXT NOT NULL, effective_date TEXT NOT NULL,
+ name_before TEXT NOT NULL, name_after TEXT NOT NULL,
+ st_before INTEGER NOT NULL CHECK(st_before IN(0,1)),
+ st_after INTEGER NOT NULL CHECK(st_after IN(0,1)),
+ source_id TEXT NOT NULL REFERENCES market_sources, source_row INTEGER NOT NULL,
+ PRIMARY KEY(source_id,source_row)
+);
+CREATE TABLE candidate_register(
+ candidate_id TEXT PRIMARY KEY, firm_id TEXT NOT NULL REFERENCES listing_records,
+ origin TEXT NOT NULL, listing_source TEXT NOT NULL REFERENCES market_sources,
+ baseline_st_from_name INTEGER CHECK(baseline_st_from_name IN(0,1)),
+ st_history_status TEXT NOT NULL,
+ new_st_name_in_followup INTEGER CHECK(new_st_name_in_followup IN(0,1)),
+ membership_status TEXT NOT NULL, collection_status TEXT NOT NULL,
+ UNIQUE(firm_id,origin)
+);

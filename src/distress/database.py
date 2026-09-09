@@ -36,6 +36,8 @@ def create(path, seed_path=None):
             ('protocol_sha256', hashlib.sha256(protocol_path.read_bytes()).hexdigest()),
             ('protocol_version', protocol['version']),
             ('confirmed_missingness_rule', json.dumps(protocol['missingness'], sort_keys=True))])
+    from .market import populate_market
+    populate_market(con, ROOT / 'data/raw/market_records.json')
     return con
 
 def asof_fact(con, firm, metric, period, basis, cutoff, scope='consolidated'):
@@ -121,6 +123,6 @@ def audit_database(con):
     invalid=con.execute("SELECT sample_id FROM sample_register WHERE baseline_status!='clear' AND (outcome IS NOT NULL OR analytical_eligible=1)").fetchall()
     errors += ['excluded_labeled:'+r[0] for r in invalid]
     counts = {table:con.execute(f'SELECT COUNT(*) FROM {table}').fetchone()[0] for table in
-       ['firms','documents','facts','derived_values','lineage','events','audit_opinions','sample_register','text_sections','training_runs','predictions']}
+       ['firms','documents','facts','derived_values','lineage','events','audit_opinions','sample_register','text_sections','training_runs','predictions','listing_records','name_changes','candidate_register']}
     counts['analytical_eligible']=con.execute('SELECT COUNT(*) FROM sample_register WHERE analytical_eligible=1').fetchone()[0]
     return {'passed':not errors,'errors':errors,'counts':counts}

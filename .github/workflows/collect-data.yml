@@ -8,7 +8,7 @@ permissions:
   contents: read
 concurrency:
   group: public-disclosures
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   collect:
     runs-on: ubuntu-latest
@@ -17,22 +17,22 @@ jobs:
       fail-fast: false
       max-parallel: 2
       matrix:
-        year: [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+        bucket: [0, 1, 2, 3, 4, 5, 6, 7]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Collect and verify announcement pages
-        run: python analysis/collect_disclosures.py --years ${{ matrix.year }} --workers 2
+        run: python analysis/collect_disclosures.py --bucket ${{ matrix.bucket }} --buckets 8 --workers 2
       - name: Save source responses and disclosure index
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: disclosures-${{ matrix.year }}
+          name: filings-${{ matrix.bucket }}
           path: |
-            data/derived/disclosures.sqlite
-            data/derived/disclosures.json
-            data/query_cache/annual_ranges/
+            data/derived/filings.sqlite
+            data/derived/filings.json
+            data/query_cache/firm_reports/
           retention-days: 30
           if-no-files-found: error

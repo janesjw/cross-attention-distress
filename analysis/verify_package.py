@@ -7,6 +7,7 @@ import unittest
 from pathlib import Path
 
 from build_database import build
+from import_market import normalize
 from distress.database import ROOT, audit_database, connect
 
 
@@ -19,11 +20,17 @@ def main():
     con = connect(included / 'distress.sqlite')
     try:
         result = audit_database(con)
+        if con.execute("SELECT COUNT(*) FROM candidate_register WHERE firm_id LIKE '689%'").fetchone()[0]:
+            raise ValueError('CDR included in A-share candidate frame')
         if not result['passed']:
             raise ValueError(result['errors'])
         metadata = dict(con.execute('SELECT key,value FROM metadata'))
+        market = json.loads((ROOT / 'data/raw/market_records.json').read_text())
+        if normalize(ROOT / 'data/raw/market_sources.zip') != market:
+            raise ValueError('Exchange source normalization mismatch')
         for key, path in [('seed_sha256', ROOT / 'data/raw/records.json'),
-                          ('protocol_sha256', ROOT / 'configs/protocol.json')]:
+                          ('protocol_sha256', ROOT / 'configs/protocol.json'),
+                          ('market_sha256', ROOT / 'data/raw/market_records.json')]:
             if metadata[key] != hashlib.sha256(path.read_bytes()).hexdigest():
                 raise ValueError(f'Database input mismatch: {key}')
         with tempfile.TemporaryDirectory() as tmp:

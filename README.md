@@ -23,11 +23,11 @@ python analysis/build_database.py
 python analysis/verify_package.py
 ```
 
-The build command creates a fresh copy in `data/derived/rebuilt/`, preserving the included snapshot. Verification checks file hashes, database consistency, CSV outputs, and 35 tests. These commands run offline after dependency installation. `requirements-lock.txt` records the tested environment; model weights and source PDFs are downloaded separately.
+The build command creates a fresh copy in `data/derived/rebuilt/`, preserving the included snapshot. Verification checks file hashes, database consistency, CSV outputs, and offline tests. These commands run offline after dependency installation. `requirements-lock.txt` records the tested environment; model weights and source PDFs are downloaded separately.
 
 ## Data and prediction setup
 
-The current snapshot contains two companies, 26 disclosures, 142 financial observations, and four company-year records. Two records are excluded at baseline; two remain pending. Full-sample estimation is pending.
+The exchange register contains 5,550 listings and 7,327 historical name changes. Listing-date screening yields 30,732 candidate company-years. Financial observations currently cover two companies; formal sample selection and estimation remain pending.
 
 Predictions are dated May 1, using information disclosed through April 30, with a 12-month follow-up. Records already meeting a distress condition are excluded. Inputs comprise 90 annual values, 32 quarterly values, and report text. Missingness is assessed before imputation: more than 27 missing annual values or nine missing quarterly values excludes a record after source collection is complete.
 
