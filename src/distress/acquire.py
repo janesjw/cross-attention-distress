@@ -18,7 +18,7 @@ def fetch(request):
 
 def query(stock,org,start,end,output,keyword='',category=''):
     output=Path(output);output.mkdir(parents=True,exist_ok=True)
-    records=[];seen=set();page=1
+    records=[];seen=set();page_signatures=set();page=1
     while True:
         payload={'pageNum':str(page),'pageSize':'50','column':'szse','tabName':'fulltext',
           'stock':f'{stock},{org}','searchkey':keyword,'secid':'','plate':'','trade':'','category':category,
@@ -31,6 +31,10 @@ def query(stock,org,start,end,output,keyword='',category=''):
                 data=urllib.parse.urlencode(payload).encode(),headers={**HEADERS,'Content-Type':'application/x-www-form-urlencoded'})
             data=json.loads(fetch(request));path.write_text(json.dumps(data,ensure_ascii=False,indent=2))
         if 'announcements' not in data or 'hasMore' not in data:raise ValueError('Unexpected CNINFO response, not an empty dataset')
+        page_ids=tuple(sorted((a['announcementId'],a['secCode']) for a in data['announcements'] or []))
+        if page_ids and page_ids in page_signatures:
+            raise RuntimeError('Repeated CNINFO page; narrow date range. No completeness claim.')
+        page_signatures.add(page_ids)
         for a in data['announcements'] or []:
             if a['secCode']!=stock:continue
             identity=a['announcementId']
@@ -42,7 +46,7 @@ def query(stock,org,start,end,output,keyword='',category=''):
               'query_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'review_status':'metadata_only'})
         if not data['hasMore']:break
         page+=1
-        if page>1000:raise RuntimeError('Pagination exceeds bound; narrow date range. No completeness claim.')
+        if page>100:raise RuntimeError('CNINFO supports at most 100 pages; narrow date range. No completeness claim.')
     manifest={'query':payload,'retrieved_at':dt.datetime.now(dt.timezone.utc).isoformat(),
               'pages':page,'records':records,'interpretation':'Search metadata only; no-hit keyword search does not establish non-distress.'}
     out=output/f'manifest_{stock}_{start}_{end}_{hashlib.sha256((keyword+category).encode()).hexdigest()[:8]}.json'

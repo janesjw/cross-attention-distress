@@ -1,9 +1,11 @@
 {
+  ".github/workflows/collect-data.yml": "ecda08c882ba6eb06c3ce00059d198f4281e6ae561b0b34701f359c96951431c",
   ".github/workflows/tests.yml": "0c3625e9f93059351de019d3de020e62df536dd444dc3eab1762883e4271c030",
   ".gitignore": "6a73596dfaa20bc9bb37dcc641b36c09d5e75fbfc4cf700ee17237926e15b3f4",
   "DATA_SOURCES.md": "5e7e412d2845f6ea6a9074df2d11f5de9588a1350b824f62e313d2efa84961a2",
   "README.md": "9cbdbfe338beb56fece36811e921f09edd92cc5010151d6ed0db1a75e591e05f",
   "analysis/build_database.py": "50ed7f1be556d7181956f2fcdc927b1c565f2212bb8e7c90743491e4140feab8",
+  "analysis/collect_disclosures.py": "ba8add536800df83850c558e0e8b0df89c26e34bee026431e80ca19ae5e64024",
   "analysis/verify_package.py": "4bb179f25d67ae3a582c560c2ae48e8d42fd0a43d4b273a110e4a2905bfcbd17",
   "analysis/verify_pretrained.py": "da086289d1e5cdc3cab393a23d502f66949e02e8cef2c9ac7a3d8512a30402c7",
   "configs/model.json": "be524ec88aa344aab21af029008fc473314ea0aa2a083bb76a69a9c1a2ea2bc0",
@@ -18,7 +20,7 @@
   "requirements-lock.txt": "2fbd493b197e97f6388db9a810744a421728b7ee0d3729da9760651dcf192298",
   "src/distress/__init__.py": "94c4b6ded5efee457d75dfbc0c3112f497c7a7133c3cd87e61daf7db55058e45",
   "src/distress/__main__.py": "cd154ed1d80be93389a1d12c997408c08ee2644fb2979c5a941ecb2d283c46ba",
-  "src/distress/acquire.py": "3661b3f1e9ae245fe4b4ecd83056ea48fa3cc529bcb3894aa0696b72010bbe3a",
+  "src/distress/acquire.py": "df1176e6816febb7126e10dae9dd9319399ec93c0e003cbf921dd0ec871bf442",
   "src/distress/build.py": "2a492070f81baf4686e511d8aa49731f3111379151d9d1cb56f7db5ac546617e",
   "src/distress/database.py": "fae3918faaf98ad15f1ff8e64d442e158d3f415b783c0b881836b16cdd6e6da2",
   "src/distress/dataset.py": "c6677543bc57e048435077d1edef49a2e859b4fd1c6029866ba86b0ec61e2727",
@@ -28,6 +30,7 @@
   "src/distress/preprocess.py": "7e54cdb87d36db28f09d05cf7a1d563ecf678c2eb8393f6a2edf9318822f3594",
   "src/distress/schema.sql": "dbe4acb71c8a75a8be23755a64704c0ca7995e797f00cf30511de4519368350e",
   "src/distress/train.py": "576b154dc6ba5573bae26cab4735fdbf47e0a654ef608524291ed07f09de9008",
+  "tests/test_acquisition.py": "ab640159909132e61cf9fda31b23ecf6b9ad76e2f247804fc91709c6bfe2f5e5",
   "tests/test_database.py": "48663b678cfc5e423328c5ae3ebf22e184d2656d8c355e866e05ef267edbac1f",
   "tests/test_model.py": "b828807b3d6e3b25b3c683da911882f12ed5e7551a1ce12fcf3e51f5a4cec957",
   "tests/test_reproducibility.py": "b9640785bae5e4047a9a7591a422518e8b1a648e78e8c8cfa053f68ba91b84f1"
