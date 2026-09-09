@@ -1,0 +1,18 @@
+{
+  "updated_at": "2026-09-09T17:35:19.994375+00:00",
+  "queue_documents": 262935,
+  "extracted_documents": 25,
+  "failed_documents": 0,
+  "attempted_this_run": 25,
+  "errors_this_run": 0,
+  "eligible_samples": 0,
+  "verified_text_sections": 0,
+  "training_candidate": false,
+  "blocking_reasons": [
+    "Complete historical Shanghai/Shenzhen A-share membership, listing/delisting and industry histories",
+    "Verified complete ST/*ST implementation and removal coverage",
+    "No eligible analytical samples",
+    "No verified annual text sections",
+    "No registered frozen dataset manifest"
+  ]
+}
