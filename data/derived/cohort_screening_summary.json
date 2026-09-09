@@ -1,0 +1,23 @@
+{
+  "candidate_firms": 798,
+  "candidate_firm_years": 5250,
+  "industry_status": {
+    "pass_preorigin_classification": 4469,
+    "pending": 646,
+    "exclude_financial": 135
+  },
+  "baseline_st_name_evidence": {
+    "0": 3222,
+    "1": 113,
+    "None": 1915
+  },
+  "baseline_st_confirmed_exclusions": 53,
+  "screening_status": {
+    "pending": 5062,
+    "excluded": 188
+  },
+  "financial_source_review_pending": 5250,
+  "analytical_eligible": 0,
+  "industry_source_validation_errors": [],
+  "note": "Industry results use the identified pre-origin official tables. Missing source periods, ST histories, quarter/audit criteria and uncollected inputs remain unresolved."
+}
