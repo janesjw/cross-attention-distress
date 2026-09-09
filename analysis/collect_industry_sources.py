@@ -3,7 +3,7 @@ import hashlib,json,re,urllib.request,urllib.parse,zipfile
 from pathlib import Path
 import fitz
 SOURCES=[
-(2017,"2016Q4","2017-02-21","https://www.capco.org.cn/xhgg/hyfl/hyfljg/201909/20190904/j_2019090416011700015675841291298181.html"),
+(2017,"2016Q4","2017-02-16","https://www.csrc.gov.cn/csrc/c100103/c1452008/content.shtml"),
 (2018,"2017Q4","2018-01-19","https://www.csrc.gov.cn/csrc/c100103/c1452004/content.shtml"),
 (2019,"2019Q1","2019-04-19","https://www.csrc.gov.cn/csrc/c100103/c1451999/content.shtml"),
 (2020,"2020Q1","2020-04-14","https://www.csrc.gov.cn/csrc/c100103/c1451995/content.shtml"),
@@ -13,17 +13,21 @@ SOURCES=[
 (2025,"2024H2","2025-04-18","https://www.capco.org.cn/xhgg/hyfl/hyfljg/202504/20250418/j_2025041815003000017449597508305299.html")]
 root=Path("data/raw/industry");root.mkdir(parents=True,exist_ok=True)
 results=[]
+previous={r["origin_year"]:r for r in json.loads(Path("data/derived/industry_source_status.json").read_text())} if Path("data/derived/industry_source_status.json").exists() else {}
 for year,period,public,page_url in SOURCES:
+    old=previous.get(year,{})
+    if old.get('status')=='downloaded_tables_pending_validation' and (root/f'{year}.pdf').exists() and (root/f'{year}_tables.json').exists() and hashlib.sha256((root/f'{year}.pdf').read_bytes()).hexdigest()==old['sha256']:
+        results.append(old);continue
     result=dict(origin_year=year,period=period,public_date=public,page_url=page_url)
     try:
         req=urllib.request.Request(page_url,headers={"User-Agent":"Mozilla/5.0"})
         with urllib.request.urlopen(req,timeout=30) as r:html=r.read()
         (root/f"{year}.html").write_bytes(html)
         decoded=html.decode("utf-8",errors="replace")
-        links=re.findall(r'href=["\']([^"\']+\.pdf(?:\?[^"\']*)?)["\']',decoded,re.I)
+        links=[x.strip() for x in re.findall(r'href=["\']([^"\']+)["\']',decoded,re.I) if re.search(r'\.pdf(?:\?|$)',x.strip(),re.I)]
         if not links:raise ValueError("No PDF links found")
         # Prefer the code-sorted table when the official page offers both orders.
-        links.sort(key=lambda x:("股票代码" not in urllib.parse.unquote(x),x))
+        links.sort(key=lambda x:(not any(v in urllib.parse.unquote(x) for v in ("股票代码","gupiaodaima")),x))
         link=urllib.parse.urljoin(page_url,links[0])
         parsed=urllib.parse.urlsplit(link)
         link=urllib.parse.urlunsplit((parsed.scheme,parsed.netloc,urllib.parse.quote(urllib.parse.unquote(parsed.path),safe="/"),parsed.query,""))
@@ -46,3 +50,4 @@ manifest=json.loads(Path("file_manifest.json").read_text())
 for p in list(root.glob("*"))+[Path("data/derived/industry_source_status.json")]:
     manifest[p.as_posix()]=hashlib.sha256(p.read_bytes()).hexdigest()
 Path("file_manifest.json").write_text(json.dumps(dict(sorted(manifest.items())),indent=2)+"\n")
+

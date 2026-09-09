@@ -1,6 +1,7 @@
 {
   ".github/workflows/collect-data.yml": "07794afb2a91279bbaf6099b32a4d5a9d220fc4be45a4b5a5ffd26092b00c7c0",
   ".github/workflows/research-pipeline.yml": "7698010fbbc442f18d47c16453eabd253be58a5d554b50da6544eb671cd381ba",
+  ".github/workflows/screen-cohort.yml": "5776bb61358e597b19e6075157577e5826d89592d0f15d9d3ad51f4f76245144",
   ".github/workflows/tests.yml": "0c3625e9f93059351de019d3de020e62df536dd444dc3eab1762883e4271c030",
   ".gitignore": "6ba54dc878d2c4ac3eaa272d39a77d59be95c2208f8d04e2066e4355aaedc35c",
   "AUTOMATION.md": "93e1b4e4dd9c1ad4bddf9b5106585e488c8f384cc6fbde622a984f883bffe2b6",
@@ -9,13 +10,16 @@
   "analysis/archive_disclosures.py": "b60c26b481e2e7d29b4cee7ce6917541fbb92f3feede19e827f4a823b348d13c",
   "analysis/build_database.py": "50ed7f1be556d7181956f2fcdc927b1c565f2212bb8e7c90743491e4140feab8",
   "analysis/collect_disclosures.py": "e8946116bcb6c4cce95d73ba5a1adc44fe9eb30deb03e8ef8edcb8bfacfcae8c",
+  "analysis/collect_industry_sources.py": "407f3113219b617b8201086b709f01588882713adea7b566dd80ef4e48a0754f",
   "analysis/import_market.py": "aec2a0719bbf2abf1702989bbe412de0d28da3d03d1bee7693a416965ab64b1b",
   "analysis/restore_disclosures.py": "1849219477fd259b9c1e44d33525a41ae3bc71b8a2f626065bf2d6e95b89ef6f",
   "analysis/run_pipeline.py": "129e5f648a0a75e348ce5273a81ebfac1ef27a9b21e4691076618b117437e3ec",
+  "analysis/screen_cohort.py": "1afba0d0a5bb139048626575ce2c945861e0f85d0adb90e9423269e2ede3e657",
   "analysis/select_cohort.py": "aef9f7fa8af832d04a31acc80e0322850122a1e45b7abb82f1ebe03c5ed3995b",
   "analysis/summarize_disclosures.py": "5a29ee8770e4f7f477df4b1d7c0a82acda758d15c1107cb720c4937689eb6a99",
   "analysis/verify_package.py": "c5138763d9d126154b0dec793180270869bf9e273fd5d91fa01d76839dc03281",
   "analysis/verify_pretrained.py": "da086289d1e5cdc3cab393a23d502f66949e02e8cef2c9ac7a3d8512a30402c7",
+  "analysis/verify_st_covers.py": "3330bf748a6f0c7b87ae962582367eb9761e66d7680470bd40a150059a404eb6",
   "configs/collection_cohort.json": "8292d74ba591c1105aab9f8f255ab0ab977ffa3ce77d83928fb9458dffe78c05",
   "configs/model.json": "be524ec88aa344aab21af029008fc473314ea0aa2a083bb76a69a9c1a2ea2bc0",
   "configs/protocol.json": "3c6b86fa78c90bee0363784f99ab8fdf43ff80aa18852631ee627d792cfa13ba",
@@ -148,5 +152,6 @@
   "tests/test_market.py": "266cfea716fa39ea6d4f37e3f03e645abc872d623b9c5847ed0a6e5946ca996a",
   "tests/test_model.py": "b828807b3d6e3b25b3c683da911882f12ed5e7551a1ce12fcf3e51f5a4cec957",
   "tests/test_pipeline.py": "527d81aada5ada125b15dde8ff1dcba60ae9668bc4611420293bc8d55a16425a",
-  "tests/test_reproducibility.py": "b9640785bae5e4047a9a7591a422518e8b1a648e78e8c8cfa053f68ba91b84f1"
+  "tests/test_reproducibility.py": "b9640785bae5e4047a9a7591a422518e8b1a648e78e8c8cfa053f68ba91b84f1",
+  "tests/test_screen_cohort.py": "a2391389572206648090c486c54941caa0617b4b72f5bb36395e41d89cf45ddc"
 }
