@@ -16,7 +16,7 @@ def industry_rows(source,tables):
             if '代码' in str(cells[3]):continue
             if cells[0]:
                 found=re.findall(r'[（(]([A-S])[）)]',cells[0])
-                current_group=found[-1] if found else None
+                current_group=found[-1] if found else {'租赁和商务服务业':'L'}.get(cells[0].replace('\n',''))
             if cells[1]:current_code=re.sub(r'\s+','',cells[1])
             if cells[2]:current_name=cells[2].replace('\n','')
             code=cells[3];name=cells[4]

@@ -14,3 +14,5 @@ In the CSV files, blank values mean unknown or unavailable. For `outcome`, `1` d
 
 `candidate_register` contains listing-date candidates and name-based ST screening evidence. It does not identify training-ready observations. Current industry classifications are retained as snapshots, not historical classifications.
 CDRs are retained in the source register and excluded from the A-share candidate frame.
+
+`derived/cohort_screening.csv` and `derived/cohort_screening.sqlite` contain the fixed cohort with industry, baseline ST and completeness statuses. `derived/historical_industry.json` preserves pre-origin classification sources and page references. An excluded record is not a future positive label. Pending records remain in the register and are not eligible for analysis.

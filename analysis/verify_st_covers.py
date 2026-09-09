@@ -34,7 +34,7 @@ def main():
         except Exception as exc:result.update(status='download_failed',error=str(exc))
         return t['sample_id'],result
     path=ROOT/'data/derived/st_cover_evidence.json';results=json.loads(path.read_text()) if path.exists() else {}
-    pending=[t for t in targets if results.get(t['sample_id'],{}).get('status')!='st_cover_confirmed']
+    pending=[t for t in targets if results.get(t['sample_id'],{}).get('status') not in ('st_cover_confirmed','cover_requires_review','no_preorigin_q1_report')]
     with cf.ThreadPoolExecutor(max_workers=2) as pool:
         for sid,result in pool.map(verify,pending):
             results[sid]=result;path.write_text(json.dumps(results,ensure_ascii=True,indent=2)+'\n')
