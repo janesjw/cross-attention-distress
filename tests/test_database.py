@@ -13,7 +13,20 @@ class DatabaseTests(unittest.TestCase):
     def tearDownClass(cls):cls.con.close();cls.tmp.cleanup()
 
     def test_database_integrity_and_units(self):
-        r=audit_database(self.con);self.assertTrue(r['passed'],r['errors']);self.assertEqual(r['counts']['facts'],142)
+        r=audit_database(self.con);self.assertTrue(r['passed'],r['errors']);self.assertEqual(r['counts']['facts'],188)
+    def test_vanke_statement_identities_and_publication_cutoff(self):
+        def v(metric,year,scope='consolidated'):
+            basis='END' if metric in ['assets','liabilities','equity'] else 'YTD'
+            return Decimal(asof_fact(self.con,'000002.SZ',metric,f'{year}-12-31',basis,'2025-04-30',scope)['value_normalized'])
+        for year in [2023,2024]:
+            self.assertEqual(v('assets',year),v('liabilities',year)+v('equity',year))
+            self.assertEqual(v('net_profit',year),v('profit_before_tax',year)-v('income_tax',year))
+            self.assertEqual(v('net_profit',year),v('parent_profit',year,'parent_attributable')+v('minority_profit',year))
+            self.assertEqual(v('ocf',year),v('operating_cash_inflow',year)-v('operating_cash_outflow',year))
+        self.assertIsNone(asof_fact(self.con,'000002.SZ','net_profit','2023-12-31','YTD','2024-04-30'))
+        values=annual(self.con,'000002.SZ',2024,'2025-04-30')
+        self.assertTrue(all(v.number is not None and v.sources for v in values.values()))
+        self.assertEqual(values['free_cash_flow'].number,Decimal('-719764542.25'))
     def test_incomplete_records_are_not_eligible(self):
         self.assertEqual(self.report['counts']['analytical_eligible'],0)
         self.assertEqual(self.report['counts']['sample_register'],4)
