@@ -29,6 +29,12 @@ def candidates(root):
     if not rows:raise ValueError('No periodic reports in source archive')
     return rows
 
+def restrict_queue(root,queue):
+    cohort=json.loads((root/'configs/collection_cohort.json').read_text())
+    allowed={r['firm_id']:r for r in cohort['firms']}
+    return [r for r in queue if r['firm_id'] in allowed and
+            allowed[r['firm_id']]['reports_start']<=r['disclosed_date']<allowed[r['firm_id']]['reports_end_exclusive']]
+
 def extract(path,meta):
     pages=[];hits=[]
     with fitz.open(path) as doc:
@@ -62,7 +68,7 @@ def readiness(root):
 def run(root,limit,minutes):
     directory=root/'data/automation';statepath=directory/'progress.json'
     state=json.loads(statepath.read_text()) if statepath.exists() else {'schema_version':1,'documents':{}}
-    queue=candidates(root)
+    queue=restrict_queue(root,candidates(root))
     queue=[r for r in queue if not re.search('英文|摘要',r['source_title'])]
     queue.sort(key=lambda r:(r['firm_id'],r['disclosed_date'],r['document_id']))
     unique={};[unique.setdefault(r['document_id'],r) for r in queue];queue=list(unique.values())
@@ -108,6 +114,7 @@ def run(root,limit,minutes):
     status={'updated_at':datetime.now(timezone.utc).isoformat(),'queue_documents':len(queue),
         'extracted_documents':sum(r['status']=='extracted' for r in state['documents'].values()),
         'failed_documents':sum(r['status']!='extracted' for r in state['documents'].values()),
+        'scope':'finite-cohort-v1','selected_queue_extracted':sum(state['documents'].get(r['document_id'],{}).get('status')=='extracted' for r in queue),
         'attempted_this_run':processed,'errors_this_run':errors,**readiness(root)}
     save(directory/'status.json',status)
     manifest=json.loads((root/'file_manifest.json').read_text())

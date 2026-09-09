@@ -9,6 +9,7 @@ on:
       - '.github/workflows/research-pipeline.yml'
       - 'analysis/run_pipeline.py'
       - 'data/derived/frozen_dataset.json'
+      - 'configs/collection_cohort.json'
 permissions:
   contents: read
 concurrency:
