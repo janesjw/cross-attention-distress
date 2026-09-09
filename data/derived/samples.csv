@@ -1,0 +1,5 @@
+sample_id,firm_id,company,origin,followup_end_exclusive,baseline_st,baseline_quarter,baseline_audit,baseline_status,feature_status,outcome,outcome_status,analytical_eligible
+000333.SZ:2024,000333.SZ,Midea Group,2024-05-01,2025-05-01,,0,,unresolved,incomplete,,unresolved,0
+000333.SZ:2025,000333.SZ,Midea Group,2025-05-01,2026-05-01,,0,0,unresolved,incomplete,,unresolved,0
+003032.SZ:2024,003032.SZ,Chuanzhi Education,2024-05-01,2025-05-01,,1,0,excluded,incomplete,,not_applicable_excluded,0
+003032.SZ:2025,003032.SZ,Chuanzhi Education,2025-05-01,2026-05-01,1,0,0,excluded,incomplete,,not_applicable_excluded,0

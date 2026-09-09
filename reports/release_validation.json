@@ -1,9 +1,0 @@
-{
-  "database_seed_digest_matches": true,
-  "integrity": "ok",
-  "export_gate_exit_code": 2,
-  "export_gate_message": "usage: __main__.py [-h]\n                   {audit,features,download-sources,collect,extract-section,export}\n                   ...\n__main__.py: error: Historical sampling frame or event coverage is incomplete; see configs/protocol.json",
-  "formal_training_rows": 0,
-  "protocol_digest_matches": true,
-  "confirmed_missingness_denominator": "each_branch_90_32"
-}

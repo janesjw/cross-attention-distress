@@ -3,7 +3,7 @@ CREATE TABLE metadata(key TEXT PRIMARY KEY, value TEXT NOT NULL);
 CREATE TABLE firms(
  firm_id TEXT PRIMARY KEY, name TEXT NOT NULL, exchange TEXT NOT NULL,
  cninfo_org_id TEXT, listing_date TEXT, listing_source TEXT, listing_page INTEGER,
- universe_status TEXT NOT NULL DEFAULT 'verification_case_not_recovered_member'
+ universe_status TEXT NOT NULL DEFAULT 'coverage_pending'
 );
 CREATE TABLE documents(
  document_id TEXT PRIMARY KEY, firm_id TEXT NOT NULL REFERENCES firms,

@@ -22,8 +22,8 @@ class ReproducibilityTests(unittest.TestCase):
     def test_entirely_missing_training_feature_is_not_invented(self):
         with self.assertRaises(ValueError):FinancialPreprocessor().fit(np.full((2,5,18),np.nan),['A','B'])
     def test_sentence_boundary_and_padding(self):
-        s='公司经营活动产生的现金流量持续改善。'
-        r=encode_disclosure(CharacterTokenizer(),[s,s,'市场环境变化导致未来经营仍存在不确定性。'],max_length=35)
+        s='\u516c\u53f8\u7ecf\u8425\u6d3b\u52a8\u4ea7\u751f\u7684\u73b0\u91d1\u6d41\u91cf\u6301\u7eed\u6539\u5584\u3002'
+        r=encode_disclosure(CharacterTokenizer(),[s,s,'\u5e02\u573a\u73af\u5883\u53d8\u5316\u5bfc\u81f4\u672a\u6765\u7ecf\u8425\u4ecd\u5b58\u5728\u4e0d\u786e\u5b9a\u6027\u3002'],max_length=35)
         self.assertEqual(len(r['input_ids']),35);self.assertEqual(r['audit']['retained_sentences'],1)
         self.assertTrue(r['audit']['truncated']);self.assertEqual(sum(r['attention_mask']),len(s)+2)
     def row(self):
@@ -42,7 +42,7 @@ class ReproducibilityTests(unittest.TestCase):
     def test_baseline_event_cannot_be_positive(self):
         r=self.row();r['label']=1;r['label_available_date']='2021-04-30'
         with self.assertRaises(ValueError):validate_timeline([r])
-    def test_export_refuses_incomplete_reconstruction(self):
+    def test_export_refuses_incomplete_data(self):
         with tempfile.TemporaryDirectory() as tmp:
             con=create(Path(tmp)/'db.sqlite')
             with self.assertRaises(ValueError):export_dataset(con,None,'invalid',Path(tmp)/'dataset.json')

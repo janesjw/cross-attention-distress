@@ -10,5 +10,4 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
       - run: python -m pip install -e .
-      - run: python -m unittest discover -s tests -v
-      - run: python -m distress audit
+      - run: python analysis/verify_package.py

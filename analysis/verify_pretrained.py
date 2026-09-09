@@ -17,12 +17,12 @@ for name,digest in checkpoint_manifest['sha256'].items():
     if hashlib.sha256((Path(a.model_path)/name).read_bytes()).hexdigest()!=digest:
         raise ValueError('Pretrained checkpoint file mismatch: '+name)
 pdf=Path(a.pdf);raw=pdf.read_bytes()
-seed=json.loads((ROOT/'data/verified_seed.json').read_text());expected=next(d['sha256'] for d in seed['documents'] if d['document_id']=='1222951181')
+seed=json.loads((ROOT/'data/raw/records.json').read_text());expected=next(d['sha256'] for d in seed['documents'] if d['document_id']=='1222951181')
 if hashlib.sha256(raw).hexdigest()!=expected:raise ValueError('Expected the registered Midea FY2024 annual report')
 tokenizer=AutoTokenizer.from_pretrained(a.model_path,local_files_only=True)
 backbone=AutoModel.from_pretrained(a.model_path,local_files_only=True)
 # First MD&A page (PDF p12), starting after the section/subsection headings.
-page=fitz.open(pdf)[11].get_text();start=page.index('美的是一家')
+page=fitz.open(pdf)[11].get_text();start=page.index('\u7f8e\u7684\u662f\u4e00\u5bb6')
 encoded=encode_disclosure(tokenizer,[page[start:]],512)
 model=MMAN(backbone);annual=torch.randn(2,5,18);short=torch.randn(2,4,8)
 ids=torch.tensor([encoded['input_ids']]*2);mask=torch.tensor([encoded['attention_mask']]*2)
@@ -43,7 +43,7 @@ report={'status':'passed','purpose':'synthetic_software_test_not_financial_distr
  'weights_sha256':hashlib.sha256(weights.read_bytes()).hexdigest(),
  'checkpoint_files':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in Path(a.model_path).iterdir() if p.is_file()},
  'text_source_document':'1222951181','text_source_pdf_page':12,'text_source_sha256':expected,
- 'text_preprocessing':encoded['audit'],'financial_inputs':'synthetic normal random numbers; not reconstructed sample observations',
+ 'text_preprocessing':encoded['audit'],'financial_inputs':'synthetic normal random numbers; not observed financial records',
  'targets':'synthetic [0,1] solely to test gradients','training_steps':0,
  'total_parameters':sum(p.numel() for p in model.parameters()),'text_parameters':sum(p.numel() for p in backbone.parameters()),
  'attention_shapes':[list(w.shape) for w in out['attentions']],

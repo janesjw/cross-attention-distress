@@ -3,9 +3,9 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cross-attention-distress-reconstruction"
+name = "cross-attention-distress"
 version = "0.1.0"
-description = "Auditable public-data reconstruction of incident corporate financial distress"
+description = "Cross-attention models for corporate financial distress prediction"
 requires-python = ">=3.11"
 dependencies = ["numpy==2.3.5", "scikit-learn==1.8.0", "torch==2.8.0", "transformers==4.55.4", "PyMuPDF==1.26.6"]
 

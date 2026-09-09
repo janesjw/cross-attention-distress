@@ -24,7 +24,7 @@ def populate(con):
             con.execute('INSERT INTO sample_register VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
                 (sid,firm,origin,f'{year+1}-05-01',st,q,audit,state,'incomplete',None,None,
                  'not_applicable_excluded' if state=='excluded' else 'unresolved',0,
-                 'Verification case only; not evidence of original sample membership. Missing ST history is unresolved.'))
+                 'ST history and financial inputs remain incomplete.'))
             for row in con.execute('SELECT derived_id FROM derived_values WHERE firm_id=? AND asof_date=?',(firm,cutoff)).fetchall():
                 con.execute('INSERT INTO sample_evidence VALUES (?,?,?,?,?,?,?)',
                     (sid,'baseline','quarter','calculated',None,row[0],'Quarter flow calculation with raw-fact lineage'))

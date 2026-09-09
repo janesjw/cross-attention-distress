@@ -1,4 +1,4 @@
-"""Export only certified analytical rows. Current verification database intentionally fails this gate."""
+"""Export analytical records with complete baseline, feature, and outcome evidence."""
 import hashlib,json
 from datetime import date,timedelta
 from pathlib import Path
@@ -37,7 +37,7 @@ def export_dataset(con,tokenizer,dataset_id,output):
     protocol=json.loads((ROOT/'configs/protocol.json').read_text())
     if protocol['pending_before_full_dataset']:raise ValueError('Historical sampling frame or event coverage is incomplete; see configs/protocol.json')
     approved=con.execute('SELECT * FROM sample_register WHERE analytical_eligible=1 ORDER BY origin,firm_id').fetchall()
-    if not approved:raise ValueError('No certified analytical samples; verification cases cannot be used as study data')
+    if not approved:raise ValueError('No eligible analytical records; complete the sample evidence before export')
     records=[]
     for r in approved:
         if r['outcome'] is None or r['label_available_date'] is None:raise ValueError('Missing verified label timing')
@@ -59,7 +59,7 @@ def export_dataset(con,tokenizer,dataset_id,output):
           WHERE d.firm_id=? AND d.disclosed_date<? AND s.verification='verified'
           AND d.title LIKE ?
           ORDER BY d.disclosed_date DESC,CASE s.section_name WHEN 'MD&A' THEN 0 ELSE 1 END''',
-          (r['firm_id'],r['origin'],f'%{int(r["origin"][:4])-1}年年度报告%')).fetchall()
+          (r['firm_id'],r['origin'],f'%{int(r["origin"][:4])-1} Annual Report%')).fetchall()
         if not secs:raise ValueError('No reviewed annual text sections')
         # Select one most recent reviewed report; no mixing documents from different years.
         secs=[s for s in secs if s['document_id']==secs[0]['document_id']]

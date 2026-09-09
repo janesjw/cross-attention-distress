@@ -14,7 +14,7 @@ class DatabaseTests(unittest.TestCase):
 
     def test_database_integrity_and_units(self):
         r=audit_database(self.con);self.assertTrue(r['passed'],r['errors']);self.assertEqual(r['counts']['facts'],142)
-    def test_no_recovered_study_rows_claimed(self):
+    def test_incomplete_records_are_not_eligible(self):
         self.assertEqual(self.report['counts']['analytical_eligible'],0)
         self.assertEqual(self.report['counts']['sample_register'],4)
     def test_quarter_controls(self):

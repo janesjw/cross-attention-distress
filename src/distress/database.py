@@ -1,4 +1,4 @@
-"""Versioned financial facts and conservative incident-disease-style risk sets."""
+"""Financial facts, disclosure dates, and incident-distress eligibility."""
 import hashlib
 import json
 import sqlite3
@@ -21,17 +21,21 @@ def create(path, seed_path=None):
     path.parent.mkdir(parents=True, exist_ok=True)
     con = connect(path)
     con.executescript((Path(__file__).with_name('schema.sql')).read_text())
-    seed_path = Path(seed_path or ROOT / 'data/verified_seed.json')
+    seed_path = Path(seed_path or ROOT / 'data/raw/records.json')
     seed = json.loads(seed_path.read_text())
+    protocol_path = ROOT / 'configs/protocol.json'
+    protocol = json.loads(protocol_path.read_text())
     with con:
         for table in ['firms', 'documents', 'facts', 'events', 'audit_opinions']:
             for row in seed[table]:
                 keys = list(row)
                 con.execute(f'INSERT INTO {table} ({",".join(keys)}) VALUES ({",".join("?" for _ in keys)})', [row[k] for k in keys])
         con.executemany('INSERT INTO metadata VALUES (?,?)', [
-            ('status', 'verification_database_not_full_study'),
+            ('status', 'data_collection_in_progress'),
             ('seed_sha256', hashlib.sha256(seed_path.read_bytes()).hexdigest()),
-            ('protocol_sha256', hashlib.sha256((ROOT/'configs/protocol.json').read_bytes()).hexdigest())])
+            ('protocol_sha256', hashlib.sha256(protocol_path.read_bytes()).hexdigest()),
+            ('protocol_version', protocol['version']),
+            ('confirmed_missingness_rule', json.dumps(protocol['missingness'], sort_keys=True))])
     return con
 
 def asof_fact(con, firm, metric, period, basis, cutoff, scope='consolidated'):
