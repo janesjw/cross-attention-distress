@@ -18,6 +18,7 @@
   "data/derived/financials.csv": "27df971442652f3b64931a6207847072d5c8566b889229a903e7a5d3e723cd9c",
   "data/derived/samples.csv": "9ca91bd840199907c3221e6f5b109ba4581c08b21634c57ab56875e798b52fbe",
   "data/raw/disclosure_firms.json": "46549e48b5db36b00101b51ece04ed2773d7e0e8eb750d376b2ee9c6fcc6afa8",
+  "data/raw/filing_sources.zip": "40d82812e5d56b496a66f5c0a3f3adc4f14954c38e5b5f1d4193059f35618303",
   "data/raw/market_records.json": "a33d19b47adee7d9b7ab9a4b0386c4ba70dfcf549451ad4e8856117962fb363d",
   "data/raw/market_sources.zip": "3e056ddf2a2591ed4c705444e0c28066101f148a7db63d1427dbcec26019305a",
   "data/raw/records.json": "c93f4938d41780bacb9ffafe7c1b06112f2330ebfd0c1e86201f7163b2ef0736",
