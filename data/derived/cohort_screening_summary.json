@@ -2,8 +2,8 @@
   "candidate_firms": 798,
   "candidate_firm_years": 5250,
   "industry_status": {
-    "pass_preorigin_classification": 4469,
-    "pending": 646,
+    "pass_preorigin_classification": 4472,
+    "pending": 643,
     "exclude_financial": 135
   },
   "baseline_st_name_evidence": {

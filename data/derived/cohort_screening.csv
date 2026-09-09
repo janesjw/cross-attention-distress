@@ -586,7 +586,7 @@ sample_id,firm_id,origin,industry_status,industry_code,industry_public_date,indu
 000850.SZ:2023,000850.SZ,2023-05-01,pending,,,,,0,,,,,,pending,0,,,pending_source_review,pending,0
 000850.SZ:2024,000850.SZ,2024-05-01,pass_preorigin_classification,C17,2024-04-03,7,https://sp.capco.org.cn:82/file/202603/hangyefenlei/2023xiaban/2023xiabangupiaodaima.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
 000850.SZ:2025,000850.SZ,2025-05-01,pass_preorigin_classification,C17,2025-04-18,7,https://sp.capco.org.cn:82/file/202603/hangyefenlei/2024xiaban/hangyefenleigupiaodaima.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
-000861.SZ:2017,000861.SZ,2017-05-01,pending,,,,,0,,,,,,pending,0,,,pending_source_review,pending,0
+000861.SZ:2017,000861.SZ,2017-05-01,pass_preorigin_classification,L72,2017-02-16,66,https://www.csrc.gov.cn/csrc/c100103/c1452008/1452008/files/1616066692059_33259.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
 000861.SZ:2018,000861.SZ,2018-05-01,pass_preorigin_classification,L72,2018-01-19,78,https://www.csrc.gov.cn/csrc/c100103/c1452004/1452004/files/1616066687576_64273.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
 000861.SZ:2019,000861.SZ,2019-05-01,pass_preorigin_classification,L72,2019-04-19,81,https://www.csrc.gov.cn/csrc/c100103/c1451999/1451999/files/1616066680642_59642.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
 000861.SZ:2020,000861.SZ,2020-05-01,pass_preorigin_classification,L72,2020-04-14,85,https://www.csrc.gov.cn/csrc/c100103/c1451995/1451995/files/1616066675411_69786.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
@@ -767,7 +767,7 @@ sample_id,firm_id,origin,industry_status,industry_code,industry_public_date,indu
 002021.SZ:2023,002021.SZ,2023-05-01,pending,,,,,1,1,https://static.cninfo.com.cn/finalpage/2023-04-29/1216685074.PDF,2023-04-29,,,exclude_existing_st,0,,,pending_source_review,excluded,0
 002021.SZ:2024,002021.SZ,2024-05-01,pass_preorigin_classification,C35,2024-04-03,12,https://sp.capco.org.cn:82/file/202603/hangyefenlei/2023xiaban/2023xiabangupiaodaima.pdf,1,1,https://static.cninfo.com.cn/finalpage/2024-04-30/1219906940.PDF,2024-04-30,,,exclude_existing_st,0,,,pending_source_review,excluded,0
 002021.SZ:2025,002021.SZ,2025-05-01,pass_preorigin_classification,C35,2025-04-18,11,https://sp.capco.org.cn:82/file/202603/hangyefenlei/2024xiaban/hangyefenleigupiaodaima.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
-002027.SZ:2017,002027.SZ,2017-05-01,pending,,,,,0,,,,,,pending,0,,,pending_source_review,pending,0
+002027.SZ:2017,002027.SZ,2017-05-01,pass_preorigin_classification,L72,2017-02-16,66,https://www.csrc.gov.cn/csrc/c100103/c1452008/1452008/files/1616066692059_33259.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
 002027.SZ:2018,002027.SZ,2018-05-01,pass_preorigin_classification,L72,2018-01-19,78,https://www.csrc.gov.cn/csrc/c100103/c1452004/1452004/files/1616066687576_64273.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
 002027.SZ:2019,002027.SZ,2019-05-01,pass_preorigin_classification,L72,2019-04-19,81,https://www.csrc.gov.cn/csrc/c100103/c1451999/1451999/files/1616066680642_59642.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
 002027.SZ:2020,002027.SZ,2020-05-01,pass_preorigin_classification,L72,2020-04-14,85,https://www.csrc.gov.cn/csrc/c100103/c1451995/1451995/files/1616066675411_69786.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
@@ -1031,7 +1031,7 @@ sample_id,firm_id,origin,industry_status,industry_code,industry_public_date,indu
 002174.SZ:2023,002174.SZ,2023-05-01,pending,,,,,0,,,,,,pending,0,,,pending_source_review,pending,0
 002174.SZ:2024,002174.SZ,2024-05-01,pass_preorigin_classification,I64,2024-04-03,15,https://sp.capco.org.cn:82/file/202603/hangyefenlei/2023xiaban/2023xiabangupiaodaima.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
 002174.SZ:2025,002174.SZ,2025-05-01,pass_preorigin_classification,I64,2025-04-18,14,https://sp.capco.org.cn:82/file/202603/hangyefenlei/2024xiaban/hangyefenleigupiaodaima.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
-002181.SZ:2017,002181.SZ,2017-05-01,pending,,,,,0,,,,,,pending,0,,,pending_source_review,pending,0
+002181.SZ:2017,002181.SZ,2017-05-01,pass_preorigin_classification,L72,2017-02-16,66,https://www.csrc.gov.cn/csrc/c100103/c1452008/1452008/files/1616066692059_33259.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
 002181.SZ:2018,002181.SZ,2018-05-01,pass_preorigin_classification,L72,2018-01-19,78,https://www.csrc.gov.cn/csrc/c100103/c1452004/1452004/files/1616066687576_64273.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
 002181.SZ:2019,002181.SZ,2019-05-01,pass_preorigin_classification,L72,2019-04-19,81,https://www.csrc.gov.cn/csrc/c100103/c1451999/1451999/files/1616066680642_59642.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
 002181.SZ:2020,002181.SZ,2020-05-01,pass_preorigin_classification,L72,2020-04-14,85,https://www.csrc.gov.cn/csrc/c100103/c1451995/1451995/files/1616066675411_69786.pdf,0,,,,,,pending,0,,,pending_source_review,pending,0
