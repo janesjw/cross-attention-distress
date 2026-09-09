@@ -1,9 +1,10 @@
 {
-  ".github/workflows/collect-data.yml": "82aefe4f5dac3336b3fff7c95f12f20e008b8ec6c03531c6d342e7ecb4303e45",
+  ".github/workflows/collect-data.yml": "c48ff742d77fcc249890a5c886199e790b7d9280c18e2324421e74b12eaf1ec9",
   ".github/workflows/tests.yml": "0c3625e9f93059351de019d3de020e62df536dd444dc3eab1762883e4271c030",
   ".gitignore": "6a73596dfaa20bc9bb37dcc641b36c09d5e75fbfc4cf700ee17237926e15b3f4",
   "DATA_SOURCES.md": "74f60a906cfcd0ce3c96f26bffb31f8af2a16f4cbb8ec2b916dd9c05fca83608",
   "README.md": "bbc939f784ffb29ddb63ce538eb3b7fabb3d5101124d8c08bebc4a78fbb535ff",
+  "analysis/archive_disclosures.py": "9e429dfb54a98f074d60ecb6a852b5830ca010d0e028ed37bb1c180d81f5f815",
   "analysis/build_database.py": "50ed7f1be556d7181956f2fcdc927b1c565f2212bb8e7c90743491e4140feab8",
   "analysis/collect_disclosures.py": "c287251c7d159e9a683cb35726eeb449ad5885cf9a44327fbe4c1e94aba4c801",
   "analysis/import_market.py": "aec2a0719bbf2abf1702989bbe412de0d28da3d03d1bee7693a416965ab64b1b",

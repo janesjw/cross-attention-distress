@@ -36,3 +36,25 @@ jobs:
             data/query_cache/firm_reports/
           retention-days: 30
           if-no-files-found: error
+  save:
+    needs: collect
+    if: always() && !cancelled()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: filings-*
+          path: collected
+      - name: Preserve collected sources in the private repository
+        run: |
+          python analysis/archive_disclosures.py collected data/raw/filing_sources.zip
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/raw/filing_sources.zip file_manifest.json
+          git commit -m 'Save collected periodic-disclosure sources'
+          git push origin HEAD:main
