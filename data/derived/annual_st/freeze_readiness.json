@@ -1,35 +1,69 @@
 {
-  "frozen": false,
-  "eligible_samples": 130,
+  "frozen": true,
+  "eligible_samples": 843,
   "splits": {
     "train": {
-      "rows": 19,
-      "firms": 15,
-      "positive": 1,
-      "negative": 18,
-      "positive_firms": 1,
-      "negative_firms": 14
+      "rows": 503,
+      "firms": 143,
+      "positive": 9,
+      "negative": 494,
+      "positive_firms": 9,
+      "negative_firms": 141
     },
     "validation": {
-      "rows": 26,
-      "firms": 26,
-      "positive": 0,
-      "negative": 26,
-      "positive_firms": 0,
-      "negative_firms": 26
+      "rows": 124,
+      "firms": 124,
+      "positive": 2,
+      "negative": 122,
+      "positive_firms": 2,
+      "negative_firms": 122
     },
     "test": {
-      "rows": 85,
-      "firms": 85,
-      "positive": 3,
-      "negative": 82,
-      "positive_firms": 3,
-      "negative_firms": 82
+      "rows": 216,
+      "firms": 127,
+      "positive": 11,
+      "negative": 205,
+      "positive_firms": 11,
+      "negative_firms": 121
     }
   },
-  "blocking_reasons": [
-    "train: requires at least two distinct firms in each class",
-    "validation: requires at least two distinct firms in each class"
-  ],
-  "adequacy_note": "Two firms per class is only a computation floor. Event counts and confidence intervals determine how limited the conclusions must be."
+  "blocking_reasons": [],
+  "adequacy_note": "Two firms per class is only a computation floor. Event counts and confidence intervals determine how limited the conclusions must be.",
+  "summary": {
+    "sample_version": "annual-st-sz-v1",
+    "candidate_firms": 471,
+    "candidate_firm_years": 3335,
+    "final_firms": 154,
+    "final_sample_count": 843,
+    "positive": 22,
+    "negative": 821,
+    "origin_min": "2017-05-01",
+    "origin_max": "2025-05-01",
+    "splits": {
+      "train": {
+        "rows": 503,
+        "firms": 143,
+        "positive": 9,
+        "negative": 494,
+        "positive_firms": 9,
+        "negative_firms": 141
+      },
+      "validation": {
+        "rows": 124,
+        "firms": 124,
+        "positive": 2,
+        "negative": 122,
+        "positive_firms": 2,
+        "negative_firms": 122
+      },
+      "test": {
+        "rows": 216,
+        "firms": 127,
+        "positive": 11,
+        "negative": 205,
+        "positive_firms": 11,
+        "negative_firms": 121
+      }
+    }
+  }
 }

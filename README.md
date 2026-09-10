@@ -39,3 +39,49 @@ Predictions are dated May 1, using information disclosed through April 30, with 
 
 Source data and pretrained models remain subject to their providers' terms. A code license has not yet been selected.
 
+
+<!-- ANNUAL_ST_FROZEN_START -->
+## Frozen annual ST sample
+
+```json
+{
+  "sample_version": "annual-st-sz-v1",
+  "candidate_firms": 471,
+  "candidate_firm_years": 3335,
+  "final_firms": 154,
+  "final_sample_count": 843,
+  "positive": 22,
+  "negative": 821,
+  "origin_min": "2017-05-01",
+  "origin_max": "2025-05-01",
+  "splits": {
+    "train": {
+      "rows": 503,
+      "firms": 143,
+      "positive": 9,
+      "negative": 494,
+      "positive_firms": 9,
+      "negative_firms": 141
+    },
+    "validation": {
+      "rows": 124,
+      "firms": 124,
+      "positive": 2,
+      "negative": 122,
+      "positive_firms": 2,
+      "negative_firms": 122
+    },
+    "test": {
+      "rows": 216,
+      "firms": 127,
+      "positive": 11,
+      "negative": 205,
+      "positive_firms": 11,
+      "negative_firms": 121
+    }
+  }
+}
+```
+
+The same summary is recorded in `data/derived/filing_summary.json` and `data/derived/annual_st/frozen_manifest.json`. Source-availability and automatic-validation limitations are recorded in the manifest. Freezing is not completion of training.
+<!-- ANNUAL_ST_FROZEN_END -->

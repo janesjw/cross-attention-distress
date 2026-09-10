@@ -4,8 +4,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000012.SZ:2018": {
-    "document_id": "1204680426",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000012.SZ:2019": {
     "document_id": "1206041640",
@@ -40,12 +40,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000018.SZ:2018": {
-    "document_id": "1204740521",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000018.SZ:2019": {
-    "document_id": "1206166751",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000019.SZ:2017": {
     "document_id": "1203359661",
@@ -208,8 +208,8 @@
     "status": "no_indexed_preorigin_report"
   },
   "000040.SZ:2021": {
-    "document_id": "1209872281",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000040.SZ:2022": {
     "document_id": "1213139374",
@@ -236,8 +236,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000042.SZ:2020": {
-    "document_id": "1207638532",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000042.SZ:2021": {
     "document_id": "1209676546",
@@ -260,8 +260,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000048.SZ:2017": {
-    "document_id": "1203402385",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000048.SZ:2018": {
     "document_id": null,
@@ -332,8 +332,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000068.SZ:2017": {
-    "document_id": "1203185295",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000068.SZ:2018": {
     "document_id": "1204642137",
@@ -480,12 +480,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000408.SZ:2019": {
-    "document_id": "1206165004",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000408.SZ:2020": {
-    "document_id": "1207687952",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000408.SZ:2021": {
     "document_id": "1209678638",
@@ -620,8 +620,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000533.SZ:2018": {
-    "document_id": "1204627040",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000533.SZ:2019": {
     "document_id": "1206162173",
@@ -656,8 +656,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000534.SZ:2018": {
-    "document_id": "1204803207",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000534.SZ:2019": {
     "document_id": "1206092833",
@@ -836,8 +836,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000576.SZ:2018": {
-    "document_id": "1204511155",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000576.SZ:2019": {
     "document_id": "1205932684",
@@ -1004,8 +1004,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000598.SZ:2018": {
-    "document_id": "1204616776",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000598.SZ:2019": {
     "document_id": "1205885023",
@@ -1108,8 +1108,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000612.SZ:2017": {
-    "document_id": "1203215056",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000612.SZ:2018": {
     "document_id": "1204576148",
@@ -1216,12 +1216,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000629.SZ:2017": {
-    "document_id": "1203333620",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000629.SZ:2018": {
-    "document_id": "1204492613",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000629.SZ:2019": {
     "document_id": "1205936715",
@@ -1252,8 +1252,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000633.SZ:2017": {
-    "document_id": "1203379368",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000633.SZ:2018": {
     "document_id": "1204647279",
@@ -1288,8 +1288,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000635.SZ:2017": {
-    "document_id": "1203275380",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000635.SZ:2018": {
     "document_id": "1204526022",
@@ -1328,8 +1328,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000636.SZ:2018": {
-    "document_id": "1204825654",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000636.SZ:2019": {
     "document_id": "1205938213",
@@ -1364,8 +1364,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000650.SZ:2018": {
-    "document_id": "1204734965",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000650.SZ:2019": {
     "document_id": "1206098077",
@@ -1400,8 +1400,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000651.SZ:2018": {
-    "document_id": "1204792477",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000651.SZ:2019": {
     "document_id": "1206125365",
@@ -1452,8 +1452,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000652.SZ:2022": {
-    "document_id": "1213109565",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000652.SZ:2023": {
     "document_id": "1216381095",
@@ -1540,16 +1540,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000662.SZ:2017": {
-    "document_id": "1203284704",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000662.SZ:2018": {
     "document_id": "1204534985",
     "status": "selected_latest_indexed_preorigin"
   },
   "000662.SZ:2019": {
-    "document_id": "1206164834",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000662.SZ:2020": {
     "document_id": null,
@@ -1596,16 +1596,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000668.SZ:2018": {
-    "document_id": "1204734928",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000668.SZ:2019": {
     "document_id": "1206088441",
     "status": "selected_latest_indexed_preorigin"
   },
   "000668.SZ:2020": {
-    "document_id": "1207603287",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000668.SZ:2021": {
     "document_id": "1209830462",
@@ -1632,8 +1632,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000670.SZ:2018": {
-    "document_id": "1204704128",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000670.SZ:2019": {
     "document_id": "1206069231",
@@ -1644,8 +1644,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000670.SZ:2021": {
-    "document_id": "1209855423",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000670.SZ:2022": {
     "document_id": "1212363938",
@@ -1720,8 +1720,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000709.SZ:2019": {
-    "document_id": "1206105811",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000709.SZ:2020": {
     "document_id": "1207677912",
@@ -1820,8 +1820,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000718.SZ:2017": {
-    "document_id": "1203237076",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000718.SZ:2018": {
     "document_id": "1204664996",
@@ -1860,12 +1860,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000727.SZ:2018": {
-    "document_id": "1204823990",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000727.SZ:2019": {
-    "document_id": "1205966437",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000727.SZ:2020": {
     "document_id": "1207501269",
@@ -1892,8 +1892,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000739.SZ:2017": {
-    "document_id": "1203158886",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000739.SZ:2018": {
     "document_id": "1204466472",
@@ -1968,8 +1968,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000786.SZ:2018": {
-    "document_id": "1204486847",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000786.SZ:2019": {
     "document_id": "1205918737",
@@ -2040,8 +2040,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000800.SZ:2018": {
-    "document_id": "1204552307",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000800.SZ:2019": {
     "document_id": "1205966224",
@@ -2108,24 +2108,24 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000821.SZ:2017": {
-    "document_id": "1203423360",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000821.SZ:2018": {
-    "document_id": "1204676733",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000821.SZ:2019": {
-    "document_id": "1206105021",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000821.SZ:2020": {
-    "document_id": "1207684581",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000821.SZ:2021": {
-    "document_id": "1209867807",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000821.SZ:2022": {
     "document_id": "1213252078",
@@ -2252,8 +2252,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000835.SZ:2017": {
-    "document_id": "1203425870",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000835.SZ:2018": {
     "document_id": "1204826276",
@@ -2324,8 +2324,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000850.SZ:2020": {
-    "document_id": "1207549161",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000850.SZ:2021": {
     "document_id": "1209866067",
@@ -2380,12 +2380,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000868.SZ:2017": {
-    "document_id": "1203155254",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000868.SZ:2018": {
-    "document_id": "1204496145",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000868.SZ:2019": {
     "document_id": "1206020334",
@@ -2492,8 +2492,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000897.SZ:2018": {
-    "document_id": "1205219591",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000897.SZ:2019": {
     "document_id": "1205918346",
@@ -2684,12 +2684,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000937.SZ:2021": {
-    "document_id": "1209850658",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000937.SZ:2022": {
-    "document_id": "1213208504",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000937.SZ:2023": {
     "document_id": "1216617445",
@@ -2704,8 +2704,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000978.SZ:2017": {
-    "document_id": "1203225829",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000978.SZ:2018": {
     "document_id": "1204556701",
@@ -2744,16 +2744,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000979.SZ:2018": {
-    "document_id": "1204828415",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000982.SZ:2017": {
-    "document_id": "1203426795",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000982.SZ:2018": {
-    "document_id": "1204828941",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000982.SZ:2019": {
     "document_id": "1206163000",
@@ -2816,16 +2816,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "000989.SZ:2017": {
-    "document_id": null,
-    "status": "ambiguous_latest_version"
+    "document_id": "1203343698",
+    "status": "selected_latest_indexed_preorigin"
   },
   "000989.SZ:2018": {
-    "document_id": "1204663700",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000989.SZ:2019": {
-    "document_id": "1206158258",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "000989.SZ:2020": {
     "document_id": "1207679259",
@@ -2948,12 +2948,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002002.SZ:2020": {
-    "document_id": "1207643608",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002002.SZ:2021": {
-    "document_id": "1209492127",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002002.SZ:2022": {
     "document_id": "1213262639",
@@ -3052,8 +3052,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002021.SZ:2021": {
-    "document_id": "1209856296",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002021.SZ:2022": {
     "document_id": "1213211281",
@@ -3200,8 +3200,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002040.SZ:2022": {
-    "document_id": "1213258276",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002040.SZ:2023": {
     "document_id": "1216692310",
@@ -3252,8 +3252,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002046.SZ:2017": {
-    "document_id": "1203188310",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002046.SZ:2018": {
     "document_id": "1204827569",
@@ -3412,8 +3412,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002064.SZ:2021": {
-    "document_id": "1209759398",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002064.SZ:2022": {
     "document_id": "1213261891",
@@ -3484,20 +3484,20 @@
     "status": "no_indexed_preorigin_report"
   },
   "002071.SZ:2021": {
-    "document_id": "1209856350",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002089.SZ:2017": {
     "document_id": "1203334985",
     "status": "selected_latest_indexed_preorigin"
   },
   "002089.SZ:2018": {
-    "document_id": "1204740010",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002089.SZ:2019": {
-    "document_id": "1206166630",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002089.SZ:2020": {
     "document_id": null,
@@ -3552,8 +3552,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002102.SZ:2017": {
-    "document_id": "1203313497",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002102.SZ:2018": {
     "document_id": "1204641125",
@@ -3592,8 +3592,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002106.SZ:2018": {
-    "document_id": "1204555654",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002106.SZ:2019": {
     "document_id": "1205966962",
@@ -3776,8 +3776,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002121.SZ:2019": {
-    "document_id": "1206072650",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002121.SZ:2020": {
     "document_id": "1207667576",
@@ -3964,8 +3964,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002145.SZ:2021": {
-    "document_id": "1209805715",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002145.SZ:2022": {
     "document_id": "1213132213",
@@ -4020,8 +4020,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002160.SZ:2017": {
-    "document_id": "1203386359",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002160.SZ:2018": {
     "document_id": "1204698111",
@@ -4032,12 +4032,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002160.SZ:2020": {
-    "document_id": "1207589236",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002160.SZ:2021": {
-    "document_id": "1209852094",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002160.SZ:2022": {
     "document_id": "1213133659",
@@ -4200,8 +4200,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002198.SZ:2017": {
-    "document_id": "1203325807",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002198.SZ:2018": {
     "document_id": "1204699669",
@@ -4348,8 +4348,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002224.SZ:2018": {
-    "document_id": "1204677239",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002224.SZ:2019": {
     "document_id": "1206069138",
@@ -4364,8 +4364,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002224.SZ:2022": {
-    "document_id": "1213261812",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002224.SZ:2023": {
     "document_id": "1216659774",
@@ -4392,8 +4392,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002227.SZ:2020": {
-    "document_id": "1207584398",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002227.SZ:2021": {
     "document_id": "1209832803",
@@ -4456,12 +4456,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002249.SZ:2018": {
-    "document_id": "1204519692",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002249.SZ:2019": {
-    "document_id": "1206121038",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002249.SZ:2020": {
     "document_id": "1207660724",
@@ -4532,8 +4532,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002255.SZ:2019": {
-    "document_id": "1206070854",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002255.SZ:2020": {
     "document_id": "1207645959",
@@ -4576,8 +4576,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002256.SZ:2021": {
-    "document_id": "1209853918",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002256.SZ:2022": {
     "document_id": "1212751406",
@@ -4840,8 +4840,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002290.SZ:2018": {
-    "document_id": "1204793794",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002290.SZ:2019": {
     "document_id": "1206160180",
@@ -5060,12 +5060,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002310.SZ:2020": {
-    "document_id": "1207684936",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002310.SZ:2021": {
-    "document_id": "1209855753",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002310.SZ:2022": {
     "document_id": "1213148865",
@@ -5096,16 +5096,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002316.SZ:2020": {
-    "document_id": "1207685933",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002316.SZ:2021": {
     "document_id": "1209836529",
     "status": "selected_latest_indexed_preorigin"
   },
   "002316.SZ:2022": {
-    "document_id": "1213265488",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002316.SZ:2023": {
     "document_id": "1216276462",
@@ -5168,8 +5168,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002325.SZ:2020": {
-    "document_id": "1207686767",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002325.SZ:2021": {
     "document_id": "1209856683",
@@ -5332,8 +5332,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002360.SZ:2017": {
-    "document_id": "1203274117",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002360.SZ:2018": {
     "document_id": "1204575799",
@@ -5444,8 +5444,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002374.SZ:2018": {
-    "document_id": "1204452294",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002374.SZ:2019": {
     "document_id": "1206116683",
@@ -5476,8 +5476,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002378.SZ:2017": {
-    "document_id": "1203274415",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002378.SZ:2018": {
     "document_id": "1204696437",
@@ -5528,8 +5528,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002380.SZ:2021": {
-    "document_id": "1209789432",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002380.SZ:2022": {
     "document_id": "1213219295",
@@ -5660,16 +5660,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002396.SZ:2018": {
-    "document_id": "1204543729",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002396.SZ:2019": {
-    "document_id": "1205953524",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002396.SZ:2020": {
-    "document_id": "1207409007",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002396.SZ:2021": {
     "document_id": "1209864080",
@@ -5808,8 +5808,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002413.SZ:2019": {
-    "document_id": "1206068581",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002413.SZ:2020": {
     "document_id": "1207688217",
@@ -5840,8 +5840,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002418.SZ:2018": {
-    "document_id": "1204679850",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002418.SZ:2019": {
     "document_id": "1206103758",
@@ -5872,16 +5872,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002426.SZ:2017": {
-    "document_id": "1203335474",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002426.SZ:2018": {
-    "document_id": "1204595330",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002426.SZ:2019": {
-    "document_id": "1206109092",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002426.SZ:2020": {
     "document_id": "1207662116",
@@ -5956,12 +5956,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002433.SZ:2020": {
-    "document_id": "1207600035",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002433.SZ:2021": {
-    "document_id": "1209668954",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002433.SZ:2022": {
     "document_id": null,
@@ -6100,8 +6100,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002455.SZ:2021": {
-    "document_id": "1209807742",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002455.SZ:2022": {
     "document_id": "1212458027",
@@ -6120,8 +6120,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002460.SZ:2017": {
-    "document_id": "1203344620",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002460.SZ:2018": {
     "document_id": "1204558346",
@@ -6136,8 +6136,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002460.SZ:2021": {
-    "document_id": "1209490996",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002460.SZ:2022": {
     "document_id": "1212751615",
@@ -6196,12 +6196,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002470.SZ:2018": {
-    "document_id": "1204641397",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002470.SZ:2019": {
-    "document_id": "1206165825",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002470.SZ:2020": {
     "document_id": null,
@@ -6304,8 +6304,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002492.SZ:2018": {
-    "document_id": "1204558423",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002492.SZ:2019": {
     "document_id": "1205966891",
@@ -6348,8 +6348,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002513.SZ:2020": {
-    "document_id": "1207638580",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002513.SZ:2021": {
     "document_id": "1209724246",
@@ -6448,20 +6448,20 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002524.SZ:2018": {
-    "document_id": "1204480831",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002524.SZ:2019": {
     "document_id": "1205923850",
     "status": "selected_latest_indexed_preorigin"
   },
   "002524.SZ:2020": {
-    "document_id": "1207645620",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002524.SZ:2021": {
-    "document_id": "1209828766",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002524.SZ:2022": {
     "document_id": "1213022367",
@@ -6532,8 +6532,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002531.SZ:2021": {
-    "document_id": "1209725333",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002531.SZ:2022": {
     "document_id": "1212896914",
@@ -6660,12 +6660,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002545.SZ:2017": {
-    "document_id": "1203411036",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002545.SZ:2018": {
-    "document_id": "1204734306",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002545.SZ:2019": {
     "document_id": "1206086391",
@@ -6776,8 +6776,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002557.SZ:2019": {
-    "document_id": "1206010334",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002557.SZ:2020": {
     "document_id": "1207468393",
@@ -6892,8 +6892,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002583.SZ:2021": {
-    "document_id": "1209730159",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002583.SZ:2022": {
     "document_id": "1212840417",
@@ -6952,8 +6952,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002601.SZ:2018": {
-    "document_id": "1204575436",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002601.SZ:2019": {
     "document_id": "1206072287",
@@ -7060,8 +7060,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002632.SZ:2018": {
-    "document_id": "1204736026",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002632.SZ:2019": {
     "document_id": "1206160025",
@@ -7288,8 +7288,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002669.SZ:2021": {
-    "document_id": "1209427258",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002669.SZ:2022": {
     "document_id": "1213105663",
@@ -7460,16 +7460,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002699.SZ:2019": {
-    "document_id": "1206166943",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002699.SZ:2020": {
-    "document_id": "1207669375",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002699.SZ:2021": {
-    "document_id": "1209872186",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002699.SZ:2022": {
     "document_id": "1213266232",
@@ -7524,8 +7524,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002709.SZ:2018": {
-    "document_id": "1204701663",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002709.SZ:2019": {
     "document_id": "1206069307",
@@ -7560,8 +7560,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002713.SZ:2018": {
-    "document_id": "1204790260",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002713.SZ:2019": {
     "document_id": "1206061225",
@@ -7632,8 +7632,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002723.SZ:2018": {
-    "document_id": "1204675942",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002723.SZ:2019": {
     "document_id": "1206120559",
@@ -7740,8 +7740,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002738.SZ:2021": {
-    "document_id": "1209830800",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002738.SZ:2022": {
     "document_id": "1213106601",
@@ -7764,16 +7764,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002742.SZ:2019": {
-    "document_id": "1206070953",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002742.SZ:2020": {
     "document_id": "1207491596",
     "status": "selected_latest_indexed_preorigin"
   },
   "002742.SZ:2021": {
-    "document_id": "1209837489",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002742.SZ:2022": {
     "document_id": "1213170533",
@@ -7968,8 +7968,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002790.SZ:2019": {
-    "document_id": "1206068397",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002790.SZ:2020": {
     "document_id": "1207540890",
@@ -8200,8 +8200,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002832.SZ:2021": {
-    "document_id": "1209852023",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002832.SZ:2022": {
     "document_id": "1212943228",
@@ -8520,8 +8520,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002929.SZ:2021": {
-    "document_id": "1209869553",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002929.SZ:2022": {
     "document_id": "1213105292",
@@ -8592,8 +8592,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "002945.SZ:2022": {
-    "document_id": "1212687108",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "002945.SZ:2023": {
     "document_id": null,
@@ -8832,8 +8832,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300018.SZ:2020": {
-    "document_id": "1207644873",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300018.SZ:2021": {
     "document_id": "1209385957",
@@ -8908,8 +8908,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300027.SZ:2021": {
-    "document_id": "1209836282",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300027.SZ:2022": {
     "document_id": "1213171440",
@@ -9020,8 +9020,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300042.SZ:2018": {
-    "document_id": "1204733901",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300042.SZ:2019": {
     "document_id": "1205894938",
@@ -9052,8 +9052,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300043.SZ:2017": {
-    "document_id": "1203253786",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300043.SZ:2018": {
     "document_id": "1204825061",
@@ -9104,8 +9104,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300045.SZ:2021": {
-    "document_id": "1209797027",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300045.SZ:2022": {
     "document_id": "1213107734",
@@ -9132,16 +9132,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300051.SZ:2019": {
-    "document_id": "1206054873",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300051.SZ:2020": {
     "document_id": "1207640521",
     "status": "selected_latest_indexed_preorigin"
   },
   "300051.SZ:2021": {
-    "document_id": "1209807612",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300051.SZ:2022": {
     "document_id": "1212919245",
@@ -9160,8 +9160,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300054.SZ:2017": {
-    "document_id": "1203282436",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300054.SZ:2018": {
     "document_id": "1204825173",
@@ -9236,12 +9236,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300090.SZ:2018": {
-    "document_id": "1204828389",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300090.SZ:2019": {
-    "document_id": "1206165488",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300090.SZ:2020": {
     "document_id": null,
@@ -9304,8 +9304,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300094.SZ:2022": {
-    "document_id": "1213149342",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300094.SZ:2023": {
     "document_id": "1216702702",
@@ -9444,8 +9444,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300106.SZ:2021": {
-    "document_id": "1209805995",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300106.SZ:2022": {
     "document_id": "1213160360",
@@ -9472,12 +9472,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300109.SZ:2019": {
-    "document_id": "1206097164",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300109.SZ:2020": {
-    "document_id": "1207680642",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300109.SZ:2021": {
     "document_id": "1209846607",
@@ -9536,8 +9536,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300117.SZ:2017": {
-    "document_id": "1203334958",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300117.SZ:2018": {
     "document_id": "1204535359",
@@ -9584,8 +9584,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300119.SZ:2021": {
-    "document_id": "1209386238",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300119.SZ:2022": {
     "document_id": "1212769537",
@@ -9604,12 +9604,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300132.SZ:2017": {
-    "document_id": "1203262141",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300132.SZ:2018": {
-    "document_id": "1204625236",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300132.SZ:2019": {
     "document_id": "1205851238",
@@ -9644,16 +9644,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300139.SZ:2018": {
-    "document_id": "1204697676",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300139.SZ:2019": {
     "document_id": "1206048656",
     "status": "selected_latest_indexed_preorigin"
   },
   "300139.SZ:2020": {
-    "document_id": "1207658396",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300139.SZ:2021": {
     "document_id": "1209817747",
@@ -9676,16 +9676,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300140.SZ:2017": {
-    "document_id": "1203324746",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300140.SZ:2018": {
     "document_id": "1204590707",
     "status": "selected_latest_indexed_preorigin"
   },
   "300140.SZ:2019": {
-    "document_id": "1205967586",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300140.SZ:2020": {
     "document_id": "1207663781",
@@ -9752,8 +9752,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300147.SZ:2018": {
-    "document_id": "1204556965",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300147.SZ:2019": {
     "document_id": "1206166332",
@@ -9764,12 +9764,12 @@
     "status": "no_indexed_preorigin_report"
   },
   "300147.SZ:2021": {
-    "document_id": "1209860551",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300147.SZ:2022": {
-    "document_id": "1213057893",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300147.SZ:2023": {
     "document_id": "1216521507",
@@ -9964,16 +9964,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300189.SZ:2017": {
-    "document_id": "1203388344",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300189.SZ:2018": {
-    "document_id": "1204704174",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300189.SZ:2019": {
-    "document_id": "1206109227",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300189.SZ:2020": {
     "document_id": "1207643206",
@@ -10188,8 +10188,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300207.SZ:2019": {
-    "document_id": "1206054008",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300207.SZ:2020": {
     "document_id": "1207662200",
@@ -10256,8 +10256,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300218.SZ:2018": {
-    "document_id": "1204587700",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300218.SZ:2019": {
     "document_id": "1205947591",
@@ -10476,16 +10476,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300266.SZ:2019": {
-    "document_id": null,
-    "status": "ambiguous_latest_version"
+    "document_id": "1206201324",
+    "status": "selected_latest_indexed_preorigin"
   },
   "300266.SZ:2020": {
     "document_id": "1207665874",
     "status": "selected_latest_indexed_preorigin"
   },
   "300266.SZ:2021": {
-    "document_id": "1209796334",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300266.SZ:2022": {
     "document_id": "1213174674",
@@ -10576,16 +10576,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300279.SZ:2017": {
-    "document_id": null,
-    "status": "ambiguous_latest_version"
+    "document_id": "1203322481",
+    "status": "selected_latest_indexed_preorigin"
   },
   "300279.SZ:2018": {
     "document_id": "1204675475",
     "status": "selected_latest_indexed_preorigin"
   },
   "300279.SZ:2019": {
-    "document_id": "1206080293",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300279.SZ:2020": {
     "document_id": "1207642793",
@@ -10612,20 +10612,20 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300288.SZ:2017": {
-    "document_id": "1203188269",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300288.SZ:2018": {
-    "document_id": "1204667338",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300288.SZ:2019": {
     "document_id": "1206048295",
     "status": "selected_latest_indexed_preorigin"
   },
   "300288.SZ:2020": {
-    "document_id": null,
-    "status": "ambiguous_latest_version"
+    "document_id": "1207590866",
+    "status": "selected_latest_indexed_preorigin"
   },
   "300288.SZ:2021": {
     "document_id": "1209796236",
@@ -10648,8 +10648,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300292.SZ:2017": {
-    "document_id": "1203381621",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300292.SZ:2018": {
     "document_id": "1204737734",
@@ -10764,8 +10764,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300300.SZ:2019": {
-    "document_id": "1206107515",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300300.SZ:2020": {
     "document_id": "1207683558",
@@ -10848,8 +10848,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300309.SZ:2022": {
-    "document_id": "1213171551",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300309.SZ:2023": {
     "document_id": "1216246509",
@@ -10868,8 +10868,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300321.SZ:2020": {
-    "document_id": null,
-    "status": "ambiguous_latest_version"
+    "document_id": "1207552175",
+    "status": "selected_latest_indexed_preorigin"
   },
   "300321.SZ:2021": {
     "document_id": "1209768821",
@@ -10964,8 +10964,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300345.SZ:2017": {
-    "document_id": "1203275451",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300345.SZ:2018": {
     "document_id": "1204699283",
@@ -11016,8 +11016,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300348.SZ:2021": {
-    "document_id": "1209714493",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300348.SZ:2022": {
     "document_id": "1212923804",
@@ -11076,8 +11076,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300354.SZ:2018": {
-    "document_id": "1204733383",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300354.SZ:2019": {
     "document_id": "1206069965",
@@ -11444,16 +11444,16 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300411.SZ:2019": {
-    "document_id": "1206163825",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300411.SZ:2020": {
     "document_id": "1207667431",
     "status": "selected_latest_indexed_preorigin"
   },
   "300411.SZ:2021": {
-    "document_id": "1209856212",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300411.SZ:2022": {
     "document_id": "1213139641",
@@ -11572,8 +11572,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300439.SZ:2019": {
-    "document_id": "1205918774",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300439.SZ:2020": {
     "document_id": "1207645522",
@@ -11600,8 +11600,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300440.SZ:2018": {
-    "document_id": "1204647245",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300440.SZ:2019": {
     "document_id": "1206014851",
@@ -11816,8 +11816,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300476.SZ:2021": {
-    "document_id": "1209497082",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300476.SZ:2022": {
     "document_id": "1213221909",
@@ -12076,8 +12076,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300525.SZ:2020": {
-    "document_id": "1207613074",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300525.SZ:2021": {
     "document_id": "1209770454",
@@ -12100,12 +12100,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300526.SZ:2020": {
-    "document_id": "1207645449",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300526.SZ:2021": {
-    "document_id": "1209860591",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300526.SZ:2022": {
     "document_id": "1213030510",
@@ -12216,8 +12216,8 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300553.SZ:2021": {
-    "document_id": "1209483716",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300553.SZ:2022": {
     "document_id": "1212973735",
@@ -12764,12 +12764,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300703.SZ:2021": {
-    "document_id": "1209701557",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300703.SZ:2022": {
-    "document_id": null,
-    "status": "ambiguous_latest_version"
+    "document_id": "1213042141",
+    "status": "selected_latest_indexed_preorigin"
   },
   "300703.SZ:2023": {
     "document_id": "1216487292",
@@ -12864,12 +12864,12 @@
     "status": "selected_latest_indexed_preorigin"
   },
   "300733.SZ:2021": {
-    "document_id": "1209795471",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300733.SZ:2022": {
-    "document_id": "1212899308",
-    "status": "selected_latest_indexed_preorigin"
+    "document_id": null,
+    "status": "no_indexed_preorigin_report"
   },
   "300733.SZ:2023": {
     "document_id": "1216580125",

@@ -1,0 +1,191 @@
+{
+  "frozen": true,
+  "created_at": "2026-09-10T23:30:11.469949+00:00",
+  "summary": {
+    "sample_version": "annual-st-sz-v1",
+    "candidate_firms": 471,
+    "candidate_firm_years": 3335,
+    "final_firms": 154,
+    "final_sample_count": 843,
+    "positive": 22,
+    "negative": 821,
+    "origin_min": "2017-05-01",
+    "origin_max": "2025-05-01",
+    "splits": {
+      "train": {
+        "rows": 503,
+        "firms": 143,
+        "positive": 9,
+        "negative": 494,
+        "positive_firms": 9,
+        "negative_firms": 141
+      },
+      "validation": {
+        "rows": 124,
+        "firms": 124,
+        "positive": 2,
+        "negative": 122,
+        "positive_firms": 2,
+        "negative_firms": 122
+      },
+      "test": {
+        "rows": 216,
+        "firms": 127,
+        "positive": 11,
+        "negative": 205,
+        "positive_firms": 11,
+        "negative_firms": 121
+      }
+    }
+  },
+  "dataset_path": "data/derived/annual_st/frozen_samples.jsonl",
+  "dataset_sha256": "105a29b64a0f485dcd33a92711e015cc5e0f29cca0e31ee3d819f03dca6bea6c",
+  "evidence_hashes": {
+    "configs/simplified_protocol.json": "7cd063507b4b87d65722658a01faa379ec94bd0c41975e8fb1a949ef45887b91",
+    "configs/simplified_cohort.json": "a854e57d2e3aed06e82137a4de369e9d2aeb4ac0cec8606e3501cb1127840892",
+    "data/derived/annual_st/sample_inventory.csv": "861461cdd91c36943214c23e9d2cc45362cd22777ac1d8280a3a3ca13b318ccf",
+    "data/derived/annual_st/candidate_inputs.zip": "06b2e26d69bd541d267604d0e8b1bea3cc3e04a237bb45b1ab5894c65e133b99",
+    "data/verification/annual_st/labels.csv": "13ccdc298283f11b6d91e13236de7f74eb38b5fff7b18ed26a8a5e6b5d5e3b66",
+    "data/verification/annual_st/input_audit.zip": "cf907b5d6da1e9289b148d961bbc7c1a955b4dd2fd121e57df60861f71d1cc69",
+    "data/verification/annual_st/source_selection.json": "77000bd25228326020326c82f661130a0cf869e8666721589b9f40d7e9b5f3ab",
+    "data/derived/sample_decisions.csv": "d0e6bfec93eb463a20e42ce56d42c5e93813398555a850bddcb69defdc680e29"
+  },
+  "protocol": {
+    "version": "annual-st-sz-v1",
+    "status": "user_authorized_redesign_not_frozen",
+    "authorization": "User accepted annual-only/ST-only simplification and removed the 5,000-observation target.",
+    "target": "New ST or *ST implementation in [May 1 Y, May 1 Y+1), among eligible non-ST firms at origin. This is not all-cause financial distress.",
+    "origin": "May 1 00:00 Asia/Shanghai",
+    "feature_cutoff": "April 30 end of day",
+    "annual_offset": -1,
+    "quarterly_inputs": false,
+    "five_year_history": false,
+    "composite_distress_label": false,
+    "exclude_baseline": "ST/*ST only; no quarterly-loss or audit-loss exclusion in the redesigned target.",
+    "missingness": {
+      "input_count": 12,
+      "maximum_missing": 3,
+      "source_review_required": true,
+      "zero_denominator": "missing",
+      "imputation": "training-global median plus missing indicators",
+      "scaling": "training-only mean and standard deviation",
+      "winsorization": "training-only 1st/99th percentiles"
+    },
+    "financial_features": [
+      "liabilities_assets",
+      "current_ratio",
+      "quick_ratio",
+      "net_profit_end_assets",
+      "net_profit_end_equity",
+      "operating_margin",
+      "net_margin",
+      "receivables_assets",
+      "inventory_assets",
+      "ocf_assets",
+      "ocf_current_liabilities",
+      "management_expense_revenue"
+    ],
+    "ratio_note": "All stock denominators are explicitly year-end balances; these are not average-balance ROA/ROE. No prior-year balance, share-count proxy, capex or expensed-interest input is required.",
+    "text": {
+      "source": "MD&A of the same preorigin annual report",
+      "representation": "training-only character TF-IDF and truncated SVD on bounded text chunks",
+      "max_chunks": 16,
+      "max_characters_per_chunk": 256,
+      "svd_dimensions": 64,
+      "external_pretrained_model": false,
+      "fit_scope": "training documents only; identical fitted representation for every variant"
+    },
+    "model": {
+      "variants": [
+        "financial_only",
+        "text_only",
+        "concat",
+        "cross_attention"
+      ],
+      "seeds": [
+        17,
+        42,
+        2026
+      ],
+      "width": 64,
+      "gate": false,
+      "annual_transformer": false,
+      "quarterly_lstm": false,
+      "attention": "Financial representation queries multiple text chunks; padding masked; no singleton-key degeneration.",
+      "loss": "binary cross entropy; any class weighting estimated from training only",
+      "concat_parameter_budget": "Exactly matched to cross_attention using a three-width concatenation head"
+    },
+    "split_years": {
+      "train": [
+        2017,
+        2021
+      ],
+      "validation": [
+        2022,
+        2023
+      ],
+      "test": [
+        2024,
+        2025
+      ]
+    },
+    "evaluation": {
+      "primary": "test average precision and paired difference, with company-cluster bootstrap intervals",
+      "secondary": [
+        "ROC AUC",
+        "F1",
+        "precision",
+        "recall",
+        "confusion matrix"
+      ],
+      "threshold": "Select once on validation for each model/seed; never select on test",
+      "bootstrap_replicates": 2000,
+      "unit": "firm clusters retaining repeated company-year records",
+      "adequacy": "No arbitrary total-N target. Report event counts and distinct event firms in every split, interval widths and variability across seeds. If event counts or intervals cannot resolve an improvement, report inconclusive evidence; do not expand/stop the sample by test performance.",
+      "claims": "Predictive association, not causality, universal distress or guaranteed early warning.",
+      "technical_minimum": "At least two distinct positive firms and two distinct negative firms in every split for computation and cluster resampling. This is not a power or publication-sufficiency criterion; sparse events and wide intervals require inconclusive conclusions."
+    },
+    "sampling": {
+      "target_count": null,
+      "rule": "Freeze all eligible observations at the source-availability snapshot, applying the same prespecified rules to every candidate; retain every exclusion/pending reason. No outcome-dependent replacements and no selection by test performance.",
+      "all_modalities_same_sample": true
+    },
+    "pending": [
+      "Finish source-based input and industry adjudication",
+      "Freeze eligible source-availability subset before estimation",
+      "Interpret intervals and seed variability without assuming improvement"
+    ],
+    "ST_source_operationalization": {
+      "source": "Audited unfiltered SZSE short-name change register, reconciled to official XLSX/API counts and listing/delisting exports",
+      "assumption": "The official register records all ST/*ST name transitions; source errors or omissions cannot be ruled out by internal consistency checks.",
+      "reconstruction": "Full normalized name chain and terminal name must agree; any conflict stays unresolved. ST at origin is excluded. An observed new transition gives label 1. Label 0 requires the full interval to be covered and no earlier delisting.",
+      "censoring": "Delisting before the end without an observed ST transition leaves the label unknown."
+    },
+    "input_verification": {
+      "methods": [
+        "manual_source_review",
+        "annual-input-rules-v2"
+      ],
+      "rule_based": "Official filing-index identity, front-matter code/year, latest indexed preorigin full report, consolidated yuan statements, explicitly ordered current/comparative headers, anchored rows and accounting checks; uniquely bounded MD&A of at least 1000 non-space characters. Automatic checks are not described as manual verification.",
+      "missingness": "Uncollected required rows remain pending; only ratios with known zero denominators may be missing under automatic checks."
+    }
+  },
+  "selection_rule": "All eligible rows at this source-availability snapshot; common sample across all four models, no selection by model results. Pending/ambiguous/missing source and industry cases excluded with reasons in the hashed inventory.",
+  "excluded_or_unresolved": {
+    "ST_history_label_and_input_certification_pending;annual_financial_certification;annual_text_certification": 1668,
+    "ST_history_label_and_input_certification_pending;historical_industry": 126,
+    "ST_history_label_and_input_certification_pending;annual_financial_certification": 263,
+    "ST_history_label_and_input_certification_pending;historical_industry;annual_financial_certification": 23,
+    "ST_history_label_and_input_certification_pending;historical_industry;annual_financial_certification;annual_text_certification": 235,
+    "preorigin_financial_industry_or_confirmed_baseline_ST;": 160,
+    "ST_history_label_and_input_certification_pending;annual_text_certification": 5,
+    "known_incomplete_followup_due_to_delisting;": 8,
+    "ST_history_label_and_input_certification_pending;historical_industry;annual_text_certification": 4
+  },
+  "limitations": [
+    "Source-availability selection may be nonrandom; results do not represent all Shenzhen firms.",
+    "Rule-based source checks are not manual audits.",
+    "Technical class-support minimum does not establish statistical power.",
+    "Registered ST changes measure a regulatory endpoint, not all financial distress."
+  ]
+}
