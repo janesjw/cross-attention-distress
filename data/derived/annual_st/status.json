@@ -1,0 +1,34 @@
+{
+  "study_version": "annual-st-sz-v1",
+  "status": "inventory_not_frozen_dataset",
+  "candidate_firms": 471,
+  "candidate_firm_years": 3335,
+  "decisions": {
+    "pending": 3234,
+    "excluded": 101
+  },
+  "eligible_samples": 0,
+  "frozen": false,
+  "final_sample_count": null,
+  "rows_with_selected_annual_report": 1408,
+  "rows_with_12_candidate_features": 850,
+  "rows_with_12_verified_features": 5,
+  "rows_with_text_candidate": 1391,
+  "verified_text_sections": 1,
+  "splits": {
+    "train": {
+      "candidate_rows": 1673,
+      "new_ST_leads_not_labels": 32
+    },
+    "validation": {
+      "candidate_rows": 793,
+      "new_ST_leads_not_labels": 15
+    },
+    "test": {
+      "candidate_rows": 869,
+      "new_ST_leads_not_labels": 24
+    }
+  },
+  "training_candidate": false,
+  "training_note": "No simplified frozen export or completed ST coverage; legacy MMAN training disabled for this design."
+}

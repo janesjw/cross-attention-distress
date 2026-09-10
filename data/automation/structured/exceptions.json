@@ -6151,7 +6151,21 @@
     ]
   },
   {
+    "document_id": "1203088239",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203095117",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203111264",
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
@@ -6166,9 +6180,22 @@
     ]
   },
   {
+    "document_id": "1203126381",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203126669",
     "issues": [
       "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203149509",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -6178,10 +6205,32 @@
     ]
   },
   {
+    "document_id": "1203155254",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203158678",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203158886",
     "issues": [
       "income:interest_expense:row_count:0",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203158962",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -6197,6 +6246,28 @@
     "document_id": "1203167772",
     "issues": [
       "balance:receivables:row_count:0",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203168566",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203172280",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1203172432",
+    "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
@@ -6223,6 +6294,12 @@
     ]
   },
   {
+    "document_id": "1203174047",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203174237",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
@@ -6231,10 +6308,24 @@
     ]
   },
   {
+    "document_id": "1203174269",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203174341",
     "issues": [
       "income:interest_expense:row_count:0",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203174727",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -6260,7 +6351,36 @@
     ]
   },
   {
+    "document_id": "1203179775",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203180254",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:parent_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203180378",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203180940",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203181621",
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
@@ -6273,6 +6393,41 @@
     ]
   },
   {
+    "document_id": "1203188310",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203193833",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203194021",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203194605",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203194727",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203195595",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
@@ -6281,9 +6436,24 @@
     ]
   },
   {
+    "document_id": "1203196084",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
     "document_id": "1203196916",
     "issues": [
       "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203208946",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -6302,6 +6472,13 @@
     ]
   },
   {
+    "document_id": "1203211690",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203215056",
     "issues": [
       "income:interest_expense:row_count:0",
@@ -6310,7 +6487,55 @@
     ]
   },
   {
+    "document_id": "1203215099",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203215751",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203215998",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203216825",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203223420",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203223524",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203223681",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203223973",
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
@@ -6329,6 +6554,21 @@
       "balance:unit_not_unambiguous_yuan",
       "income:unit_not_unambiguous_yuan",
       "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1203225759",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203225829",
+    "issues": [
+      "balance:statement_count:2",
+      "income:statement_count:2",
+      "cashflow:statement_count:2"
     ]
   },
   {
@@ -6353,10 +6593,58 @@
     ]
   },
   {
+    "document_id": "1203237245",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203237298",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203237645",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203237895",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203239446",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203245920",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203246057",
     "issues": [
       "income:interest_expense:row_count:0",
       "income:parent_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203246083",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -6366,6 +6654,28 @@
       "income:interest_expense:row_count:0",
       "income:parent_profit:row_count:0",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203259700",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203260615",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1203261831",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -6405,6 +6715,51 @@
     ]
   },
   {
+    "document_id": "1203263379",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203263544",
+    "issues": [
+      "balance:inventory:row_count:0",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203263829",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:parent_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203274117",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203274415",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203275171",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203275335",
     "issues": [
       "income:interest_expense:row_count:0"
@@ -6415,6 +6770,19 @@
     "issues": [
       "income:interest_expense:row_count:0",
       "income:minority_profit:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203275971",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203276129",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -6499,7 +6867,35 @@
     ]
   },
   {
+    "document_id": "1203283858",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203284704",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203295927",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203297369",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203298296",
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
@@ -6520,6 +6916,12 @@
     ]
   },
   {
+    "document_id": "1203299793",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203299854",
     "issues": [
       "income:interest_expense:row_count:0",
@@ -6533,9 +6935,80 @@
     ]
   },
   {
+    "document_id": "1203312492",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203312795",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203312969",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203313497",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203314074",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203314600",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203314980",
     "issues": [
       "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203315955",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203323132",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203324397",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203325807",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -6607,10 +7080,81 @@
     ]
   },
   {
+    "document_id": "1203333685",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203334985",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203335474",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203342445",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203343375",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203343496",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203343698",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203344261",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203344879",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203344959",
     "issues": [
       "income:interest_expense:row_count:0",
       "income:income_tax:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203346439",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -6655,6 +7199,13 @@
     ]
   },
   {
+    "document_id": "1203355921",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203356044",
     "issues": [
       "balance:statement_count:0",
@@ -6671,6 +7222,13 @@
   },
   {
     "document_id": "1203357300",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203358542",
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
@@ -6762,6 +7320,20 @@
     ]
   },
   {
+    "document_id": "1203372756",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203372980",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203372997",
     "issues": [
       "income:interest_expense:row_count:0",
@@ -6780,6 +7352,14 @@
     "document_id": "1203373000",
     "issues": [
       "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203373395",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:parent_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -6831,6 +7411,27 @@
     ]
   },
   {
+    "document_id": "1203376919",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203377583",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203378518",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203379368",
     "issues": [
       "income:interest_expense:row_count:0",
@@ -6841,6 +7442,28 @@
     "document_id": "1203381415",
     "issues": [
       "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203381451",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203383100",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203383160",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -6859,6 +7482,13 @@
     ]
   },
   {
+    "document_id": "1203384373",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203385291",
     "issues": [
       "income:interest_expense:row_count:0",
@@ -6872,6 +7502,35 @@
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1203386152",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203386359",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203386628",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203386719",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -6913,6 +7572,21 @@
     ]
   },
   {
+    "document_id": "1203388066",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203388853",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203389543",
     "issues": [
       "balance:statement_count:0",
@@ -6927,6 +7601,29 @@
     ]
   },
   {
+    "document_id": "1203390105",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203401316",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203402274",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203402347",
     "issues": [
       "balance:statement_count:0",
@@ -6936,6 +7633,13 @@
   },
   {
     "document_id": "1203402348",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203402375",
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
@@ -6958,6 +7662,13 @@
   },
   {
     "document_id": "1203402632",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203402715",
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
@@ -7001,6 +7712,13 @@
     ]
   },
   {
+    "document_id": "1203406435",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203407054",
     "issues": [
       "income:interest_expense:row_count:0",
@@ -7013,6 +7731,36 @@
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1203407553",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203407939",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203408181",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203410270",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -7033,6 +7781,21 @@
     ]
   },
   {
+    "document_id": "1203410932",
+    "issues": [
+      "balance:inventory:row_count:0",
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203410982",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203410989",
     "issues": [
       "balance:statement_count:0",
@@ -7042,6 +7805,12 @@
   },
   {
     "document_id": "1203410991",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203411151",
     "issues": [
       "income:interest_expense:row_count:0"
     ]
@@ -7213,6 +7982,13 @@
     ]
   },
   {
+    "document_id": "1203413171",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203413293",
     "issues": [
       "balance:statement_count:0",
@@ -7231,6 +8007,28 @@
     "document_id": "1203413315",
     "issues": [
       "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203413327",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203413349",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203413919",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -7257,6 +8055,20 @@
     ]
   },
   {
+    "document_id": "1203414727",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203415255",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203415328",
     "issues": [
       "balance:statement_count:0",
@@ -7276,6 +8088,29 @@
     "issues": [
       "income:interest_expense:row_count:0",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203415376",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:parent_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203415622",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:statement_count:2",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1203415764",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -7411,6 +8246,12 @@
     ]
   },
   {
+    "document_id": "1203423360",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
     "document_id": "1203423558",
     "issues": [
       "balance:statement_count:0",
@@ -7499,6 +8340,12 @@
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203425870",
+    "issues": [
+      "income:interest_expense:row_count:0"
     ]
   },
   {
@@ -7591,6 +8438,14 @@
       "income:interest_expense:row_count:0",
       "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1203426795",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
     ]
   },
   {
@@ -9079,10 +9934,100 @@
     ]
   },
   {
+    "document_id": "1204421434",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204452294",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204453532",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204453556",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204456068",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204458652",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204459157",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204464140",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204466472",
     "issues": [
       "income:interest_expense:row_count:0",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204466877",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204466952",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204470475",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204477796",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204478148",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -9097,6 +10042,13 @@
     "issues": [
       "income:interest_expense:row_count:0",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204480243",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -9116,10 +10068,28 @@
     ]
   },
   {
+    "document_id": "1204488010",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204492247",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204492613",
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204496145",
+    "issues": [
+      "income:interest_expense:row_count:0"
     ]
   },
   {
@@ -9140,6 +10110,14 @@
       "income:interest_expense:row_count:0",
       "income:parent_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204507514",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
     ]
   },
   {
@@ -9168,7 +10146,35 @@
     ]
   },
   {
+    "document_id": "1204516646",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204517220",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204519256",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:parent_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204519692",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204519876",
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
@@ -9183,10 +10189,23 @@
     ]
   },
   {
+    "document_id": "1204524776",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204525588",
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204525616",
+    "issues": [
+      "income:interest_expense:row_count:0"
     ]
   },
   {
@@ -9213,13 +10232,62 @@
     ]
   },
   {
+    "document_id": "1204533307",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204533609",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204534077",
     "issues": [
       "income:interest_expense:row_count:0"
     ]
   },
   {
+    "document_id": "1204534797",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
     "document_id": "1204534985",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204543729",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204544653",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204545136",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204547146",
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
@@ -9241,6 +10309,62 @@
     ]
   },
   {
+    "document_id": "1204554425",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204555129",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204555169",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204555654",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204556140",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204556701",
+    "issues": [
+      "balance:statement_count:2",
+      "income:statement_count:2",
+      "cashflow:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1204557454",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204575799",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204576148",
     "issues": [
       "balance:statement_count:0",
@@ -9249,11 +10373,48 @@
     ]
   },
   {
+    "document_id": "1204577236",
+    "issues": [
+      "balance:inventory:row_count:0",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204585624",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204594851",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204594964",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1204595330",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204595862",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -9269,6 +10430,13 @@
     "issues": [
       "income:interest_expense:row_count:0",
       "income:minority_profit:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204601539",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -9332,6 +10500,21 @@
     ]
   },
   {
+    "document_id": "1204624977",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204626001",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204626250",
     "issues": [
       "income:interest_expense:row_count:0",
@@ -9346,9 +10529,36 @@
     ]
   },
   {
+    "document_id": "1204627906",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204628056",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204639375",
     "issues": [
       "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204639909",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204640144",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -9374,6 +10584,21 @@
     ]
   },
   {
+    "document_id": "1204641125",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204642031",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204642114",
     "issues": [
       "income:interest_expense:row_count:0",
@@ -9395,9 +10620,44 @@
     ]
   },
   {
+    "document_id": "1204642531",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204645850",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204646113",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204647279",
     "issues": [
       "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204648533",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204663259",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -9406,6 +10666,13 @@
     "issues": [
       "income:interest_expense:row_count:0",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204663700",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -9448,6 +10715,42 @@
     ]
   },
   {
+    "document_id": "1204665554",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1204666517",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204666857",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204668059",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204668180",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204669299",
     "issues": [
       "income:interest_expense:row_count:0"
@@ -9467,6 +10770,27 @@
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1204669432",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204669529",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204673680",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -9494,6 +10818,39 @@
     ]
   },
   {
+    "document_id": "1204676297",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204676733",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204677239",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204679312",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204679850",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204680426",
     "issues": [
       "income:interest_expense:row_count:0",
@@ -9509,6 +10866,14 @@
     ]
   },
   {
+    "document_id": "1204696437",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:operating_outflow:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204696607",
     "issues": [
       "balance:statement_count:0",
@@ -9521,6 +10886,13 @@
     "issues": [
       "income:interest_expense:row_count:0",
       "income:minority_profit:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204698111",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -9546,6 +10918,43 @@
     ]
   },
   {
+    "document_id": "1204699055",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204699669",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204699715",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204700307",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204701615",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204702256",
     "issues": [
       "income:interest_expense:row_count:0",
@@ -9568,7 +10977,41 @@
     ]
   },
   {
+    "document_id": "1204702864",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204704128",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204704207",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204733453",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204733591",
+    "issues": [
+      "balance:inventory:row_count:0",
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204733758",
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
@@ -9641,6 +11084,28 @@
     ]
   },
   {
+    "document_id": "1204735947",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204736850",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204739230",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204739347",
     "issues": [
       "balance:statement_count:0",
@@ -9653,6 +11118,13 @@
     "issues": [
       "income:interest_expense:row_count:0",
       "income:income_tax:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204740010",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -9703,11 +11175,69 @@
     ]
   },
   {
+    "document_id": "1204788017",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204788273",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204789287",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204792424",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204792477",
     "issues": [
       "balance:statement_count:2",
       "income:statement_count:2",
       "cashflow:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1204793620",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204793794",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204794350",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204794548",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -9724,6 +11254,13 @@
       "income:interest_expense:row_count:0",
       "income:income_tax:row_count:0",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204799500",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -9835,6 +11372,13 @@
     ]
   },
   {
+    "document_id": "1204800839",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204800878",
     "issues": [
       "balance:statement_count:0",
@@ -9871,6 +11415,21 @@
     ]
   },
   {
+    "document_id": "1204801785",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1204801925",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204802730",
     "issues": [
       "balance:statement_count:0",
@@ -9882,6 +11441,14 @@
     "document_id": "1204802732",
     "issues": [
       "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204802936",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -9906,6 +11473,13 @@
     "issues": [
       "income:interest_expense:row_count:0",
       "income:income_tax:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204803282",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -9951,6 +11525,14 @@
     "document_id": "1204804834",
     "issues": [
       "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204804908",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:parent_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -10003,6 +11585,20 @@
     ]
   },
   {
+    "document_id": "1204805714",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204808138",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204821968",
     "issues": [
       "balance:statement_count:0",
@@ -10030,6 +11626,12 @@
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204822359",
+    "issues": [
+      "income:interest_expense:row_count:0"
     ]
   },
   {
@@ -10356,6 +11958,12 @@
     ]
   },
   {
+    "document_id": "1204826276",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
     "document_id": "1204826493",
     "issues": [
       "balance:statement_count:0",
@@ -10369,6 +11977,12 @@
       "income:interest_expense:row_count:0",
       "income:income_tax:row_count:0",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204826596",
+    "issues": [
+      "income:interest_expense:row_count:0"
     ]
   },
   {
@@ -10419,6 +12033,34 @@
   },
   {
     "document_id": "1204827263",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204827569",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204828415",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204828941",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1204829160",
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
@@ -10560,6 +12202,13 @@
       "income:interest_expense:row_count:0",
       "income:income_tax:row_count:0",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205219591",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -11960,6 +13609,19 @@
     ]
   },
   {
+    "document_id": "1205854443",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205855399",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1205856377",
     "issues": [
       "balance:statement_count:0",
@@ -11968,7 +13630,26 @@
     ]
   },
   {
+    "document_id": "1205874488",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205877076",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1205885023",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205885339",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -11981,8 +13662,48 @@
     ]
   },
   {
+    "document_id": "1205892096",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205893526",
+    "issues": [
+      "income:parent_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205898775",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205900421",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1205912432",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205913549",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1205918346",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -12019,10 +13740,35 @@
     ]
   },
   {
+    "document_id": "1205922966",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205924489",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205924936",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1205925356",
     "issues": [
       "income:interest_expense:row_count:0",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205925542",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -12074,7 +13820,61 @@
     ]
   },
   {
+    "document_id": "1205937849",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1205938213",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205938523",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205942591",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205946816",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205946882",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205948144",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205948179",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205949442",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205953524",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -12087,13 +13887,107 @@
     ]
   },
   {
+    "document_id": "1205955119",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205955463",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205955668",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205956455",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1205958028",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
   {
+    "document_id": "1205965051",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205966224",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205966395",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
     "document_id": "1205966437",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205966479",
+    "issues": [
+      "balance:statement_count:2",
+      "income:statement_count:2",
+      "cashflow:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1205966840",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1205966962",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205968383",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205980777",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205982467",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205988008",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -12118,6 +14012,36 @@
       "balance:unit_not_unambiguous_yuan",
       "income:unit_not_unambiguous_yuan",
       "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1205996780",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1205999073",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206000122",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206002568",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206007074",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -12191,9 +14115,45 @@
     ]
   },
   {
+    "document_id": "1206016051",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1206016212",
     "issues": [
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206016474",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206020334",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206021188",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206022974",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206040984",
+    "issues": [
+      "income:interest_expense:row_count:0"
     ]
   },
   {
@@ -12247,11 +14207,44 @@
     ]
   },
   {
+    "document_id": "1206048117",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1206057667",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
       "income:unit_not_unambiguous_yuan",
       "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1206057752",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206058023",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206058598",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206058706",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
     ]
   },
   {
@@ -12274,6 +14267,18 @@
     "document_id": "1206059535",
     "issues": [
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206060070",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206061116",
+    "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -12335,6 +14340,12 @@
     ]
   },
   {
+    "document_id": "1206067416",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1206067971",
     "issues": [
       "balance:statement_count:0",
@@ -12351,9 +14362,39 @@
     ]
   },
   {
+    "document_id": "1206068581",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206069138",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1206069231",
     "issues": [
       "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206070854",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206071177",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206071415",
+    "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -12374,11 +14415,37 @@
     ]
   },
   {
+    "document_id": "1206076964",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206077755",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206078425",
+    "issues": [
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
     "document_id": "1206085936",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
       "income:unit_not_unambiguous_yuan",
       "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1206086235",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -12393,6 +14460,12 @@
     "document_id": "1206086850",
     "issues": [
       "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206087958",
+    "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -12414,6 +14487,13 @@
   {
     "document_id": "1206088441",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206090187",
+    "issues": [
+      "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -12497,6 +14577,12 @@
     ]
   },
   {
+    "document_id": "1206099034",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1206100468",
     "issues": [
       "balance:statement_count:0",
@@ -12529,6 +14615,27 @@
     ]
   },
   {
+    "document_id": "1206101185",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206102750",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206103758",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1206104466",
     "issues": [
       "balance:statement_count:0",
@@ -12540,6 +14647,12 @@
     "document_id": "1206104468",
     "issues": [
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206105021",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan"
     ]
   },
   {
@@ -12558,6 +14671,12 @@
     ]
   },
   {
+    "document_id": "1206106813",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1206107171",
     "issues": [
       "balance:statement_count:0",
@@ -12569,6 +14688,12 @@
     "document_id": "1206107174",
     "issues": [
       "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206109092",
+    "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -12732,6 +14857,14 @@
     ]
   },
   {
+    "document_id": "1206114701",
+    "issues": [
+      "income:income_tax:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1206115683",
     "issues": [
       "balance:statement_count:0",
@@ -12761,6 +14894,12 @@
     ]
   },
   {
+    "document_id": "1206116683",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1206117748",
     "issues": [
       "balance:statement_count:0",
@@ -12772,6 +14911,20 @@
     "document_id": "1206117755",
     "issues": [
       "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206118115",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1206118366",
+    "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -12791,6 +14944,24 @@
   },
   {
     "document_id": "1206118904",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206119286",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206120477",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206120869",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -12817,6 +14988,25 @@
     ]
   },
   {
+    "document_id": "1206121828",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206122788",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206123364",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1206124211",
     "issues": [
       "balance:statement_count:0",
@@ -12829,6 +15019,18 @@
     "issues": [
       "balance:statement_count:2",
       "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206124435",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206124537",
+    "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -12855,11 +15057,24 @@
     ]
   },
   {
+    "document_id": "1206124895",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1206125365",
     "issues": [
       "balance:statement_count:0",
       "income:unit_not_unambiguous_yuan",
       "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1206125408",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -12894,6 +15109,13 @@
     ]
   },
   {
+    "document_id": "1206158258",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1206158326",
     "issues": [
       "balance:statement_count:2"
@@ -12905,6 +15127,12 @@
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1206158475",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -12951,6 +15179,20 @@
     "issues": [
       "income:interest_expense:row_count:0",
       "income:income_tax:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206159825",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206160180",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -13030,6 +15272,26 @@
     ]
   },
   {
+    "document_id": "1206161606",
+    "issues": [
+      "balance:inventory:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206161822",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206162146",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1206162168",
     "issues": [
       "balance:statement_count:0",
@@ -13066,6 +15328,12 @@
     ]
   },
   {
+    "document_id": "1206162746",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1206162851",
     "issues": [
       "balance:statement_count:2"
@@ -13077,6 +15345,13 @@
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1206163000",
+    "issues": [
+      "income:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -13212,6 +15487,26 @@
     "issues": [
       "balance:statement_count:2",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206165556",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206165605",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1206166630",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -15047,6 +17342,13 @@
     ]
   },
   {
+    "document_id": "1207328648",
+    "issues": [
+      "balance:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207333445",
     "issues": [
       "balance:statement_count:4",
@@ -15056,6 +17358,14 @@
   {
     "document_id": "1207334871",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207344697",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -15072,11 +17382,45 @@
     ]
   },
   {
+    "document_id": "1207351223",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207364300",
     "issues": [
       "balance:statement_count:2",
       "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207364828",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207365080",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1207371713",
+    "issues": [
+      "balance:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207377848",
+    "issues": [
+      "balance:statement_count:2"
     ]
   },
   {
@@ -15115,11 +17459,47 @@
     ]
   },
   {
+    "document_id": "1207395344",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207403977",
     "issues": [
       "balance:statement_count:2",
       "income:parent_profit:row_count:0",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207404472",
+    "issues": [
+      "balance:statement_count:3",
+      "income:statement_count:2",
+      "cashflow:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1207405043",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207409007",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207410516",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -15140,9 +17520,30 @@
     ]
   },
   {
+    "document_id": "1207416685",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207417048",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207417319",
     "issues": [
       "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1207418708",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -15162,6 +17563,13 @@
     ]
   },
   {
+    "document_id": "1207426852",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207427168",
     "issues": [
       "balance:statement_count:2",
@@ -15172,6 +17580,13 @@
   },
   {
     "document_id": "1207427513",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207429366",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
@@ -15192,6 +17607,28 @@
     ]
   },
   {
+    "document_id": "1207430634",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207446139",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207446211",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207448969",
     "issues": [
       "balance:statement_count:2",
@@ -15204,6 +17641,20 @@
       "balance:statement_count:3",
       "income:interest_expense:row_count:0",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207452317",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207468686",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -15223,10 +17674,62 @@
     ]
   },
   {
+    "document_id": "1207474770",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207474792",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207482493",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207482614",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207482673",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207483132",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207490425",
+    "issues": [
+      "balance:statement_count:3",
+      "income:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207490656",
+    "issues": [
+      "balance:statement_count:2",
+      "income:statement_count:2"
     ]
   },
   {
@@ -15281,6 +17784,20 @@
     ]
   },
   {
+    "document_id": "1207498667",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207498759",
+    "issues": [
+      "balance:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207499429",
     "issues": [
       "balance:statement_count:2",
@@ -15288,7 +17805,30 @@
     ]
   },
   {
+    "document_id": "1207501037",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207501269",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207505432",
+    "issues": [
+      "balance:statement_count:2",
+      "income:income_tax:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207506238",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
@@ -15311,10 +17851,44 @@
     ]
   },
   {
+    "document_id": "1207522227",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207523866",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
     "document_id": "1207523959",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207524459",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207524881",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1207524967",
+    "issues": [
+      "balance:statement_count:2"
     ]
   },
   {
@@ -15342,9 +17916,39 @@
     ]
   },
   {
+    "document_id": "1207525419",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207537807",
     "issues": [
       "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1207538611",
+    "issues": [
+      "balance:statement_count:3",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207539053",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207539530",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
     ]
   },
   {
@@ -15364,6 +17968,27 @@
     ]
   },
   {
+    "document_id": "1207549161",
+    "issues": [
+      "balance:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207552112",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1207552150",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207554678",
     "issues": [
       "balance:statement_count:2",
@@ -15376,6 +18001,19 @@
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1207557768",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207558262",
+    "issues": [
+      "balance:statement_count:2"
     ]
   },
   {
@@ -15445,6 +18083,14 @@
     ]
   },
   {
+    "document_id": "1207584398",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207586104",
     "issues": [
       "balance:statement_count:2",
@@ -15453,8 +18099,29 @@
     ]
   },
   {
+    "document_id": "1207586291",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207586647",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207587566",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207589236",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -15486,6 +18153,13 @@
     "issues": [
       "balance:statement_count:2",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207600035",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -15532,6 +18206,20 @@
     ]
   },
   {
+    "document_id": "1207604802",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207606735",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207607039",
     "issues": [
       "balance:statement_count:0",
@@ -15553,9 +18241,46 @@
     ]
   },
   {
+    "document_id": "1207607190",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207607908",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
     "document_id": "1207609218",
     "issues": [
       "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207609378",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207609524",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207610972",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -15592,11 +18317,32 @@
     ]
   },
   {
+    "document_id": "1207633763",
+    "issues": [
+      "balance:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207634053",
     "issues": [
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1207634547",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207634608",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -15716,6 +18462,26 @@
     ]
   },
   {
+    "document_id": "1207639080",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1207640723",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207641026",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207641573",
     "issues": [
       "balance:statement_count:0",
@@ -15729,6 +18495,12 @@
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1207641971",
+    "issues": [
+      "balance:statement_count:2"
     ]
   },
   {
@@ -15754,6 +18526,34 @@
     ]
   },
   {
+    "document_id": "1207643181",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207643608",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207644283",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207644596",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207645149",
     "issues": [
       "balance:statement_count:0",
@@ -15764,6 +18564,20 @@
   {
     "document_id": "1207645151",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207645813",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207645959",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -15807,6 +18621,76 @@
   },
   {
     "document_id": "1207654813",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207655173",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207655267",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207656472",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207656845",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207656995",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1207657013",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207657626",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207659126",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207660724",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1207660780",
     "issues": [
       "balance:statement_count:2",
       "income:minority_profit:row_count:0",
@@ -15862,6 +18746,13 @@
     ]
   },
   {
+    "document_id": "1207662116",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207662548",
     "issues": [
       "balance:statement_count:2"
@@ -15876,6 +18767,14 @@
     ]
   },
   {
+    "document_id": "1207663319",
+    "issues": [
+      "balance:statement_count:2",
+      "income:parent_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207663532",
     "issues": [
       "balance:statement_count:2"
@@ -15887,6 +18786,20 @@
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1207664432",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1207665479",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -15907,6 +18820,19 @@
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1207667576",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1207677846",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -15984,6 +18910,14 @@
     ]
   },
   {
+    "document_id": "1207679259",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207679290",
     "issues": [
       "balance:statement_count:2",
@@ -16027,6 +18961,14 @@
     "document_id": "1207679684",
     "issues": [
       "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207679712",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -16150,6 +19092,14 @@
     ]
   },
   {
+    "document_id": "1207681372",
+    "issues": [
+      "balance:statement_count:2",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
     "document_id": "1207681434",
     "issues": [
       "balance:statement_count:0",
@@ -16188,6 +19138,21 @@
     ]
   },
   {
+    "document_id": "1207682012",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207682044",
+    "issues": [
+      "balance:statement_count:3",
+      "income:statement_count:2",
+      "cashflow:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1207682376",
     "issues": [
       "balance:statement_count:0",
@@ -16204,6 +19169,13 @@
   },
   {
     "document_id": "1207682401",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207682788",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
@@ -16230,6 +19202,41 @@
     ]
   },
   {
+    "document_id": "1207684032",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207684138",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207684171",
+    "issues": [
+      "balance:statement_count:2",
+      "income:parent_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207684332",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207684581",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1207684852",
     "issues": [
       "balance:statement_count:2",
@@ -16249,6 +19256,13 @@
     "issues": [
       "income:interest_expense:row_count:0",
       "income:income_tax:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207684936",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -16305,6 +19319,40 @@
     ]
   },
   {
+    "document_id": "1207685933",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207685973",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207686767",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207687054",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207687672",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1207687952",
     "issues": [
       "income:minority_profit:row_count:0",
@@ -16340,6 +19388,13 @@
     "issues": [
       "balance:statement_count:2",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1207688217",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -18091,6 +21146,13 @@
     ]
   },
   {
+    "document_id": "1209258527",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209285462",
     "issues": [
       "balance:statement_count:2",
@@ -18122,11 +21184,46 @@
     ]
   },
   {
+    "document_id": "1209301422",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209311879",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209338218",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209352456",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209370257",
     "issues": [
       "balance:statement_count:2",
       "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209370738",
+    "issues": [
+      "balance:statement_count:2"
     ]
   },
   {
@@ -18153,6 +21250,14 @@
       "balance:statement_count:2",
       "income:parent_profit:row_count:0",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209417113",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -18184,7 +21289,30 @@
     ]
   },
   {
+    "document_id": "1209425240",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209425561",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
     "document_id": "1209427315",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209427686",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
@@ -18199,9 +21327,63 @@
     ]
   },
   {
+    "document_id": "1209428328",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209451323",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209451447",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209452643",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209454384",
     "issues": [
       "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209462017",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209462148",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209463535",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -18221,6 +21403,13 @@
     ]
   },
   {
+    "document_id": "1209465069",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209465825",
     "issues": [
       "balance:statement_count:3",
@@ -18232,6 +21421,12 @@
     "document_id": "1209472904",
     "issues": [
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209474203",
+    "issues": [
+      "balance:statement_count:2"
     ]
   },
   {
@@ -18251,6 +21446,40 @@
   },
   {
     "document_id": "1209475139",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209475211",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209475245",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209475842",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1209477085",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209477316",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
@@ -18291,7 +21520,51 @@
     ]
   },
   {
+    "document_id": "1209485209",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209487681",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209488453",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209488567",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209489075",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209489212",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209491037",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
@@ -18305,11 +21578,53 @@
     ]
   },
   {
+    "document_id": "1209491585",
+    "issues": [
+      "balance:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209491894",
     "issues": [
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1209492038",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209492127",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209492309",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209492383",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209492680",
+    "issues": [
+      "balance:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -18326,7 +21641,42 @@
     ]
   },
   {
+    "document_id": "1209638011",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1209658730",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209667812",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1209668954",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209669039",
+    "issues": [
+      "balance:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209674636",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
@@ -18355,6 +21705,13 @@
       "income:income_tax:row_count:0",
       "cashflow:ocf:row_count:0",
       "accounting_identity_failed"
+    ]
+  },
+  {
+    "document_id": "1209676928",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -18399,9 +21756,37 @@
     ]
   },
   {
+    "document_id": "1209689582",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209689788",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1209690229",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209690393",
     "issues": [
       "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209691810",
+    "issues": [
+      "balance:statement_count:2",
+      "income:parent_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -18419,6 +21804,13 @@
       "balance:unit_not_unambiguous_yuan",
       "income:unit_not_unambiguous_yuan",
       "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1209703301",
+    "issues": [
+      "balance:statement_count:5",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -18444,9 +21836,24 @@
     ]
   },
   {
+    "document_id": "1209714338",
+    "issues": [
+      "balance:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209722907",
     "issues": [
       "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1209723070",
+    "issues": [
+      "balance:statement_count:2",
+      "income:parent_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -18465,6 +21872,13 @@
     ]
   },
   {
+    "document_id": "1209723758",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209725938",
     "issues": [
       "balance:statement_count:2",
@@ -18473,7 +21887,71 @@
     ]
   },
   {
+    "document_id": "1209726199",
+    "issues": [
+      "balance:statement_count:3",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209726259",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209727244",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209727450",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209736731",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209737252",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1209758596",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209758935",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209759398",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209759587",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
@@ -18500,11 +21978,47 @@
     ]
   },
   {
+    "document_id": "1209769795",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209771495",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209771826",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1209774842",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209774966",
     "issues": [
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1209777225",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -18523,6 +22037,13 @@
     ]
   },
   {
+    "document_id": "1209786919",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209787080",
     "issues": [
       "balance:statement_count:0",
@@ -18538,6 +22059,21 @@
     ]
   },
   {
+    "document_id": "1209788240",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209788304",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
     "document_id": "1209789009",
     "issues": [
       "balance:statement_count:0",
@@ -18550,6 +22086,14 @@
     "issues": [
       "balance:statement_count:2",
       "income:income_tax:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209789432",
+    "issues": [
+      "balance:statement_count:3",
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -18593,6 +22137,14 @@
     ]
   },
   {
+    "document_id": "1209795970",
+    "issues": [
+      "balance:statement_count:3",
+      "income:statement_count:2",
+      "cashflow:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1209805493",
     "issues": [
       "balance:statement_count:0",
@@ -18604,6 +22156,14 @@
     "document_id": "1209805495",
     "issues": [
       "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209805715",
+    "issues": [
+      "balance:statement_count:2",
       "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
@@ -18637,10 +22197,37 @@
     ]
   },
   {
+    "document_id": "1209806557",
+    "issues": [
+      "balance:statement_count:4",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209806780",
     "issues": [
       "balance:statement_count:2",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209809693",
+    "issues": [
+      "balance:statement_count:3"
+    ]
+  },
+  {
+    "document_id": "1209810093",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209812413",
+    "issues": [
+      "balance:statement_count:3",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -18707,6 +22294,13 @@
     "document_id": "1209814356",
     "issues": [
       "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1209816312",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -18794,6 +22388,13 @@
     ]
   },
   {
+    "document_id": "1209828124",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209829610",
     "issues": [
       "balance:statement_count:0",
@@ -18820,6 +22421,12 @@
     "issues": [
       "income:income_tax:row_count:0",
       "income:minority_profit:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209830431",
+    "issues": [
+      "balance:statement_count:2"
     ]
   },
   {
@@ -18866,6 +22473,13 @@
     ]
   },
   {
+    "document_id": "1209830969",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209831026",
     "issues": [
       "balance:statement_count:0",
@@ -18903,6 +22517,13 @@
     ]
   },
   {
+    "document_id": "1209832803",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209833524",
     "issues": [
       "balance:statement_count:2",
@@ -18927,6 +22548,61 @@
   },
   {
     "document_id": "1209835975",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209836185",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209836529",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1209836656",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209837338",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209837794",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209838752",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209838869",
+    "issues": [
+      "balance:statement_count:4",
+      "income:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209846670",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
@@ -18982,6 +22658,48 @@
     ]
   },
   {
+    "document_id": "1209847417",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209847986",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209850035",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209850421",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209850534",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209850658",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1209850821",
     "issues": [
       "balance:statement_count:0",
@@ -19012,6 +22730,14 @@
     ]
   },
   {
+    "document_id": "1209851734",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209851852",
     "issues": [
       "balance:statement_count:0",
@@ -19026,6 +22752,13 @@
     ]
   },
   {
+    "document_id": "1209852094",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209853072",
     "issues": [
       "balance:statement_count:0",
@@ -19035,6 +22768,13 @@
   },
   {
     "document_id": "1209853073",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209853415",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
@@ -19060,6 +22800,20 @@
     "issues": [
       "balance:statement_count:2",
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209853918",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209854956",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -19124,6 +22878,13 @@
     ]
   },
   {
+    "document_id": "1209855753",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209855805",
     "issues": [
       "balance:statement_count:0",
@@ -19139,6 +22900,40 @@
     ]
   },
   {
+    "document_id": "1209856173",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209856296",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209856350",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209856683",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209860375",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1209863924",
     "issues": [
       "balance:statement_count:0",
@@ -19150,6 +22945,13 @@
     "document_id": "1209863926",
     "issues": [
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209864080",
+    "issues": [
+      "balance:statement_count:3",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -19174,6 +22976,13 @@
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1209866067",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -19253,6 +23062,14 @@
     ]
   },
   {
+    "document_id": "1209867154",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
     "document_id": "1209867295",
     "issues": [
       "balance:statement_count:0",
@@ -19314,6 +23131,12 @@
     ]
   },
   {
+    "document_id": "1209867807",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1209868510",
     "issues": [
       "balance:statement_count:0",
@@ -19323,6 +23146,20 @@
   },
   {
     "document_id": "1209868512",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209868953",
+    "issues": [
+      "balance:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209869322",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
@@ -19358,6 +23195,13 @@
     ]
   },
   {
+    "document_id": "1209870986",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1209872260",
     "issues": [
       "balance:statement_count:0",
@@ -19374,6 +23218,14 @@
   {
     "document_id": "1209872281",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1209872399",
+    "issues": [
+      "balance:statement_count:2",
+      "income:income_tax:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -20185,10 +24037,37 @@
     ]
   },
   {
+    "document_id": "1212386396",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212413557",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212453505",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1212512239",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212519729",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0"
     ]
   },
   {
@@ -20217,6 +24096,12 @@
     ]
   },
   {
+    "document_id": "1212538586",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1212540184",
     "issues": [
       "balance:assets:row_count:0",
@@ -20224,6 +24109,28 @@
       "balance:liabilities:row_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1212541133",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1212541367",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212550543",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -20257,8 +24164,65 @@
     ]
   },
   {
+    "document_id": "1212634443",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1212634984",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1212644781",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212667588",
+    "issues": [
+      "balance:statement_count:2",
+      "income:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212667823",
+    "issues": [
+      "balance:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212669655",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212670691",
+    "issues": [
+      "balance:statement_count:2",
+      "income:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1212671080",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212671261",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -20275,6 +24239,13 @@
     ]
   },
   {
+    "document_id": "1212707869",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1212709241",
     "issues": [
       "balance:statement_count:2",
@@ -20282,7 +24253,21 @@
     ]
   },
   {
+    "document_id": "1212710445",
+    "issues": [
+      "balance:statement_count:4",
+      "income:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1212710834",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212711809",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
@@ -20303,6 +24288,26 @@
     ]
   },
   {
+    "document_id": "1212729763",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1212740336",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212742504",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1212743962",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -20310,6 +24315,21 @@
   },
   {
     "document_id": "1212744289",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212745653",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212746472",
     "issues": [
       "balance:statement_count:2",
       "income:minority_profit:row_count:0",
@@ -20325,9 +24345,31 @@
     ]
   },
   {
+    "document_id": "1212748377",
+    "issues": [
+      "balance:statement_count:3",
+      "income:statement_count:2",
+      "cashflow:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1212750276",
     "issues": [
       "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1212751406",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212751513",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:interest_expense:row_count:0"
     ]
   },
   {
@@ -20346,13 +24388,66 @@
     ]
   },
   {
+    "document_id": "1212764854",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212765717",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212836874",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212837560",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1212840747",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1212845292",
     "issues": [
       "balance:statement_count:2"
     ]
   },
   {
+    "document_id": "1212854254",
+    "issues": [
+      "balance:statement_count:3",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1212854718",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212855236",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
@@ -20365,11 +24460,36 @@
     ]
   },
   {
+    "document_id": "1212857634",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212882564",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1212886659",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
       "income:statement_count:0",
       "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1212886675",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1212886771",
+    "issues": [
+      "balance:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -20390,6 +24510,33 @@
     ]
   },
   {
+    "document_id": "1212899089",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212899207",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212919115",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1212919494",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1212923975",
     "issues": [
       "balance:statement_count:2",
@@ -20405,10 +24552,96 @@
     ]
   },
   {
+    "document_id": "1212943570",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1212958486",
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212959209",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1212959508",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212959527",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212960578",
+    "issues": [
+      "balance:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212966700",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212978588",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212978637",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212978944",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212979242",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212983510",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1212999588",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1213001265",
+    "issues": [
+      "balance:statement_count:2"
     ]
   },
   {
@@ -20441,6 +24674,42 @@
     ]
   },
   {
+    "document_id": "1213029200",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213042468",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213042739",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213042832",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213044117",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1213048202",
     "issues": [
       "income:interest_expense:row_count:0",
@@ -20457,6 +24726,26 @@
     "document_id": "1213053771",
     "issues": [
       "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213053957",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213055560",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213059325",
+    "issues": [
+      "balance:statement_count:4",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -20479,11 +24768,32 @@
     ]
   },
   {
+    "document_id": "1213101704",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213101961",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1213103818",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
       "income:unit_not_unambiguous_yuan",
       "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1213106642",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -20507,6 +24817,12 @@
     ]
   },
   {
+    "document_id": "1213116317",
+    "issues": [
+      "balance:statement_count:3"
+    ]
+  },
+  {
     "document_id": "1213126039",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -20526,14 +24842,58 @@
     ]
   },
   {
+    "document_id": "1213128513",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1213128762",
     "issues": [
       "income:minority_profit:row_count:0"
     ]
   },
   {
+    "document_id": "1213129347",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1213131467",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213132213",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213132744",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213133659",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213137834",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -20546,6 +24906,33 @@
   {
     "document_id": "1213139374",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213142400",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213145872",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213148204",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1213148865",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -20614,8 +25001,22 @@
     ]
   },
   {
+    "document_id": "1213164375",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1213165846",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213165855",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -20657,11 +25058,32 @@
     ]
   },
   {
+    "document_id": "1213167209",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213167431",
+    "issues": [
+      "balance:statement_count:2",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1213168701",
     "issues": [
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1213169462",
+    "issues": [
+      "balance:statement_count:2"
     ]
   },
   {
@@ -20673,8 +25095,23 @@
     ]
   },
   {
+    "document_id": "1213176561",
+    "issues": [
+      "balance:statement_count:2",
+      "income:parent_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1213198463",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213199976",
+    "issues": [
+      "balance:statement_count:3",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -20713,6 +25150,20 @@
     ]
   },
   {
+    "document_id": "1213205314",
+    "issues": [
+      "balance:statement_count:2",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213205440",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1213207074",
     "issues": [
       "income:interest_expense:row_count:0",
@@ -20721,8 +25172,28 @@
     ]
   },
   {
+    "document_id": "1213208504",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1213208622",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213209313",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213211281",
+    "issues": [
+      "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -20752,6 +25223,34 @@
     ]
   },
   {
+    "document_id": "1213214825",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213217549",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213219295",
+    "issues": [
+      "balance:statement_count:3",
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213220328",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1213223116",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -20774,6 +25273,21 @@
   {
     "document_id": "1213248137",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213249247",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1213249481",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -20806,7 +25320,26 @@
     ]
   },
   {
+    "document_id": "1213252078",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1213252736",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213253589",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213254527",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -20844,6 +25377,20 @@
     ]
   },
   {
+    "document_id": "1213256731",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213258276",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1213259884",
     "issues": [
       "income:interest_expense:row_count:0",
@@ -20855,6 +25402,14 @@
     "issues": [
       "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213260006",
+    "issues": [
+      "balance:statement_count:2",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
     ]
   },
   {
@@ -20877,6 +25432,26 @@
     ]
   },
   {
+    "document_id": "1213261812",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213261891",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213262144",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1213262535",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
@@ -20885,8 +25460,40 @@
     ]
   },
   {
+    "document_id": "1213263369",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213263535",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
+    "document_id": "1213263918",
+    "issues": [
+      "balance:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1213264511",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213264572",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1213265488",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -21584,6 +26191,14 @@
     ]
   },
   {
+    "document_id": "1216166724",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
     "document_id": "1216171157",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
@@ -21604,9 +26219,42 @@
     ]
   },
   {
+    "document_id": "1216201007",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
     "document_id": "1216219711",
     "issues": [
       "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216220188",
+    "issues": [
+      "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216220214",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216222010",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216235113",
+    "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -21633,11 +26281,66 @@
     ]
   },
   {
+    "document_id": "1216245817",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216246546",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216255812",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216256122",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216258461",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216261325",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216273286",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216276462",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216276587",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
       "income:unit_not_unambiguous_yuan",
       "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1216277045",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -21647,9 +26350,47 @@
     ]
   },
   {
+    "document_id": "1216278070",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216279646",
+    "issues": [
+      "income:parent_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216280228",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216281227",
     "issues": [
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216298710",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216303118",
+    "issues": [
+      "income:minority_profit:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216319195",
+    "issues": [
+      "income:interest_expense:row_count:0"
     ]
   },
   {
@@ -21677,7 +26418,21 @@
     ]
   },
   {
+    "document_id": "1216331275",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
     "document_id": "1216355030",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216357642",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -21712,7 +26467,31 @@
     ]
   },
   {
+    "document_id": "1216358541",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216358807",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216369872",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216371018",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216373479",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -21728,6 +26507,12 @@
     "document_id": "1216377865",
     "issues": [
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216379720",
+    "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -21757,7 +26542,70 @@
     ]
   },
   {
+    "document_id": "1216382212",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216383287",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216393079",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216394196",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216402554",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216410475",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216412717",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216413953",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216416381",
+    "issues": [
+      "balance:statement_count:2",
+      "income:statement_count:2",
+      "cashflow:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1216417085",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216417716",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -21779,13 +26627,38 @@
     ]
   },
   {
+    "document_id": "1216436627",
+    "issues": [
+      "income:parent_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216437721",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216440223",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
   {
+    "document_id": "1216441449",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216442800",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216473950",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -21833,11 +26706,29 @@
     ]
   },
   {
+    "document_id": "1216496394",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216497188",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
       "income:unit_not_unambiguous_yuan",
       "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1216515166",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1216515240",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -21848,7 +26739,39 @@
     ]
   },
   {
+    "document_id": "1216522395",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216523084",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216525087",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216527018",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216527480",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1216529288",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -21918,8 +26841,46 @@
     ]
   },
   {
+    "document_id": "1216557152",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216557215",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216560705",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216561363",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216561409",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216562336",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216563881",
+    "issues": [
+      "balance:statement_count:2",
+      "income:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -21936,6 +26897,12 @@
     ]
   },
   {
+    "document_id": "1216580229",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216581980",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -21943,6 +26910,18 @@
   },
   {
     "document_id": "1216582330",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216584421",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216585342",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -21962,7 +26941,25 @@
     ]
   },
   {
+    "document_id": "1216587935",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216588580",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216593480",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216593556",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -22018,9 +27015,39 @@
     ]
   },
   {
+    "document_id": "1216646871",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216647340",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216647683",
     "issues": [
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216649151",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216649184",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
     ]
   },
   {
@@ -22042,6 +27069,24 @@
     ]
   },
   {
+    "document_id": "1216650618",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216650728",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216651388",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216652378",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -22049,6 +27094,24 @@
   },
   {
     "document_id": "1216655602",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216657982",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216658487",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216658782",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -22070,6 +27133,12 @@
     ]
   },
   {
+    "document_id": "1216659774",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216660063",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -22083,6 +27152,12 @@
   },
   {
     "document_id": "1216660961",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216662480",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -22115,6 +27190,18 @@
     ]
   },
   {
+    "document_id": "1216683117",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216683872",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216683911",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -22142,13 +27229,37 @@
     ]
   },
   {
+    "document_id": "1216685212",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216685389",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216685505",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
   {
+    "document_id": "1216686456",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216687140",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216687189",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -22174,6 +27285,13 @@
     ]
   },
   {
+    "document_id": "1216688319",
+    "issues": [
+      "balance:inventory:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216688529",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -22194,6 +27312,13 @@
   {
     "document_id": "1216689399",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216689485",
+    "issues": [
+      "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -22224,6 +27349,18 @@
     ]
   },
   {
+    "document_id": "1216691745",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216692310",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1216693470",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
@@ -22233,6 +27370,18 @@
   },
   {
     "document_id": "1216695250",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216695462",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216696192",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -22287,6 +27436,30 @@
       "balance:unit_not_unambiguous_yuan",
       "income:unit_not_unambiguous_yuan",
       "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1216702668",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216703170",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216704120",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1216706015",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -22991,6 +28164,13 @@
     ]
   },
   {
+    "document_id": "1219110472",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219255077",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -23005,8 +28185,42 @@
     ]
   },
   {
+    "document_id": "1219285532",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219297416",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219328401",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219330022",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1219345102",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219346582",
+    "issues": [
+      "balance:statement_count:2",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -23037,6 +28251,14 @@
     ]
   },
   {
+    "document_id": "1219372633",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
     "document_id": "1219386765",
     "issues": [
       "balance:statement_count:0",
@@ -23049,6 +28271,25 @@
     "issues": [
       "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219401996",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219402603",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219402662",
+    "issues": [
+      "cashflow:capex_cash:row_count:0",
+      "accounting_identity_failed"
     ]
   },
   {
@@ -23065,6 +28306,12 @@
     ]
   },
   {
+    "document_id": "1219404372",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219412587",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
@@ -23073,10 +28320,28 @@
     ]
   },
   {
+    "document_id": "1219424765",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219429623",
     "issues": [
       "balance:statement_count:3",
       "income:statement_count:3",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219438882",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219446301",
+    "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -23095,6 +28360,14 @@
     ]
   },
   {
+    "document_id": "1219462130",
+    "issues": [
+      "balance:statement_count:2",
+      "income:statement_count:2",
+      "cashflow:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1219462222",
     "issues": [
       "income:minority_profit:row_count:0",
@@ -23102,7 +28375,32 @@
     ]
   },
   {
+    "document_id": "1219462913",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219468081",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219468828",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219470537",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219470730",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -23114,10 +28412,49 @@
     ]
   },
   {
+    "document_id": "1219472248",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219472436",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219474278",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1219504204",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219534603",
     "issues": [
       "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219551411",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219551816",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
     ]
   },
   {
@@ -23129,11 +28466,54 @@
     ]
   },
   {
+    "document_id": "1219579197",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219580932",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219582734",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219595984",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219597033",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219620326",
     "issues": [
       "balance:statement_count:2",
       "income:parent_profit:row_count:0",
       "income:minority_profit:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219621234",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219621365",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -23161,6 +28541,12 @@
     ]
   },
   {
+    "document_id": "1219637036",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219646003",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -23174,13 +28560,50 @@
     ]
   },
   {
+    "document_id": "1219649693",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219650522",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219652952",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
   {
+    "document_id": "1219653607",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219663834",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219665523",
+    "issues": [
+      "income:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1219670639",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219673354",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -23193,11 +28616,30 @@
     ]
   },
   {
+    "document_id": "1219690728",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219692680",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
     "document_id": "1219696841",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
       "income:unit_not_unambiguous_yuan",
       "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1219700501",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -23207,10 +28649,54 @@
     ]
   },
   {
+    "document_id": "1219702302",
+    "issues": [
+      "income:parent_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219736453",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219737119",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219737362",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219739536",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219740317",
     "issues": [
       "balance:statement_count:3",
       "income:statement_count:3"
+    ]
+  },
+  {
+    "document_id": "1219743585",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219745683",
+    "issues": [
+      "income:income_tax:row_count:0",
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -23244,6 +28730,12 @@
     ]
   },
   {
+    "document_id": "1219775289",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219786662",
     "issues": [
       "balance:statement_count:2",
@@ -23264,6 +28756,18 @@
     ]
   },
   {
+    "document_id": "1219798621",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219799625",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219800796",
     "issues": [
       "balance:statement_count:0",
@@ -23277,6 +28781,26 @@
       "income:interest_expense:row_count:0",
       "income:income_tax:row_count:0",
       "income:minority_profit:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219801258",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1219802071",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219814781",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -23314,7 +28838,20 @@
     ]
   },
   {
+    "document_id": "1219821384",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219824221",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219825230",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -23354,8 +28891,40 @@
     ]
   },
   {
+    "document_id": "1219828416",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219829318",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219829429",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219831116",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219842762",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219855304",
+    "issues": [
+      "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -23366,9 +28935,36 @@
     ]
   },
   {
+    "document_id": "1219857583",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219858652",
     "issues": [
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219858871",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219861084",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219862560",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
     ]
   },
   {
@@ -23385,11 +28981,23 @@
     ]
   },
   {
+    "document_id": "1219863046",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219863705",
     "issues": [
       "balance:unit_not_unambiguous_yuan",
       "income:unit_not_unambiguous_yuan",
       "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1219864314",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -23404,6 +29012,12 @@
     "document_id": "1219866600",
     "issues": [
       "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219868091",
+    "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -23428,6 +29042,50 @@
   {
     "document_id": "1219870715",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219871052",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219871078",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219871415",
+    "issues": [
+      "balance:statement_count:2",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219871582",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219871664",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219871972",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219873189",
+    "issues": [
+      "balance:inventory:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -23511,6 +29169,24 @@
     ]
   },
   {
+    "document_id": "1219908129",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219908450",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219908696",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219908712",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -23548,7 +29224,37 @@
     ]
   },
   {
+    "document_id": "1219910083",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1219911561",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219912907",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219914150",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219914359",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219915982",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -23561,6 +29267,42 @@
   },
   {
     "document_id": "1219916020",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219917121",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219919569",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219924669",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219926131",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219926918",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1219927912",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -24214,8 +29956,21 @@
     ]
   },
   {
+    "document_id": "1222663514",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1222733484",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222758543",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -24240,9 +29995,49 @@
     ]
   },
   {
+    "document_id": "1222807894",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1222821612",
     "issues": [
       "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222822293",
+    "issues": [
+      "income:interest_expense:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222823028",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1222845103",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222845503",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222867296",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
     ]
   },
   {
@@ -24254,8 +30049,47 @@
     ]
   },
   {
+    "document_id": "1222880140",
+    "issues": [
+      "income:income_tax:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222881520",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222911855",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222911954",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1222913178",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1222913498",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222922630",
+    "issues": [
+      "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -24266,9 +30100,33 @@
     ]
   },
   {
+    "document_id": "1222925703",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222926680",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222929471",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1222940732",
     "issues": [
       "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222942739",
+    "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -24282,6 +30140,25 @@
     "document_id": "1222944885",
     "issues": [
       "income:interest_expense:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222945531",
+    "issues": [
+      "income:parent_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222946422",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222946959",
+    "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -24328,6 +30205,39 @@
     ]
   },
   {
+    "document_id": "1222971026",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222975804",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1222990722",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1222990992",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223005934",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1223020906",
     "issues": [
       "income:minority_profit:row_count:0",
@@ -24342,6 +30252,42 @@
     ]
   },
   {
+    "document_id": "1223030397",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1223042723",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223045151",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1223070565",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223070689",
+    "issues": [
+      "balance:statement_count:2",
+      "income:statement_count:2",
+      "cashflow:statement_count:2"
+    ]
+  },
+  {
     "document_id": "1223096531",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -24349,6 +30295,18 @@
   },
   {
     "document_id": "1223100386",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223113522",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223122166",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -24375,7 +30333,19 @@
     ]
   },
   {
+    "document_id": "1223127383",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1223128111",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223144950",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -24388,6 +30358,12 @@
   },
   {
     "document_id": "1223147871",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223149241",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -24407,13 +30383,92 @@
     ]
   },
   {
+    "document_id": "1223183624",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1223197750",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
   },
   {
+    "document_id": "1223217089",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223218799",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223236966",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223237647",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223239029",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223240224",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223241478",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223241868",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223242623",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1223245521",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223245929",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223247279",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223264518",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -24435,6 +30490,13 @@
     ]
   },
   {
+    "document_id": "1223266499",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1223266831",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -24447,8 +30509,21 @@
     ]
   },
   {
+    "document_id": "1223268572",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1223269485",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223270212",
+    "issues": [
+      "income:minority_profit:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -24474,6 +30549,12 @@
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1223271159",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -24529,6 +30610,30 @@
     ]
   },
   {
+    "document_id": "1223304031",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223308835",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223309702",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223309877",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1223310079",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -24541,8 +30646,55 @@
     ]
   },
   {
+    "document_id": "1223310825",
+    "issues": [
+      "balance:statement_count:0",
+      "income:statement_count:0",
+      "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1223312062",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223312424",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1223313283",
     "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223316577",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223316981",
+    "issues": [
+      "balance:inventory:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223317715",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223317875",
+    "issues": [
+      "income:interest_expense:row_count:0",
       "cashflow:capex_cash:row_count:0"
     ]
   },
@@ -24568,11 +30720,23 @@
     ]
   },
   {
+    "document_id": "1223319201",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1223322032",
     "issues": [
       "balance:statement_count:0",
       "income:statement_count:0",
       "cashflow:statement_count:0"
+    ]
+  },
+  {
+    "document_id": "1223328968",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {
@@ -24596,6 +30760,19 @@
     ]
   },
   {
+    "document_id": "1223330807",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223332818",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1223356785",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -24614,7 +30791,19 @@
     ]
   },
   {
+    "document_id": "1223360523",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
     "document_id": "1223360869",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223361063",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -24668,6 +30857,12 @@
     ]
   },
   {
+    "document_id": "1223371445",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1223372645",
     "issues": [
       "cashflow:capex_cash:row_count:0"
@@ -24698,7 +30893,34 @@
     ]
   },
   {
+    "document_id": "1223377668",
+    "issues": [
+      "balance:unit_not_unambiguous_yuan",
+      "income:unit_not_unambiguous_yuan",
+      "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1223379052",
+    "issues": [
+      "income:minority_profit:row_count:0",
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223380357",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
     "document_id": "1223381455",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223381526",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -24714,6 +30936,12 @@
   },
   {
     "document_id": "1223381579",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
+    ]
+  },
+  {
+    "document_id": "1223383574",
     "issues": [
       "cashflow:capex_cash:row_count:0"
     ]
@@ -24806,6 +31034,12 @@
       "balance:unit_not_unambiguous_yuan",
       "income:unit_not_unambiguous_yuan",
       "cashflow:unit_not_unambiguous_yuan"
+    ]
+  },
+  {
+    "document_id": "1223415269",
+    "issues": [
+      "cashflow:capex_cash:row_count:0"
     ]
   },
   {

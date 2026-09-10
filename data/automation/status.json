@@ -1,39 +1,35 @@
 {
-  "updated_at": "2026-09-10T22:32:31.546361+00:00",
-  "queue_documents": 44962,
+  "updated_at": "2026-09-10T22:57:24.372179+00:00",
+  "queue_documents": 3398,
   "queue_priority_counts": {
-    "0": 32737,
-    "1": 38,
-    "2": 12187
+    "0": 3398,
+    "1": 0,
+    "2": 0
   },
   "queue_priority_meaning": {
     "0": "feature_or_followup_window",
     "1": "title_needs_period_review",
     "2": "ancillary_retained_not_deleted"
   },
-  "extracted_documents": 4621,
-  "failed_documents": 12,
-  "scope": "finite-cohort-v1",
-  "selected_queue_extracted": 4596,
+  "extracted_documents": 5618,
+  "failed_documents": 15,
+  "scope": "annual-st-sz-v1",
+  "selected_queue_extracted": 1517,
   "attempted_this_run": 1000,
-  "errors_this_run": 4,
+  "errors_this_run": 3,
   "workers": 4,
-  "elapsed_seconds": 769.24,
+  "elapsed_seconds": 1327.37,
   "automatic_verification_implemented": false,
-  "next_required_stage": "Complete sample_completion_tasks with source-reviewed evidence; rerun build_samples after registration. Extraction and sample adjudication do not automatically verify missing sources.",
+  "next_required_stage": "Certify annual_st sample inventory, historical ST eligibility and full follow-up coverage; implement simplified frozen export and runner.",
+  "study": "annual_st_v1",
   "eligible_samples": 0,
-  "verified_text_sections": 1,
+  "verified_text_sections": 0,
   "training_candidate": false,
   "blocking_reasons": [
-    "Complete historical Shanghai/Shenzhen A-share membership, listing/delisting and industry histories",
-    "Verified complete ST/*ST implementation and removal coverage",
     "No eligible analytical samples",
-    "No registered frozen dataset manifest"
+    "Simplified annual inputs and 12-month ST coverage require certification",
+    "Simplified frozen export and experiment runner are not yet implemented"
   ],
-  "sample_adjudication_implemented": true,
-  "sample_decisions": {
-    "pending": 5062,
-    "excluded": 188
-  },
-  "completion_tasks": "data/derived/sample_completion_tasks.json"
+  "sample_adjudication_implemented": false,
+  "sample_inventory": "data/derived/annual_st/sample_inventory.csv"
 }
