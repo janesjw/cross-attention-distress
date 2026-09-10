@@ -42,7 +42,7 @@ class ModelTests(unittest.TestCase):
     def test_all_ablation_variants_forward_and_backward(self):
         for variant in VARIANTS:
             with self.subTest(variant=variant):
-                text=None if variant in ('long_only','short_only','numerical_only') else tiny()
+                text=None if variant in ('long_only','short_only','numerical_only','numerical_cross_attention') else tiny()
                 model=MMAN(text,variant,32);out=model(*inputs())
                 self.assertEqual(out['logits'].shape,(3,))
                 loss=focal_loss(out['logits'],torch.tensor([0,1,0]));loss.backward()
@@ -50,6 +50,23 @@ class ModelTests(unittest.TestCase):
     def test_focal_loss_extremes_are_finite(self):
         z=torch.tensor([-1000.,1000.,0.,1000.],requires_grad=True);loss=focal_loss(z,torch.tensor([1,0,1,1]))
         loss.backward();self.assertTrue(torch.isfinite(loss));self.assertTrue(torch.isfinite(z.grad).all())
+    def test_gating_only_uses_all_three_modalities_and_gate(self):
+        model=MMAN(tiny(),'gating_only',32).eval();x=inputs();out=model(*x)
+        self.assertEqual(out['gates'].shape,(3,3));self.assertEqual(out['attentions'],[])
+        out['logits'].square().sum().backward()
+        for module in (model.gate,model.long_projection,model.short_projection,model.text_projection):
+            self.assertGreater(sum(p.grad.abs().sum().item() for p in module.parameters() if p.grad is not None),0)
+    def test_no_text_control_preserves_financial_cross_attention(self):
+        model=MMAN(None,'numerical_cross_attention',32).eval();x=inputs()
+        out=model(x[0],x[1]);self.assertEqual(len(out['attentions']),1)
+        self.assertEqual(out['attentions'][0].shape,(3,4,1,4))
+        self.assertEqual(out['gates'].shape,(3,3))
+        out['logits'].square().sum().backward()
+        self.assertGreater(model.paths[0].in_proj_weight.grad.abs().sum().item(),0)
+    def test_original_mean_has_three_equal_weights_and_no_attention(self):
+        out=MMAN(tiny(),'original_mean',32).eval()(*inputs())
+        self.assertEqual(out['attentions'],[])
+        self.assertTrue(torch.allclose(out['gates'],torch.full((3,3),1/3)))
     def test_checkpoint_roundtrip(self):
         model=MMAN(tiny(),d_model=32).eval();x=inputs();a=model(*x)['logits']
         file=io.BytesIO();torch.save(model.state_dict(),file);file.seek(0)

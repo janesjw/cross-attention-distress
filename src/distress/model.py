@@ -4,7 +4,8 @@ from torch import nn
 from torch.nn import functional as F
 
 VARIANTS=('sequence_cross_attention','manuscript_singleton','mean_fusion','gating_only','concat',
-          'long_only','short_only','text_only','numerical_only')
+          'long_only','short_only','text_only','numerical_only',
+          'original_mean','numerical_cross_attention')
 
 class MMAN(nn.Module):
     def __init__(self,text_encoder=None,variant='sequence_cross_attention',d_model=128,settings=None):
@@ -16,8 +17,8 @@ class MMAN(nn.Module):
         if settings is not None:c.update({k:v for k,v in settings.items() if k in c})
         self.use_long=variant not in ('short_only','text_only')
         self.use_short=variant not in ('long_only','text_only')
-        self.use_text=variant not in ('long_only','short_only','numerical_only')
-        self.cross=variant in ('sequence_cross_attention','manuscript_singleton','mean_fusion')
+        self.use_text=variant not in ('long_only','short_only','numerical_only','numerical_cross_attention')
+        self.cross=variant in ('sequence_cross_attention','manuscript_singleton','mean_fusion','numerical_cross_attention')
         if self.use_long:
             self.long_projection=nn.Linear(18,d_model)
             self.position=nn.Parameter(torch.empty(1,5,d_model));nn.init.normal_(self.position,std=.02)
@@ -36,11 +37,11 @@ class MMAN(nn.Module):
             self.text_encoder=text_encoder
             self.text_projection=nn.Linear(text_encoder.config.hidden_size,d_model)
         if self.cross:
-            self.paths=nn.ModuleList([nn.MultiheadAttention(d_model,c['heads'],dropout=c['attention_dropout'],batch_first=True) for _ in range(3)])
-        n=6 if self.cross else (2 if variant=='numerical_only' else 3)
+            self.paths=nn.ModuleList([nn.MultiheadAttention(d_model,c['heads'],dropout=c['attention_dropout'],batch_first=True) for _ in range(3 if self.use_text else 1)])
+        n=(6 if self.use_text else 3) if self.cross else (2 if variant=='numerical_only' else 3)
         if variant=='manuscript_singleton':
             self.global_gate=nn.Parameter(torch.zeros(6))
-        elif variant in ('sequence_cross_attention','gating_only','numerical_only'):
+        elif variant in ('sequence_cross_attention','gating_only','numerical_only','numerical_cross_attention'):
             self.gate=nn.Sequential(nn.Linear(n*d_model,d_model),nn.GELU(),nn.Linear(d_model,n))
         elif variant=='concat':
             self.concat_projection=nn.Linear(3*d_model,d_model)
@@ -65,20 +66,23 @@ class MMAN(nn.Module):
             text=text_tokens[:,0];vectors.append(text)
         if self.cross:
             singleton=self.variant=='manuscript_singleton'
-            text_keys=text[:,None] if singleton else text_tokens
             short_keys=short[:,None] if singleton else short_tokens
-            mask=None if singleton else ~attention_mask.bool()
-            for path,(query,keys,padding) in zip(self.paths,[(long,text_keys,mask),(short,text_keys,mask),(long,short_keys,None)]):
+            routes=[(long,short_keys,None)]
+            if self.use_text:
+                text_keys=text[:,None] if singleton else text_tokens
+                mask=None if singleton else ~attention_mask.bool()
+                routes=[(long,text_keys,mask),(short,text_keys,mask)]+routes
+            for path,(query,keys,padding) in zip(self.paths,routes):
                 out,weights=path(query[:,None],keys,keys,key_padding_mask=padding,need_weights=True,average_attn_weights=False)
                 vectors.append(out[:,0]);attentions.append(weights)
-        if self.variant.endswith('_only') and self.variant!='numerical_only':
+        if self.variant in ('long_only','short_only','text_only'):
             fused=vectors[0]
         elif self.variant=='concat':
             fused=self.concat_projection(torch.cat(vectors,dim=-1))
         else:
             stack=torch.stack(vectors,dim=1)
             if self.variant=='manuscript_singleton':gates=torch.softmax(self.global_gate,dim=0).expand(stack.shape[0],-1)
-            elif self.variant=='mean_fusion':gates=stack.new_full(stack.shape[:2],1/len(vectors))
+            elif self.variant in ('mean_fusion','original_mean'):gates=stack.new_full(stack.shape[:2],1/len(vectors))
             else:gates=torch.softmax(self.gate(torch.cat(vectors,dim=-1)),dim=-1)
             fused=(stack*gates.unsqueeze(-1)).sum(dim=1)
         return {'logits':self.classifier(fused).squeeze(-1),'gates':gates,'attentions':attentions,'fused':fused}

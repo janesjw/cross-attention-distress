@@ -1,0 +1,31 @@
+{
+  "version": "matched-ablation-v1",
+  "status": "specified_not_executed",
+  "requires": "Certified frozen dataset accepted by distress.dataset.load_frozen",
+  "seeds": [42, 43, 44, 45, 46],
+  "variants": ["sequence_cross_attention", "gating_only", "mean_fusion", "original_mean", "concat", "long_only", "short_only", "text_only", "numerical_cross_attention", "numerical_only"],
+  "planned_model_seed_runs": 50,
+  "shared_conditions": ["identical eligible sample IDs and labels", "identical split years", "training-only fitted preprocessing", "same retained modality encoders", "same stopping rule and epoch budget", "same declared validation-only tuning trial budget"],
+  "primary_metric": "f1",
+  "secondary_metrics": ["roc_auc", "average_precision", "recall", "precision", "specificity", "accuracy", "brier"],
+  "threshold": 0.5,
+  "contrasts": {
+    "H1": [["sequence_cross_attention", "long_only"], ["sequence_cross_attention", "short_only"], ["sequence_cross_attention", "text_only"]],
+    "attention": [["sequence_cross_attention", "gating_only"], ["mean_fusion", "original_mean"]],
+    "gating": [["sequence_cross_attention", "mean_fusion"], ["gating_only", "original_mean"]],
+    "text": [["sequence_cross_attention", "numerical_cross_attention"], ["gating_only", "numerical_only"]],
+    "simple_fusion": [["sequence_cross_attention", "concat"]]
+  },
+  "uncertainty": {
+    "company_cluster_paired_bootstrap_repetitions": 2000,
+    "interval": "95 percent percentile interval",
+    "bootstrap_scope": "conditional on each fitted model pair; same sampled firms and multiplicity in both models",
+    "seed_reporting": "per-seed scores and paired differences, mean and standard deviation; no pseudo-replication of firm-years",
+    "formal_significance": "Do not claim omnibus significance from unadjusted intervals; specify a primary comparison family and multiplicity procedure before any formal tests."
+  },
+  "temporal_reporting": "Pooled 2024-2025 and separate year metrics; fixed trained model for both years. This is not rolling retraining.",
+  "not_established_by_these_tests": ["causal or semantic interpretation of attention weights", "faithful causal interpretation of gate weights", "earlier textual warning before numerical deterioration", "exact parameter-count matching", "generalization to unseen economic regimes"],
+  "prediction_and_log_requirements": ["sample ID, firm ID, origin, label and probability for every model and seed", "dataset manifest hash and checkpoint hash", "threshold and split", "epoch-level training and validation losses, selected epoch and stopping epoch", "feature panel, missingness masks and fitted transformation parameters"],
+  "completed_research_runs": 0,
+  "empirical_results": null
+}

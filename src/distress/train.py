@@ -67,7 +67,7 @@ def main():
     data=load_frozen(a.manifest,con)
     cfg=json.loads((ROOT/'configs/model.json').read_text());cfg.update(seed=a.seed,variant=a.variant)
     a.output.mkdir(parents=True,exist_ok=False);seed_all(a.seed);device=torch.device(a.device)
-    text=None if a.variant in ('long_only','short_only','numerical_only') else AutoModel.from_pretrained(cfg['text_model'],revision=cfg['text_revision'])
+    text=None if a.variant in ('long_only','short_only','numerical_only','numerical_cross_attention') else AutoModel.from_pretrained(cfg['text_model'],revision=cfg['text_revision'])
     model=MMAN(text,a.variant,d_model=cfg['d_model'],settings=cfg).to(device)
     groups=[{'params':[v for k,v in model.named_parameters() if not k.startswith('text_encoder.')],'lr':cfg['learning_rate']}]
     if text is not None:groups.append({'params':model.text_encoder.parameters(),'lr':cfg['text_learning_rate']})
