@@ -56,8 +56,8 @@
     "balance:equity:row_count:2": 3,
     "cashflow:ocf:row_count:2": 1
   },
-  "newly_parsed": 997,
-  "elapsed_seconds": 62.45,
+  "newly_parsed": 0,
+  "elapsed_seconds": 2.63,
   "analytical_verified": false,
   "automatic_sample_verification_implemented": false,
   "purpose": "Batch row extraction and accounting checks; never a frozen sample or verified label."
