@@ -7,13 +7,13 @@
     "excluded": 188
   },
   "baseline_quarter_known": 1,
-  "baseline_audit_known": 1,
+  "baseline_audit_known": 5,
   "preorigin_annual_text_verified": 1,
   "unresolved_requirements": {
     "historical_membership": 5062,
     "baseline_ST": 5062,
     "baseline_quarter": 5061,
-    "baseline_audit": 5061,
+    "baseline_audit": 5057,
     "financial_source_review": 5062,
     "annual_text": 5061,
     "future_12_month_outcome": 5062,
