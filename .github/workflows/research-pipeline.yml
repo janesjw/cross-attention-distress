@@ -2,12 +2,13 @@ name: Research data pipeline
 on:
   workflow_dispatch:
   schedule:
-    - cron: '23 * * * *'
+    - cron: '23,53 * * * *'
   push:
     branches: [main]
     paths:
       - '.github/workflows/research-pipeline.yml'
       - 'analysis/run_pipeline.py'
+      - 'analysis/structure_financials.py'
       - 'analysis/import_reviewed_evidence.py'
       - 'analysis/build_samples.py'
       - 'src/distress/sample_builder.py'
@@ -54,7 +55,10 @@ jobs:
           fi
       - name: Extract next batch and check analytical readiness
         id: pipeline
-        run: python analysis/run_pipeline.py --limit 500 --minutes 25 --workers 4
+        run: python analysis/run_pipeline.py --limit 1000 --minutes 25 --workers 4
+      - name: Structure statements and check accounting identities
+        if: always()
+        run: python analysis/structure_financials.py
       - name: Preserve completed work
         id: persist
         if: always()
