@@ -1,14 +1,24 @@
 {
-  "updated_at": "2026-09-10T22:16:54.336111+00:00",
+  "updated_at": "2026-09-10T22:32:31.546361+00:00",
   "queue_documents": 44962,
-  "extracted_documents": 3625,
-  "failed_documents": 9,
+  "queue_priority_counts": {
+    "0": 32737,
+    "1": 38,
+    "2": 12187
+  },
+  "queue_priority_meaning": {
+    "0": "feature_or_followup_window",
+    "1": "title_needs_period_review",
+    "2": "ancillary_retained_not_deleted"
+  },
+  "extracted_documents": 4621,
+  "failed_documents": 12,
   "scope": "finite-cohort-v1",
-  "selected_queue_extracted": 3600,
+  "selected_queue_extracted": 4596,
   "attempted_this_run": 1000,
-  "errors_this_run": 1,
+  "errors_this_run": 4,
   "workers": 4,
-  "elapsed_seconds": 422.86,
+  "elapsed_seconds": 769.24,
   "automatic_verification_implemented": false,
   "next_required_stage": "Complete sample_completion_tasks with source-reviewed evidence; rerun build_samples after registration. Extraction and sample adjudication do not automatically verify missing sources.",
   "eligible_samples": 0,
