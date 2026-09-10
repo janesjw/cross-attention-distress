@@ -1100,6 +1100,271 @@
       "pages": 11,
       "financial_candidates": 33,
       "review_status": "needs_financial_and_section_review"
+    },
+    "1219823600": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000012.SZ",
+      "extraction_path": "data/automation/extracted/1219823600.zip",
+      "extraction_sha256": "a0b3ce564cdcdb9e503bcca535cf03e65c4f76ef6d3236b017ce28baabf88688",
+      "pdf_sha256": "1404f6cbcc7364806f6c13d1a0f0b31554bb9c0092af02e45c7a696437a585e6",
+      "pages": 167,
+      "financial_candidates": 181,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "1219854723": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000012.SZ",
+      "extraction_path": "data/automation/extracted/1219854723.zip",
+      "extraction_sha256": "0bc0f8bb0b4065a7db5cd57a6829123bc77fea04e386dba40652658c3136328e",
+      "pdf_sha256": "b3f82dd4a745c1bb4567eb4b28d159705f6e36ef0540d76b8862ca1d10bd3d06",
+      "pages": 9,
+      "financial_candidates": 28,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "1220962795": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000012.SZ",
+      "extraction_path": "data/automation/extracted/1220962795.zip",
+      "extraction_sha256": "557c5b155e37c251cf1d614d81b09f2917ad1351d3414272109f4ae6ba6b903f",
+      "pdf_sha256": "234d2da3fc0fb1183ba08119961813296c2fe6185fcca1a7ae13706febacde25",
+      "pages": 134,
+      "financial_candidates": 155,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "1221557311": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000012.SZ",
+      "extraction_path": "data/automation/extracted/1221557311.zip",
+      "extraction_sha256": "b5474bf216b47cd0d12922cd1eb2888cd111c736ff1c3465ee0cce833455c0c0",
+      "pdf_sha256": "aba7fa9115ff02b734ec9e728ce2628510e6cb31801d4c1f5f0418bfcd731cb8",
+      "pages": 10,
+      "financial_candidates": 27,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "1223303879": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000012.SZ",
+      "extraction_path": "data/automation/extracted/1223303879.zip",
+      "extraction_sha256": "03fa95277c20cc312153fadd5ad4414365c92a89bcd75270d74f16dba1051518",
+      "pdf_sha256": "d9b60e11ebb75c717455bd09c87fd763d95b1dd67c764694cff97e694000e1ab",
+      "pages": 161,
+      "financial_candidates": 200,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "1223304127": {
+      "status": "retry_pending",
+      "attempts": 1,
+      "firm_id": "000012.SZ",
+      "error": "ValueError: Unexpected source URL"
+    },
+    "1224503532": {
+      "status": "retry_pending",
+      "attempts": 1,
+      "firm_id": "000012.SZ",
+      "error": "ValueError: Unexpected source URL"
+    },
+    "1224750664": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000012.SZ",
+      "extraction_path": "data/automation/extracted/1224750664.zip",
+      "extraction_sha256": "8f703cf2faf7431b8019780855c95d26b3837d4251ca1d560183dbc1a88a9fab",
+      "pdf_sha256": "a91fd7e916d54526b543a57f1a61aa072c25ef8c45defea3c8a766c869f68601",
+      "pages": 10,
+      "financial_candidates": 25,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "1225203844": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000012.SZ",
+      "extraction_path": "data/automation/extracted/1225203844.zip",
+      "extraction_sha256": "b0a37c908b538ab5c1a7cf6291870cb8a9e97ef41203c8e07df188092f8b502b",
+      "pdf_sha256": "efc91430571037147aed4d14fdde969e616396b7cf0b698157894e8a30d94c47",
+      "pages": 10,
+      "financial_candidates": 27,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "1225204194": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000012.SZ",
+      "extraction_path": "data/automation/extracted/1225204194.zip",
+      "extraction_sha256": "4b51b595ba6666586a0e7a90d4786df7a2831a951361813543f2c94ea4901076",
+      "pdf_sha256": "5a7d16085632259dd33d982ecd1886fea417969c964e2b6ae41ec42378bd3e89",
+      "pages": 160,
+      "financial_candidates": 211,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "59362727": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/59362727.zip",
+      "extraction_sha256": "4f20833f176c9a14604006d94a9cb236499940240e6d65b0a795cc25d21f087e",
+      "pdf_sha256": "cdab71a972c6c84a05fccd8fa196def566b7e09a7c82e7a06e7b9473c9d2a202",
+      "pages": 107,
+      "financial_candidates": 132,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "59362735": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/59362735.zip",
+      "extraction_sha256": "6f66badb2a99373c94ed9881b2b1f922ff6e548b09123fb3936fc72c88e8147c",
+      "pdf_sha256": "877978df144c26daf16c5905fd868d1c7160297c7e01ddada2e49079ccc824cb",
+      "pages": 5,
+      "financial_candidates": 15,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "59362736": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/59362736.zip",
+      "extraction_sha256": "b0e49d08a1a404307d2efdf18fd79c5b5885e74fb9852aa34daf25b4657a5b71",
+      "pdf_sha256": "17a3de32e3ac21cb26332fc0462188efc9637e30c5ff06377b8c0f7a318ad900",
+      "pages": 10,
+      "financial_candidates": 30,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "59895036": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/59895036.zip",
+      "extraction_sha256": "b28d7e35f92efc8c52cd1c99acbea57971402e7ed055e7c081466765d63ba1b3",
+      "pdf_sha256": "4e7eb2e223fdbdc990886999e943f5ef1c8b1c1b6075e85f65a91a353e76f5d9",
+      "pages": 73,
+      "financial_candidates": 110,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "60134088": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/60134088.zip",
+      "extraction_sha256": "20af50640e71aa352aa0f418f6d9b2cb03ba9e1dc98c5678bd627704a6d5022f",
+      "pdf_sha256": "160cde839d9fa2d26300ac8b49b074335858be9a2088c24be1a563e8c21c52b4",
+      "pages": 4,
+      "financial_candidates": 15,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "60134089": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/60134089.zip",
+      "extraction_sha256": "7ad8cc7692238cb5b38f78c32bdd257d23d32d7f454ca475a38bfe1c9d4dc97e",
+      "pdf_sha256": "b8f86786512aaf5f423ca17026c77d4641b0ebfc86951fb019433ecfc47509ed",
+      "pages": 11,
+      "financial_candidates": 37,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "60888678": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/60888678.zip",
+      "extraction_sha256": "0f501373890291224761fc4766fa2c12d02679019056f1f83c7da08f855de43b",
+      "pdf_sha256": "426f3532f69c0f7d332a9e1d8740c1bae1af510f56bce054671d3ba49227556c",
+      "pages": 103,
+      "financial_candidates": 130,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "60888713": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/60888713.zip",
+      "extraction_sha256": "f728ac3d323dabcf12bce26cf5c2f122996f62f3c531e88ea7bdd137bb85d88f",
+      "pdf_sha256": "69a07adeafb63ae9cf8571129597719d0d3efc3a94cd618c8b2595d9f474e558",
+      "pages": 5,
+      "financial_candidates": 15,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "60888714": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/60888714.zip",
+      "extraction_sha256": "7b461f231cad8eb78ca879969fe6d14526e7e36d5b7bc787f502b99a3c0a60da",
+      "pdf_sha256": "56318590172a38a422f598b0161a130bf9fb7819962ad2693f46cfe03b9a1836",
+      "pages": 11,
+      "financial_candidates": 30,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "61428589": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/61428589.zip",
+      "extraction_sha256": "e7b6b0650a809af2a60cc19ab191723dcac0b4e7f8b6f67c6e996b10fe704a69",
+      "pdf_sha256": "bbcf1d96d1a2d4b1702a9975745011757beee9a38465b1617973436fe9f4bb92",
+      "pages": 141,
+      "financial_candidates": 182,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "61718831": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/61718831.zip",
+      "extraction_sha256": "31c66a0c9528a61ddb8c6b7ce28c168b5765183ef9746f219438b43b6a50492b",
+      "pdf_sha256": "0e812e3534b96039725667923f3e257c6a2538e8197197feb0cba6fac75f756e",
+      "pages": 5,
+      "financial_candidates": 12,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "61718841": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/61718841.zip",
+      "extraction_sha256": "b21c4a56988c14059c595fc5113ced7ec020f9128d404b8b5f46e5f3e059db29",
+      "pdf_sha256": "b108db16dffac1f6633dc7e3ca19680161a289aab47bdd9bb51f308037763dd1",
+      "pages": 16,
+      "financial_candidates": 60,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "62405177": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/62405177.zip",
+      "extraction_sha256": "6fde429b8b3852cee95974856da9c4646c0b2b78eb180fd14567a5a54303b87f",
+      "pdf_sha256": "61d9efc8050091bbc45362fca6bf32e001150a769860446b41287da075592ac2",
+      "pages": 143,
+      "financial_candidates": 209,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "62405188": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/62405188.zip",
+      "extraction_sha256": "b999ceacea93430257d7d260dab2fef3932cc2e0b8a69a2815d526bcae7830ba",
+      "pdf_sha256": "af2578fcba0eb9dda6e8a410b6e6e77afcb8c322d39dad6d4b37406943eb3924",
+      "pages": 8,
+      "financial_candidates": 19,
+      "review_status": "needs_financial_and_section_review"
+    },
+    "62405189": {
+      "status": "extracted",
+      "attempts": 1,
+      "firm_id": "000018.SZ",
+      "extraction_path": "data/automation/extracted/62405189.zip",
+      "extraction_sha256": "4e8575edaed586cdb0ce4882f2b8d36a611d493ea22799f7ef52989e2dfb12cd",
+      "pdf_sha256": "2a6d3cb3078adc1207c205e20cf3ec38c22690c0a919185f3a2ef5872895e083",
+      "pages": 19,
+      "financial_candidates": 54,
+      "review_status": "needs_financial_and_section_review"
     }
   }
 }
