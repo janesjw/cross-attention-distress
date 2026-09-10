@@ -7295,7 +7295,7 @@
   "data/derived/cohort_screening.csv": "f32d75a3cfeba4874b6ae3330edc82f19eb6fc2392ea8a61c713f5770813fc5d",
   "data/derived/cohort_screening.sqlite": "d389d35087026d566b730e54856cdce0ee4e47a879abe96ff4a06be5ef4b7fe1",
   "data/derived/cohort_screening_summary.json": "e03ae8b3ae7e60a262e092003d4590f270d8d872efbfafb213fd72c8afb768d6",
-  "data/derived/distress.sqlite": "c63fb8d7f7f49d77b4cee9a3dbaef82fbec7abfd62cb834d8e824b042416102f",
+  "data/derived/distress.sqlite": "8d16122b36d767eb48ac594c515856ce5ab568b89e13fb42befaf6fba70e658d",
   "data/derived/filing_summary.json": "4cabd52b64e2a62aa5831309ac31f1889aaff00944500e787cc7d542c78cf3d6",
   "data/derived/financials.csv": "8d4c5ed3032bc6aad6cf5e3f51d2d1218df14f8fe46cd588b085a92b25590d97",
   "data/derived/historical_industry.json": "141a4698dc5157049594b45aaae2ea478775cfb4eec4e042ed404933e474b11e",
