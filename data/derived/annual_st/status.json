@@ -4,31 +4,44 @@
   "candidate_firms": 471,
   "candidate_firm_years": 3335,
   "decisions": {
-    "pending": 3234,
-    "excluded": 101
+    "pending": 3166,
+    "eligible_awaiting_freeze": 1,
+    "excluded": 168
   },
-  "eligible_samples": 0,
+  "eligible_samples": 1,
   "frozen": false,
   "final_sample_count": null,
-  "rows_with_selected_annual_report": 1408,
-  "rows_with_12_candidate_features": 850,
+  "registry_labels_verified": 3167,
+  "unresolved_requirements": {
+    "annual_financial_certification": 3162,
+    "annual_text_certification": 3166,
+    "historical_industry": 388
+  },
+  "rows_with_selected_annual_report": 1359,
+  "rows_with_12_candidate_features": 830,
   "rows_with_12_verified_features": 5,
-  "rows_with_text_candidate": 1391,
+  "rows_with_text_candidate": 1342,
   "verified_text_sections": 1,
   "splits": {
     "train": {
       "candidate_rows": 1673,
+      "registry_negative": 1551,
+      "registry_positive": 31,
       "new_ST_leads_not_labels": 32
     },
     "validation": {
       "candidate_rows": 793,
+      "registry_negative": 748,
+      "registry_positive": 15,
       "new_ST_leads_not_labels": 15
     },
     "test": {
       "candidate_rows": 869,
+      "registry_negative": 798,
+      "registry_positive": 24,
       "new_ST_leads_not_labels": 24
     }
   },
   "training_candidate": false,
-  "training_note": "No simplified frozen export or completed ST coverage; legacy MMAN training disabled for this design."
+  "training_note": "Full-cohort input review and simplified frozen export/runner remain incomplete; legacy MMAN training disabled."
 }
