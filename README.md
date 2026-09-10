@@ -2,7 +2,7 @@
 
 The active, user-authorized design uses one pre-origin annual report, 12 financial ratios, annual-report text and a subsequent 12-month ST/*ST endpoint. Five-year histories, quarterly inputs and the composite distress label are retired for this study. There is no fixed final-sample-size quota. See [the simplified study specification](analysis/SIMPLIFIED_STUDY.md) and `configs/active_study.json`.
 
-Collection and input inventory are in progress; the simplified sample is not frozen and empirical results are not yet available. Current readiness is recorded in `data/derived/annual_st/status.json` after the pipeline runs. Candidate observations, parsed values and ST leads are not verified training samples.
+The active workflow audits the latest indexed annual inputs, checks sample support, and freezes an eligible source-availability subset before estimation. Current readiness and any blocking reasons are recorded in `data/derived/annual_st/freeze_readiness.json`; empirical results exist only after the experiment job completes. Candidate observations and parsed values are not automatically eligible. See [the annual audit and experiment workflow](analysis/ANNUAL_WORKFLOW.md).
 
 The original Transformer/LSTM/FinBERT MMAN implementation and its protocol are preserved for reconstruction and provenance. The reproduction instructions and historical audits below refer to that archived design; its training job is disabled for the active annual-only study.
 

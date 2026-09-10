@@ -89,24 +89,31 @@
     "bootstrap_replicates": 2000,
     "unit": "firm clusters retaining repeated company-year records",
     "adequacy": "No arbitrary total-N target. Report event counts and distinct event firms in every split, interval widths and variability across seeds. If event counts or intervals cannot resolve an improvement, report inconclusive evidence; do not expand/stop the sample by test performance.",
-    "claims": "Predictive association, not causality, universal distress or guaranteed early warning."
+    "claims": "Predictive association, not causality, universal distress or guaranteed early warning.",
+    "technical_minimum": "At least two distinct positive firms and two distinct negative firms in every split for computation and cluster resampling. This is not a power or publication-sufficiency criterion; sparse events and wide intervals require inconclusive conclusions."
   },
   "sampling": {
     "target_count": null,
-    "rule": "Complete the fixed reduced source frame; no outcome-dependent replacements or exact-count quota.",
+    "rule": "Freeze all eligible observations at the source-availability snapshot, applying the same prespecified rules to every candidate; retain every exclusion/pending reason. No outcome-dependent replacements and no selection by test performance.",
     "all_modalities_same_sample": true
   },
   "pending": [
-    "Verify historical eligibility and baseline ST state",
-    "Verify full 12-month ST implementation/removal coverage, retaining unknown labels",
-    "Certify statement period/version, features and annual text",
-    "Implement and validate simplified frozen export and experiment runner",
-    "Freeze sample and synchronize README, filing_summary and frozen manifest before empirical claims"
+    "Finish source-based input and industry adjudication",
+    "Freeze eligible source-availability subset before estimation",
+    "Interpret intervals and seed variability without assuming improvement"
   ],
   "ST_source_operationalization": {
     "source": "Audited unfiltered SZSE short-name change register, reconciled to official XLSX/API counts and listing/delisting exports",
     "assumption": "The official register records all ST/*ST name transitions; source errors or omissions cannot be ruled out by internal consistency checks.",
     "reconstruction": "Full normalized name chain and terminal name must agree; any conflict stays unresolved. ST at origin is excluded. An observed new transition gives label 1. Label 0 requires the full interval to be covered and no earlier delisting.",
     "censoring": "Delisting before the end without an observed ST transition leaves the label unknown."
+  },
+  "input_verification": {
+    "methods": [
+      "manual_source_review",
+      "annual-input-rules-v1"
+    ],
+    "rule_based": "Official filing-index identity, front-matter code/year, latest indexed preorigin full report, consolidated yuan statements, explicitly ordered current/comparative headers, anchored rows and accounting checks; uniquely bounded MD&A of at least 1000 non-space characters. Automatic checks are not described as manual verification.",
+    "missingness": "Uncollected required rows remain pending; only ratios with known zero denominators may be missing under automatic checks."
   }
 }

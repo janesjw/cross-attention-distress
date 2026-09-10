@@ -84,13 +84,16 @@ def readiness(root):
     if simplified_active(root):
         path=root/'data/derived/annual_st/status.json'
         status=json.loads(path.read_text()) if path.exists() else {}
+        frozen=root/'data/derived/annual_st/frozen_manifest.json'
+        ready=False
+        if frozen.exists():
+            from distress.annual_freeze import load_frozen
+            load_frozen(root);ready=True
         return {'study':'annual_st_v1','eligible_samples':status.get('eligible_samples',0),
                 'verified_text_sections':status.get('verified_text_sections',0),
-                'training_candidate':False,
-                'blocking_reasons':[('No eligible analytical samples' if not status.get('eligible_samples') else 'Reduced study is not yet frozen'),
-                    'Complete annual financial/text and historical-industry review; retain censored ST windows',
-                    'Simplified frozen export and experiment runner are not yet implemented'],
-                'sample_adjudication_implemented':False,
+                'training_candidate':ready,
+                'blocking_reasons':[] if ready else ['See annual_st/freeze_readiness.json for source and split support blockers'],
+                'sample_adjudication_implemented':True,
                 'sample_inventory':'data/derived/annual_st/sample_inventory.csv'}
     protocol=json.loads((root/'configs/protocol.json').read_text());reasons=list(protocol['pending_before_full_dataset'])
     db=root/'data/derived/distress.sqlite'

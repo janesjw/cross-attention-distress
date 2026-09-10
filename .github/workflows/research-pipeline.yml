@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     outputs:
-      ready: ${{ steps.pipeline.outputs.ready }}
+      ready: ${{ steps.freeze.outputs.ready }}
       source_sha: ${{ steps.persist.outputs.sha }}
       study: ${{ steps.pipeline.outputs.study }}
     permissions:
@@ -71,9 +71,15 @@ jobs:
       - name: Structure statements and check accounting identities
         if: always()
         run: python analysis/structure_financials.py
+      - name: Audit annual source inputs
+        if: always()
+        run: python analysis/audit_annual_inputs.py
       - name: Inventory simplified annual ST study
         if: always()
         run: python analysis/build_annual_st.py
+      - name: Check annual freeze readiness
+        id: freeze
+        run: python analysis/freeze_annual_st.py
       - name: Preserve completed work
         id: persist
         if: always()
@@ -81,7 +87,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           if [ -d data/automation ]; then
-            git add data/automation data/verification data/verified_text data/derived file_manifest.json
+            git add data/automation data/verification data/verified_text data/derived README.md file_manifest.json
             if ! git diff --cached --quiet; then
               git commit -m 'Save disclosure extraction progress'
               git pull --rebase origin main
@@ -101,9 +107,11 @@ jobs:
           if-no-files-found: warn
   train:
     needs: extract
-    if: needs.extract.outputs.ready == 'true' && needs.extract.outputs.study != 'annual_st_v1'
+    if: needs.extract.outputs.ready == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 90
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -112,12 +120,28 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
-      - run: python -m pip install -e .
+      - run: python -m pip install -e . matplotlib==3.10.8
+      - name: Train annual ST comparisons
+        if: needs.extract.outputs.study == 'annual_st_v1'
+        run: python -m distress.annual_train --root . --output runs/annual-st-v1
       - name: Train only on a registered frozen dataset
+        if: needs.extract.outputs.study != 'annual_st_v1'
         run: |
           mkdir -p runs
           cp data/derived/distress.sqlite runs/training.sqlite
           python -m distress.train --database runs/training.sqlite --manifest data/derived/frozen_dataset.json --output runs/main-seed42 --seed 42 --device cpu
+      - name: Commit annual empirical results
+        if: needs.extract.outputs.study == 'annual_st_v1'
+        run: |
+          mkdir -p data/derived/annual_st/results
+          cp runs/annual-st-v1/results.json runs/annual-st-v1/predictions.csv runs/annual-st-v1/training_log.json runs/annual-st-v1/test_curves.png data/derived/annual_st/results/
+          python analysis/register_annual_results.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/derived/annual_st/results data/derived/filing_summary.json file_manifest.json
+          git commit -m 'Record annual ST empirical comparisons'
+          git pull --rebase origin main
+          git push origin HEAD:main
       - name: Save predictions, logs, database and model checkpoint
         if: always()
         uses: actions/upload-artifact@v4

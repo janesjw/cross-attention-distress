@@ -85,6 +85,14 @@ def inventory(root):
     if label_path.exists():
         if hashlib.sha256(label_path.read_bytes()).hexdigest()!=manifest.get(label_path.relative_to(root).as_posix()):raise ValueError('Label audit hash mismatch')
         labels={r['sample_id']:r for r in csv.DictReader(label_path.open())}
+    audits={}; selection={}
+    for name in ('input_audit.zip','source_selection.json'):
+        ap=root/'data/verification/annual_st'/name
+        if ap.exists():
+            if hashlib.sha256(ap.read_bytes()).hexdigest()!=manifest.get(ap.relative_to(root).as_posix()):raise ValueError('Annual audit hash mismatch')
+            if name.endswith('.zip'):
+                with zipfile.ZipFile(ap) as z:audits={n[:-5]:json.loads(z.read(n)) for n in z.namelist()}
+            else:selection=json.loads(ap.read_text())
     con=sqlite3.connect(f'file:{root / "data/derived/distress.sqlite"}?mode=ro',uri=True)
     con.row_factory=sqlite3.Row
     leads={r['candidate_id']:dict(r) for r in con.execute('SELECT * FROM candidate_register')}
@@ -107,7 +115,7 @@ def inventory(root):
                'baseline_ST_verified':label.get('baseline_ST')=='0',
                'registry_label_verified':label.get('status')=='verified_registry_endpoint',
                'label_available_date':label.get('label_available_date') or None,
-               'input_certified':False,'unresolved_requirements':'',
+               'input_certified':False,'financial_certified':False,'financial_verification_tier':'none','text_verification_tier':'none','unresolved_requirements':'',
                'baseline_ST_lead':leads.get(sid,{}).get('baseline_st_from_name'),
                'new_ST_followup_lead':leads.get(sid,{}).get('new_st_name_in_followup'),
                'lead_is_verified_label':False,'analytical_eligible':False}
@@ -115,6 +123,8 @@ def inventory(root):
                 r['reason']='known_incomplete_followup_due_to_delisting' if label.get('status')=='right_censored' else 'preorigin_financial_industry_or_confirmed_baseline_ST'
             else:
                 choices=[(s,p) for s,p in archives.get(firm['firm_id'],[]) if annual_matches(s,origin)]
+                if sid in selection:
+                    choices=[(s,p) for s,p in choices if s['document_id']==selection[sid]['document_id']]
                 if choices:
                     latest=max(s['disclosed_date'] for s,_ in choices)
                     chosen=[(s,p) for s,p in choices if s['disclosed_date']==latest]
@@ -139,6 +149,21 @@ def inventory(root):
                                           'verified_features':annual_features(verified),'text':mda_candidate(raw),
                                 'analytical_verified':False,'label':None}
                         p=packets[did]
+                        reviewed=audits.get(did)
+                        if reviewed:
+                            if reviewed['source']!=source or reviewed['extraction_sha256']!=hashlib.sha256(path.read_bytes()).hexdigest():raise ValueError('Stale annual input audit')
+                            if reviewed['financial_pass'] and all(v is not None for v in p['verified_features']):
+                                import math
+                                if any(v is None or not math.isclose(v,w,rel_tol=1e-9,abs_tol=1e-9) for v,w in zip(reviewed['features'],p['verified_features'])):raise ValueError('Manual and automatic financial evidence disagree')
+                            if reviewed['financial_pass']:
+                                p['rule_checked_features']=reviewed['features']
+                                r['financial_certified']=True
+                                r['financial_verification_tier']=reviewed['verification_tier']
+                            if reviewed['text_pass']:
+                                p['verified_text']=reviewed['text']['text']
+                                p['verified_text_sha256']=reviewed['text']['text_sha256']
+                                r['text_verified']=True
+                                r['text_verification_tier']=reviewed['verification_tier']
                         r['candidate_feature_values']=sum(v is not None for v in p['candidate_features'])
                         r['verified_feature_values']=sum(v is not None for v in p['verified_features'])
                         r['text_candidate']=p['text'] is not None
@@ -149,19 +174,23 @@ def inventory(root):
                             p['verified_text']=tp.read_text()
                             p['verified_text_sha256']=section['text_sha256']
                             r['text_verified']=True
+                            r['text_verification_tier']='manual_source_review'
                     else:r['reason']='simultaneous_report_versions_need_review'
                 r.setdefault('reason','ST_history_label_and_input_certification_pending')
                 if r['registry_label_verified']:
                     r['label']=int(label['registry_label'])
                 # Only all twelve previously reviewed values certify complete
                 # collection here. Partially collected sources never pass by imputation.
-                r['input_certified']=r['verified_feature_values']==12 and r['text_verified']
+                if r['verified_feature_values']==12:
+                    r['financial_certified']=True
+                    r['financial_verification_tier']='manual_source_review'
+                r['input_certified']=r['financial_certified'] and r['text_verified']
                 missing=[]
                 for valid,reason in [(r['membership_verified'],'listing_interval'),
                                      (r['baseline_ST_verified'],'baseline_ST'),
                                      (r['registry_label_verified'],'ST_followup_coverage'),
                                      (r['industry_status']=='verified_nonfinancial','historical_industry'),
-                                     (r['verified_feature_values']==12,'annual_financial_certification'),
+                                     (r['financial_certified'],'annual_financial_certification'),
                                      (r['text_verified'],'annual_text_certification')]:
                     if not valid:missing.append(reason)
                 r['unresolved_requirements']=';'.join(missing)
@@ -180,11 +209,19 @@ def inventory(root):
              'unresolved_requirements':dict(Counter(s for r in rows for s in r['unresolved_requirements'].split(';') if s)),
              'rows_with_selected_annual_report':sum(r['document_id'] is not None for r in rows),
              'rows_with_12_candidate_features':sum(r['candidate_feature_values']==12 for r in rows),
+             'rows_with_certified_financial_inputs':sum(r['financial_certified'] for r in rows),
+             'financial_verification_tiers':dict(Counter(r['financial_verification_tier'] for r in rows)),
+             'text_verification_tiers':dict(Counter(r['text_verification_tier'] for r in rows)),
              'rows_with_12_verified_features':sum(r['verified_feature_values']==12 for r in rows),
              'rows_with_text_candidate':sum(r['text_candidate'] for r in rows),
              'verified_text_sections':sum(r['text_verified'] for r in rows),
              'splits':{k:dict(v) for k,v in by_split.items()},
-             'training_candidate':False,'training_note':'Full-cohort input review and simplified frozen export/runner remain incomplete; legacy MMAN training disabled.'}
+             'training_candidate':False,'training_note':'Input inventory is not a frozen dataset. Run the annual freeze readiness check; unresolved cases remain excluded from any export.'}
+    frozen_path=output/'frozen_manifest.json'
+    if frozen_path.exists():
+        from .annual_freeze import load_frozen
+        frozen,_=load_frozen(root)
+        summary.update(frozen=True,final_sample_count=frozen['summary']['final_sample_count'],training_candidate=True,status='frozen_dataset_with_live_inventory')
     (output/'status.json').write_text(json.dumps(summary,indent=2)+'\n')
     with (output/'sample_inventory.csv').open('w',newline='') as f:
         writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
