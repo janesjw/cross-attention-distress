@@ -55,7 +55,7 @@
   ],
   "incomplete": [],
   "formal_sample_ready": true,
-  "training_completed": false,
+  "training_completed": true,
   "annual_st_frozen_sample": {
     "sample_version": "annual-st-sz-v1",
     "candidate_firms": 471,
