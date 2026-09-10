@@ -108,13 +108,20 @@ def main():
     model.load_state_dict(best_checkpoint['model'])
     test_loss,prob=evaluate(model,tensors,test_idx,device,cfg['batch_size'],cfg['focal_alpha'],cfg['focal_gamma'])
     labels=tensors['labels'][test_idx].numpy().astype(int)
-    results=classification_metrics(labels,prob);results.update(test_focal_loss=test_loss,best_epoch=best_checkpoint['epoch'])
+    results=classification_metrics(labels,prob);results.update(test_focal_loss=test_loss,best_epoch=best_checkpoint['epoch'],stopping_epoch=history[-1]['epoch'])
     (a.output/'test_metrics.json').write_text(json.dumps(results,indent=2))
-    predictions=[{'sample_id':data['rows'][int(idx)]['sample_id'],'firm_id':data['rows'][int(idx)]['firm_id'],'label':int(y),'probability':float(p)} for idx,y,p in zip(test_idx,labels,prob)]
+    predictions=[{'sample_id':data['rows'][int(idx)]['sample_id'],'firm_id':data['rows'][int(idx)]['firm_id'],
+      'origin':data['rows'][int(idx)]['origin'],'split':'test','label':int(y),'probability':float(p)} for idx,y,p in zip(test_idx,labels,prob)]
     (a.output/'test_predictions.json').write_text(json.dumps(predictions,indent=2))
     con.executemany('INSERT INTO predictions VALUES (?,?,?,?,?)',[(run_id,r['sample_id'],'test',r['probability'],r['label']) for r in predictions])
     digest=hashlib.sha256((a.output/'best.pt').read_bytes()).hexdigest()
     con.execute('UPDATE training_runs SET checkpoint_sha256=?,status=? WHERE run_id=?',(digest,'completed',run_id));con.commit();con.close()
+    receipt={'status':'completed','purpose':'research','dataset_id':data['dataset_id'],'variant':a.variant,
+      'seed':a.seed,'threshold':results['threshold'],'manifest_sha256':best_checkpoint['manifest_sha256'],
+      'checkpoint_sha256':digest,'parameter_count':sum(p.numel() for p in model.parameters()),
+      'files_sha256':{name:hashlib.sha256((a.output/name).read_bytes()).hexdigest() for name in
+         ('test_predictions.json','test_metrics.json','history.json','config.json','environment.json')}}
+    (a.output/'run_manifest.json').write_text(json.dumps(receipt,indent=2))
     print(json.dumps(results))
 
 if __name__=='__main__':main()

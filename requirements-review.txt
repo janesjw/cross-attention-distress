@@ -1,0 +1,2 @@
+# Plotting extra for the prediction-derived reviewer report.
+matplotlib==3.10.8

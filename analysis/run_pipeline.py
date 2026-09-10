@@ -65,57 +65,98 @@ def readiness(root):
     if not manifest.exists():reasons.append('No registered frozen dataset manifest')
     return {'eligible_samples':eligible,'verified_text_sections':texts,'training_candidate':not reasons,'blocking_reasons':reasons}
 
-def run(root,limit,minutes):
+def process_document(root,row,attempts,expected_hash=None):
+    directory=root/'data/automation';key=row['document_id']
+    try:
+        url=row['url']
+        if not re.fullmatch(r'https://static\.cninfo\.com\.cn/finalpage/[0-9-]+/[0-9]+\.PDF',url):raise ValueError('Unexpected source URL')
+        pdf=root/'data/automation_downloads'/f'{key}.pdf';pdf.parent.mkdir(parents=True,exist_ok=True)
+        with urllib.request.urlopen(url,timeout=40) as response:
+            with pdf.open('wb') as out:
+                size=0
+                while chunk:=response.read(1024*1024):
+                    size+=len(chunk)
+                    if size>80*1024*1024:raise ValueError('PDF exceeds 80 MiB limit; review separately')
+                    out.write(chunk)
+        if not pdf.read_bytes()[:5]==b'%PDF-':raise ValueError('Response is not a PDF')
+        expected=expected_hash
+        if expected and digest(pdf)!=expected:raise ValueError('Registered source hash changed')
+        result=extract(pdf,row);dest=directory/'extracted'/f'{key}.zip';dest.parent.mkdir(parents=True,exist_ok=True)
+        with zipfile.ZipFile(dest,'w',zipfile.ZIP_DEFLATED) as z:
+            z.writestr('pages.json',json.dumps(result,ensure_ascii=True))
+        with zipfile.ZipFile(dest) as z:
+            if z.testzip() is not None:raise ValueError('Extraction archive integrity failure')
+        entry={'status':'extracted','attempts':attempts,'firm_id':row['firm_id'],
+            'extraction_path':dest.relative_to(root).as_posix(),'extraction_sha256':digest(dest),
+            'pdf_sha256':result['pdf_sha256'],'pages':len(result['pages']),
+            'financial_candidates':len(result['financial_candidates']),'review_status':result['review_status']}
+    except Exception as exc:
+        entry={'status':'retry_pending' if attempts<3 else 'needs_review','attempts':attempts,'firm_id':row['firm_id'],'error':f'{type(exc).__name__}: {exc}'[:500]}
+    return entry
+
+def run(root,limit,minutes,workers=1):
+    if not 1<=workers<=4 or not 1<=limit<=1000 or not 1<=minutes<=25:
+        raise ValueError('workers 1..4, limit 1..1000 and minutes 1..25 required')
     directory=root/'data/automation';statepath=directory/'progress.json'
     state=json.loads(statepath.read_text()) if statepath.exists() else {'schema_version':1,'documents':{}}
     queue=restrict_queue(root,candidates(root))
     queue=[r for r in queue if not re.search('英文|摘要',r['source_title'])]
     queue.sort(key=lambda r:(r['firm_id'],r['disclosed_date'],r['document_id']))
     unique={};[unique.setdefault(r['document_id'],r) for r in queue];queue=list(unique.values())
-    started=time.monotonic();processed=0;errors=0
+    jobs=[]
     for row in queue:
         key=row['document_id']
         if not re.fullmatch(r'\d+',key):raise ValueError('Invalid source document ID')
         previous=state['documents'].get(key,{})
         if previous.get('status')=='extracted':
-            p=root/previous['extraction_path']
-            if p.exists() and digest(p)==previous['extraction_sha256']:continue
+            path=root/previous['extraction_path']
+            if path.exists() and digest(path)==previous['extraction_sha256']:continue
             previous={}
-        if previous.get('attempts',0)>=3:continue
-        if processed>=limit or time.monotonic()-started>minutes*60:break
-        processed+=1;attempts=previous.get('attempts',0)+1
-        try:
-            url=row['url']
-            if not re.fullmatch(r'https://static\.cninfo\.com\.cn/finalpage/[0-9-]+/[0-9]+\.PDF',url):raise ValueError('Unexpected source URL')
-            pdf=root/'data/automation_downloads'/f'{key}.pdf';pdf.parent.mkdir(parents=True,exist_ok=True)
-            with urllib.request.urlopen(url,timeout=40) as response:
-                with pdf.open('wb') as out:
-                    size=0
-                    while chunk:=response.read(1024*1024):
-                        size+=len(chunk)
-                        if size>80*1024*1024:raise ValueError('PDF exceeds 80 MiB limit; review separately')
-                        out.write(chunk)
-            if not pdf.read_bytes()[:5]==b'%PDF-':raise ValueError('Response is not a PDF')
-            expected=next((d['sha256'] for d in json.loads((root/'data/raw/records.json').read_text())['documents'] if d['document_id']==key),None)
-            if expected and digest(pdf)!=expected:raise ValueError('Registered source hash changed')
-            result=extract(pdf,row);dest=directory/'extracted'/f'{key}.zip';dest.parent.mkdir(parents=True,exist_ok=True)
-            with zipfile.ZipFile(dest,'w',zipfile.ZIP_DEFLATED) as z:
-                z.writestr('pages.json',json.dumps(result,ensure_ascii=True))
-            with zipfile.ZipFile(dest) as z:
-                if z.testzip() is not None:raise ValueError('Extraction archive integrity failure')
-            state['documents'][key]={'status':'extracted','attempts':attempts,'firm_id':row['firm_id'],
-                'extraction_path':dest.relative_to(root).as_posix(),'extraction_sha256':digest(dest),
-                'pdf_sha256':result['pdf_sha256'],'pages':len(result['pages']),
-                'financial_candidates':len(result['financial_candidates']),'review_status':result['review_status']}
-        except Exception as exc:
-            errors+=1;state['documents'][key]={'status':'retry_pending' if attempts<3 else 'needs_review','attempts':attempts,'firm_id':row['firm_id'],'error':f'{type(exc).__name__}: {exc}'[:500]}
+        if previous.get('attempts',0)<3:jobs.append((row,previous.get('attempts',0)+1))
+    record_path=root/'data/raw/records.json'
+    expected={d['document_id']:d['sha256'] for d in json.loads(record_path.read_text())['documents']} if record_path.exists() else {}
+    deadline=time.monotonic()+minutes*60;processed=0;errors=0
+    def record(row,entry):
+        nonlocal processed,errors
+        processed+=1;errors+=entry['status']!='extracted'
+        state['documents'][row['document_id']]=entry
         save(statepath,state)
-        print(json.dumps({'document_id':key,**state['documents'][key]}),flush=True)
+        print(json.dumps({'document_id':row['document_id'],**entry}),flush=True)
+    if workers==1:
+        for row,attempts in jobs[:limit]:
+            if time.monotonic()>=deadline:break
+            record(row,process_document(root,row,attempts,expected.get(row['document_id'])))
+    else:
+        # MuPDF is not thread-safe. Each worker owns its PDF and writes unique files.
+        # Only the parent mutates progress, and at most `workers` jobs are in flight.
+        from concurrent.futures import ProcessPoolExecutor,wait,FIRST_COMPLETED
+        iterator=iter(jobs[:limit]);pending={};exhausted=False
+        with ProcessPoolExecutor(max_workers=workers) as pool:
+            while pending or not exhausted:
+                while len(pending)<workers and not exhausted and time.monotonic()<deadline:
+                    job=next(iterator,None)
+                    if job is None:exhausted=True;break
+                    row,attempts=job
+                    future=pool.submit(process_document,root,row,attempts,expected.get(row['document_id']))
+                    pending[future]=(row,attempts)
+                if time.monotonic()>=deadline:exhausted=True
+                if not pending:break
+                done,_=wait(pending,return_when=FIRST_COMPLETED)
+                for future in done:
+                    row,attempts=pending.pop(future)
+                    try:entry=future.result()
+                    except Exception as exc:
+                        entry={'status':'retry_pending' if attempts<3 else 'needs_review','attempts':attempts,
+                               'firm_id':row['firm_id'],'error':f'{type(exc).__name__}: {exc}'[:500]}
+                    record(row,entry)
     status={'updated_at':datetime.now(timezone.utc).isoformat(),'queue_documents':len(queue),
         'extracted_documents':sum(r['status']=='extracted' for r in state['documents'].values()),
         'failed_documents':sum(r['status']!='extracted' for r in state['documents'].values()),
         'scope':'finite-cohort-v1','selected_queue_extracted':sum(state['documents'].get(r['document_id'],{}).get('status')=='extracted' for r in queue),
-        'attempted_this_run':processed,'errors_this_run':errors,**readiness(root)}
+        'attempted_this_run':processed,'errors_this_run':errors,'workers':workers,
+        'elapsed_seconds':round(minutes*60-(deadline-time.monotonic()),2),
+        'automatic_verification_implemented':False,
+        'next_required_stage':'Review extraction candidates and register source-backed financial facts, text sections, baseline and outcome evidence; extraction alone cannot freeze a sample',**readiness(root)}
     save(directory/'status.json',status)
     manifest=json.loads((root/'file_manifest.json').read_text())
     for path in directory.rglob('*'):
@@ -129,6 +170,6 @@ def run(root,limit,minutes):
     print(json.dumps(status,indent=2))
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--limit',type=int,default=25);p.add_argument('--minutes',type=int,default=25);a=p.parse_args()
-    if not 1<=a.limit<=100 or not 1<=a.minutes<=25:raise SystemExit('Limit must be 1..100; minutes 1..25')
-    run(ROOT,a.limit,a.minutes)
+    p=argparse.ArgumentParser();p.add_argument('--limit',type=int,default=500)
+    p.add_argument('--minutes',type=int,default=25);p.add_argument('--workers',type=int,default=4);a=p.parse_args()
+    run(ROOT,a.limit,a.minutes,a.workers)
