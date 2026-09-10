@@ -1,24 +1,23 @@
 {
-  "updated_at": "2026-09-10T18:28:33.479667+00:00",
+  "updated_at": "2026-09-10T20:42:31.567287+00:00",
   "queue_documents": 44962,
-  "extracted_documents": 643,
+  "extracted_documents": 1142,
   "failed_documents": 3,
   "scope": "finite-cohort-v1",
-  "selected_queue_extracted": 618,
+  "selected_queue_extracted": 1117,
   "attempted_this_run": 500,
-  "errors_this_run": 3,
+  "errors_this_run": 1,
   "workers": 4,
-  "elapsed_seconds": 405.38,
+  "elapsed_seconds": 270.69,
   "automatic_verification_implemented": false,
   "next_required_stage": "Review extraction candidates and register source-backed financial facts, text sections, baseline and outcome evidence; extraction alone cannot freeze a sample",
   "eligible_samples": 0,
-  "verified_text_sections": 0,
+  "verified_text_sections": 1,
   "training_candidate": false,
   "blocking_reasons": [
     "Complete historical Shanghai/Shenzhen A-share membership, listing/delisting and industry histories",
     "Verified complete ST/*ST implementation and removal coverage",
     "No eligible analytical samples",
-    "No verified annual text sections",
     "No registered frozen dataset manifest"
   ]
 }
