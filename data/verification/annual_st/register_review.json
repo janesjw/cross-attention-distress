@@ -1,0 +1,92 @@
+{
+  "status": "official_register_audit_completed",
+  "candidate_firms": 471,
+  "candidate_firm_years": 3335,
+  "company_chain_pass": 471,
+  "counts": {
+    "verified_registry_endpoint": 3214,
+    "negative": 3143,
+    "positive": 71,
+    "excluded": 113,
+    "right_censored": 8
+  },
+  "splits": {
+    "train": {
+      "verified_registry_endpoint": 1608,
+      "negative": 1576,
+      "positive": 32,
+      "excluded": 61,
+      "right_censored": 4
+    },
+    "validation": {
+      "verified_registry_endpoint": 770,
+      "negative": 755,
+      "right_censored": 2,
+      "positive": 15,
+      "excluded": 21
+    },
+    "test": {
+      "verified_registry_endpoint": 836,
+      "negative": 812,
+      "positive": 24,
+      "excluded": 31,
+      "right_censored": 2
+    }
+  },
+  "provenance": {
+    "archive_sha256": "20bed5c355251d93e9b65d78484fecdcc012d1d7a0d0a41405ae672b88862672",
+    "retrieved_date": "2026-09-10",
+    "name_register_records": 7478,
+    "api_export_controls": [
+      {
+        "page": 1,
+        "rows_checked": 20,
+        "total_rows": 7478
+      },
+      {
+        "page": 187,
+        "rows_checked": 20,
+        "total_rows": 7478
+      },
+      {
+        "page": 374,
+        "rows_checked": 18,
+        "total_rows": 7478
+      }
+    ],
+    "sources": {
+      "names.xlsx": {
+        "url": "https://www.szse.cn/api/report/ShowReport?SHOWTYPE=xlsx&CATALOGID=SSGSGMXX&TABKEY=tab2",
+        "sha256": "8f3b0201ad85ee1062ba0def113bb2fe035a3ac76e6d5751925ebd9bcb22a3d4",
+        "bytes": 286607
+      },
+      "listed.xlsx": {
+        "url": "https://www.szse.cn/api/report/ShowReport?SHOWTYPE=xlsx&CATALOGID=1110&TABKEY=tab1",
+        "sha256": "070d48bc2e3cac13fd05701b01424e5893467df07ca54d19c0caaf4dc7c43723",
+        "bytes": 544334
+      },
+      "delisted.xlsx": {
+        "url": "https://www.szse.cn/api/report/ShowReport?SHOWTYPE=xlsx&CATALOGID=1793_ssgs&TABKEY=tab2",
+        "sha256": "3fa0d96803cdc2906e94936b28e0569c89d8ab79cf6e7d07815aff81ac9ade9c",
+        "bytes": 10792
+      },
+      "names_first.json": {
+        "url": "https://www.szse.cn/api/report/ShowReport/data?SHOWTYPE=JSON&CATALOGID=SSGSGMXX&TABKEY=tab2&PAGENO=1",
+        "sha256": "7b4231b4ca4acc1ca447384105ea43a787bd187aac5762da7f50b6923e2319cf",
+        "bytes": 5459
+      },
+      "names_middle.json": {
+        "url": "https://www.szse.cn/api/report/ShowReport/data?SHOWTYPE=JSON&CATALOGID=SSGSGMXX&TABKEY=tab2&PAGENO=187",
+        "sha256": "57b5e111b3165a6b1e93cf79d72401d479dd5a05288a600c6b0ac6baaadcf20c",
+        "bytes": 5428
+      },
+      "names_last.json": {
+        "url": "https://www.szse.cn/api/report/ShowReport/data?SHOWTYPE=JSON&CATALOGID=SSGSGMXX&TABKEY=tab2&PAGENO=374",
+        "sha256": "f2a7d4569c2727f4d6fb765c57ab4c5fdfd34db9abe215c9c06fe9f63dcded0f",
+        "bytes": 5284
+      }
+    }
+  },
+  "source_assumption": "Unfiltered SZSE short-name register is complete for ST/*ST name transitions. Export row counts, first/middle/last API pages, full name chains, terminal names and prior-snapshot agreement are checked. These controls cannot prove the underlying registry contains no omissions.",
+  "scope": "Registered ST endpoint only. Historical industry, annual financial/text certification and analytical sample eligibility are separate."
+}

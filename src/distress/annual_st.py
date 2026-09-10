@@ -80,6 +80,11 @@ def inventory(root):
         if source.get('report_kind')!='annual_report':continue
         archives.setdefault(source['firm_id'],[]).append((source,path))
     legacy={r['sample_id']:r for r in csv.DictReader((root/'data/derived/sample_decisions.csv').open())}
+    label_path=root/'data/verification/annual_st/labels.csv'
+    labels={}
+    if label_path.exists():
+        if hashlib.sha256(label_path.read_bytes()).hexdigest()!=manifest.get(label_path.relative_to(root).as_posix()):raise ValueError('Label audit hash mismatch')
+        labels={r['sample_id']:r for r in csv.DictReader(label_path.open())}
     con=sqlite3.connect(f'file:{root / "data/derived/distress.sqlite"}?mode=ro',uri=True)
     con.row_factory=sqlite3.Row
     leads={r['candidate_id']:dict(r) for r in con.execute('SELECT * FROM candidate_register')}
@@ -89,17 +94,25 @@ def inventory(root):
             y=int(origin[:4]);sid=f'{firm["firm_id"]}:{y}'
             split=next(s for s,(a,b) in protocol['split_years'].items() if a<=y<=b)
             prior=legacy.get(sid,{})
+            label=labels.get(sid,{})
+            if label and (label['origin']!=origin or label['followup_end_exclusive']!=f'{y+1}-05-01'):raise ValueError('Label window mismatch')
             # Reuse only exclusions that remain part of the new endpoint.
-            excluded=prior.get('industry_status')=='excluded_financial' or prior.get('baseline_st')=='1'
+            excluded=prior.get('industry_status')=='excluded_financial' or prior.get('baseline_st')=='1' or label.get('status') in ('excluded','right_censored')
             r={'sample_id':sid,'firm_id':firm['firm_id'],'origin':origin,'split':split,
                'decision':'excluded' if excluded else 'pending','document_id':None,
                'annual_feature_count':12,'candidate_feature_values':0,'verified_feature_values':0,
                'text_candidate':False,'text_verified':False,'label':None,
+               'industry_status':prior.get('industry_status','pending'),
+               'membership_verified':label.get('membership')=='verified_listing_interval',
+               'baseline_ST_verified':label.get('baseline_ST')=='0',
+               'registry_label_verified':label.get('status')=='verified_registry_endpoint',
+               'label_available_date':label.get('label_available_date') or None,
+               'input_certified':False,'unresolved_requirements':'',
                'baseline_ST_lead':leads.get(sid,{}).get('baseline_st_from_name'),
                'new_ST_followup_lead':leads.get(sid,{}).get('new_st_name_in_followup'),
                'lead_is_verified_label':False,'analytical_eligible':False}
             if excluded:
-                r['reason']='preorigin_financial_industry_or_confirmed_baseline_ST'
+                r['reason']='known_incomplete_followup_due_to_delisting' if label.get('status')=='right_censored' else 'preorigin_financial_industry_or_confirmed_baseline_ST'
             else:
                 choices=[(s,p) for s,p in archives.get(firm['firm_id'],[]) if annual_matches(s,origin)]
                 if choices:
@@ -117,32 +130,61 @@ def inventory(root):
                                 if packet['extraction_sha256']!=hashlib.sha256(path.read_bytes()).hexdigest():raise ValueError('Stale structured source')
                                 values={r['metric']:Decimal(r['values'][0]) for r in packet['rows']}
                             period=f'{y-1}-12-31'
+                            doc=con.execute('SELECT * FROM documents WHERE document_id=?',(did,)).fetchone()
+                            if doc and (doc['sha256']!=raw['pdf_sha256'] or doc['firm_id']!=source['firm_id'] or doc['disclosed_date']!=source['disclosed_date']):raise ValueError('Registered document identity mismatch')
                             verified={r['metric']:Decimal(r['value_normalized']) for r in con.execute(
                                 "SELECT * FROM facts WHERE document_id=? AND period_end=? AND scope='consolidated' AND verification='verified'",(did,period))}
+                            if not doc or doc['verification']!='verified':verified={}
                             packets[did]={'source':source,'candidate_features':annual_features(values),
                                           'verified_features':annual_features(verified),'text':mda_candidate(raw),
-                                          'analytical_verified':False,'label':None}
+                                'analytical_verified':False,'label':None}
                         p=packets[did]
                         r['candidate_feature_values']=sum(v is not None for v in p['candidate_features'])
                         r['verified_feature_values']=sum(v is not None for v in p['verified_features'])
                         r['text_candidate']=p['text'] is not None
-                        r['text_verified']=bool(con.execute("SELECT 1 FROM text_sections WHERE document_id=? AND verification='verified'",(did,)).fetchone())
+                        sections=list(con.execute("SELECT * FROM text_sections WHERE document_id=? AND verification='verified'",(did,)))
+                        if len(sections)==1:
+                            section=sections[0];tp=root/section['text_path']
+                            if not tp.exists() or hashlib.sha256(tp.read_bytes()).hexdigest()!=section['text_sha256'] or manifest.get(section['text_path'])!=section['text_sha256']:raise ValueError('Verified text hash mismatch')
+                            p['verified_text']=tp.read_text()
+                            p['verified_text_sha256']=section['text_sha256']
+                            r['text_verified']=True
                     else:r['reason']='simultaneous_report_versions_need_review'
                 r.setdefault('reason','ST_history_label_and_input_certification_pending')
+                if r['registry_label_verified']:
+                    r['label']=int(label['registry_label'])
+                # Only all twelve previously reviewed values certify complete
+                # collection here. Partially collected sources never pass by imputation.
+                r['input_certified']=r['verified_feature_values']==12 and r['text_verified']
+                missing=[]
+                for valid,reason in [(r['membership_verified'],'listing_interval'),
+                                     (r['baseline_ST_verified'],'baseline_ST'),
+                                     (r['registry_label_verified'],'ST_followup_coverage'),
+                                     (r['industry_status']=='verified_nonfinancial','historical_industry'),
+                                     (r['verified_feature_values']==12,'annual_financial_certification'),
+                                     (r['text_verified'],'annual_text_certification')]:
+                    if not valid:missing.append(reason)
+                r['unresolved_requirements']=';'.join(missing)
+                if not missing:
+                    r['analytical_eligible']=True;r['decision']='eligible_awaiting_freeze'
+                    r['reason']='Annual financial/text inputs and registry-defined endpoint verified; full-cohort freeze pending.'
             rows.append(r);counts[r['decision']]+=1;by_split[split]['candidate_rows']+=1
+            if r['label'] is not None:by_split[split]['registry_positive' if r['label'] else 'registry_negative']+=1
             if r['baseline_ST_lead']==0 and r['new_ST_followup_lead']==1:by_split[split]['new_ST_leads_not_labels']+=1
     con.close()
     output=root/'data/derived/annual_st';output.mkdir(parents=True,exist_ok=True)
     summary={'study_version':protocol['version'],'status':'inventory_not_frozen_dataset',
              'candidate_firms':len(scope['firms']),'candidate_firm_years':len(rows),
-             'decisions':dict(counts),'eligible_samples':0,'frozen':False,'final_sample_count':None,
+             'decisions':dict(counts),'eligible_samples':sum(r['analytical_eligible'] for r in rows),'frozen':False,'final_sample_count':None,
+             'registry_labels_verified':sum(r['registry_label_verified'] and r['decision']!='excluded' for r in rows),
+             'unresolved_requirements':dict(Counter(s for r in rows for s in r['unresolved_requirements'].split(';') if s)),
              'rows_with_selected_annual_report':sum(r['document_id'] is not None for r in rows),
              'rows_with_12_candidate_features':sum(r['candidate_feature_values']==12 for r in rows),
              'rows_with_12_verified_features':sum(r['verified_feature_values']==12 for r in rows),
              'rows_with_text_candidate':sum(r['text_candidate'] for r in rows),
              'verified_text_sections':sum(r['text_verified'] for r in rows),
              'splits':{k:dict(v) for k,v in by_split.items()},
-             'training_candidate':False,'training_note':'No simplified frozen export or completed ST coverage; legacy MMAN training disabled for this design.'}
+             'training_candidate':False,'training_note':'Full-cohort input review and simplified frozen export/runner remain incomplete; legacy MMAN training disabled.'}
     (output/'status.json').write_text(json.dumps(summary,indent=2)+'\n')
     with (output/'sample_inventory.csv').open('w',newline='') as f:
         writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)

@@ -87,8 +87,8 @@ def readiness(root):
         return {'study':'annual_st_v1','eligible_samples':status.get('eligible_samples',0),
                 'verified_text_sections':status.get('verified_text_sections',0),
                 'training_candidate':False,
-                'blocking_reasons':['No eligible analytical samples',
-                    'Simplified annual inputs and 12-month ST coverage require certification',
+                'blocking_reasons':[('No eligible analytical samples' if not status.get('eligible_samples') else 'Reduced study is not yet frozen'),
+                    'Complete annual financial/text and historical-industry review; retain censored ST windows',
                     'Simplified frozen export and experiment runner are not yet implemented'],
                 'sample_adjudication_implemented':False,
                 'sample_inventory':'data/derived/annual_st/sample_inventory.csv'}

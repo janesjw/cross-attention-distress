@@ -18,7 +18,9 @@ class PipelineTests(unittest.TestCase):
     def test_missing_data_blocks_training(self):
         result=pipeline.readiness(pipeline.ROOT)
         self.assertFalse(result['training_candidate'])
-        self.assertIn('No eligible analytical samples',result['blocking_reasons'])
+        self.assertTrue(result['blocking_reasons'])
+        if result.get('eligible_samples',0)==0:
+            self.assertIn('No eligible analytical samples',result['blocking_reasons'])
     def test_failed_download_is_checkpointed_and_retry_is_capped(self):
         row={'document_id':'123','firm_id':'000002.SZ','source_title':'Annual report','disclosed_date':'2025-04-01','url':'https://static.cninfo.com.cn/finalpage/2025-04-01/123.PDF'}
         with tempfile.TemporaryDirectory() as tmp:

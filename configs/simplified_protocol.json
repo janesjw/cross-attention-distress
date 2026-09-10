@@ -102,5 +102,11 @@
     "Certify statement period/version, features and annual text",
     "Implement and validate simplified frozen export and experiment runner",
     "Freeze sample and synchronize README, filing_summary and frozen manifest before empirical claims"
-  ]
+  ],
+  "ST_source_operationalization": {
+    "source": "Audited unfiltered SZSE short-name change register, reconciled to official XLSX/API counts and listing/delisting exports",
+    "assumption": "The official register records all ST/*ST name transitions; source errors or omissions cannot be ruled out by internal consistency checks.",
+    "reconstruction": "Full normalized name chain and terminal name must agree; any conflict stays unresolved. ST at origin is excluded. An observed new transition gives label 1. Label 0 requires the full interval to be covered and no earlier delisting.",
+    "censoring": "Delisting before the end without an observed ST transition leaves the label unknown."
+  }
 }
