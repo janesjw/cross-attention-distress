@@ -1,0 +1,31 @@
+{
+  "status": "sample_adjudication_not_frozen",
+  "candidate_firms": 798,
+  "candidate_firm_years": 5250,
+  "decisions": {
+    "pending": 5062,
+    "excluded": 188
+  },
+  "baseline_quarter_known": 1,
+  "baseline_audit_known": 1,
+  "preorigin_annual_text_verified": 1,
+  "unresolved_requirements": {
+    "historical_membership": 5062,
+    "baseline_ST": 5062,
+    "baseline_quarter": 5061,
+    "baseline_audit": 5061,
+    "financial_source_review": 5062,
+    "annual_text": 5061,
+    "future_12_month_outcome": 5062,
+    "historical_industry": 631
+  },
+  "final_sample_count": null,
+  "frozen": false,
+  "input_sha256": {
+    "configs/collection_cohort.json": "8292d74ba591c1105aab9f8f255ab0ab977ffa3ce77d83928fb9458dffe78c05",
+    "configs/protocol.json": "3c6b86fa78c90bee0363784f99ab8fdf43ff80aa18852631ee627d792cfa13ba",
+    "data/derived/historical_industry.json": "141a4698dc5157049594b45aaae2ea478775cfb4eec4e042ed404933e474b11e",
+    "data/derived/industry_source_status.json": "65a4e6d26857d4f3823426958088ac3643895c48d76b9a8bf2348de223c1f0be",
+    "data/derived/st_cover_evidence.json": "8541967a4d21b959c126deb9ab9a21db9751059d7d4559ad78e0cc565bad7d91"
+  }
+}
