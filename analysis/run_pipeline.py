@@ -63,7 +63,12 @@ def readiness(root):
         if not texts:reasons.append('No verified annual text sections')
     manifest=root/'data/derived/frozen_dataset.json'
     if not manifest.exists():reasons.append('No registered frozen dataset manifest')
-    return {'eligible_samples':eligible,'verified_text_sections':texts,'training_candidate':not reasons,'blocking_reasons':reasons}
+    decision_path=root/'data/derived/sample_decisions.json'
+    decisions=json.loads(decision_path.read_text()) if decision_path.exists() else None
+    return {'eligible_samples':eligible,'verified_text_sections':texts,'training_candidate':not reasons,'blocking_reasons':reasons,
+            'sample_adjudication_implemented':decisions is not None,
+            'sample_decisions':None if decisions is None else decisions['decisions'],
+            'completion_tasks':'data/derived/sample_completion_tasks.json' if decisions is not None else None}
 
 def process_document(root,row,attempts,expected_hash=None):
     directory=root/'data/automation';key=row['document_id']
@@ -156,7 +161,7 @@ def run(root,limit,minutes,workers=1):
         'attempted_this_run':processed,'errors_this_run':errors,'workers':workers,
         'elapsed_seconds':round(minutes*60-(deadline-time.monotonic()),2),
         'automatic_verification_implemented':False,
-        'next_required_stage':'Review extraction candidates and register source-backed financial facts, text sections, baseline and outcome evidence; extraction alone cannot freeze a sample',**readiness(root)}
+        'next_required_stage':'Complete sample_completion_tasks with source-reviewed evidence; rerun build_samples after registration. Extraction and sample adjudication do not automatically verify missing sources.',**readiness(root)}
     save(directory/'status.json',status)
     manifest=json.loads((root/'file_manifest.json').read_text())
     for path in directory.rglob('*'):

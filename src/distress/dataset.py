@@ -6,6 +6,7 @@ import numpy as np
 from .database import ROOT,connect
 from .features import matrices,assess_missingness
 from .preprocess import encode_disclosure
+from .sample_builder import annual_sections
 
 def split_for_origin(origin):
     y=int(origin[:4])
@@ -55,11 +56,7 @@ def export_dataset(con,tokenizer,dataset_id,output):
         assessment=assess_missingness(features,protocol['missingness'],{'annual','quarterly'}.issubset(reviewed))
         if assessment['status']=='pending_collection':raise ValueError('Financial source review incomplete; uncollected data cannot determine missingness eligibility')
         if assessment['status']=='exclude':raise ValueError('Sample fails confirmed branch-specific missingness criterion')
-        secs=con.execute('''SELECT s.*,d.disclosed_date FROM text_sections s JOIN documents d USING(document_id)
-          WHERE d.firm_id=? AND d.disclosed_date<? AND s.verification='verified'
-          AND d.title LIKE ?
-          ORDER BY d.disclosed_date DESC,CASE s.section_name WHEN 'MD&A' THEN 0 ELSE 1 END''',
-          (r['firm_id'],r['origin'],f'%{int(r["origin"][:4])-1} Annual Report%')).fetchall()
+        secs=annual_sections(con,r['firm_id'],r['origin'])
         if not secs:raise ValueError('No reviewed annual text sections')
         # Select one most recent reviewed report; no mixing documents from different years.
         secs=[s for s in secs if s['document_id']==secs[0]['document_id']]
