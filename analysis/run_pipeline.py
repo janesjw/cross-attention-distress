@@ -142,6 +142,16 @@ def process_document(root,row,attempts,expected_hash=None):
     return entry
 
 def run(root,limit,minutes,workers=1):
+    if simplified_active(root) and (root/'data/derived/annual_st/frozen_manifest.json').exists():
+        status=readiness(root)
+        status.update(updated_at=datetime.now(timezone.utc).isoformat(),collection_stopped_after_freeze=True)
+        save(root/'data/automation/status.json',status)
+        registry=json.loads((root/'file_manifest.json').read_text())
+        registry['data/automation/status.json']=digest(root/'data/automation/status.json')
+        save(root/'file_manifest.json',dict(sorted(registry.items())))
+        if os.getenv('GITHUB_OUTPUT'):
+            with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('ready=false\nstudy=annual_st_v1\n')
+        print(json.dumps(status,indent=2));return
     if not 1<=workers<=4 or not 1<=limit<=1000 or not 1<=minutes<=25:
         raise ValueError('workers 1..4, limit 1..1000 and minutes 1..25 required')
     directory=root/'data/automation';statepath=directory/'progress.json'

@@ -95,6 +95,12 @@ class AnnualTrainingTest(unittest.TestCase):
             result=run(root,root/'test_output',epochs=2,bootstrap=5)
             self.assertEqual(len(result['runs']),8)
             for r in result['runs']:self.assertEqual(sum(map(sum,r['test']['confusion_matrix'])),8)
+            from distress.annual_freeze import training_required
+            saved=out/'results/results.json';saved.parent.mkdir();saved.write_text(json.dumps(result))
+            code=root/'src/distress/annual_train.py';code.parent.mkdir(parents=True);code.write_bytes((ROOT/'src/distress/annual_train.py').read_bytes())
+            self.assertFalse(training_required(root))
+            code.write_text(code.read_text()+'\n# Changed training code\n')
+            self.assertTrue(training_required(root))
             dataset.write_text(dataset.read_text()+'\n')
             with self.assertRaises(ValueError):load_frozen(root)
 

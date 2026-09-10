@@ -116,3 +116,15 @@ def load_frozen(root):
     # Inventory may continue to grow; it is not read as a model input after freeze.
     # The protocol embedded in the hashed frozen manifest is the training contract.
     return m,records
+
+
+def training_required(root):
+    """Avoid rerunning a completed experiment on each collection schedule."""
+    root=Path(root);frozen,_=load_frozen(root)
+    result_path=root/'data/derived/annual_st/results/results.json'
+    if not result_path.exists():return True
+    result=json.loads(result_path.read_text())
+    expected={(v,s) for v in frozen['protocol']['model']['variants'] for s in frozen['protocol']['model']['seeds']}
+    actual={(r['variant'],r['seed']) for r in result.get('runs',[])}
+    return (result.get('dataset_sha256')!=frozen['dataset_sha256'] or
+            result.get('training_code_sha256')!=sha(root/'src/distress/annual_train.py') or actual!=expected)

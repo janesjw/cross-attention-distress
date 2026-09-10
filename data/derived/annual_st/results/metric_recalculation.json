@@ -1,0 +1,66 @@
+{
+  "dataset_sha256": "105a29b64a0f485dcd33a92711e015cc5e0f29cca0e31ee3d819f03dca6bea6c",
+  "checks": [
+    {
+      "variant": "financial_only",
+      "seed": 17,
+      "passed": true
+    },
+    {
+      "variant": "financial_only",
+      "seed": 42,
+      "passed": true
+    },
+    {
+      "variant": "financial_only",
+      "seed": 2026,
+      "passed": true
+    },
+    {
+      "variant": "text_only",
+      "seed": 17,
+      "passed": true
+    },
+    {
+      "variant": "text_only",
+      "seed": 42,
+      "passed": true
+    },
+    {
+      "variant": "text_only",
+      "seed": 2026,
+      "passed": true
+    },
+    {
+      "variant": "concat",
+      "seed": 17,
+      "passed": true
+    },
+    {
+      "variant": "concat",
+      "seed": 42,
+      "passed": true
+    },
+    {
+      "variant": "concat",
+      "seed": 2026,
+      "passed": true
+    },
+    {
+      "variant": "cross_attention",
+      "seed": 17,
+      "passed": true
+    },
+    {
+      "variant": "cross_attention",
+      "seed": 42,
+      "passed": true
+    },
+    {
+      "variant": "cross_attention",
+      "seed": 2026,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}
