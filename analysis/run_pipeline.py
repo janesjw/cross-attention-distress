@@ -35,6 +35,30 @@ def restrict_queue(root,queue):
     return [r for r in queue if r['firm_id'] in allowed and
             allowed[r['firm_id']]['reports_start']<=r['disclosed_date']<allowed[r['firm_id']]['reports_end_exclusive']]
 
+def collection_priority(row, origins):
+    """Prioritize actual input/follow-up windows without deleting any document."""
+    title=re.sub(r'\s+','',row['source_title'])
+    year=re.search(r'(20\d{2})年',title)
+    if not year:return 1
+    year=int(year.group(1))
+    if re.search(r'(?:第一|一|1)季度',title):quarter=1
+    elif re.search(r'(?:第三|三|3)季度',title):quarter=3
+    elif '半年度' in title:quarter=2
+    elif '年度报告' in title:quarter=4
+    else:return 1
+    disclosed=row['disclosed_date']
+    for origin in origins:
+        y=int(origin[:4])
+        # Annual windows include the beginning-balance year; no assumption that
+        # another report's comparative column supplies a usable December balance.
+        if disclosed<origin:
+            if quarter==4 and y-6<=year<=y-1:return 0
+            if year==y-1 or (year==y and quarter==1):return 0
+        # Include late prior-year reports and all disclosures of periods that
+        # can provide event evidence during the following twelve months.
+        if origin<=disclosed<f'{y+1}-05-01' and y-1<=year<=y+1:return 0
+    return 2
+
 def extract(path,meta):
     pages=[];hits=[]
     with fitz.open(path) as doc:
@@ -106,7 +130,10 @@ def run(root,limit,minutes,workers=1):
     state=json.loads(statepath.read_text()) if statepath.exists() else {'schema_version':1,'documents':{}}
     queue=restrict_queue(root,candidates(root))
     queue=[r for r in queue if not re.search('英文|摘要',r['source_title'])]
-    queue.sort(key=lambda r:(r['firm_id'],r['disclosed_date'],r['document_id']))
+    origins={r['firm_id']:r.get('origins',[]) for r in json.loads((root/'configs/collection_cohort.json').read_text())['firms']}
+    # Old test/minimal configurations can omit origins: preserve their queue.
+    priority=lambda r:collection_priority(r,origins.get(r['firm_id'],[])) if origins.get(r['firm_id']) else 1
+    queue.sort(key=lambda r:(priority(r),r['firm_id'],r['disclosed_date'],r['document_id']))
     unique={};[unique.setdefault(r['document_id'],r) for r in queue];queue=list(unique.values())
     jobs=[]
     for row in queue:
@@ -155,6 +182,8 @@ def run(root,limit,minutes,workers=1):
                                'firm_id':row['firm_id'],'error':f'{type(exc).__name__}: {exc}'[:500]}
                     record(row,entry)
     status={'updated_at':datetime.now(timezone.utc).isoformat(),'queue_documents':len(queue),
+        'queue_priority_counts':{str(p):sum(priority(r)==p for r in queue) for p in (0,1,2)},
+        'queue_priority_meaning':{'0':'feature_or_followup_window','1':'title_needs_period_review','2':'ancillary_retained_not_deleted'},
         'extracted_documents':sum(r['status']=='extracted' for r in state['documents'].values()),
         'failed_documents':sum(r['status']!='extracted' for r in state['documents'].values()),
         'scope':'finite-cohort-v1','selected_queue_extracted':sum(state['documents'].get(r['document_id'],{}).get('status')=='extracted' for r in queue),

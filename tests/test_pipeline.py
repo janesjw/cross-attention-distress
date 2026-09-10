@@ -6,6 +6,15 @@ SPEC=importlib.util.spec_from_file_location('pipeline',Path(__file__).resolve().
 pipeline=importlib.util.module_from_spec(SPEC);SPEC.loader.exec_module(pipeline)
 
 class PipelineTests(unittest.TestCase):
+    def test_priority_targets_features_and_followup_not_ancillary_quarters(self):
+        def rank(title,date):
+            return pipeline.collection_priority({'source_title':title,'disclosed_date':date},['2017-05-01'])
+        self.assertEqual(rank('2011年年度报告','2012-04-01'),0)
+        self.assertEqual(rank('2012年一季度报告','2012-04-30'),2)
+        self.assertEqual(rank('2017年一季度报告','2017-04-30'),0)
+        self.assertEqual(rank('2018年一季度报告','2018-04-30'),0)
+        self.assertEqual(rank('2016年年度报告（更正后）','2017-05-03'),0)
+        self.assertEqual(rank('财务报告更新','2017-04-30'),1)
     def test_missing_data_blocks_training(self):
         result=pipeline.readiness(pipeline.ROOT)
         self.assertFalse(result['training_candidate'])

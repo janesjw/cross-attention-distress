@@ -33,6 +33,12 @@ fourfold increase in scheduled document capacity, not a promise of fourfold
 verified-sample throughput. GitHub scheduling delays, source availability,
 timeouts and review exceptions can reduce actual throughput.
 
+Collection also prioritizes disclosures needed by the registered origins:
+five annual inputs plus beginning balances, quarterly inputs, and reports in
+the twelve-month follow-up window. Older ancillary quarters are retained at a
+lower priority; unknown report titles remain queued for period review. No firm,
+sample or document is deleted by this ordering, and report versions are retained.
+
 Tests compare parsed values and page anchors with existing visually reviewed
 evidence and exercise parent-scope contamination, missing values, wrong units,
 accounting failures, ambiguous versions and future-period rejection. Final sample
