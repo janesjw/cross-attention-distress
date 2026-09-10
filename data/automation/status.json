@@ -1,35 +1,11 @@
 {
-  "updated_at": "2026-09-10T22:57:24.372179+00:00",
-  "queue_documents": 3398,
-  "queue_priority_counts": {
-    "0": 3398,
-    "1": 0,
-    "2": 0
-  },
-  "queue_priority_meaning": {
-    "0": "feature_or_followup_window",
-    "1": "title_needs_period_review",
-    "2": "ancillary_retained_not_deleted"
-  },
-  "extracted_documents": 5618,
-  "failed_documents": 15,
-  "scope": "annual-st-sz-v1",
-  "selected_queue_extracted": 1517,
-  "attempted_this_run": 1000,
-  "errors_this_run": 3,
-  "workers": 4,
-  "elapsed_seconds": 1327.37,
-  "automatic_verification_implemented": false,
-  "next_required_stage": "Certify annual_st sample inventory, historical ST eligibility and full follow-up coverage; implement simplified frozen export and runner.",
   "study": "annual_st_v1",
-  "eligible_samples": 0,
-  "verified_text_sections": 0,
-  "training_candidate": false,
-  "blocking_reasons": [
-    "No eligible analytical samples",
-    "Simplified annual inputs and 12-month ST coverage require certification",
-    "Simplified frozen export and experiment runner are not yet implemented"
-  ],
-  "sample_adjudication_implemented": false,
-  "sample_inventory": "data/derived/annual_st/sample_inventory.csv"
+  "eligible_samples": 843,
+  "verified_text_sections": 1255,
+  "training_candidate": true,
+  "blocking_reasons": [],
+  "sample_adjudication_implemented": true,
+  "sample_inventory": "data/derived/annual_st/sample_inventory.csv",
+  "updated_at": "2026-09-10T23:42:36.310804+00:00",
+  "collection_stopped_after_freeze": true
 }
