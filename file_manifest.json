@@ -1,6 +1,6 @@
 {
   ".github/workflows/collect-data.yml": "07794afb2a91279bbaf6099b32a4d5a9d220fc4be45a4b5a5ffd26092b00c7c0",
-  ".github/workflows/research-pipeline.yml": "eb7f5023784477c8d7100de844ea90ec7dfeb0c1456b77ee33660a2f33616e89",
+  ".github/workflows/research-pipeline.yml": "b957105018ffc891f62d284f8367d33bad071d73387ec60a74784b0432dd003e",
   ".github/workflows/screen-cohort.yml": "5776bb61358e597b19e6075157577e5826d89592d0f15d9d3ad51f4f76245144",
   ".github/workflows/tests.yml": "68e6da74371dfe5d99653d9665b7f509df5d5b6a3ce5bc58b1ac4d03594573fd",
   ".gitignore": "6ba54dc878d2c4ac3eaa272d39a77d59be95c2208f8d04e2066e4355aaedc35c",
@@ -8,12 +8,14 @@
   "DATA_SOURCES.md": "74f60a906cfcd0ce3c96f26bffb31f8af2a16f4cbb8ec2b916dd9c05fca83608",
   "README.md": "bbc939f784ffb29ddb63ce538eb3b7fabb3d5101124d8c08bebc4a78fbb535ff",
   "analysis/FAST_REVIEW.md": "395576e7bbf998bdb60ba2b5f196f8c49a8f431778f810fd7ed1cadcb3e78022",
+  "analysis/REVIEWED_EVIDENCE.md": "98ded594955cbd64d156c44bb827c23fe90cb0b2c21cb463f11f9b6b233dc36d",
   "analysis/archive_disclosures.py": "b60c26b481e2e7d29b4cee7ce6917541fbb92f3feede19e827f4a823b348d13c",
   "analysis/audit_sample_readiness.py": "7bc5ece34376705d1380bf5ac8c4d7a440bbed93265ec6aa562d16fb13132491",
   "analysis/build_database.py": "50ed7f1be556d7181956f2fcdc927b1c565f2212bb8e7c90743491e4140feab8",
   "analysis/collect_disclosures.py": "e8946116bcb6c4cce95d73ba5a1adc44fe9eb30deb03e8ef8edcb8bfacfcae8c",
   "analysis/collect_industry_sources.py": "407f3113219b617b8201086b709f01588882713adea7b566dd80ef4e48a0754f",
   "analysis/import_market.py": "aec2a0719bbf2abf1702989bbe412de0d28da3d03d1bee7693a416965ab64b1b",
+  "analysis/import_reviewed_evidence.py": "a04e8d19bfdac1928628e49b204ed5f500df91a18a63561b0f78d1f4fc136859",
   "analysis/restore_disclosures.py": "1849219477fd259b9c1e44d33525a41ae3bc71b8a2f626065bf2d6e95b89ef6f",
   "analysis/revision_notes.md": "4b4e960f0cef48fd3aeca8c7ebc286c26137103dbe263171f5c5982fa44a0ccd",
   "analysis/run_pipeline.py": "9912dbce3125ec15cfc5668cd568bd5335920c65c49d0111bc7a96c23a20f3b2",
@@ -719,6 +721,8 @@
   "data/raw/market_records.json": "a33d19b47adee7d9b7ab9a4b0386c4ba70dfcf549451ad4e8856117962fb363d",
   "data/raw/market_sources.zip": "3e056ddf2a2591ed4c705444e0c28066101f148a7db63d1427dbcec26019305a",
   "data/raw/records.json": "6dffcb8b41bcecd9240d97897c9613a0c446c922e55be1a8bffafef90e15ca2a",
+  "data/verification/reviewed/1219823600.json": "ecd47ab912348be1f988652805630212211a127b8cf3893c810b8143ed22dca5",
+  "data/verification/reviewed/1219854723.json": "5e9898f5a4cd2e5861c17a83a6ce8da97ff6e6e21898eb41c187c02375cef9f3",
   "pyproject.toml": "145bc2910b09fb1b3de9ae233cbc35ad563b2cb36e06c82e4230b154ffcdd867",
   "requirements-lock.txt": "2fbd493b197e97f6388db9a810744a421728b7ee0d3729da9760651dcf192298",
   "requirements-review.txt": "b9d47568b04c2d3c2658d403377bc530994b97069948f9fa18471a4ced7e633f",
@@ -743,5 +747,6 @@
   "tests/test_model.py": "e0f99d08ed684e3af98136f1b5efdccaa8ccb5ba148334b8476acfcae156e1e4",
   "tests/test_pipeline.py": "527d81aada5ada125b15dde8ff1dcba60ae9668bc4611420293bc8d55a16425a",
   "tests/test_reproducibility.py": "b9640785bae5e4047a9a7591a422518e8b1a648e78e8c8cfa053f68ba91b84f1",
+  "tests/test_reviewed_evidence.py": "f1e5ae2fa235aa9ec9022ffab110ac133f240b0384d1f1bcfc8cbba1133bf1ac",
   "tests/test_screen_cohort.py": "a2391389572206648090c486c54941caa0617b4b72f5bb36395e41d89cf45ddc"
 }
