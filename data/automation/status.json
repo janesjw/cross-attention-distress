@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-10T21:02:39.308532+00:00",
+  "updated_at": "2026-09-10T21:44:16.094943+00:00",
   "queue_documents": 44962,
-  "extracted_documents": 1636,
+  "extracted_documents": 2131,
   "failed_documents": 8,
   "scope": "finite-cohort-v1",
-  "selected_queue_extracted": 1611,
+  "selected_queue_extracted": 2106,
   "attempted_this_run": 500,
-  "errors_this_run": 6,
+  "errors_this_run": 5,
   "workers": 4,
-  "elapsed_seconds": 301.38,
+  "elapsed_seconds": 236.88,
   "automatic_verification_implemented": false,
-  "next_required_stage": "Review extraction candidates and register source-backed financial facts, text sections, baseline and outcome evidence; extraction alone cannot freeze a sample",
+  "next_required_stage": "Complete sample_completion_tasks with source-reviewed evidence; rerun build_samples after registration. Extraction and sample adjudication do not automatically verify missing sources.",
   "eligible_samples": 0,
   "verified_text_sections": 1,
   "training_candidate": false,
@@ -19,5 +19,11 @@
     "Verified complete ST/*ST implementation and removal coverage",
     "No eligible analytical samples",
     "No registered frozen dataset manifest"
-  ]
+  ],
+  "sample_adjudication_implemented": true,
+  "sample_decisions": {
+    "pending": 5062,
+    "excluded": 188
+  },
+  "completion_tasks": "data/derived/sample_completion_tasks.json"
 }
