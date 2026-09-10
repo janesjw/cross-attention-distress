@@ -34,3 +34,10 @@ decisions before spending time on the next extraction batch. Freeze still requir
 completed source review, label ascertainment and the protocol's global gates.
 README final sample counts, filing_summary.json and the frozen manifest remain
 unchanged until that certified freeze.
+
+The original `financials.csv` and `samples.csv` are seed-recovery views. Current
+sample adjudication is in `sample_decisions.csv`; current financial facts are in
+the database. Package verification replays the seed, registered reviewed bundles
+and sample construction, then compares every database table and decision output.
+Newly staged review bundles that have not yet been ingested are not represented
+as already registered evidence. Hash and integrity checks remain mandatory.

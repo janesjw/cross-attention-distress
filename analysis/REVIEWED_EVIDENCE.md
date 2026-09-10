@@ -29,3 +29,18 @@ values. No model-performance result was produced.
 
 Final sample counts in README, filing_summary.json and the frozen manifest remain
 pending the certified sample; these source-registration counts are not substitutes.
+
+## Annual history extension
+
+Four further original annual reports have now been checked against hash-matched
+PDFs: 2019 (1207683744), 2020 (1209687499), 2021 (1213059469), and 2022
+(1216593484). The bundles add 121 consolidated financial facts, taking this
+reviewed set to six documents and 171 facts. The 2019–2021 statements explicitly
+label the comparative balance column December 31; those values retain their
+actual later disclosure dates. The 2022 opening column is January 1 and is not
+silently converted to a prior December 31 balance.
+
+Some later reports revise comparative income/cash-flow figures. The different
+versions remain separately identifiable. Cross-report comparability is still
+unreviewed, so these cells do not certify complete model inputs or an eligible
+sample. No share counts are inferred from share capital.
