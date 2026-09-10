@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-10T11:33:26.090310+00:00",
+  "updated_at": "2026-09-10T16:35:44.116944+00:00",
   "queue_documents": 44962,
-  "extracted_documents": 123,
+  "extracted_documents": 146,
   "failed_documents": 2,
   "scope": "finite-cohort-v1",
-  "selected_queue_extracted": 98,
+  "selected_queue_extracted": 121,
   "attempted_this_run": 25,
   "errors_this_run": 2,
   "eligible_samples": 0,
