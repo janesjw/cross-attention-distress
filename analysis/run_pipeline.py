@@ -207,8 +207,8 @@ def run(root,limit,minutes,workers=1):
         'scope':'annual-st-sz-v1' if simplified_active(root) else 'finite-cohort-v1','selected_queue_extracted':sum(state['documents'].get(r['document_id'],{}).get('status')=='extracted' for r in queue),
         'attempted_this_run':processed,'errors_this_run':errors,'workers':workers,
         'elapsed_seconds':round(minutes*60-(deadline-time.monotonic()),2),
-        'automatic_verification_implemented':False,
-        'next_required_stage':('Certify annual_st sample inventory, historical ST eligibility and full follow-up coverage; implement simplified frozen export and runner.' if simplified_active(root) else 'Complete sample_completion_tasks with source-reviewed evidence; rerun build_samples after registration. Extraction and sample adjudication do not automatically verify missing sources.'),**readiness(root)}
+        'automatic_verification_implemented':simplified_active(root),
+        'next_required_stage':('Run annual input audit and freeze readiness; unresolved source and industry cases remain excluded. Simplified export and training are implemented.' if simplified_active(root) else 'Complete sample_completion_tasks with source-reviewed evidence; rerun build_samples after registration. Extraction and sample adjudication do not automatically verify missing sources.'),**readiness(root)}
     save(directory/'status.json',status)
     manifest=json.loads((root/'file_manifest.json').read_text())
     for path in directory.rglob('*'):

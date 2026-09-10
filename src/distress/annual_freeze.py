@@ -91,6 +91,12 @@ def freeze(root):
     if begin in content:content=content[:content.index(begin)]+block+content[content.index(end)+len(end):]
     else:content+='\n'+block+'\n'
     readme.write_text(content)
+    status_path=out/'status.json'
+    if status_path.exists():
+        status=json.loads(status_path.read_text())
+        status.update(frozen=True,final_sample_count=len(records),training_candidate=True,status='frozen_dataset_with_live_inventory')
+        status_path.write_text(json.dumps(status,indent=2)+'\n')
+        manifest[status_path.relative_to(root).as_posix()]=sha(status_path)
     for p in (dataset,frozen,fs,readme):manifest[p.relative_to(root).as_posix()]=sha(p)
     check.update(frozen=True,summary=summary);(out/'freeze_readiness.json').write_text(json.dumps(check,indent=2)+'\n')
     manifest['data/derived/annual_st/freeze_readiness.json']=sha(out/'freeze_readiness.json')

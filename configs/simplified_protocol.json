@@ -60,7 +60,8 @@
     "annual_transformer": false,
     "quarterly_lstm": false,
     "attention": "Financial representation queries multiple text chunks; padding masked; no singleton-key degeneration.",
-    "loss": "binary cross entropy; any class weighting estimated from training only"
+    "loss": "binary cross entropy; any class weighting estimated from training only",
+    "concat_parameter_budget": "Exactly matched to cross_attention using a three-width concatenation head"
   },
   "split_years": {
     "train": [
@@ -111,7 +112,7 @@
   "input_verification": {
     "methods": [
       "manual_source_review",
-      "annual-input-rules-v1"
+      "annual-input-rules-v2"
     ],
     "rule_based": "Official filing-index identity, front-matter code/year, latest indexed preorigin full report, consolidated yuan statements, explicitly ordered current/comparative headers, anchored rows and accounting checks; uniquely bounded MD&A of at least 1000 non-space characters. Automatic checks are not described as manual verification.",
     "missingness": "Uncollected required rows remain pending; only ratios with known zero denominators may be missing under automatic checks."

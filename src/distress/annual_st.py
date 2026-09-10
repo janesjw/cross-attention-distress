@@ -23,7 +23,7 @@ def annual_matches(row,origin):
     year=int(origin[:4])-1
     return (row.get('report_kind')=='annual_report'
             and re.search(rf'(?<!\d){year}年(?:年?度)?报告',title) is not None
-            and not any(s in title for s in ('英文','摘要','半年度'))
+            and not any(s in title for s in ('英文','摘要','半年度','已取消','已撤回','已撤销'))
             and f'{year}-12-31'<row['disclosed_date']<origin)
 
 

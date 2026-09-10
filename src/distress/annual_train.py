@@ -63,7 +63,9 @@ class Model(nn.Module):
         self.attention=nn.MultiheadAttention(width,4,batch_first=True) if variant=='cross_attention' else None
         if variant=='financial_only':self.txt.requires_grad_(False)
         if variant=='text_only':self.fin.requires_grad_(False)
-        self.head=nn.Sequential(nn.Linear(width*(2 if variant in ('concat','cross_attention') else 1),width),nn.ReLU(),nn.Dropout(.1),nn.Linear(width,1))
+        hidden=3*width if variant=='concat' else width
+        # Match the trainable parameter budget of the fusion comparison.
+        self.head=nn.Sequential(nn.Linear(width*(2 if variant in ('concat','cross_attention') else 1),hidden),nn.ReLU(),nn.Dropout(.1),nn.Linear(hidden,1))
     def forward(self,financial,text,mask):
         f=self.fin(financial);t=self.txt(text)
         pooled=(t*(~mask).unsqueeze(-1)).sum(1)/(~mask).sum(1,keepdim=True)
@@ -160,6 +162,7 @@ def run(root,output,epochs=100,bootstrap=None):
                          'seed_sd':float(np.std([r['test'][metric] for r in all_results if r['variant']==v],ddof=1))}
                     for metric in ('average_precision','roc_auc','f1','precision','recall','accuracy')} for v in VARIANTS}
     result={'dataset_sha256':m['dataset_sha256'],'frozen_summary':m['summary'],'runs':all_results,'aggregate':aggregate,'intervals':ci,
+            'training_code_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
             'runtime':{'python':platform.python_version(),'numpy':np.__version__,'sklearn':sklearn.__version__,'torch':torch.__version__},
             'training':{'max_epochs':epochs,'batch_size':64,'learning_rate':.001,'weight_decay':.0001,'patience':15,'selection':'validation AP checkpoint; validation F1 threshold'},
             'limitations':m['limitations']+['Intervals may be wide because positive events are sparse. No gate contribution is tested in this simplified design.']}

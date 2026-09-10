@@ -10,7 +10,7 @@ import zipfile
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
 sys.path[:0]=[str(ROOT/'src'),str(ROOT/'analysis')]
-from distress.annual_audit import audit
+from distress.annual_audit import audit,parse_annual
 from distress.annual_freeze import minimum_support,split_counts,load_frozen
 from structure_financials import parse
 
@@ -31,6 +31,16 @@ class AnnualAuditTest(unittest.TestCase):
             import re
             page['text']=re.sub(r'2023 年度(\s+)2022 年度',r'2022 年度\g<1>2023 年度',page['text'])
         a=audit(raw,parse(raw));self.assertFalse(a['financial_pass'])
+    def test_formal_statements_separate_from_adoption_notes(self):
+        for did in ('1213263535','1213137834','1203312386','1204669529'):
+            with zipfile.ZipFile(ROOT/f'data/automation/extracted/{did}.zip') as z:raw=json.loads(z.read('pages.json'))
+            p=parse_annual(raw,parse);result=audit(raw,p)
+            self.assertTrue(p.get('statement_block'),did)
+            self.assertTrue(result['financial_pass'],(did,result['issues']))
+    def test_cancelled_report_is_excluded(self):
+        from distress.annual_st import annual_matches
+        row=dict(self.raw['source']);row['source_title']+='（已取消）'
+        self.assertFalse(annual_matches(row,'2024-05-01'))
     def test_missing_required_row_not_imputed(self):
         p=parse(self.raw);p['rows']=[r for r in p['rows'] if r['metric']!='inventory']
         self.assertFalse(audit(self.raw,p)['financial_pass'])
@@ -60,6 +70,10 @@ class AnnualTrainingTest(unittest.TestCase):
         self.assertTrue(torch.allclose(a,m(f,t,mask),atol=1e-6))
         t[:,1,:]+=3
         self.assertFalse(torch.allclose(a,m(f,t,mask)))
+    def test_equal_fusion_parameter_budget(self):
+        from distress.annual_train import Model
+        counts=[sum(p.numel() for p in Model(v).parameters() if p.requires_grad) for v in ('concat','cross_attention')]
+        self.assertEqual(counts[0],counts[1])
     def test_threshold_is_computed_from_supplied_validation(self):
         from distress.annual_train import choose_threshold
         self.assertAlmostEqual(choose_threshold(np.array([0,0,1,1]),np.array([.1,.3,.6,.8])),.6)
