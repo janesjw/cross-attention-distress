@@ -1,0 +1,35 @@
+{
+  "frozen": false,
+  "eligible_samples": 130,
+  "splits": {
+    "train": {
+      "rows": 19,
+      "firms": 15,
+      "positive": 1,
+      "negative": 18,
+      "positive_firms": 1,
+      "negative_firms": 14
+    },
+    "validation": {
+      "rows": 26,
+      "firms": 26,
+      "positive": 0,
+      "negative": 26,
+      "positive_firms": 0,
+      "negative_firms": 26
+    },
+    "test": {
+      "rows": 85,
+      "firms": 85,
+      "positive": 3,
+      "negative": 82,
+      "positive_firms": 3,
+      "negative_firms": 82
+    }
+  },
+  "blocking_reasons": [
+    "train: requires at least two distinct firms in each class",
+    "validation: requires at least two distinct firms in each class"
+  ],
+  "adequacy_note": "Two firms per class is only a computation floor. Event counts and confidence intervals determine how limited the conclusions must be."
+}

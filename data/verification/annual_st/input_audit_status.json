@@ -1,0 +1,48 @@
+{
+  "method": "annual-input-rules-v1",
+  "counts": {
+    "selected_not_downloaded": 1827,
+    "audited_documents": 1473,
+    "financial_pass": 238,
+    "text_pass": 1213,
+    "both_pass": 235
+  },
+  "issue_counts": {
+    "balance:current_comparative_header": 1114,
+    "income:current_comparative_header": 596,
+    "cashflow:current_comparative_header": 583,
+    "balance:scope_or_unit_or_duplicate_statement": 571,
+    "income:scope_or_unit_or_duplicate_statement": 171,
+    "cashflow:scope_or_unit_or_duplicate_statement": 159,
+    "missing_required_row:assets": 580,
+    "missing_required_row:current_assets": 583,
+    "missing_required_row:current_liabilities": 585,
+    "missing_required_row:equity": 572,
+    "missing_required_row:inventory": 592,
+    "missing_required_row:liabilities": 580,
+    "missing_required_row:management_expense": 187,
+    "missing_required_row:net_profit": 172,
+    "missing_required_row:ocf": 167,
+    "missing_required_row:operating_profit": 171,
+    "missing_required_row:receivables": 585,
+    "missing_required_row:revenue": 184,
+    "balance_identity:column1": 580,
+    "balance_identity:column2": 580,
+    "profit_after_tax:column1": 188,
+    "profit_after_tax:column2": 188,
+    "operating_cashflow:column1": 168,
+    "operating_cashflow:column2": 168,
+    "too_many_missing_ratios": 589,
+    "stock_code_not_in_front_matter": 244,
+    "document_identity_or_period": 246,
+    "ambiguous_mda_boundaries": 23,
+    "accounting_identity_failed": 8,
+    "annual_year_not_in_front_matter": 6
+  },
+  "scope": "Latest indexed preorigin reports; rule-based checks, not manual review or a frozen dataset.",
+  "limitations": [
+    "PDF extraction errors can survive internal checks.",
+    "Source/index completeness is assumed within the registered filing archive.",
+    "Missing or ambiguous cases remain unresolved."
+  ]
+}

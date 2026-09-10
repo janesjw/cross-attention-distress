@@ -4,24 +4,35 @@
   "candidate_firms": 471,
   "candidate_firm_years": 3335,
   "decisions": {
-    "pending": 3166,
-    "eligible_awaiting_freeze": 1,
+    "pending": 3037,
+    "eligible_awaiting_freeze": 130,
     "excluded": 168
   },
-  "eligible_samples": 1,
+  "eligible_samples": 130,
   "frozen": false,
   "final_sample_count": null,
   "registry_labels_verified": 3167,
   "unresolved_requirements": {
-    "annual_financial_certification": 3162,
-    "annual_text_certification": 3166,
+    "annual_financial_certification": 2942,
+    "annual_text_certification": 2038,
     "historical_industry": 388
   },
   "rows_with_selected_annual_report": 1359,
   "rows_with_12_candidate_features": 830,
+  "rows_with_certified_financial_inputs": 225,
+  "financial_verification_tiers": {
+    "none": 3110,
+    "manual_source_review": 5,
+    "rule_based_source_checks_not_manual_review": 220
+  },
+  "text_verification_tiers": {
+    "none": 2206,
+    "rule_based_source_checks_not_manual_review": 1128,
+    "manual_source_review": 1
+  },
   "rows_with_12_verified_features": 5,
   "rows_with_text_candidate": 1342,
-  "verified_text_sections": 1,
+  "verified_text_sections": 1129,
   "splits": {
     "train": {
       "candidate_rows": 1673,
@@ -43,5 +54,5 @@
     }
   },
   "training_candidate": false,
-  "training_note": "Full-cohort input review and simplified frozen export/runner remain incomplete; legacy MMAN training disabled."
+  "training_note": "Input inventory is not a frozen dataset. Run the annual freeze readiness check; unresolved cases remain excluded from any export."
 }
