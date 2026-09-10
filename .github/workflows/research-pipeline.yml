@@ -16,6 +16,11 @@ on:
       - 'data/verification/reviewed/**'
       - 'data/derived/frozen_dataset.json'
       - 'configs/collection_cohort.json'
+      - 'configs/active_study.json'
+      - 'configs/simplified_cohort.json'
+      - 'configs/simplified_protocol.json'
+      - 'src/distress/annual_st.py'
+      - 'analysis/build_annual_st.py'
 permissions:
   contents: read
 concurrency:
@@ -28,6 +33,7 @@ jobs:
     outputs:
       ready: ${{ steps.pipeline.outputs.ready }}
       source_sha: ${{ steps.persist.outputs.sha }}
+      study: ${{ steps.pipeline.outputs.study }}
     permissions:
       contents: write
     steps:
@@ -59,6 +65,9 @@ jobs:
       - name: Structure statements and check accounting identities
         if: always()
         run: python analysis/structure_financials.py
+      - name: Inventory simplified annual ST study
+        if: always()
+        run: python analysis/build_annual_st.py
       - name: Preserve completed work
         id: persist
         if: always()
@@ -86,7 +95,7 @@ jobs:
           if-no-files-found: warn
   train:
     needs: extract
-    if: needs.extract.outputs.ready == 'true'
+    if: needs.extract.outputs.ready == 'true' && needs.extract.outputs.study != 'annual_st_v1'
     runs-on: ubuntu-latest
     timeout-minutes: 300
     steps:

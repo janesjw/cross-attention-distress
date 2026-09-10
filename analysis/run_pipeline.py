@@ -5,6 +5,9 @@ from datetime import datetime, timezone
 import fitz
 
 ROOT=Path(__file__).resolve().parents[1]
+import sys
+sys.path.insert(0,str(ROOT/'src'))
+from distress.annual_st import active as simplified_active, restrict as restrict_annual
 LABELS=('资产总计','负债合计','流动资产合计','流动负债合计','应收账款','存货','营业收入','营业总收入','营业成本','管理费用','利息费用','利润总额','净利润','现金流量净额','股东权益合计')
 
 def digest(path): return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -30,6 +33,7 @@ def candidates(root):
     return rows
 
 def restrict_queue(root,queue):
+    if simplified_active(root):return restrict_annual(root,queue)
     cohort=json.loads((root/'configs/collection_cohort.json').read_text())
     allowed={r['firm_id']:r for r in cohort['firms']}
     return [r for r in queue if r['firm_id'] in allowed and
@@ -77,6 +81,17 @@ def extract(path,meta):
             'analytical_verified':False}
 
 def readiness(root):
+    if simplified_active(root):
+        path=root/'data/derived/annual_st/status.json'
+        status=json.loads(path.read_text()) if path.exists() else {}
+        return {'study':'annual_st_v1','eligible_samples':status.get('eligible_samples',0),
+                'verified_text_sections':status.get('verified_text_sections',0),
+                'training_candidate':False,
+                'blocking_reasons':['No eligible analytical samples',
+                    'Simplified annual inputs and 12-month ST coverage require certification',
+                    'Simplified frozen export and experiment runner are not yet implemented'],
+                'sample_adjudication_implemented':False,
+                'sample_inventory':'data/derived/annual_st/sample_inventory.csv'}
     protocol=json.loads((root/'configs/protocol.json').read_text());reasons=list(protocol['pending_before_full_dataset'])
     db=root/'data/derived/distress.sqlite'
     with sqlite3.connect(f'file:{db}?mode=ro',uri=True) as con:
@@ -186,18 +201,20 @@ def run(root,limit,minutes,workers=1):
         'queue_priority_meaning':{'0':'feature_or_followup_window','1':'title_needs_period_review','2':'ancillary_retained_not_deleted'},
         'extracted_documents':sum(r['status']=='extracted' for r in state['documents'].values()),
         'failed_documents':sum(r['status']!='extracted' for r in state['documents'].values()),
-        'scope':'finite-cohort-v1','selected_queue_extracted':sum(state['documents'].get(r['document_id'],{}).get('status')=='extracted' for r in queue),
+        'scope':'annual-st-sz-v1' if simplified_active(root) else 'finite-cohort-v1','selected_queue_extracted':sum(state['documents'].get(r['document_id'],{}).get('status')=='extracted' for r in queue),
         'attempted_this_run':processed,'errors_this_run':errors,'workers':workers,
         'elapsed_seconds':round(minutes*60-(deadline-time.monotonic()),2),
         'automatic_verification_implemented':False,
-        'next_required_stage':'Complete sample_completion_tasks with source-reviewed evidence; rerun build_samples after registration. Extraction and sample adjudication do not automatically verify missing sources.',**readiness(root)}
+        'next_required_stage':('Certify annual_st sample inventory, historical ST eligibility and full follow-up coverage; implement simplified frozen export and runner.' if simplified_active(root) else 'Complete sample_completion_tasks with source-reviewed evidence; rerun build_samples after registration. Extraction and sample adjudication do not automatically verify missing sources.'),**readiness(root)}
     save(directory/'status.json',status)
     manifest=json.loads((root/'file_manifest.json').read_text())
     for path in directory.rglob('*'):
         if path.is_file():manifest[path.relative_to(root).as_posix()]=digest(path)
     save(root/'file_manifest.json',dict(sorted(manifest.items())))
     if os.environ.get('GITHUB_OUTPUT'):
-        with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('ready='+str(status['training_candidate']).lower()+'\n')
+        with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+            f.write('ready='+str(status['training_candidate']).lower()+'\n')
+            f.write('study='+('annual_st_v1' if simplified_active(root) else 'legacy')+'\n')
     if os.environ.get('GITHUB_STEP_SUMMARY'):
         with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
             f.write('## Pipeline status\n\n```json\n'+json.dumps(status,indent=2)+'\n```\n')

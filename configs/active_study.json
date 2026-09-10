@@ -1,0 +1,7 @@
+{
+  "study": "annual_st_v1",
+  "protocol": "configs/simplified_protocol.json",
+  "cohort": "configs/simplified_cohort.json",
+  "legacy_protocol": "configs/protocol.json",
+  "legacy_status": "superseded_for_new_research_preserved_for_reproduction"
+}
