@@ -6,6 +6,6 @@
   "blocking_reasons": [],
   "sample_adjudication_implemented": true,
   "sample_inventory": "data/derived/annual_st/sample_inventory.csv",
-  "updated_at": "2026-09-11T09:11:27.041227+00:00",
+  "updated_at": "2026-09-11T13:38:46.348868+00:00",
   "collection_stopped_after_freeze": true
 }
