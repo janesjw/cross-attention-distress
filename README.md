@@ -1,44 +1,43 @@
 # Annual Financial Indicators and Disclosure Text for Predicting ST Risk
 
-The active, user-authorized design uses one pre-origin annual report, 12 financial ratios, annual-report text and a subsequent 12-month ST/*ST endpoint. Five-year histories, quarterly inputs and the composite distress label are retired for this study. There is no fixed final-sample-size quota. See [the simplified study specification](analysis/SIMPLIFIED_STUDY.md) and `configs/active_study.json`.
+## Active study and completed results
 
-The active workflow audits the latest indexed annual inputs, checks sample support, and freezes an eligible source-availability subset before estimation. Current readiness and any blocking reasons are recorded in `data/derived/annual_st/freeze_readiness.json`; empirical results exist only after the experiment job completes. Candidate observations and parsed values are not automatically eligible. See [the annual audit and experiment workflow](analysis/ANNUAL_WORKFLOW.md).
+The active study is annual-st-sz-v1: one pre-origin annual report, 12 financial ratios, MD&A character TF-IDF/SVD and new ST/*ST in the following 12 months. Predictions are dated May 1 using disclosures available through April 30. Training origins are 2017–2021, validation 2022–2023 and test 2024–2025. Five-year histories, quarterly inputs, FinBERT, gating and composite distress outcomes are retired for this study.
 
-The original Transformer/LSTM/FinBERT MMAN implementation and its protocol are preserved for reconstruction and provenance. The reproduction instructions and historical audits below refer to that archived design; its training job is disabled for the active annual-only study.
+The frozen source-availability sample contains **154 firms and 843 company-years**, with 22 positive outcomes: training 503 (9 positives), validation 124 (2), test 216 (11). All four variants share this sample. Four models across seeds 17, 42 and 2026 have completed; all 12 saved prediction outputs passed the recorded metric audit. No repeat training is required merely to update manuscript wording or figures.
 
-## Repository contents
+Mean test AP is financial-only 0.3642, text-only 0.0536, concatenation 0.3638 and cross-attention 0.3641. The paired company-cluster 95% AP interval for cross-attention minus concatenation is [-0.0361, 0.0289], and versus financial-only [-0.0868, 0.0538]. These intervals do not establish stable improvement and do not prove equivalence. Validation has only two positive outcomes. ST/*ST measures a regulatory endpoint, not all financial distress.
 
-- `src/distress/`: data processing, model implementation, training, and evaluation.
-- `analysis/`: database build and package verification commands.
-- `data/raw/`: financial records and source metadata.
-- `data/derived/`: SQLite database and CSV views of financials and sample eligibility.
-- `configs/`: prediction rules, model settings, and the text-model version.
-- `tests/`: data and model tests.
-- `DATA_SOURCES.md`: source locations and data conventions.
+See [the empirical report](data/derived/annual_st/results/empirical_reanalysis.md), [saved results](data/derived/annual_st/results/results.json), [raw predictions](data/derived/annual_st/results/predictions.csv) and [metric audit](data/derived/annual_st/results/metric_recalculation.json).
 
-## Reproduction
+## Authoritative data and provenance
 
-Use Python 3.12 from the repository root:
+- Immutable analysis input: `data/derived/annual_st/frozen_samples.jsonl`.
+- Frozen contract and hashes: `data/derived/annual_st/frozen_manifest.json`.
+- Eligibility and exclusions: `data/derived/annual_st/sample_inventory.csv`.
+- Source selection, label windows and certification: `data/verification/annual_st/`.
+- Training implementation: `src/distress/annual_train.py`.
+- Filing collection totals and frozen sample totals are separate fields in `data/derived/filing_summary.json`.
 
+The embedded protocol status in the frozen manifest is historical pre-freeze wording. The top-level frozen flag, dataset digest and later completed result files record subsequent stages. Preserve the embedded protocol and evidence hashes; do not overwrite a historical snapshot to make all status strings identical.
+
+The SQLite `sample_register` and `financials.csv` / `samples.csv` support legacy reconstruction and are not the 843-row annual analysis dataset. Annual construction uses the candidate register as a linked source, with separate annual source certification and labels. Seed CSV views are intentionally retained; `analysis/verify_package.py` checks their replay and the current SQLite tables. Do not replace the annual frozen export with legacy eligibility counts.
+
+## Reproduction and checks
+
+Use [the annual workflow](analysis/ANNUAL_WORKFLOW.md) and [study specification](analysis/SIMPLIFIED_STUDY.md) for the active design. Existing result and prediction files support manuscript tables without rerunning training. The annual freeze loader verifies the manifest and dataset hashes. Training is gated by the frozen digest, training-code digest and complete model/seed set.
+
+Legacy package checks use Python 3.12 with the pinned project dependencies:
 ```bash
-python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
-python -m pip install -e .
-python analysis/build_database.py
 python analysis/verify_package.py
 ```
+This verifies registered hashes, SQLite integrity, source normalization, deterministic database/CSV replay and software tests. It does not rerun the 12 annual training experiments. `python analysis/sqlite_closeout.py` provides a read-only summary of existing SQLite files and their candidate linkage to the frozen annual observations, without rebuilding data.
 
-The build command creates a fresh copy in `data/derived/rebuilt/`, preserving the included snapshot. Verification checks file hashes, database consistency, CSV outputs, and offline tests. These commands run offline after dependency installation. `requirements-lock.txt` records the tested environment; model weights and source PDFs are downloaded separately.
+Historical Transformer/LSTM/FinBERT code and the old protocol are preserved for provenance only. Legacy input counts or unresolved composite labels are not current annual-study claims. Synthetic fixtures validate software, not empirical performance.
 
-## Data and prediction setup
+## Limitations and reuse
 
-The exchange register contains 5,550 listings and 7,327 historical name changes. Listing-date screening yields 30,732 candidate company-years. Financial observations currently cover two companies; formal sample selection and estimation remain pending.
-
-Predictions are dated May 1, using information disclosed through April 30, with a 12-month follow-up. Records already meeting a distress condition are excluded. Inputs comprise 90 annual values, 32 quarterly values, and report text. Missingness is assessed before imputation: more than 27 missing annual values or nine missing quarterly values excludes a record after source collection is complete.
-
-## Reuse
-
-Source data and pretrained models remain subject to their providers' terms. A code license has not yet been selected.
-
+The sample is selected by source availability and certification, rather than representative sampling. Most financial input records have rule-based source checks, not manual review. Sparse events and wide intervals constrain inference. A code license has not yet been selected; source material remains subject to its providers' terms.
 
 <!-- ANNUAL_ST_FROZEN_START -->
 ## Frozen annual ST sample
@@ -83,5 +82,5 @@ Source data and pretrained models remain subject to their providers' terms. A co
 }
 ```
 
-The same summary is recorded in `data/derived/filing_summary.json` and `data/derived/annual_st/frozen_manifest.json`. Source-availability and automatic-validation limitations are recorded in the manifest. Freezing is not completion of training.
+The same summary is recorded in `data/derived/filing_summary.json` and `data/derived/annual_st/frozen_manifest.json`. Source-availability and automatic-validation limitations are recorded in the manifest. Training is complete as documented in the linked result files; the original frozen manifest remains unchanged.
 <!-- ANNUAL_ST_FROZEN_END -->

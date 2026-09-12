@@ -16,11 +16,14 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(rank('2016年年度报告（更正后）','2017-05-03'),0)
         self.assertEqual(rank('财务报告更新','2017-04-30'),1)
     def test_missing_data_blocks_training(self):
-        result=pipeline.readiness(pipeline.ROOT)
+        # Isolate missing-data behavior from the live, now-frozen study.
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'configs').mkdir()
+            (root/'configs/active_study.json').write_text(json.dumps({'study':'annual_st_v1'}))
+            result=pipeline.readiness(root)
         self.assertFalse(result['training_candidate'])
         self.assertTrue(result['blocking_reasons'])
-        if result.get('eligible_samples',0)==0:
-            self.assertIn('No eligible analytical samples',result['blocking_reasons'])
+        self.assertEqual(result['eligible_samples'],0)
     def test_failed_download_is_checkpointed_and_retry_is_capped(self):
         row={'document_id':'123','firm_id':'000002.SZ','source_title':'Annual report','disclosed_date':'2025-04-01','url':'https://static.cninfo.com.cn/finalpage/2025-04-01/123.PDF'}
         with tempfile.TemporaryDirectory() as tmp:
