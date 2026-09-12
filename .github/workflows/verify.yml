@@ -1,0 +1,23 @@
+name: Verify compact paper package
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python verify.py
+      - name: Enforce 10 MB current-tree limit
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          files=subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          size=sum(Path(p).stat().st_size for p in files if p)
+          print(f'Tracked payload: {size:,} bytes / 10,000,000 bytes')
+          assert size <= 10_000_000
+          PY
