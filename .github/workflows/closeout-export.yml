@@ -1,0 +1,35 @@
+name: Export existing database for closeout
+on:
+  push:
+    paths: ['.github/workflows/closeout-export.yml']
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check existing SQLite snapshots without rebuilding
+        run: |
+          python - <<'PY'
+          import sqlite3,json,pathlib,hashlib
+          outputs=[]
+          for p in pathlib.Path('data/derived').glob('*.sqlite'):
+              con=sqlite3.connect(f'file:{p}?mode=ro',uri=True)
+              tables=[x[0] for x in con.execute("SELECT name FROM sqlite_master WHERE type='table'")]
+              outputs.append({'path':str(p),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'integrity':con.execute('PRAGMA integrity_check').fetchall(),'foreign_key_errors':con.execute('PRAGMA foreign_key_check').fetchall(),'tables':{t:con.execute('SELECT COUNT(*) FROM "'+t+'"').fetchone()[0] for t in tables}})
+              con.close()
+          pathlib.Path('closeout_sqlite_check.json').write_text(json.dumps(outputs,indent=2))
+          assert outputs and all(x['integrity']==[('ok',)] and not x['foreign_key_errors'] for x in outputs)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: existing-database-closeout
+          retention-days: 7
+          path: |
+            closeout_sqlite_check.json
+            data/derived/*.sqlite
+            data/derived/financials.csv
+            data/derived/samples.csv
+            data/derived/sample_decisions.csv
+            data/derived/cohort_screening.csv
