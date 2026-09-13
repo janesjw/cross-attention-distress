@@ -1,0 +1,9 @@
+{
+  "rows": 969,
+  "independent_metric_checks": [
+    "validation",
+    "test"
+  ],
+  "passed": true,
+  "fit_count": 1
+}

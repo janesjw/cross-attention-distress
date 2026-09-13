@@ -1,58 +1,29 @@
 {
   "frozen": true,
-  "created_at": "2026-09-10T23:30:11.469949+00:00",
   "summary": {
-    "sample_version": "annual-st-sz-v1",
-    "candidate_firms": 471,
-    "candidate_firm_years": 3335,
-    "final_firms": 154,
-    "final_sample_count": 843,
-    "positive": 22,
-    "negative": 821,
-    "origin_min": "2017-05-01",
-    "origin_max": "2025-05-01",
+    "n": 969,
+    "positive": 26,
+    "firms": 155,
     "splits": {
       "train": {
-        "rows": 503,
-        "firms": 143,
-        "positive": 9,
-        "negative": 494,
-        "positive_firms": 9,
-        "negative_firms": 141
+        "n": 503,
+        "positives": 9
       },
       "validation": {
-        "rows": 124,
-        "firms": 124,
-        "positive": 2,
-        "negative": 122,
-        "positive_firms": 2,
-        "negative_firms": 122
+        "n": 250,
+        "positives": 6
       },
       "test": {
-        "rows": 216,
-        "firms": 127,
-        "positive": 11,
-        "negative": 205,
-        "positive_firms": 11,
-        "negative_firms": 121
+        "n": 216,
+        "positives": 11
       }
     }
   },
-  "dataset_path": "data/derived/annual_st/frozen_samples.jsonl",
-  "dataset_sha256": "105a29b64a0f485dcd33a92711e015cc5e0f29cca0e31ee3d819f03dca6bea6c",
-  "evidence_hashes": {
-    "configs/simplified_protocol.json": "7cd063507b4b87d65722658a01faa379ec94bd0c41975e8fb1a949ef45887b91",
-    "configs/simplified_cohort.json": "a854e57d2e3aed06e82137a4de369e9d2aeb4ac0cec8606e3501cb1127840892",
-    "data/derived/annual_st/sample_inventory.csv": "861461cdd91c36943214c23e9d2cc45362cd22777ac1d8280a3a3ca13b318ccf",
-    "data/derived/annual_st/candidate_inputs.zip": "06b2e26d69bd541d267604d0e8b1bea3cc3e04a237bb45b1ab5894c65e133b99",
-    "data/verification/annual_st/labels.csv": "13ccdc298283f11b6d91e13236de7f74eb38b5fff7b18ed26a8a5e6b5d5e3b66",
-    "data/verification/annual_st/input_audit.zip": "cf907b5d6da1e9289b148d961bbc7c1a955b4dd2fd121e57df60861f71d1cc69",
-    "data/verification/annual_st/source_selection.json": "77000bd25228326020326c82f661130a0cf869e8666721589b9f40d7e9b5f3ab",
-    "data/derived/sample_decisions.csv": "d0e6bfec93eb463a20e42ce56d42c5e93813398555a850bddcb69defdc680e29"
-  },
+  "dataset_path": "data/model_inputs.jsonl.gz",
+  "dataset_sha256": "fdcfe6bda4f1f05f36669ff70ccee1091078149dfdd78a295658910e1fa4e263",
   "protocol": {
     "version": "annual-st-sz-v1",
-    "status": "user_authorized_redesign_not_frozen",
+    "status": "locked_for_exploratory_revision",
     "authorization": "User accepted annual-only/ST-only simplification and removed the 5,000-observation target.",
     "target": "New ST or *ST implementation in [May 1 Y, May 1 Y+1), among eligible non-ST firms at origin. This is not all-cause financial distress.",
     "origin": "May 1 00:00 Asia/Shanghai",
@@ -168,24 +139,58 @@
       ],
       "rule_based": "Official filing-index identity, front-matter code/year, latest indexed preorigin full report, consolidated yuan statements, explicitly ordered current/comparative headers, anchored rows and accounting checks; uniquely bounded MD&A of at least 1000 non-space characters. Automatic checks are not described as manual verification.",
       "missingness": "Uncollected required rows remain pending; only ratios with known zero denominators may be missing under automatic checks."
-    }
-  },
-  "selection_rule": "All eligible rows at this source-availability snapshot; common sample across all four models, no selection by model results. Pending/ambiguous/missing source and industry cases excluded with reasons in the hashed inventory.",
-  "excluded_or_unresolved": {
-    "ST_history_label_and_input_certification_pending;annual_financial_certification;annual_text_certification": 1668,
-    "ST_history_label_and_input_certification_pending;historical_industry": 126,
-    "ST_history_label_and_input_certification_pending;annual_financial_certification": 263,
-    "ST_history_label_and_input_certification_pending;historical_industry;annual_financial_certification": 23,
-    "ST_history_label_and_input_certification_pending;historical_industry;annual_financial_certification;annual_text_certification": 235,
-    "preorigin_financial_industry_or_confirmed_baseline_ST;": 160,
-    "ST_history_label_and_input_certification_pending;annual_text_certification": 5,
-    "known_incomplete_followup_due_to_delisting;": 8,
-    "ST_history_label_and_input_certification_pending;historical_industry;annual_text_certification": 4
+    },
+    "candidate_amendment": "All126 recovered2023 records included under FINAL_ANALYSIS_RULES.md. Broad classification separate from detailed codes. Mixed/disposed financial exposure retained with scope flag. Primary endpoint is ST implementation; definite announcement date assessed separately."
   },
   "limitations": [
     "Source-availability selection may be nonrandom; results do not represent all Shenzhen firms.",
     "Rule-based source checks are not manual audits.",
     "Technical class-support minimum does not establish statistical power.",
-    "Registered ST changes measure a regulatory endpoint, not all financial distress."
-  ]
+    "Registered ST changes measure a regulatory endpoint, not all financial distress.",
+    "Exploratory expansion after v1 test inspection; this is not independent confirmation.",
+    "Known preannounced v1 endpoints are retained under effective-date definition; no clean unknown-event claim.",
+    "Local CPU environment may differ from v1 CI runtime; cross-version differences cannot be attributed solely to validation expansion.",
+    "The pre-origin industry rule retains002316:2023 with disposed-payment exposure in annual financial flows; no continuing-operation figures are fabricated."
+  ],
+  "version": "annual-st-sz-v2",
+  "status": "data_locked_exploratory_revision",
+  "compressed_sha256": "eee3897120a25e1383d5f8127cbaebbdc8523222599bf1f65bddf7e3ebcf51f6",
+  "parent_v1_provenance": {
+    "created_at": "2026-09-10T23:30:11.469949+00:00",
+    "evidence_hashes": {
+      "configs/simplified_protocol.json": "7cd063507b4b87d65722658a01faa379ec94bd0c41975e8fb1a949ef45887b91",
+      "configs/simplified_cohort.json": "a854e57d2e3aed06e82137a4de369e9d2aeb4ac0cec8606e3501cb1127840892",
+      "data/derived/annual_st/sample_inventory.csv": "861461cdd91c36943214c23e9d2cc45362cd22777ac1d8280a3a3ca13b318ccf",
+      "data/derived/annual_st/candidate_inputs.zip": "06b2e26d69bd541d267604d0e8b1bea3cc3e04a237bb45b1ab5894c65e133b99",
+      "data/verification/annual_st/labels.csv": "13ccdc298283f11b6d91e13236de7f74eb38b5fff7b18ed26a8a5e6b5d5e3b66",
+      "data/verification/annual_st/input_audit.zip": "cf907b5d6da1e9289b148d961bbc7c1a955b4dd2fd121e57df60861f71d1cc69",
+      "data/verification/annual_st/source_selection.json": "77000bd25228326020326c82f661130a0cf869e8666721589b9f40d7e9b5f3ab",
+      "data/derived/sample_decisions.csv": "d0e6bfec93eb463a20e42ce56d42c5e93813398555a850bddcb69defdc680e29"
+    },
+    "selection_rule": "All eligible rows at this source-availability snapshot; common sample across all four models, no selection by model results. Pending/ambiguous/missing source and industry cases excluded with reasons in the hashed inventory.",
+    "excluded_or_unresolved": {
+      "ST_history_label_and_input_certification_pending;annual_financial_certification;annual_text_certification": 1668,
+      "ST_history_label_and_input_certification_pending;historical_industry": 126,
+      "ST_history_label_and_input_certification_pending;annual_financial_certification": 263,
+      "ST_history_label_and_input_certification_pending;historical_industry;annual_financial_certification": 23,
+      "ST_history_label_and_input_certification_pending;historical_industry;annual_financial_certification;annual_text_certification": 235,
+      "preorigin_financial_industry_or_confirmed_baseline_ST;": 160,
+      "ST_history_label_and_input_certification_pending;annual_text_certification": 5,
+      "known_incomplete_followup_due_to_delisting;": 8,
+      "ST_history_label_and_input_certification_pending;historical_industry;annual_text_certification": 4
+    }
+  },
+  "created_at": "2026-09-13T03:40:19.610699+00:00",
+  "dataset_sha256_scope": "Decompressed compact model-input JSONL, not original full MD&A JSONL",
+  "selection_rule": "Parent843 plus all126 industry-resolved2023 records. Broad pre-origin nonfinancial status governs; mixed/disposed operations are flagged rather than selectively excluded. No score-based inclusion.",
+  "cohort_inventory_summary": {
+    "candidates": 3335,
+    "included": 969,
+    "excluded_or_unresolved": 2366
+  },
+  "v2_evidence_hashes": {
+    "evidence/cohort_decisions.csv": "c1084177eb50e576ddf0d0fa6105700db6f840645d20bad6e50cd5c5df85855e",
+    "evidence/announcement_timing.csv": "0b87305c7aef741dacd1c6c1076145d5863ed6ba728bc0feeab730e70b7e8e57",
+    "ANALYSIS_RULES.md": "8ccc09646cc53161b80d804b8c475ef24d41f2828740357d1148f4a20a7301ad"
+  }
 }

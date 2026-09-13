@@ -1,0 +1,27 @@
+{
+  "paired_company_bootstrap_replicates": 2000,
+  "valid_replicates": 2000,
+  "logistic_AP_95CI": [
+    0.060233770314600144,
+    0.4697992676929621
+  ],
+  "neural_mean_AP_minus_logistic_AP_95CI": {
+    "financial_only": [
+      0.013577282118129088,
+      0.4066282264032032
+    ],
+    "text_only": [
+      -0.4139741108181787,
+      0.014393313281217925
+    ],
+    "concat": [
+      -0.0034618557173217864,
+      0.38559757785564586
+    ],
+    "cross_attention": [
+      -0.0439410128446995,
+      0.37243506032648965
+    ]
+  },
+  "estimand": "Mean of three prespecified neural single-run APs minus one deterministic logistic fit; paired identical company resamples"
+}

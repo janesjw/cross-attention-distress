@@ -1,0 +1,14 @@
+Model / seed,Threshold,Epoch,AP,TN,FP,FN,TP
+L2 logistic,0.962664,—,0.2177,201,4,9,2
+Financial neural / 17,0.746854,4,0.3697,204,1,9,2
+Financial neural / 42,0.657018,3,0.3800,204,1,10,1
+Financial neural / 2026,0.852044,7,0.3898,204,1,10,1
+Text neural / 17,0.509983,1,0.0552,190,15,10,1
+Text neural / 42,0.000576,96,0.0542,137,68,7,4
+Text neural / 2026,0.485097,1,0.0642,126,79,6,5
+Concatenation / 17,0.607692,1,0.3707,204,1,9,2
+Concatenation / 42,0.876304,3,0.3710,204,1,10,1
+Concatenation / 2026,0.634772,1,0.3637,205,0,10,1
+Cross-attention / 17,0.539542,1,0.3484,204,1,9,2
+Cross-attention / 42,0.637472,1,0.3634,205,0,10,1
+Cross-attention / 2026,0.602087,1,0.3524,205,0,10,1

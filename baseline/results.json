@@ -1,0 +1,60 @@
+{
+  "model": "L2_logistic_regression",
+  "C": 1,
+  "solver": "lbfgs",
+  "max_iter": 10000,
+  "iterations": [
+    42
+  ],
+  "class_weight": {
+    "negative": 1,
+    "positive": 54.888888888888886
+  },
+  "preprocessing": "Same train-only FinancialTransform as neural financial model; 12 ratios plus12missingness flags",
+  "threshold_selection": "validation F1 maximum",
+  "threshold": 0.9626639978874088,
+  "validation": {
+    "n": 250,
+    "positive": 6,
+    "average_precision": 0.08923078443219673,
+    "roc_auc": 0.5430327868852459,
+    "accuracy": 0.948,
+    "precision": 0.18181818181818182,
+    "recall": 0.3333333333333333,
+    "f1": 0.23529411764705882,
+    "confusion_matrix": [
+      [
+        235,
+        9
+      ],
+      [
+        4,
+        2
+      ]
+    ]
+  },
+  "test": {
+    "n": 216,
+    "positive": 11,
+    "average_precision": 0.21767755858198726,
+    "roc_auc": 0.7569844789356985,
+    "accuracy": 0.9398148148148148,
+    "precision": 0.3333333333333333,
+    "recall": 0.18181818181818182,
+    "f1": 0.23529411764705882,
+    "confusion_matrix": [
+      [
+        201,
+        4
+      ],
+      [
+        9,
+        2
+      ]
+    ]
+  },
+  "dataset_sha256": "fdcfe6bda4f1f05f36669ff70ccee1091078149dfdd78a295658910e1fa4e263",
+  "training_records": 503,
+  "hyperparameter_search": false,
+  "fit_replicates": 1
+}

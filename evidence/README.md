@@ -1,0 +1,9 @@
+# Evidence and version history
+
+The active manifest is candidate_manifest.json (legacy interface filename). Its top-level version and frozen status describe annual-st-sz-v2. Any prior-version identifier retained inside the protocol describes inherited design provenance; it is not a request to revert the sample. Historical v1 snapshots, including the embedded not_frozen protocol text, remain unchanged in earlier commits and the research workspace.
+
+All 843 v1 rows remain unchanged; all 126 industry-resolved 2023 rows are added. admission_2023_checks.csv and admission_2023_financial_checks.csv document source/structural checks and 1,512 ratio comparisons. These are AI-assisted source audits, not a claim of independent signed human review. The earlier 002316 hold is superseded by the uniform eligibility decision in timing_and_cohort_resolution.md. Historical adjudication context is retained as provenance and must be read with that final resolution.
+
+cohort_decisions.csv covers all 3,335 candidate firm-years. announcement_timing.csv covers the 26 positive implementation records and identifies five definitive pre-origin notices. It does not claim an exhaustive search for every prior risk warning. checkpoint_replay.json records the completed local replay; full weights and preprocessing artifacts are intentionally outside the compact current tree and can be regenerated. Ordinary verification recomputes saved-score metrics without refitting.
+
+The v1 full-text data SHA-256 is 105a29b64a0f485dcd33a92711e015cc5e0f29cca0e31ee3d819f03dca6bea6c. The earlier selected-chunk SHA-256 is 8042ecb6d52f506571b659fd02f0e2b367c57008973bbbb1127f5036dcf0b795. The authoritative earlier manifest should be used for that historical byte identity. Current v2 data identity is in candidate_manifest.json and filing_summary.json. A Git commit or blob SHA is not a data SHA-256.

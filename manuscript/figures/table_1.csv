@@ -1,0 +1,5 @@
+Partition,Origins,Firm-years,Events
+Training,2017–2021,503,9
+Validation,2022–2023,250,6
+Test,2024–2025,216,11
+Total,2017–2025,969,26

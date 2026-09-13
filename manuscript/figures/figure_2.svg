@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="405pt" height="197.352pt" viewBox="0 0 405 197.352" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-12T21:06:13.713389</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 197.352 
+L 405 197.352 
+L 405 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <g id="patch_2">
+     <path d="M 47.723062 46.707452 
+L 154.164937 46.707452 
+Q 158.664937 46.707452 158.664937 42.207452 
+L 158.664937 23.419108 
+Q 158.664937 18.919108 154.164937 18.919108 
+L 47.723062 18.919108 
+Q 43.223062 18.919108 43.223062 23.419108 
+L 43.223062 42.207452 
+Q 43.223062 46.707452 47.723062 46.707452 
+z
+" style="fill: #f4f4f4; stroke: #555555; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(60.609937 30.257702)">12 financial ratios</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(47.723062 40.335733)">+ 12 missing indicators</text>
+   </g>
+   <g id="text_2">
+    <g id="patch_3">
+     <path d="M 226.876078 46.707452 
+L 381.235922 46.707452 
+Q 385.735922 46.707452 385.735922 42.207452 
+L 385.735922 23.419108 
+Q 385.735922 18.919108 381.235922 18.919108 
+L 226.876078 18.919108 
+Q 222.376078 18.919108 222.376078 23.419108 
+L 222.376078 42.207452 
+Q 222.376078 46.707452 226.876078 46.707452 
+z
+" style="fill: #f4f4f4; stroke: #555555; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(232.613578 30.257702)">MD&amp;A from same annual report</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(226.876078 40.335733)">≤16 chunks × 64 SVD dimensions</text>
+   </g>
+   <g id="text_3">
+    <g id="patch_4">
+     <path d="M 51.854625 108.911132 
+L 150.033375 108.911132 
+Q 154.533375 108.911132 154.533375 104.411132 
+L 154.533375 85.622788 
+Q 154.533375 81.122788 150.033375 81.122788 
+L 51.854625 81.122788 
+Q 47.354625 81.122788 47.354625 85.622788 
+L 47.354625 104.411132 
+Q 47.354625 108.911132 51.854625 108.911132 
+z
+" style="fill: #f4f4f4; stroke: #555555; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(57.336187 92.461382)">Financial projection</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(51.854625 102.539413)">64-dimensional query</text>
+   </g>
+   <g id="text_4">
+    <g id="patch_5">
+     <path d="M 223.659984 108.911132 
+L 384.452016 108.911132 
+Q 388.952016 108.911132 388.952016 104.411132 
+L 388.952016 85.622788 
+Q 388.952016 81.122788 384.452016 81.122788 
+L 223.659984 81.122788 
+Q 219.159984 81.122788 219.159984 85.622788 
+L 219.159984 104.411132 
+Q 219.159984 108.911132 223.659984 108.911132 
+z
+" style="fill: #f4f4f4; stroke: #555555; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(271.052719 92.461382)">Text projection</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(223.659984 102.539413)">64-dimensional chunk keys / values</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 100.944 58.594951 
+Q 100.944 64.827465 100.944 69.718339 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 102.744 66.118339 
+L 100.944 69.718339 
+L 99.144 66.118339 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 304.056 58.594951 
+Q 304.056 64.827465 304.056 69.718339 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 305.856 66.118339 
+L 304.056 69.718339 
+L 302.256 66.118339 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <g id="patch_8">
+     <path d="M 100.588359 172.944332 
+L 304.411641 172.944332 
+Q 308.911641 172.944332 308.911641 168.444332 
+L 308.911641 149.655988 
+Q 308.911641 145.155988 304.411641 145.155988 
+L 100.588359 145.155988 
+Q 96.088359 145.155988 96.088359 149.655988 
+L 96.088359 168.444332 
+Q 96.088359 172.944332 100.588359 172.944332 
+z
+" style="fill: #f4f4f4; stroke: #555555; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(100.588359 156.494582)">Four-head cross-attention with padding mask</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(116.992266 166.572613)">Financial vector + context → classifier</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 102.83573 117.620979 
+Q 130.238394 127.033352 156.372183 136.009887 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 153.552171 133.138035 
+L 156.372183 136.009887 
+L 152.382694 136.542785 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 302.16427 117.620979 
+Q 274.761606 127.033352 248.627817 136.009887 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 252.617306 136.542785 
+L 248.627817 136.009887 
+L 251.447829 133.138035 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+  </g>
+ </g>
+</svg>

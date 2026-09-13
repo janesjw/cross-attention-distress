@@ -1,0 +1,5 @@
+Comparison,Difference,Paired 95% CI
+Cross-attention − Financial neural,-0.0251,"[-0.1087, 0.0276]"
+Cross-attention − Text neural,0.2969,"[0.0610, 0.5680]"
+Cross-attention − Concatenation,-0.0137,"[-0.0645, 0.0262]"
+Financial neural − L2 logistic,0.1622,"[0.0136, 0.4066]"

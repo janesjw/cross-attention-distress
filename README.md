@@ -1,31 +1,31 @@
-# Annual ST risk: compact paper reproduction package
+# Annual ST risk prediction: multimodal value and early-warning limitations
 
-This package preserves all 843 frozen company-years (154 firms, 22 positives), all 12 saved prediction runs and their actual model inputs. Total tracked file payload is below 10,000,000 bytes, without compression. It is a compact representation of annual-st-sz-v1, not a newly selected sample.
+This compact repository contains the integrated Financial Internet Quarterly working manuscript, versioned model inputs, source audit ledgers, code and verified predictions. The current tracked payload is kept below 10,000,000 bytes. Git history remains intact, so a full clone or GitHub's repository-size statistic can be much larger. No history rewrite is required.
 
-Train: 503 rows / 9 positives. Validation: 124 / 2. Test: 216 / 11. Seeds: 17, 42, 2026. Four models. Company-cluster bootstrap: 2,000 replicates.
+## Current study
 
-Test AP: financial_only 0.3642; text_only 0.0536; concat 0.3638; cross_attention 0.3641. Paired AP 95% CI for cross_attention minus concat is [-0.0361, 0.0289]; minus financial_only is [-0.0868, 0.0538]. These results do not establish a stable attention gain or equivalence.
+Annual-ST-SZ-v2 contains **969 firm-years from 155 firms, with 26 ST/*ST implementation events**. Training: 503 / 9 events (2017–2021); validation: 250 / 6 (2022–2023); test: 216 / 11 (2024–2025). The original 843 observations and all original training/test assignments are unchanged; all 126 industry-resolved 2023 observations are added to validation. See evidence/filing_summary.json and evidence/timing_and_cohort_resolution.md.
 
-## What was reduced
+Prediction is at May 1, using information available by April 30: twelve annual financial ratios and selected MD&A chunks from the same annual report. Text uses training-fitted character TF-IDF and SVD. The revised analysis is exploratory because original test results had already been inspected. No observations were selected to obtain significance.
 
-The source dataset stores complete MD&A (62,862,819 bytes). Original training deterministically removes whitespace, splits text into 256-character pieces and selects at most 16 evenly spaced pieces. `data/model_inputs.jsonl` stores exactly those selected pieces, together with every original non-text field. Ordered chunk equality and non-text field equality were verified for all 843 rows against the frozen original. The unchanged original training code fits TF-IDF on these selected training chunks; no omitted full-text material enters that fit.
+Test average precision is 0.2177 for the fixed L2 logistic baseline and, across three neural seeds, 0.3798 financial-only, 0.0579 text-only, 0.3685 concatenation and 0.3547 cross-attention. Paired company-bootstrap intervals do not establish incremental cross-attention value over financial-only or concatenation. The financial neural minus specified logistic AP interval is [0.0136, 0.4066], an unadjusted exploratory comparison. Ranking performance, threshold recall, annual alert budgets and announcement timing are reported separately.
 
-The loader rejoins the selected pieces so the unchanged original chunk function returns precisely the same ordered sequence. This preserves token counts, boundaries and training vocabulary inputs. Numeric training was not rerun merely to reduce file size. This package omits raw extraction archives, complete MD&A, legacy SQLite databases, automated collection caches and model checkpoints. It supports model-input reproduction and independent verification of saved metrics; it does not independently reproduce raw document extraction. Training creates checkpoints under an ignored output directory.
+## Paper files
 
-## Provenance
+- manuscript/Annual_ST_Manuscript.docx: anonymous complete main text; 13 rendered pages, 32,992 editable characters including references, tables and captions.
+- manuscript/Annual_ST_Title_Page.docx: separate supplied author information and declarations; this private repository as a whole is not an anonymous submission package.
+- manuscript/Annual_ST_Editable_Tables.docx: six main tables and supplementary Table S1; four pages.
+- manuscript/figures/: five separate PNG/SVG figures and seven CSV/PNG/SVG table exports (table_7 is S1).
+- manuscript/Reviewer_Response_Ledger.csv and Citation_Audit.csv: original comment, change, location, evidence and status.
 
-Full original evidence remains at [source commit e92becd6](https://github.com/janesjw/cross-attention-distress/tree/e92becd6ff0f4b2078d29985767cb1f6afced1e2). The original manifest is preserved byte-for-byte in `evidence/frozen_manifest.json`. Its historical `protocol.status: not_frozen` is embedded pre-freeze protocol text; the enclosing manifest has `frozen: true`. Do not overwrite it.
+Seventeen historical comment items are closed; one citation-locator group remains as an actual Word comment. Four references have verified publisher-abstract support but still need published-page locators or journal acceptance of the explicit electronic paragraph locators. See manuscript/Review_Status.md. No final journal submission has been made.
 
-Original full-data SHA-256: `105a29b64a0f485dcd33a92711e015cc5e0f29cca0e31ee3d819f03dca6bea6c`.
-Compact-data SHA-256: `8042ecb6d52f506571b659fd02f0e2b367c57008973bbbb1127f5036dcf0b795`.
-These are different byte representations. `text_sha256` identifies the FULL original text, not joined selected chunks. The original manifest's paths describe the archived source tree and need not exist in this compact package. `file_manifest.json` covers files in this package. Neither hash is a Git blob identifier.
+## Verification and reproduction
 
-## Verify and optionally reproduce
+Run `python verify.py` using Python 3.12 or newer. This checks every manifested file, exact model inputs, all 26 validation/test metric groups for 13 fits, logistic score-to-sample alignment, and supplementary output counts. It performs no training. GitHub Actions also enforces the current tracked-file size limit, excluding Git history.
 
-Run `python verify.py` using Python 3.12 (standard library only). This checks file integrity, sample keys/counts and all 12 runs' validation and test metrics, including thresholds and confusion matrices.
+To refit, install requirements.txt. Run `PYTHONPATH=src python -m distress.annual_train --root . --output rerun --epochs 100 --bootstrap 2000` for neural models, or `PYTHONPATH=src python fit_logistic.py` for the single fixed logistic model. Training artifacts are intentionally not tracked. Reproduction can vary across hardware and dependency environments; the supplied saved predictions define the reported results. Rerunning analyses may change output files and will require an explicit new manifest/version review.
 
-For optional full training, install `requirements.txt`, then run `PYTHONPATH=src python -m distress.annual_train --root . --output rerun`. Original runtime: Python 3.12.14, NumPy 2.3.5, scikit-learn 1.8.0, PyTorch 2.8.0+cpu. Use the corresponding CPU wheel when matching that environment. No new training was performed during compacting. Bootstrap intervals are retained from the frozen experiment; the optional training entry also recomputes them. This package has no automatic collection schedule.
+`python supplement_analysis.py` regenerates annual budgets, validation-event stress checks and notice-conditioned sensitivities from saved scores. `python compare_logistic.py` regenerates paired company-bootstrap comparisons (requires dependencies). `python build_figures.py` regenerates displays with requirements-figures.txt. No rerun is necessary to read or verify this release.
 
-Financial ratios retain year-end denominators. The text representation is character TF-IDF + SVD, not FinBERT. ST/*ST is a regulatory risk endpoint, not all financial distress. Only two validation positives make threshold selection unstable. Source availability limits generalization.
-
-The under-10-MB limit concerns current package files. Keeping an archive commit preserves Git history and does not make a full historical clone smaller.
+The compact database is gzip-compressed JSONL, not a SQLite database. It preserves exact selected-chunk model inputs, not full raw MD&A documents. Raw historical source packets and v1 evidence remain in earlier commits, including e92becd6ff0f4b2078d29985767cb1f6afced1e2. Original uploaded documents and full local replay artifacts remain in the research workspace. file_manifest.json records current-file SHA-256 values; see evidence/README.md for historical version differences.

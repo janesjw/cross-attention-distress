@@ -1,0 +1,30 @@
+{
+  "version": "annual-st-sz-v2",
+  "status": "data_locked_exploratory_revision",
+  "firms": 155,
+  "firm_years": 969,
+  "events": 26,
+  "splits": {
+    "train": {
+      "n": 503,
+      "events": 9
+    },
+    "validation": {
+      "n": 250,
+      "events": 6
+    },
+    "test": {
+      "n": 216,
+      "events": 11
+    }
+  },
+  "parent_records_unchanged": 843,
+  "added_2023_records": 126,
+  "candidate_firm_years": 3335,
+  "excluded_or_unresolved": 2366,
+  "neural_fits": 12,
+  "logistic_fits": 1,
+  "dataset_sha256": "fdcfe6bda4f1f05f36669ff70ccee1091078149dfdd78a295658910e1fa4e263",
+  "data_scope": "Decompressed selected-chunk model-input JSONL; not original full MD&A",
+  "manuscript_status": "Integrated and rendered; four published page locators remain open in one comment group."
+}

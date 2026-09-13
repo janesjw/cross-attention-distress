@@ -1,0 +1,24 @@
+{
+  "status": "candidate_only_pending_announcement_review_and_version_policy",
+  "reviewed": 126,
+  "passed_structural_input_registry_checks": 126,
+  "holds": [],
+  "candidate_count": 969,
+  "candidate_positives": 26,
+  "splits": {
+    "train": {
+      "n": 503,
+      "positives": 9
+    },
+    "validation": {
+      "n": 250,
+      "positives": 6
+    },
+    "test": {
+      "n": 216,
+      "positives": 11
+    }
+  },
+  "v1_records_unchanged": true,
+  "candidate_bytes": 9998300
+}

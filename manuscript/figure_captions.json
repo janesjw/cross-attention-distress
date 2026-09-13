@@ -1,0 +1,22 @@
+{
+  "1": [
+    "Figure 1: Source inventory and chronological evaluation",
+    "Source: Version 2 manifest and candidate decision inventory."
+  ],
+  "2": [
+    "Figure 2: Financial-query cross-attention over MD&A chunks",
+    "Source: Implemented annual model. Concatenation uses mean-pooled text; both fusion models contain 30,721 parameters."
+  ],
+  "3": [
+    "Figure 3: Common-observation training correlation matrix",
+    "Source: Raw ratios for the same 503 complete training observations. Codes are defined in Table 2."
+  ],
+  "4": [
+    "Figure 4: Test precision\u2013recall and ROC curves",
+    "Source: Saved predictions. Neural seeds 17 solid, 42 dashed and 2026 dotted; logistic is black. The PR reference is prevalence, 11/216."
+  ],
+  "5": [
+    "Figure 5: Recorded neural optimization histories",
+    "Source: Actual training loss and validation AP logs. Seeds 17 solid, 42 dashed and 2026 dotted. Validation loss was not recorded."
+  ]
+}

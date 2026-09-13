@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="405pt" height="197.352pt" viewBox="0 0 405 197.352" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-12T21:06:13.676437</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 197.352 
+L 405 197.352 
+L 405 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <g id="patch_2">
+     <path d="M 139.540781 44.877932 
+L 265.459219 44.877932 
+Q 269.959219 44.877932 269.959219 40.377932 
+L 269.959219 21.589588 
+Q 269.959219 17.089588 265.459219 17.089588 
+L 139.540781 17.089588 
+Q 135.040781 17.089588 135.040781 21.589588 
+L 135.040781 40.377932 
+Q 135.040781 44.877932 139.540781 44.877932 
+z
+" style="fill: #f4f4f4; stroke: #555555; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(164.198672 28.428182)">Source inventory</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(139.540781 38.506213)">471 firms / 3,335 firm-years</text>
+   </g>
+   <g id="text_2">
+    <g id="patch_3">
+     <path d="M 117.139922 110.740652 
+L 287.860078 110.740652 
+Q 292.360078 110.740652 292.360078 106.240652 
+L 292.360078 87.452308 
+Q 292.360078 82.952308 287.860078 82.952308 
+L 117.139922 82.952308 
+Q 112.639922 82.952308 112.639922 87.452308 
+L 112.639922 106.240652 
+Q 112.639922 110.740652 117.139922 110.740652 
+z
+" style="fill: #f4f4f4; stroke: #555555; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(141.233906 94.290902)">Common analytical sample</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(117.139922 104.368933)">155 firms / 969 firm-years / 26 events</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 202.5 53.108848 
+Q 202.5 62.999391 202.5 71.548293 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 204.3 67.948293 
+L 202.5 71.548293 
+L 200.7 67.948293 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'" transform="translate(328.39425 49.46831)">2,366 excluded</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'" transform="translate(335.06925 58.42656)">or unresolved</text>
+   </g>
+   <g id="text_4">
+    <g id="patch_5">
+     <path d="M 25.318969 180.262412 
+L 114.073031 180.262412 
+Q 118.573031 180.262412 118.573031 175.762412 
+L 118.573031 156.974068 
+Q 118.573031 152.474068 114.073031 152.474068 
+L 25.318969 152.474068 
+Q 20.818969 152.474068 20.818969 156.974068 
+L 20.818969 175.762412 
+Q 20.818969 180.262412 25.318969 180.262412 
+z
+" style="fill: #f4f4f4; stroke: #555555; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(32.316469 163.812662)">Train 2017–2021</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(25.318969 173.890693)">503 rows / 9 events</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 200.54247 117.375707 
+Q 136.099545 130.692281 72.970503 143.737352 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 76.860277 144.771593 
+L 72.970503 143.737352 
+L 76.13176 141.246077 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <g id="patch_7">
+     <path d="M 153.693281 180.262412 
+L 251.306719 180.262412 
+Q 255.806719 180.262412 255.806719 175.762412 
+L 255.806719 156.974068 
+Q 255.806719 152.474068 251.306719 152.474068 
+L 153.693281 152.474068 
+Q 149.193281 152.474068 149.193281 156.974068 
+L 149.193281 175.762412 
+Q 149.193281 180.262412 153.693281 180.262412 
+z
+" style="fill: #f4f4f4; stroke: #555555; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(153.693281 163.812662)">Validation 2022–2023</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(158.122969 173.890693)">250 rows / 6 events</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 202.5 118.971121 
+Q 202.5 130.694039 202.5 141.075317 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 204.3 137.475317 
+L 202.5 141.075317 
+L 200.7 137.475317 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <g id="patch_9">
+     <path d="M 288.063844 180.262412 
+L 382.544156 180.262412 
+Q 387.044156 180.262412 387.044156 175.762412 
+L 387.044156 156.974068 
+Q 387.044156 152.474068 382.544156 152.474068 
+L 288.063844 152.474068 
+Q 283.563844 152.474068 283.563844 156.974068 
+L 283.563844 175.762412 
+Q 283.563844 180.262412 288.063844 180.262412 
+z
+" style="fill: #f4f4f4; stroke: #555555; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(299.858062 163.812662)">Test 2024–2025</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(288.063844 173.890693)">216 rows / 11 events</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 204.45753 117.375707 
+Q 268.900455 130.692281 332.029497 143.737352 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 328.86824 141.246077 
+L 332.029497 143.737352 
+L 328.139723 144.771593 
+" style="fill: none; stroke: #555555; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+  </g>
+ </g>
+</svg>

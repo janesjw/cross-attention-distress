@@ -1,0 +1,8 @@
+{
+  "candidate_rows": 969,
+  "runs": 12,
+  "prediction_rows": 11628,
+  "metric_checks": 24,
+  "all_passed": true,
+  "training_rerun_by_verifier": false
+}
