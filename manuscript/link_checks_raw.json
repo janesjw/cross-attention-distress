@@ -1,0 +1,740 @@
+[
+  {
+    "reference": "Altman, E. I. (1968). Financial Ratios, Discriminant Analysis and the Prediction of Corporate Bankruptcy. The Journal of Finance, 23(4), 589–609. https://doi.org/10.1111/j.1540-6261.1968.tb00843.x",
+    "url": "https://doi.org/10.1111/j.1540-6261.1968.tb00843.x",
+    "request": {
+      "status": 403,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1968.tb00843.x",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "registry_request": {
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1111/j.1540-6261.1968.tb00843.x"
+    },
+    "registered_metadata": {
+      "DOI": "10.1111/j.1540-6261.1968.tb00843.x",
+      "title": [
+        "FINANCIAL RATIOS, DISCRIMINANT ANALYSIS AND THE PREDICTION OF CORPORATE BANKRUPTCY"
+      ],
+      "author": [
+        {
+          "given": "Edward I.",
+          "family": "Altman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Journal of Finance"
+      ],
+      "volume": "23",
+      "issue": "4",
+      "page": "589-609",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1968,
+            9
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1111/j.1540-6261.1968.tb00843.x"
+    }
+  },
+  {
+    "reference": "Beaver, W. H. (1966). Financial Ratios as Predictors of Failure. Journal of Accounting Research, 4, 71–111. https://doi.org/10.2307/2490171",
+    "url": "https://doi.org/10.2307/2490171",
+    "request": {
+      "status": 200,
+      "final_url": "https://www.jstor.org/stable/10.2307/2490171?origin=crossref"
+    },
+    "registry_request": {
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.2307/2490171"
+    },
+    "registered_metadata": {
+      "DOI": "10.2307/2490171",
+      "title": [
+        "Financial Ratios As Predictors of Failure"
+      ],
+      "author": [
+        {
+          "given": "William H.",
+          "family": "Beaver",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Accounting Research"
+      ],
+      "volume": "4",
+      "issue": null,
+      "page": "71",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1966
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.2307/2490171"
+    }
+  },
+  {
+    "reference": "Campbell, J. Y., Hilscher, J., & Szilagyi, J. (2008). In Search of Distress Risk [Abstract]. The Journal of Finance, 63(6), 2899–2939. https://doi.org/10.1111/j.1540-6261.2008.01416.x",
+    "url": "https://doi.org/10.1111/j.1540-6261.2008.01416.x",
+    "request": {
+      "status": 403,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.2008.01416.x",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "registry_request": {
+      "status": 429,
+      "final_url": "https://api.crossref.org/works/10.1111/j.1540-6261.2008.01416.x",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    "registry_retry_status": 200,
+    "registered_metadata": {
+      "DOI": "10.1111/j.1540-6261.2008.01416.x",
+      "title": [
+        "In Search of Distress Risk"
+      ],
+      "author": [
+        {
+          "given": "JOHN Y.",
+          "family": "CAMPBELL",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "JENS",
+          "family": "HILSCHER",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "JAN",
+          "family": "SZILAGYI",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Journal of Finance"
+      ],
+      "volume": "63",
+      "issue": "6",
+      "page": "2899-2939",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            11,
+            11
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1111/j.1540-6261.2008.01416.x"
+    }
+  },
+  {
+    "reference": "Che, W., Wang, Z., Jiang, C., & Abedin, M. Z. (2024). Predicting Financial Distress Using Multimodal Data: An Attentive and Regularized Deep Learning Method. Information Processing & Management, 61(4), 103703. https://doi.org/10.1016/j.ipm.2024.103703",
+    "url": "https://doi.org/10.1016/j.ipm.2024.103703",
+    "request": {
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0306457324000633"
+    },
+    "registry_request": {
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.ipm.2024.103703"
+    },
+    "registered_metadata": {
+      "DOI": "10.1016/j.ipm.2024.103703",
+      "title": [
+        "Predicting financial distress using multimodal data: An attentive and regularized deep learning method"
+      ],
+      "author": [
+        {
+          "given": "Wanliu",
+          "family": "Che",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3352-3655",
+          "authenticated-orcid": false,
+          "given": "Zhao",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6492-4550",
+          "authenticated-orcid": false,
+          "given": "Cuiqing",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4688-0619",
+          "authenticated-orcid": false,
+          "given": "Mohammad Zoynul",
+          "family": "Abedin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Information Processing &amp; Management"
+      ],
+      "volume": "61",
+      "issue": "4",
+      "page": "103703",
+      "article-number": "103703",
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1016/j.ipm.2024.103703"
+    }
+  },
+  {
+    "reference": "Hajek, P., & Munk, M. (2024). Corporate Financial Distress Prediction Using the Risk-Related Information Content of Annual Reports [Abstract]. Information Processing & Management, 61(5), 103820. https://doi.org/10.1016/j.ipm.2024.103820",
+    "url": "https://doi.org/10.1016/j.ipm.2024.103820",
+    "request": {
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0306457324001791"
+    },
+    "registry_request": {
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.ipm.2024.103820"
+    },
+    "registered_metadata": {
+      "DOI": "10.1016/j.ipm.2024.103820",
+      "title": [
+        "Corporate financial distress prediction using the risk-related information content of annual reports"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5579-1215",
+          "authenticated-orcid": false,
+          "given": "Petr",
+          "family": "Hajek",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9913-3596",
+          "authenticated-orcid": false,
+          "given": "Michal",
+          "family": "Munk",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Information Processing &amp; Management"
+      ],
+      "volume": "61",
+      "issue": "5",
+      "page": "103820",
+      "article-number": "103820",
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1016/j.ipm.2024.103820"
+    }
+  },
+  {
+    "reference": "Jiang, C., Lyu, X., Yuan, Y., Wang, Z., & Ding, Y. (2022). Mining Semantic Features in Current Reports for Financial Distress Prediction: Empirical Evidence from Unlisted Public Firms in China [Abstract]. International Journal of Forecasting, 38(3), 1086–1099. https://doi.org/10.1016/j.ijforecast.2021.06.011",
+    "url": "https://doi.org/10.1016/j.ijforecast.2021.06.011",
+    "request": {
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0169207021001114"
+    },
+    "registry_request": {
+      "status": 429,
+      "final_url": "https://api.crossref.org/works/10.1016/j.ijforecast.2021.06.011",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    "registry_retry_status": 200,
+    "registered_metadata": {
+      "DOI": "10.1016/j.ijforecast.2021.06.011",
+      "title": [
+        "Mining semantic features in current reports for financial distress prediction: Empirical evidence from unlisted public firms in China"
+      ],
+      "author": [
+        {
+          "given": "Cuiqing",
+          "family": "Jiang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ximei",
+          "family": "Lyu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yufei",
+          "family": "Yuan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhao",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yong",
+          "family": "Ding",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "International Journal of Forecasting"
+      ],
+      "volume": "38",
+      "issue": "3",
+      "page": "1086-1099",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1016/j.ijforecast.2021.06.011"
+    }
+  },
+  {
+    "reference": "Kogan, S., Levin, D., Routledge, B. R., Sagi, J. S., & Smith, N. A. (2009). Predicting Risk from Financial Reports with Regression. In Proceedings of Human Language Technologies: The 2009 Annual Conference of the North American Chapter of the ACL (pp. 272–280). Association for Computational Linguistics. https://aclanthology.org/N09-1031/",
+    "url": "https://aclanthology.org/N09-1031/",
+    "request": {
+      "status": 200,
+      "final_url": "https://aclanthology.org/N09-1031/"
+    }
+  },
+  {
+    "reference": "Loughran, T., & McDonald, B. (2011). When Is a Liability Not a Liability? Textual Analysis, Dictionaries, and 10-Ks [Abstract]. The Journal of Finance, 66(1), 35–65. https://doi.org/10.1111/j.1540-6261.2010.01625.x",
+    "url": "https://doi.org/10.1111/j.1540-6261.2010.01625.x",
+    "request": {
+      "status": 403,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.2010.01625.x",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "registry_request": {
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1111/j.1540-6261.2010.01625.x"
+    },
+    "registered_metadata": {
+      "DOI": "10.1111/j.1540-6261.2010.01625.x",
+      "title": [
+        "When Is a Liability Not a Liability? Textual Analysis, Dictionaries, and 10‐Ks"
+      ],
+      "author": [
+        {
+          "given": "TIM",
+          "family": "LOUGHRAN",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "BILL",
+          "family": "MCDONALD",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Journal of Finance"
+      ],
+      "volume": "66",
+      "issue": "1",
+      "page": "35-65",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            1,
+            6
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1111/j.1540-6261.2010.01625.x"
+    }
+  },
+  {
+    "reference": "Mai, F., Tian, S., Lee, C., & Ma, L. (2019). Deep Learning Models for Bankruptcy Prediction Using Textual Disclosures. European Journal of Operational Research, 274(2), 743–758. https://doi.org/10.1016/j.ejor.2018.10.024",
+    "url": "https://doi.org/10.1016/j.ejor.2018.10.024",
+    "request": {
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0377221718308774"
+    },
+    "registry_request": {
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.ejor.2018.10.024"
+    },
+    "registered_metadata": {
+      "DOI": "10.1016/j.ejor.2018.10.024",
+      "title": [
+        "Deep learning models for bankruptcy prediction using textual disclosures"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6897-8935",
+          "authenticated-orcid": false,
+          "given": "Feng",
+          "family": "Mai",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shaonan",
+          "family": "Tian",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chihoon",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ling",
+          "family": "Ma",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "European Journal of Operational Research"
+      ],
+      "volume": "274",
+      "issue": "2",
+      "page": "743-758",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            4
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1016/j.ejor.2018.10.024"
+    }
+  },
+  {
+    "reference": "Matin, R., Hansen, C., Hansen, C., & Mølgaard, P. (2018). Predicting Distresses Using Deep Learning of Text Segments in Annual Reports [Preprint]. arXiv:1811.05270. https://arxiv.org/abs/1811.05270",
+    "url": "https://arxiv.org/abs/1811.05270",
+    "request": {
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1811.05270"
+    }
+  },
+  {
+    "reference": "Ohlson, J. A. (1980). Financial Ratios and the Probabilistic Prediction of Bankruptcy. Journal of Accounting Research, 18(1), 109–131. https://doi.org/10.2307/2490395",
+    "url": "https://doi.org/10.2307/2490395",
+    "request": {
+      "status": 200,
+      "final_url": "https://www.jstor.org/stable/10.2307/2490395?origin=crossref"
+    },
+    "registry_request": {
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.2307/2490395"
+    },
+    "registered_metadata": {
+      "DOI": "10.2307/2490395",
+      "title": [
+        "Financial Ratios and the Probabilistic Prediction of Bankruptcy"
+      ],
+      "author": [
+        {
+          "given": "James A.",
+          "family": "Ohlson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Accounting Research"
+      ],
+      "volume": "18",
+      "issue": "1",
+      "page": "109",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1980
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.2307/2490395"
+    }
+  },
+  {
+    "reference": "Shumway, T. (2001). Forecasting Bankruptcy More Accurately: A Simple Hazard Model. The Journal of Business, 74(1), 101–124. https://doi.org/10.1086/209665",
+    "url": "https://doi.org/10.1086/209665",
+    "request": {
+      "status": 200,
+      "final_url": "https://www.jstor.org/stable/10.1086/209665"
+    },
+    "registry_request": {
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1086/209665"
+    },
+    "registered_metadata": {
+      "DOI": "10.1086/209665",
+      "title": [
+        "Forecasting Bankruptcy More Accurately: A Simple Hazard Model"
+      ],
+      "author": [
+        {
+          "given": "Tyler",
+          "family": "Shumway",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Journal of Business"
+      ],
+      "volume": "74",
+      "issue": "1",
+      "page": "101-124",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2001,
+            1
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1086/209665"
+    }
+  },
+  {
+    "reference": "Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention Is All You Need. In Advances in Neural Information Processing Systems 30 (pp. 5998–6008). Curran Associates. https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html",
+    "url": "https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html",
+    "request": {
+      "status": 200,
+      "final_url": "https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html"
+    }
+  },
+  {
+    "reference": "Zmijewski, M. E. (1984). Methodological Issues Related to the Estimation of Financial Distress Prediction Models. Journal of Accounting Research, 22, 59–82. https://doi.org/10.2307/2490859",
+    "url": "https://doi.org/10.2307/2490859",
+    "request": {
+      "status": 200,
+      "final_url": "https://www.jstor.org/stable/2490859?origin=crossref"
+    },
+    "registry_request": {
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.2307/2490859"
+    },
+    "registered_metadata": {
+      "DOI": "10.2307/2490859",
+      "title": [
+        "Methodological Issues Related to the Estimation of Financial Distress Prediction Models"
+      ],
+      "author": [
+        {
+          "given": "Mark E.",
+          "family": "Zmijewski",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Accounting Research"
+      ],
+      "volume": "22",
+      "issue": null,
+      "page": "59",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1984
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.2307/2490859"
+    }
+  }
+]

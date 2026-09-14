@@ -1,0 +1,17 @@
+{
+  "source_sha256": "dd81da7c56569748b426d1b727e35bb9304a82bd0249b7c76964ee30d7a63e65",
+  "output_sha256": "cf80e5b015730af5fed768ee3eade0558151ccea86296b2ae3c3416c47210dee",
+  "changes": [
+    "Loughran and McDonald: verified printed page 35 replaces electronic abstract locator.",
+    "11 caption/source pairs: template 11 pt; centered; sources italic.",
+    "JEL and Keywords labels bold at template 10 pt.",
+    "Added 2 missing official URLs; all 14 URLs are actual Word hyperlinks."
+  ],
+  "remaining_comments": 1,
+  "remaining_page_locators": 3,
+  "unchanged_tables": 6,
+  "unchanged_images": 5,
+  "paragraph_characters_with_spaces": 31117,
+  "table_characters_with_spaces": 1728,
+  "total_characters_with_spaces": 32845
+}

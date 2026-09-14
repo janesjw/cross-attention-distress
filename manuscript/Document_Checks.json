@@ -1,7 +1,7 @@
 {
-  "paragraph_characters_with_spaces": 31116,
-  "table_characters_with_spaces": 1907,
-  "total_characters_with_spaces_including_references_tables_captions": 33024,
+  "paragraph_characters_with_spaces": 31117,
+  "table_characters_with_spaces": 1728,
+  "total_characters_with_spaces_including_references_tables_captions": 32845,
   "references": 14,
   "main_tables": 6,
   "main_figures": 5,
@@ -12,7 +12,7 @@
   "historical_comment_items_partial": 1,
   "latest_working_comments_before_integration": 1,
   "current_unresolved_comment_groups": 1,
-  "remaining_published_page_locators": 4,
+  "remaining_published_page_locators": 3,
   "citation_reference_bidirectional_match": true,
   "first_citation_multiauthor_rules_checked": true,
   "anonymous_main_xml_scan_passed": true,
@@ -24,11 +24,15 @@
     "editable_tables": 4
   },
   "all_pages_visually_reviewed": true,
-  "visual_review_result": "No clipping, overlaps, broken table rows or blank pages observed.",
+  "visual_review_result": "All 13 newly rendered pages inspected: no clipping, overlaps, broken rows, missing glyphs or blank pages. References occupy page 13.",
   "docx_sha256": {
     "Annual_ST_Editable_Tables.docx": "aea12f92fe9b3cd5c89991425a90dc28d581a705d9b5a908e2398882002d6456",
-    "Annual_ST_Manuscript.docx": "dd81da7c56569748b426d1b727e35bb9304a82bd0249b7c76964ee30d7a63e65",
+    "Annual_ST_Manuscript.docx": "cf80e5b015730af5fed768ee3eade0558151ccea86296b2ae3c3416c47210dee",
     "Annual_ST_Title_Page.docx": "f36de13d185e747602ebeb3eab4baa1663b1d8631f1adaaae3fa28e3ae731dd7"
   },
-  "figures_redrawn": "2026-09-14; Python/Matplotlib, black/grey serif style, 300 dpi PNG, SVG and PDF"
+  "figures_redrawn": "2026-09-14; Python/Matplotlib, black/grey serif style, 300 dpi PNG, SVG and PDF",
+  "reference_hyperlinks": 14,
+  "link_http_200": 11,
+  "link_publisher_403": 3,
+  "character_count_scope": "Sum of visible paragraph and table-cell characters including spaces, captions and references; excludes paragraph/cell separators, page numbers, comments and image text."
 }

@@ -25,7 +25,7 @@ Classical accounting studies provide a foundation for the financial input set. B
 
 Temporal structure is also material. Shumway (2001, p. 101) models bankruptcy dynamically, while Campbell, Hilscher and Szilagyi (2008, Abstract, para. 1) study distress risk using accounting, market and firm information. Their settings differ from an annual regulatory designation. The relevant lesson for the present design is to state the prediction horizon and information set explicitly, and to avoid interpreting randomly separated records from repeated firms as evidence of prospective deployment.
 
-Text research provides several routes to measuring corporate information. Loughran and McDonald (2011, Abstract, para. 1) show why general-purpose negative-word dictionaries can misclassify financial language, while Kogan, Levin, Routledge, Sagi and Smith (2009, p. 272) study future stock-return volatility using financial-report text. Mai, Tian, Lee and Ma (2019, p. 743) and Matin, Hansen, Hansen and Mølgaard (2018, p. 1) investigate deep textual representations for bankruptcy or distress prediction. These studies motivate testing narrative information; their reported performance cannot be transferred to a different endpoint, language, sample or validation design.
+Text research provides several routes to measuring corporate information. Loughran and McDonald (2011, p. 35) show why general-purpose negative-word dictionaries can misclassify financial language, while Kogan, Levin, Routledge, Sagi and Smith (2009, p. 272) study future stock-return volatility using financial-report text. Mai, Tian, Lee and Ma (2019, p. 743) and Matin, Hansen, Hansen and Mølgaard (2018, p. 1) investigate deep textual representations for bankruptcy or distress prediction. These studies motivate testing narrative information; their reported performance cannot be transferred to a different endpoint, language, sample or validation design.
 
 More recent work also precludes a claim that prior multimodal research is limited to simple concatenation. Che, Wang, Jiang and Abedin (2024, accepted manuscript p. 1) study an attentive and regularized multimodal method. Hajek and Munk (2024, Abstract, para. 1) analyse risk-related annual-report language with contextual representations and a semi-supervised prediction approach. Jiang, Lyu, Yuan, Wang and Ding (2022, Abstract, para. 1) examine semantic features in current reports from unlisted Chinese public firms. These are useful conceptual comparators, but their reporting frequency, populations and text models differ from those used here.
 
@@ -159,4 +159,30 @@ In a common sample of 969 firm-years from 155 Chinese listed firms, a financial 
 
 ## References
 
-[REFERENCES]
+Altman, E. I. (1968). Financial Ratios, Discriminant Analysis and the Prediction of Corporate Bankruptcy. The Journal of Finance, 23(4), 589–609. https://doi.org/10.1111/j.1540-6261.1968.tb00843.x
+
+Beaver, W. H. (1966). Financial Ratios as Predictors of Failure. Journal of Accounting Research, 4, 71–111. https://doi.org/10.2307/2490171
+
+Campbell, J. Y., Hilscher, J., & Szilagyi, J. (2008). In Search of Distress Risk [Abstract]. The Journal of Finance, 63(6), 2899–2939. https://doi.org/10.1111/j.1540-6261.2008.01416.x
+
+Che, W., Wang, Z., Jiang, C., & Abedin, M. Z. (2024). Predicting Financial Distress Using Multimodal Data: An Attentive and Regularized Deep Learning Method. Information Processing & Management, 61(4), 103703. https://doi.org/10.1016/j.ipm.2024.103703
+
+Hajek, P., & Munk, M. (2024). Corporate Financial Distress Prediction Using the Risk-Related Information Content of Annual Reports [Abstract]. Information Processing & Management, 61(5), 103820. https://doi.org/10.1016/j.ipm.2024.103820
+
+Jiang, C., Lyu, X., Yuan, Y., Wang, Z., & Ding, Y. (2022). Mining Semantic Features in Current Reports for Financial Distress Prediction: Empirical Evidence from Unlisted Public Firms in China [Abstract]. International Journal of Forecasting, 38(3), 1086–1099. https://doi.org/10.1016/j.ijforecast.2021.06.011
+
+Kogan, S., Levin, D., Routledge, B. R., Sagi, J. S., & Smith, N. A. (2009). Predicting Risk from Financial Reports with Regression. In Proceedings of Human Language Technologies: The 2009 Annual Conference of the North American Chapter of the ACL (pp. 272–280). Association for Computational Linguistics. https://aclanthology.org/N09-1031/
+
+Loughran, T., & McDonald, B. (2011). When Is a Liability Not a Liability? Textual Analysis, Dictionaries, and 10-Ks. The Journal of Finance, 66(1), 35–65. https://doi.org/10.1111/j.1540-6261.2010.01625.x
+
+Mai, F., Tian, S., Lee, C., & Ma, L. (2019). Deep Learning Models for Bankruptcy Prediction Using Textual Disclosures. European Journal of Operational Research, 274(2), 743–758. https://doi.org/10.1016/j.ejor.2018.10.024
+
+Matin, R., Hansen, C., Hansen, C., & Mølgaard, P. (2018). Predicting Distresses Using Deep Learning of Text Segments in Annual Reports [Preprint]. arXiv:1811.05270. https://arxiv.org/abs/1811.05270
+
+Ohlson, J. A. (1980). Financial Ratios and the Probabilistic Prediction of Bankruptcy. Journal of Accounting Research, 18(1), 109–131. https://doi.org/10.2307/2490395
+
+Shumway, T. (2001). Forecasting Bankruptcy More Accurately: A Simple Hazard Model. The Journal of Business, 74(1), 101–124. https://doi.org/10.1086/209665
+
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention Is All You Need. In Advances in Neural Information Processing Systems 30 (pp. 5998–6008). Curran Associates. https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html
+
+Zmijewski, M. E. (1984). Methodological Issues Related to the Estimation of Financial Distress Prediction Models. Journal of Accounting Research, 22, 59–82. https://doi.org/10.2307/2490859
