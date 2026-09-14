@@ -12,7 +12,7 @@ Test average precision is 0.2177 for the fixed L2 logistic baseline and, across 
 
 ## Paper files
 
-- manuscript/Annual_ST_Manuscript.docx: anonymous complete main text; 14 rendered pages, 32,929 editable characters including references, tables and captions.
+- manuscript/Annual_ST_Manuscript.docx: anonymous complete main text; 15 rendered pages, 34,695 editable characters including references, tables and captions.
 - manuscript/Annual_ST_Title_Page.docx: separate supplied author information and declarations; this private repository as a whole is not an anonymous submission package.
 - manuscript/Annual_ST_Editable_Tables.docx: six main tables and supplementary Table S1; four pages.
 - manuscript/figures/: five separate PNG/SVG figures and seven CSV/PNG/SVG table exports (table_7 is S1).
@@ -40,4 +40,8 @@ All 14 reference identities and links checked; two official URLs added and all 1
 
 ## Figure 4 model panels — 2026-09-14
 
-The current Figure 4 separates five models into rows with PR and ROC columns. Muted colours identify models and line patterns identify neural seeds; all 13 saved runs use common axes. The plotted data CSV is byte-identical to the previous version. The current main Word has 14 visually reviewed pages and 32,929 editable characters. Figures 1, 2, 3 and 5, all tables, references, comment content, frozen inputs and empirical results remain unchanged. Full Python source is retained in build_figures.py; see manuscript/panel_update_audit.json.
+The current Figure 4 separates five models into rows with PR and ROC columns. Muted colours identify models and line patterns identify neural seeds; all 13 saved runs use common axes. The plotted data CSV is byte-identical to the previous version. At the model-panel stage the main Word had 14 visually reviewed pages and 32,929 editable characters. Figures 1, 2, 3 and 5, all tables, references, comment content, frozen inputs and empirical results remain unchanged. Full Python source is retained in build_figures.py; see manuscript/panel_update_audit.json.
+
+## Abbreviation glossary — 2026-09-14
+
+Appendix A (Table A1, main page 15) defines 38 abbreviations and symbols used in the text, figures and main/supplementary tables. It is also included in the five-page editable table supplement. Current main length is 34,695 editable characters, including the glossary. Original main pages 1–14 are pixel-identical; all research inputs, predictions, figures, existing tables, references and comments are unchanged. `python build_abbreviations.py` exports the glossary to CSV, PNG and editable SVG from manuscript/glossary.json. See manuscript/glossary_audit.json.

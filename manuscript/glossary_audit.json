@@ -1,0 +1,40 @@
+{
+  "entries": 38,
+  "title": "Appendix A Abbreviations and notation",
+  "caption": "Table A1: Abbreviations and notation",
+  "source_note": "Source: Terms used in the text, figures and tables, including Supplementary Table S1. Ratio denominators follow Table 2.",
+  "files": {
+    "Annual_ST_Manuscript.docx": {
+      "sha256": "28e4fdcc1fa1102cd1d77a1abe7200eeb4a9ecd32cc9866b8c90b1bcff9f7b7b",
+      "source_sha256": "e3830101056eb37bc47be6351031baa020f5562a3aff55f7db478cfd81a15b13",
+      "all_original_body_nodes_preserved": true,
+      "all_other_docx_parts_byte_identical": true,
+      "paragraph_characters": 31394,
+      "table_characters": 3301,
+      "total_characters": 34695,
+      "tables": 7
+    },
+    "Annual_ST_Editable_Tables.docx": {
+      "sha256": "a772781ab3f334fc52a30a23fbf7df8ad7836f5ae2dd23402d3ce1b802e0aa3e",
+      "source_sha256": "aea12f92fe9b3cd5c89991425a90dc28d581a705d9b5a908e2398882002d6456",
+      "all_original_body_nodes_preserved": true,
+      "all_other_docx_parts_byte_identical": true,
+      "paragraph_characters": 1535,
+      "table_characters": 3865,
+      "total_characters": 5400,
+      "tables": 8
+    }
+  },
+  "main_pages": 15,
+  "editable_table_pages": 5,
+  "original_main_pages_1_to_14_pixel_identical": true,
+  "new_appendix_and_all_table_supplement_pages_visually_inspected": true,
+  "layout_result": "No clipping, overlaps or split rows; complete glossary on main page 15 and table-supplement page 5.",
+  "excluded_tokens": "Document/table identifiers, JEL category codes, bibliographic author initials, ordinary Latin citation expressions and URL components are not research abbreviations.",
+  "definition_sources": [
+    "https://www.szse.cn/English/about/news/szse/t20240527_607371.html",
+    "https://www.szse.cn/English/about/news/szse/t20181120_558434.html",
+    "https://arxiv.org/abs/1412.6980",
+    "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"
+  ]
+}

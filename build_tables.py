@@ -44,3 +44,8 @@ for k,(title,header,rows,note) in T.items():
  for (i,j),cell in tb.get_celld().items():
   cell.set_edgecolor('#888');cell.set_linewidth(.5);cell.set_facecolor('#eee' if i==0 else 'white')
  fig.savefig(F/(name+'.png'),dpi=220,bbox_inches='tight');fig.savefig(F/(name+'.svg'),bbox_inches='tight');plt.close(fig)
+
+# The glossary has a separate exporter to preserve the existing table numbering.
+G=json.loads((O/"glossary.json").read_text())
+T["TABLE_A1"]=("Table A1: Abbreviations and notation",["Abbreviation / symbol","Full form or meaning"],G,"Source: Terms used in the text, figures and tables, including Supplementary Table S1. Ratio denominators follow Table 2.")
+(O/"tables.json").write_text(json.dumps(T,indent=2,ensure_ascii=False)+"\n")

@@ -1,0 +1,39 @@
+Abbreviation / symbol,Full form or meaning
+ACL,Association for Computational Linguistics
+Adam,Adaptive moment estimation; neural optimizer
+AP,Average precision; recall-weighted precision
+AR/A,Accounts receivable / assets
+AUC,"Area under the curve; here, the ROC curve"
+BCE,Binary cross-entropy; training loss
+C,Inverse regularization strength in logistic regression
+CI,Confidence interval
+CR,Current ratio; current assets / current liabilities
+F1,Harmonic mean of precision and recall
+FN,False negatives; missed events
+FP,False positives; false alerts
+INV/A,Inventory / assets
+JEL,Journal of Economic Literature classification
+L/A,Liabilities / assets
+L2,Squared-coefficient regularization penalty
+lbfgs,Limited-memory Broyden–Fletcher–Goldfarb–Shanno solver
+MD&A,Management discussion and analysis
+ME/R,Management expenses / revenue
+n,Number of observations
+NM,Net margin; consolidated net profit / revenue
+NP/A,Consolidated net profit / year-end assets
+NP/E,Consolidated net profit / year-end equity
+OCF/A,Operating cash flow / assets
+OCF/CL,Operating cash flow / current liabilities
+OM,Operating margin; operating profit / revenue
+PR,Precision–recall
+QR,Quick ratio; (current assets − inventory) / current liabilities
+ROC,Receiver operating characteristic
+SD,Standard deviation
+SHA-256,Secure Hash Algorithm; 256-bit file fingerprint
+ST,Special treatment; other risk warning
+*ST,Special treatment indicating delisting risk
+SVD,Singular value decomposition
+TF-IDF,Term frequency–inverse document frequency
+TN,True negatives; correctly classified non-events
+TP,True positives; correctly identified events
+Y,Calendar year of the May 1 prediction origin

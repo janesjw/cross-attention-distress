@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="720pt" viewBox="0 0 576 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>build_abbreviations.py</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720 
+L 576 720 
+L 576 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="table_1">
+    <g id="patch_2">
+     <path d="M 14.4 42.369231 
+L 118.368 42.369231 
+L 118.368 25.2 
+L 14.4 25.2 
+z
+" style="fill: #eeeeee; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_1">
+     <text style="font-weight: 700; font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: middle" x="66.384" y="35.971334" transform="rotate(-0 66.384 35.971334)">Abbreviation / symbol</text>
+    </g>
+    <g id="patch_3">
+     <path d="M 118.368 42.369231 
+L 561.6 42.369231 
+L 561.6 25.2 
+L 118.368 25.2 
+z
+" style="fill: #eeeeee; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_2">
+     <text style="font-weight: 700; font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: middle" x="339.984" y="35.967115" transform="rotate(-0 339.984 35.967115)">Full form or meaning</text>
+    </g>
+    <g id="patch_4">
+     <path d="M 14.4 59.538462 
+L 118.368 59.538462 
+L 118.368 42.369231 
+L 14.4 42.369231 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_3">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="53.050565" transform="rotate(-0 24.7968 53.050565)">ACL</text>
+    </g>
+    <g id="patch_5">
+     <path d="M 118.368 59.538462 
+L 561.6 59.538462 
+L 561.6 42.369231 
+L 118.368 42.369231 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_4">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="53.046346" transform="rotate(-0 162.6912 53.046346)">Association for Computational Linguistics</text>
+    </g>
+    <g id="patch_6">
+     <path d="M 14.4 76.707692 
+L 118.368 76.707692 
+L 118.368 59.538462 
+L 14.4 59.538462 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="70.219796" transform="rotate(-0 24.7968 70.219796)">Adam</text>
+    </g>
+    <g id="patch_7">
+     <path d="M 118.368 76.707692 
+L 561.6 76.707692 
+L 561.6 59.538462 
+L 118.368 59.538462 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="70.219796" transform="rotate(-0 162.6912 70.219796)">Adaptive moment estimation; neural optimizer</text>
+    </g>
+    <g id="patch_8">
+     <path d="M 14.4 93.876923 
+L 118.368 93.876923 
+L 118.368 76.707692 
+L 14.4 76.707692 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="87.389026" transform="rotate(-0 24.7968 87.389026)">AP</text>
+    </g>
+    <g id="patch_9">
+     <path d="M 118.368 93.876923 
+L 561.6 93.876923 
+L 561.6 76.707692 
+L 118.368 76.707692 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_8">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="87.384808" transform="rotate(-0 162.6912 87.384808)">Average precision; recall-weighted precision</text>
+    </g>
+    <g id="patch_10">
+     <path d="M 14.4 111.046154 
+L 118.368 111.046154 
+L 118.368 93.876923 
+L 14.4 93.876923 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="104.558257" transform="rotate(-0 24.7968 104.558257)">AR/A</text>
+    </g>
+    <g id="patch_11">
+     <path d="M 118.368 111.046154 
+L 561.6 111.046154 
+L 561.6 93.876923 
+L 118.368 93.876923 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="104.558257" transform="rotate(-0 162.6912 104.558257)">Accounts receivable / assets</text>
+    </g>
+    <g id="patch_12">
+     <path d="M 14.4 128.215385 
+L 118.368 128.215385 
+L 118.368 111.046154 
+L 14.4 111.046154 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="121.727488" transform="rotate(-0 24.7968 121.727488)">AUC</text>
+    </g>
+    <g id="patch_13">
+     <path d="M 118.368 128.215385 
+L 561.6 128.215385 
+L 561.6 111.046154 
+L 118.368 111.046154 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="121.727488" transform="rotate(-0 162.6912 121.727488)">Area under the curve; here, the ROC curve</text>
+    </g>
+    <g id="patch_14">
+     <path d="M 14.4 145.384615 
+L 118.368 145.384615 
+L 118.368 128.215385 
+L 14.4 128.215385 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="138.896719" transform="rotate(-0 24.7968 138.896719)">BCE</text>
+    </g>
+    <g id="patch_15">
+     <path d="M 118.368 145.384615 
+L 561.6 145.384615 
+L 561.6 128.215385 
+L 118.368 128.215385 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="138.8925" transform="rotate(-0 162.6912 138.8925)">Binary cross-entropy; training loss</text>
+    </g>
+    <g id="patch_16">
+     <path d="M 14.4 162.553846 
+L 118.368 162.553846 
+L 118.368 145.384615 
+L 14.4 145.384615 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="156.06595" transform="rotate(-0 24.7968 156.06595)">C</text>
+    </g>
+    <g id="patch_17">
+     <path d="M 118.368 162.553846 
+L 561.6 162.553846 
+L 561.6 145.384615 
+L 118.368 145.384615 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="156.061731" transform="rotate(-0 162.6912 156.061731)">Inverse regularization strength in logistic regression</text>
+    </g>
+    <g id="patch_18">
+     <path d="M 14.4 179.723077 
+L 118.368 179.723077 
+L 118.368 162.553846 
+L 14.4 162.553846 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_17">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="173.23518" transform="rotate(-0 24.7968 173.23518)">CI</text>
+    </g>
+    <g id="patch_19">
+     <path d="M 118.368 179.723077 
+L 561.6 179.723077 
+L 561.6 162.553846 
+L 118.368 162.553846 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_18">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="173.23518" transform="rotate(-0 162.6912 173.23518)">Confidence interval</text>
+    </g>
+    <g id="patch_20">
+     <path d="M 14.4 196.892308 
+L 118.368 196.892308 
+L 118.368 179.723077 
+L 14.4 179.723077 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_19">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="190.404411" transform="rotate(-0 24.7968 190.404411)">CR</text>
+    </g>
+    <g id="patch_21">
+     <path d="M 118.368 196.892308 
+L 561.6 196.892308 
+L 561.6 179.723077 
+L 118.368 179.723077 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_20">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="190.404411" transform="rotate(-0 162.6912 190.404411)">Current ratio; current assets / current liabilities</text>
+    </g>
+    <g id="patch_22">
+     <path d="M 14.4 214.061538 
+L 118.368 214.061538 
+L 118.368 196.892308 
+L 14.4 196.892308 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_21">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="207.573642" transform="rotate(-0 24.7968 207.573642)">F1</text>
+    </g>
+    <g id="patch_23">
+     <path d="M 118.368 214.061538 
+L 561.6 214.061538 
+L 561.6 196.892308 
+L 118.368 196.892308 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_22">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="207.573642" transform="rotate(-0 162.6912 207.573642)">Harmonic mean of precision and recall</text>
+    </g>
+    <g id="patch_24">
+     <path d="M 14.4 231.230769 
+L 118.368 231.230769 
+L 118.368 214.061538 
+L 14.4 214.061538 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_23">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="224.742873" transform="rotate(-0 24.7968 224.742873)">FN</text>
+    </g>
+    <g id="patch_25">
+     <path d="M 118.368 231.230769 
+L 561.6 231.230769 
+L 561.6 214.061538 
+L 118.368 214.061538 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_24">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="224.738654" transform="rotate(-0 162.6912 224.738654)">False negatives; missed events</text>
+    </g>
+    <g id="patch_26">
+     <path d="M 14.4 248.4 
+L 118.368 248.4 
+L 118.368 231.230769 
+L 14.4 231.230769 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_25">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="241.912103" transform="rotate(-0 24.7968 241.912103)">FP</text>
+    </g>
+    <g id="patch_27">
+     <path d="M 118.368 248.4 
+L 561.6 248.4 
+L 561.6 231.230769 
+L 118.368 231.230769 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_26">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="241.912103" transform="rotate(-0 162.6912 241.912103)">False positives; false alerts</text>
+    </g>
+    <g id="patch_28">
+     <path d="M 14.4 265.569231 
+L 118.368 265.569231 
+L 118.368 248.4 
+L 14.4 248.4 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_27">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="259.081334" transform="rotate(-0 24.7968 259.081334)">INV/A</text>
+    </g>
+    <g id="patch_29">
+     <path d="M 118.368 265.569231 
+L 561.6 265.569231 
+L 561.6 248.4 
+L 118.368 248.4 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_28">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="259.072897" transform="rotate(-0 162.6912 259.072897)">Inventory / assets</text>
+    </g>
+    <g id="patch_30">
+     <path d="M 14.4 282.738462 
+L 118.368 282.738462 
+L 118.368 265.569231 
+L 14.4 265.569231 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_29">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="276.250565" transform="rotate(-0 24.7968 276.250565)">JEL</text>
+    </g>
+    <g id="patch_31">
+     <path d="M 118.368 282.738462 
+L 561.6 282.738462 
+L 561.6 265.569231 
+L 118.368 265.569231 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_30">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="276.250565" transform="rotate(-0 162.6912 276.250565)">Journal of Economic Literature classification</text>
+    </g>
+    <g id="patch_32">
+     <path d="M 14.4 299.907692 
+L 118.368 299.907692 
+L 118.368 282.738462 
+L 14.4 282.738462 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_31">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="293.419796" transform="rotate(-0 24.7968 293.419796)">L/A</text>
+    </g>
+    <g id="patch_33">
+     <path d="M 118.368 299.907692 
+L 561.6 299.907692 
+L 561.6 282.738462 
+L 118.368 282.738462 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_32">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="293.419796" transform="rotate(-0 162.6912 293.419796)">Liabilities / assets</text>
+    </g>
+    <g id="patch_34">
+     <path d="M 14.4 317.076923 
+L 118.368 317.076923 
+L 118.368 299.907692 
+L 14.4 299.907692 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_33">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="310.589026" transform="rotate(-0 24.7968 310.589026)">L2</text>
+    </g>
+    <g id="patch_35">
+     <path d="M 118.368 317.076923 
+L 561.6 317.076923 
+L 561.6 299.907692 
+L 118.368 299.907692 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_34">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="310.584808" transform="rotate(-0 162.6912 310.584808)">Squared-coefficient regularization penalty</text>
+    </g>
+    <g id="patch_36">
+     <path d="M 14.4 334.246154 
+L 118.368 334.246154 
+L 118.368 317.076923 
+L 14.4 317.076923 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_35">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="327.754038" transform="rotate(-0 24.7968 327.754038)">lbfgs</text>
+    </g>
+    <g id="patch_37">
+     <path d="M 118.368 334.246154 
+L 561.6 334.246154 
+L 561.6 317.076923 
+L 118.368 317.076923 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_36">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="327.754038" transform="rotate(-0 162.6912 327.754038)">Limited-memory Broyden–Fletcher–Goldfarb–Shanno solver</text>
+    </g>
+    <g id="patch_38">
+     <path d="M 14.4 351.415385 
+L 118.368 351.415385 
+L 118.368 334.246154 
+L 14.4 334.246154 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_37">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="344.927488" transform="rotate(-0 24.7968 344.927488)">MD&amp;A</text>
+    </g>
+    <g id="patch_39">
+     <path d="M 118.368 351.415385 
+L 561.6 351.415385 
+L 561.6 334.246154 
+L 118.368 334.246154 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_38">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="344.923269" transform="rotate(-0 162.6912 344.923269)">Management discussion and analysis</text>
+    </g>
+    <g id="patch_40">
+     <path d="M 14.4 368.584615 
+L 118.368 368.584615 
+L 118.368 351.415385 
+L 14.4 351.415385 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_39">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="362.096719" transform="rotate(-0 24.7968 362.096719)">ME/R</text>
+    </g>
+    <g id="patch_41">
+     <path d="M 118.368 368.584615 
+L 561.6 368.584615 
+L 561.6 351.415385 
+L 118.368 351.415385 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_40">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="362.088281" transform="rotate(-0 162.6912 362.088281)">Management expenses / revenue</text>
+    </g>
+    <g id="patch_42">
+     <path d="M 14.4 385.753846 
+L 118.368 385.753846 
+L 118.368 368.584615 
+L 14.4 368.584615 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_41">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="379.26595" transform="rotate(-0 24.7968 379.26595)">n</text>
+    </g>
+    <g id="patch_43">
+     <path d="M 118.368 385.753846 
+L 561.6 385.753846 
+L 561.6 368.584615 
+L 118.368 368.584615 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_42">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="379.26595" transform="rotate(-0 162.6912 379.26595)">Number of observations</text>
+    </g>
+    <g id="patch_44">
+     <path d="M 14.4 402.923077 
+L 118.368 402.923077 
+L 118.368 385.753846 
+L 14.4 385.753846 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_43">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="396.43518" transform="rotate(-0 24.7968 396.43518)">NM</text>
+    </g>
+    <g id="patch_45">
+     <path d="M 118.368 402.923077 
+L 561.6 402.923077 
+L 561.6 385.753846 
+L 118.368 385.753846 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_44">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="396.430962" transform="rotate(-0 162.6912 396.430962)">Net margin; consolidated net profit / revenue</text>
+    </g>
+    <g id="patch_46">
+     <path d="M 14.4 420.092308 
+L 118.368 420.092308 
+L 118.368 402.923077 
+L 14.4 402.923077 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_45">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="413.604411" transform="rotate(-0 24.7968 413.604411)">NP/A</text>
+    </g>
+    <g id="patch_47">
+     <path d="M 118.368 420.092308 
+L 561.6 420.092308 
+L 561.6 402.923077 
+L 118.368 402.923077 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_46">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="413.600192" transform="rotate(-0 162.6912 413.600192)">Consolidated net profit / year-end assets</text>
+    </g>
+    <g id="patch_48">
+     <path d="M 14.4 437.261538 
+L 118.368 437.261538 
+L 118.368 420.092308 
+L 14.4 420.092308 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_47">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="430.773642" transform="rotate(-0 24.7968 430.773642)">NP/E</text>
+    </g>
+    <g id="patch_49">
+     <path d="M 118.368 437.261538 
+L 561.6 437.261538 
+L 561.6 420.092308 
+L 118.368 420.092308 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_48">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="430.769423" transform="rotate(-0 162.6912 430.769423)">Consolidated net profit / year-end equity</text>
+    </g>
+    <g id="patch_50">
+     <path d="M 14.4 454.430769 
+L 118.368 454.430769 
+L 118.368 437.261538 
+L 14.4 437.261538 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_49">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="447.942873" transform="rotate(-0 24.7968 447.942873)">OCF/A</text>
+    </g>
+    <g id="patch_51">
+     <path d="M 118.368 454.430769 
+L 561.6 454.430769 
+L 561.6 437.261538 
+L 118.368 437.261538 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_50">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="447.938654" transform="rotate(-0 162.6912 447.938654)">Operating cash flow / assets</text>
+    </g>
+    <g id="patch_52">
+     <path d="M 14.4 471.6 
+L 118.368 471.6 
+L 118.368 454.430769 
+L 14.4 454.430769 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_51">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="465.112103" transform="rotate(-0 24.7968 465.112103)">OCF/CL</text>
+    </g>
+    <g id="patch_53">
+     <path d="M 118.368 471.6 
+L 561.6 471.6 
+L 561.6 454.430769 
+L 118.368 454.430769 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_52">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="465.107885" transform="rotate(-0 162.6912 465.107885)">Operating cash flow / current liabilities</text>
+    </g>
+    <g id="patch_54">
+     <path d="M 14.4 488.769231 
+L 118.368 488.769231 
+L 118.368 471.6 
+L 14.4 471.6 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_53">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="482.281334" transform="rotate(-0 24.7968 482.281334)">OM</text>
+    </g>
+    <g id="patch_55">
+     <path d="M 118.368 488.769231 
+L 561.6 488.769231 
+L 561.6 471.6 
+L 118.368 471.6 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_54">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="482.277115" transform="rotate(-0 162.6912 482.277115)">Operating margin; operating profit / revenue</text>
+    </g>
+    <g id="patch_56">
+     <path d="M 14.4 505.938462 
+L 118.368 505.938462 
+L 118.368 488.769231 
+L 14.4 488.769231 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_55">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="499.450565" transform="rotate(-0 24.7968 499.450565)">PR</text>
+    </g>
+    <g id="patch_57">
+     <path d="M 118.368 505.938462 
+L 561.6 505.938462 
+L 561.6 488.769231 
+L 118.368 488.769231 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_56">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="499.450565" transform="rotate(-0 162.6912 499.450565)">Precision–recall</text>
+    </g>
+    <g id="patch_58">
+     <path d="M 14.4 523.107692 
+L 118.368 523.107692 
+L 118.368 505.938462 
+L 14.4 505.938462 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_57">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="516.619796" transform="rotate(-0 24.7968 516.619796)">QR</text>
+    </g>
+    <g id="patch_59">
+     <path d="M 118.368 523.107692 
+L 561.6 523.107692 
+L 561.6 505.938462 
+L 118.368 505.938462 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_58">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="516.615577" transform="rotate(-0 162.6912 516.615577)">Quick ratio; (current assets − inventory) / current liabilities</text>
+    </g>
+    <g id="patch_60">
+     <path d="M 14.4 540.276923 
+L 118.368 540.276923 
+L 118.368 523.107692 
+L 14.4 523.107692 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_59">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="533.789026" transform="rotate(-0 24.7968 533.789026)">ROC</text>
+    </g>
+    <g id="patch_61">
+     <path d="M 118.368 540.276923 
+L 561.6 540.276923 
+L 561.6 523.107692 
+L 118.368 523.107692 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_60">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="533.784808" transform="rotate(-0 162.6912 533.784808)">Receiver operating characteristic</text>
+    </g>
+    <g id="patch_62">
+     <path d="M 14.4 557.446154 
+L 118.368 557.446154 
+L 118.368 540.276923 
+L 14.4 540.276923 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_61">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="550.958257" transform="rotate(-0 24.7968 550.958257)">SD</text>
+    </g>
+    <g id="patch_63">
+     <path d="M 118.368 557.446154 
+L 561.6 557.446154 
+L 561.6 540.276923 
+L 118.368 540.276923 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_62">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="550.958257" transform="rotate(-0 162.6912 550.958257)">Standard deviation</text>
+    </g>
+    <g id="patch_64">
+     <path d="M 14.4 574.615385 
+L 118.368 574.615385 
+L 118.368 557.446154 
+L 14.4 557.446154 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_63">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="568.127488" transform="rotate(-0 24.7968 568.127488)">SHA-256</text>
+    </g>
+    <g id="patch_65">
+     <path d="M 118.368 574.615385 
+L 561.6 574.615385 
+L 561.6 557.446154 
+L 118.368 557.446154 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_64">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="568.145769" transform="rotate(-0 162.6912 568.145769)">Secure Hash Algorithm; 256-bit file fingerprint</text>
+    </g>
+    <g id="patch_66">
+     <path d="M 14.4 591.784615 
+L 118.368 591.784615 
+L 118.368 574.615385 
+L 14.4 574.615385 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_65">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="585.296719" transform="rotate(-0 24.7968 585.296719)">ST</text>
+    </g>
+    <g id="patch_67">
+     <path d="M 118.368 591.784615 
+L 561.6 591.784615 
+L 561.6 574.615385 
+L 118.368 574.615385 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_66">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="585.2925" transform="rotate(-0 162.6912 585.2925)">Special treatment; other risk warning</text>
+    </g>
+    <g id="patch_68">
+     <path d="M 14.4 608.953846 
+L 118.368 608.953846 
+L 118.368 591.784615 
+L 14.4 591.784615 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_67">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="602.46595" transform="rotate(-0 24.7968 602.46595)">*ST</text>
+    </g>
+    <g id="patch_69">
+     <path d="M 118.368 608.953846 
+L 561.6 608.953846 
+L 561.6 591.784615 
+L 118.368 591.784615 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_68">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="602.461731" transform="rotate(-0 162.6912 602.461731)">Special treatment indicating delisting risk</text>
+    </g>
+    <g id="patch_70">
+     <path d="M 14.4 626.123077 
+L 118.368 626.123077 
+L 118.368 608.953846 
+L 14.4 608.953846 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_69">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="619.63518" transform="rotate(-0 24.7968 619.63518)">SVD</text>
+    </g>
+    <g id="patch_71">
+     <path d="M 118.368 626.123077 
+L 561.6 626.123077 
+L 561.6 608.953846 
+L 118.368 608.953846 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_70">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="619.630962" transform="rotate(-0 162.6912 619.630962)">Singular value decomposition</text>
+    </g>
+    <g id="patch_72">
+     <path d="M 14.4 643.292308 
+L 118.368 643.292308 
+L 118.368 626.123077 
+L 14.4 626.123077 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_71">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="636.804411" transform="rotate(-0 24.7968 636.804411)">TF-IDF</text>
+    </g>
+    <g id="patch_73">
+     <path d="M 118.368 643.292308 
+L 561.6 643.292308 
+L 561.6 626.123077 
+L 118.368 626.123077 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_72">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="636.800192" transform="rotate(-0 162.6912 636.800192)">Term frequency–inverse document frequency</text>
+    </g>
+    <g id="patch_74">
+     <path d="M 14.4 660.461538 
+L 118.368 660.461538 
+L 118.368 643.292308 
+L 14.4 643.292308 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_73">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="653.973642" transform="rotate(-0 24.7968 653.973642)">TN</text>
+    </g>
+    <g id="patch_75">
+     <path d="M 118.368 660.461538 
+L 561.6 660.461538 
+L 561.6 643.292308 
+L 118.368 643.292308 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_74">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="653.969423" transform="rotate(-0 162.6912 653.969423)">True negatives; correctly classified non-events</text>
+    </g>
+    <g id="patch_76">
+     <path d="M 14.4 677.630769 
+L 118.368 677.630769 
+L 118.368 660.461538 
+L 14.4 660.461538 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_75">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="671.142873" transform="rotate(-0 24.7968 671.142873)">TP</text>
+    </g>
+    <g id="patch_77">
+     <path d="M 118.368 677.630769 
+L 561.6 677.630769 
+L 561.6 660.461538 
+L 118.368 660.461538 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_76">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="671.138654" transform="rotate(-0 162.6912 671.138654)">True positives; correctly identified events</text>
+    </g>
+    <g id="patch_78">
+     <path d="M 14.4 694.8 
+L 118.368 694.8 
+L 118.368 677.630769 
+L 14.4 677.630769 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_77">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="24.7968" y="688.312103" transform="rotate(-0 24.7968 688.312103)">Y</text>
+    </g>
+    <g id="patch_79">
+     <path d="M 118.368 694.8 
+L 561.6 694.8 
+L 561.6 677.630769 
+L 118.368 677.630769 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-width: 0.4; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_78">
+     <text style="font-size: 9px; font-family: 'STIXGeneral', 'DejaVu Serif', serif; text-anchor: start" x="162.6912" y="688.307885" transform="rotate(-0 162.6912 688.307885)">Calendar year of the May 1 prediction origin</text>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,9 +1,9 @@
 {
-  "paragraph_characters_with_spaces": 31201,
-  "table_characters_with_spaces": 1728,
-  "total_characters_with_spaces_including_references_tables_captions": 32929,
+  "paragraph_characters_with_spaces": 31394,
+  "table_characters_with_spaces": 3301,
+  "total_characters_with_spaces_including_references_tables_captions": 34695,
   "references": 14,
-  "main_tables": 6,
+  "main_tables": 7,
   "main_figures": 5,
   "unresolved_comment_groups": 1,
   "narrative_source_characters": 26378,
@@ -17,22 +17,25 @@
   "first_citation_multiauthor_rules_checked": true,
   "anonymous_main_xml_scan_passed": true,
   "obsolete_empirical_numbers_scan_passed": true,
-  "main_source_sha256": "18aae001feffd7fe26e1f57bb597a3d3f4b4fbc8d2190d48cbb0af6b0fc9030d",
+  "main_source_sha256": "a652c51ae5fc2d2b29c57437d9723f2a3de84d081436c82c7672cc4f714f761f",
   "rendered_pages": {
-    "main": 14,
+    "main": 15,
     "title_page": 1,
-    "editable_tables": 4
+    "editable_tables": 5
   },
   "all_pages_visually_reviewed": true,
-  "visual_review_result": "All 14 newly rendered pages inspected: no clipping, overlaps, broken rows, missing glyphs or blank pages. Figure 4 occupies page 10; references occupy page 14.",
+  "visual_review_result": "Main pages 1–14 pixel-identical to previously inspected renders; new appendix page 15 and all five table-supplement pages visually inspected. No clipping, overlaps or split rows. References remain page 14.",
   "docx_sha256": {
-    "Annual_ST_Editable_Tables.docx": "aea12f92fe9b3cd5c89991425a90dc28d581a705d9b5a908e2398882002d6456",
-    "Annual_ST_Manuscript.docx": "e3830101056eb37bc47be6351031baa020f5562a3aff55f7db478cfd81a15b13",
+    "Annual_ST_Editable_Tables.docx": "a772781ab3f334fc52a30a23fbf7df8ad7836f5ae2dd23402d3ce1b802e0aa3e",
+    "Annual_ST_Manuscript.docx": "28e4fdcc1fa1102cd1d77a1abe7200eeb4a9ecd32cc9866b8c90b1bcff9f7b7b",
     "Annual_ST_Title_Page.docx": "f36de13d185e747602ebeb3eab4baa1663b1d8631f1adaaae3fa28e3ae731dd7"
   },
   "figures_redrawn": "2026-09-14; Python/Matplotlib, serif style, 300 dpi PNG, SVG and PDF; Figure 4 revised to 5 model rows × 2 metric columns with muted model colours and seed line patterns; other four figures unchanged.",
   "reference_hyperlinks": 14,
   "link_http_200": 11,
   "link_publisher_403": 3,
-  "character_count_scope": "Sum of visible paragraph and table-cell characters including spaces, captions and references; excludes paragraph/cell separators, page numbers, comments and image text."
+  "character_count_scope": "Sum of visible paragraph and table-cell characters including spaces, captions and references; excludes paragraph/cell separators, page numbers, comments and image text.",
+  "main_numbered_tables": 6,
+  "appendix_tables": 1,
+  "glossary_entries": 38
 }

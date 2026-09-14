@@ -5,3 +5,5 @@ Run `python build_figures.py --root . --output manuscript/figures` after install
 `manuscript/figures/figure_build_audit.json` records input/output SHA-256 values. `manuscript/curve_verification.json` verifies AP and ROC AUC from plotted points. Original predictions, training logs and research conclusions are unchanged. `python build_tables.py` regenerates table exports separately (requires requirements-figures.txt).
 
 The model-panel revision is documented in manuscript/panel_update_audit.json. Its curve-data CSV is byte-identical to the preceding version.
+
+`python build_abbreviations.py` exports the separate Table A1 glossary to CSV, 300 dpi PNG and editable SVG. The source entries are in manuscript/glossary.json. The original table exporter retains Tables 1–6 and Supplementary Table S1.
