@@ -1,7 +1,7 @@
 {
-  "paragraph_characters_with_spaces": 31084,
+  "paragraph_characters_with_spaces": 31116,
   "table_characters_with_spaces": 1907,
-  "total_characters_with_spaces_including_references_tables_captions": 32992,
+  "total_characters_with_spaces_including_references_tables_captions": 33024,
   "references": 14,
   "main_tables": 6,
   "main_figures": 5,
@@ -27,7 +27,8 @@
   "visual_review_result": "No clipping, overlaps, broken table rows or blank pages observed.",
   "docx_sha256": {
     "Annual_ST_Editable_Tables.docx": "aea12f92fe9b3cd5c89991425a90dc28d581a705d9b5a908e2398882002d6456",
-    "Annual_ST_Manuscript.docx": "c6923e1337833e6de6f4c089d56be18f221c6d1a342d01331a0ec886c89a34e7",
+    "Annual_ST_Manuscript.docx": "dd81da7c56569748b426d1b727e35bb9304a82bd0249b7c76964ee30d7a63e65",
     "Annual_ST_Title_Page.docx": "f36de13d185e747602ebeb3eab4baa1663b1d8631f1adaaae3fa28e3ae731dd7"
-  }
+  },
+  "figures_redrawn": "2026-09-14; Python/Matplotlib, black/grey serif style, 300 dpi PNG, SVG and PDF"
 }

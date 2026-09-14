@@ -12,7 +12,7 @@ Test average precision is 0.2177 for the fixed L2 logistic baseline and, across 
 
 ## Paper files
 
-- manuscript/Annual_ST_Manuscript.docx: anonymous complete main text; 13 rendered pages, 32,992 editable characters including references, tables and captions.
+- manuscript/Annual_ST_Manuscript.docx: anonymous complete main text; 13 rendered pages, 33,024 editable characters including references, tables and captions.
 - manuscript/Annual_ST_Title_Page.docx: separate supplied author information and declarations; this private repository as a whole is not an anonymous submission package.
 - manuscript/Annual_ST_Editable_Tables.docx: six main tables and supplementary Table S1; four pages.
 - manuscript/figures/: five separate PNG/SVG figures and seven CSV/PNG/SVG table exports (table_7 is S1).
@@ -29,3 +29,7 @@ To refit, install requirements.txt. Run `PYTHONPATH=src python -m distress.annua
 `python supplement_analysis.py` regenerates annual budgets, validation-event stress checks and notice-conditioned sensitivities from saved scores. `python compare_logistic.py` regenerates paired company-bootstrap comparisons (requires dependencies). `python build_figures.py` regenerates displays with requirements-figures.txt. No rerun is necessary to read or verify this release.
 
 The compact database is gzip-compressed JSONL, not a SQLite database. It preserves exact selected-chunk model inputs, not full raw MD&A documents. Raw historical source packets and v1 evidence remain in earlier commits, including e92becd6ff0f4b2078d29985767cb1f6afced1e2. Original uploaded documents and full local replay artifacts remain in the research workspace. file_manifest.json records current-file SHA-256 values; see evidence/README.md for historical version differences.
+
+## Figure revision — 2026-09-14
+
+All five figures were redrawn with Python/Matplotlib in black/grey academic style. The numerical curves reproduce all 13 saved test AP and ROC AUC values. Main Word remains 13 pages; the original comment is preserved. `build_figures.py` is the current figure source; `build_tables.py` regenerates the unchanged tables separately. Five vector PDFs are included alongside the PNG/SVG files. See manuscript/curve_verification.json, word_update_audit.json and figures/figure_build_audit.json. No training, data or numerical result changed.

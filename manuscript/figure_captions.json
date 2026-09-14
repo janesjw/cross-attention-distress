@@ -13,7 +13,7 @@
   ],
   "4": [
     "Figure 4: Test precision\u2013recall and ROC curves",
-    "Source: Saved predictions. Neural seeds 17 solid, 42 dashed and 2026 dotted; logistic is black. The PR reference is prevalence, 11/216."
+    "Source: Saved predictions. Line patterns identify models; grey tones identify neural seeds 17, 42 and 2026. All runs are shown. The PR reference is prevalence, 11/216."
   ],
   "5": [
     "Figure 5: Recorded neural optimization histories",

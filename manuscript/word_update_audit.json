@@ -1,0 +1,17 @@
+{
+  "original_sha256": "c6923e1337833e6de6f4c089d56be18f221c6d1a342d01331a0ec886c89a34e7",
+  "new_sha256": "dd81da7c56569748b426d1b727e35bb9304a82bd0249b7c76964ee30d7a63e65",
+  "image_parts_replaced": {
+    "word/media/image15.png": 1,
+    "word/media/image16.png": 2,
+    "word/media/image17.png": 3,
+    "word/media/image18.png": 4,
+    "word/media/image19.png": 5
+  },
+  "other_package_parts_byte_identical": true,
+  "comments_byte_identical": true,
+  "text_only_change": "Figure 4 legend explanation",
+  "old_note": "Source: Saved predictions. Neural seeds 17 solid, 42 dashed and 2026 dotted; logistic is black. The PR reference is prevalence, 11/216.",
+  "new_note": "Source: Saved predictions. Line patterns identify models; grey tones identify neural seeds 17, 42 and 2026. All runs are shown. The PR reference is prevalence, 11/216.",
+  "text_character_delta": 32
+}

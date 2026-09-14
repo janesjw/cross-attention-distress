@@ -1,0 +1,93 @@
+[
+  {
+    "model": "financial_only",
+    "seed": 17,
+    "AP_from_plotted_points": 0.3697022123609094,
+    "ROC_AUC_from_plotted_points": 0.8687361419068735,
+    "matches_saved_result": true
+  },
+  {
+    "model": "financial_only",
+    "seed": 42,
+    "AP_from_plotted_points": 0.3799919766575193,
+    "ROC_AUC_from_plotted_points": 0.8922394678492239,
+    "matches_saved_result": true
+  },
+  {
+    "model": "financial_only",
+    "seed": 2026,
+    "AP_from_plotted_points": 0.38979090826940394,
+    "ROC_AUC_from_plotted_points": 0.8980044345898004,
+    "matches_saved_result": true
+  },
+  {
+    "model": "text_only",
+    "seed": 17,
+    "AP_from_plotted_points": 0.05521834384996203,
+    "ROC_AUC_from_plotted_points": 0.3549889135254989,
+    "matches_saved_result": true
+  },
+  {
+    "model": "text_only",
+    "seed": 42,
+    "AP_from_plotted_points": 0.05416910272588017,
+    "ROC_AUC_from_plotted_points": 0.46651884700665186,
+    "matches_saved_result": true
+  },
+  {
+    "model": "text_only",
+    "seed": 2026,
+    "AP_from_plotted_points": 0.06419819859587275,
+    "ROC_AUC_from_plotted_points": 0.526829268292683,
+    "matches_saved_result": true
+  },
+  {
+    "model": "concat",
+    "seed": 17,
+    "AP_from_plotted_points": 0.37070285480726906,
+    "ROC_AUC_from_plotted_points": 0.8784922394678492,
+    "matches_saved_result": true
+  },
+  {
+    "model": "concat",
+    "seed": 42,
+    "AP_from_plotted_points": 0.3709779009510561,
+    "ROC_AUC_from_plotted_points": 0.8913525498891353,
+    "matches_saved_result": true
+  },
+  {
+    "model": "concat",
+    "seed": 2026,
+    "AP_from_plotted_points": 0.3636740148314838,
+    "ROC_AUC_from_plotted_points": 0.8988913525498892,
+    "matches_saved_result": true
+  },
+  {
+    "model": "cross_attention",
+    "seed": 17,
+    "AP_from_plotted_points": 0.34836111337575887,
+    "ROC_AUC_from_plotted_points": 0.8532150776053214,
+    "matches_saved_result": true
+  },
+  {
+    "model": "cross_attention",
+    "seed": 42,
+    "AP_from_plotted_points": 0.3634035006361209,
+    "ROC_AUC_from_plotted_points": 0.8758314855875832,
+    "matches_saved_result": true
+  },
+  {
+    "model": "cross_attention",
+    "seed": 2026,
+    "AP_from_plotted_points": 0.35239320114255424,
+    "ROC_AUC_from_plotted_points": 0.8873614190687361,
+    "matches_saved_result": true
+  },
+  {
+    "model": "logistic_regression",
+    "seed": 0,
+    "AP_from_plotted_points": 0.21767755858198726,
+    "ROC_AUC_from_plotted_points": 0.7569844789356984,
+    "matches_saved_result": true
+  }
+]
