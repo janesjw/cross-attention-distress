@@ -1,0 +1,14 @@
+{
+  "models": 5,
+  "neural_runs": 12,
+  "logistic_runs": 1,
+  "panels": 10,
+  "test_rows_per_curve": 216,
+  "events_per_curve": 11,
+  "common_axes": true,
+  "fits_rerun": 0,
+  "sources": {
+    "results/predictions.csv": "b0adf49094dd1297b3138a1fce56b4e1e7009f6ebff8ca7bd51db67ee2e55286",
+    "baseline/predictions.csv": "c41f753dfd0e6a9078169ecb0ba710fef5f6c0c648c7c1d6f5f71364f497bf50"
+  }
+}

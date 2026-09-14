@@ -12,8 +12,8 @@
     "Source: Raw ratios for the same 503 complete training observations. Codes are defined in Table 2."
   ],
   "4": [
-    "Figure 4: Test precision\u2013recall and ROC curves",
-    "Source: Saved predictions. Line patterns identify models; grey tones identify neural seeds 17, 42 and 2026. All runs are shown. The PR reference is prevalence, 11/216."
+    "Figure 4: Test precision–recall and ROC curves",
+    "Source: Saved test predictions. Rows and colours identify models; solid, dashed and dotted lines identify neural seeds 17, 42 and 2026. All 13 runs are shown on common axes. Grey references indicate prevalence (11/216) for PR and the diagonal for ROC."
   ],
   "5": [
     "Figure 5: Recorded neural optimization histories",

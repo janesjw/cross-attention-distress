@@ -12,7 +12,7 @@ Test average precision is 0.2177 for the fixed L2 logistic baseline and, across 
 
 ## Paper files
 
-- manuscript/Annual_ST_Manuscript.docx: anonymous complete main text; 13 rendered pages, 32,845 editable characters including references, tables and captions.
+- manuscript/Annual_ST_Manuscript.docx: anonymous complete main text; 14 rendered pages, 32,929 editable characters including references, tables and captions.
 - manuscript/Annual_ST_Title_Page.docx: separate supplied author information and declarations; this private repository as a whole is not an anonymous submission package.
 - manuscript/Annual_ST_Editable_Tables.docx: six main tables and supplementary Table S1; four pages.
 - manuscript/figures/: five separate PNG/SVG figures and seven CSV/PNG/SVG table exports (table_7 is S1).
@@ -32,8 +32,12 @@ The compact database is gzip-compressed JSONL, not a SQLite database. It preserv
 
 ## Figure revision — 2026-09-14
 
-All five figures were redrawn with Python/Matplotlib in black/grey academic style. The numerical curves reproduce all 13 saved test AP and ROC AUC values. At the figure-revision stage the main Word was 13 pages and the original comment was preserved; the subsequent reference review below updates that comment. `build_figures.py` is the current figure source; `build_tables.py` regenerates the unchanged tables separately. Five vector PDFs are included alongside the PNG/SVG files. See manuscript/curve_verification.json, word_update_audit.json and figures/figure_build_audit.json. No training, data or numerical result changed.
+In the initial figure revision, all five figures were redrawn with Python/Matplotlib in black/grey academic style. The numerical curves reproduce all 13 saved test AP and ROC AUC values. At the figure-revision stage the main Word was 13 pages and the original comment was preserved; the subsequent reference review below updates that comment. `build_figures.py` is the current figure source; `build_tables.py` regenerates the unchanged tables separately. Five vector PDFs are included alongside the PNG/SVG files. See manuscript/curve_verification.json, word_update_audit.json and figures/figure_build_audit.json. No training, data or numerical result changed.
 
 ## Reference and format review — 2026-09-14
 
-All 14 reference identities and links checked; two official URLs added and all 14 made clickable in Word. Loughran and McDonald (2011) printed p. 35 verified and removed from the open follow-up. One comment remains for three unverified printed-page locators. Captions/source notes and metadata labels corrected against the supplied template; all 13 final pages inspected. See manuscript/Format_Review.md and Reference_Link_Audit.csv. Data, predictions, tables and Python figures are unchanged.
+All 14 reference identities and links checked; two official URLs added and all 14 made clickable in Word. Loughran and McDonald (2011) printed p. 35 verified and removed from the open follow-up. One comment remains for three unverified printed-page locators. Captions/source notes and metadata labels corrected against the supplied template; all 13 pages of that reference-review version inspected. See manuscript/Format_Review.md and Reference_Link_Audit.csv. Data, predictions, tables and Python figures are unchanged.
+
+## Figure 4 model panels — 2026-09-14
+
+The current Figure 4 separates five models into rows with PR and ROC columns. Muted colours identify models and line patterns identify neural seeds; all 13 saved runs use common axes. The plotted data CSV is byte-identical to the previous version. The current main Word has 14 visually reviewed pages and 32,929 editable characters. Figures 1, 2, 3 and 5, all tables, references, comment content, frozen inputs and empirical results remain unchanged. Full Python source is retained in build_figures.py; see manuscript/panel_update_audit.json.

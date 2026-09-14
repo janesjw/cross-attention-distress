@@ -92,21 +92,35 @@ def curve(q,model,seed):
  rc=np.r_[0,tp/11];prec=np.r_[1,tp/(end+1)];fpr=np.r_[0,fp/205]
  for i,(r,p_,f) in enumerate(zip(rc,prec,fpr)):curve_rows.append({'model':model,'seed':seed,'point':i,'recall':float(r),'precision':float(p_),'false_positive_rate':float(f)})
  return rc,prec,fpr
-fig,axes=plt.subplots(1,2,figsize=(7,3.80));fig.subplots_adjust(left=.08,right=.98,bottom=.29,top=.91,wspace=.28)
-model_styles=['-',(0,(5,2)),(0,(3,1,1,1)),(0,(1,1))];shades=['.10','.40','.65']
-for v,sty in zip(variants,model_styles):
- for seed,shade in zip(seeds,shades):
-  q=[r for r in pr if r['variant']==v and int(r['seed'])==seed and r['split']=='test'];rc,precision,fpr=curve(q,v,seed)
-  axes[0].step(rc,precision,where='pre',ls=sty,color=shade,lw=.9);axes[1].plot(fpr,rc,ls=sty,color=shade,lw=.9)
-rc,precision,fpr=curve([r for r in lp if r['split']=='test'],'logistic_regression',0)
-axes[0].step(rc,precision,where='pre',color='black',ls=(0,(8,2,1,2)),lw=1.2);axes[1].plot(fpr,rc,color='black',ls=(0,(8,2,1,2)),lw=1.2)
-axes[0].axhline(11/216,color='.75',lw=.6);axes[1].plot([0,1],[0,1],color='.75',lw=.6)
-for ax,title in zip(axes,['(a) Precision–recall','(b) Receiver operating characteristic']):
- ax.set(xlim=(0,1),ylim=(0,1.02));ax.set_xticks([0,.25,.5,.75,1]);ax.set_yticks([0,.25,.5,.75,1]);ax.set_title(title,fontsize=10,loc='left')
-axes[0].set(xlabel='Recall',ylabel='Precision');axes[1].set(xlabel='False positive rate',ylabel='True positive rate')
-handles=[Line2D([0],[0],color='black',ls=sty,lw=1,label=n) for n,sty in zip(names,model_styles)]+[Line2D([0],[0],color='black',ls=(0,(8,2,1,2)),label='L2 logistic')]
-fig.legend(handles=handles,loc='lower center',bbox_to_anchor=(.50,.075),ncol=3,frameon=False,fontsize=8.5,handlelength=3,columnspacing=1.8)
-fig.text(.50,.035,'Neural seeds: 17 dark grey; 42 medium grey; 2026 light grey.',ha='center',fontsize=8.5)
+# One model per row: model colour and seed line pattern are independent.
+fig,axes=plt.subplots(5,2,figsize=(7,8.2))
+fig.subplots_adjust(left=.10,right=.98,bottom=.10,top=.92,hspace=.55,wspace=.28)
+colours=['#245A81','#696969','#24836B','#BC632D','#795582']
+model_labels=names+['L2 logistic']
+for i,(v,n,colour) in enumerate(zip(variants+['logistic_regression'],model_labels,colours)):
+ runs=seeds if i<4 else [0]
+ for seed,sty in zip(runs,seed_styles):
+  q=[r for r in pr if r['variant']==v and int(r['seed'])==seed and r['split']=='test'] if i<4 else [r for r in lp if r['split']=='test']
+  rc,precision,fpr=curve(q,v,seed)
+  axes[i,0].step(rc,precision,where='pre',ls=sty,color=colour,lw=1.15)
+  axes[i,1].plot(fpr,rc,ls=sty,color=colour,lw=1.15)
+ axes[i,0].axhline(11/216,color='.72',lw=.65,ls=(0,(1,3)),zorder=0)
+ axes[i,1].plot([0,1],[0,1],color='.72',lw=.65,ls=(0,(1,3)),zorder=0)
+ for j,ax in enumerate(axes[i]):
+  ax.set(xlim=(0,1),ylim=(0,1.03))
+  ax.set_xticks([0,.25,.5,.75,1]);ax.set_yticks([0,.5,1])
+  ax.tick_params(labelsize=8,pad=2)
+  ax.set_axisbelow(True);ax.grid(axis='y',color='.92',lw=.5)
+  ax.set_title(f'({chr(97+2*i+j)}) {n}',fontsize=9.5,color=colour,loc='left',pad=4)
+ axes[i,0].set_ylabel('Precision',fontsize=9)
+ axes[i,1].set_ylabel('True positive rate',fontsize=9)
+axes[-1,0].set_xlabel('Recall',fontsize=9)
+axes[-1,1].set_xlabel('False positive rate',fontsize=9)
+fig.text(.30,.965,'Precision–recall',ha='center',fontsize=11)
+fig.text(.80,.965,'Receiver operating characteristic',ha='center',fontsize=11)
+handles=[Line2D([0],[0],color='.15',ls=sty,lw=1.15,label=f'Seed {s}') for s,sty in zip(seeds,seed_styles)]
+fig.legend(handles=handles,loc='lower center',bbox_to_anchor=(.54,.027),ncol=3,frameon=False,fontsize=9,handlelength=3)
+fig.text(.54,.012,'Neural models: three seeds per panel. L2 logistic: one deterministic fit.',ha='center',fontsize=8.5)
 save(fig,4)
 with (O/'figure_4_curve_data.csv').open('w',newline='') as f:
  w=csv.DictWriter(f,fieldnames=list(curve_rows[0]));w.writeheader();w.writerows(curve_rows)

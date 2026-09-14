@@ -1,0 +1,18 @@
+{
+  "source_sha256": "cf80e5b015730af5fed768ee3eade0558151ccea86296b2ae3c3416c47210dee",
+  "output_sha256": "e3830101056eb37bc47be6351031baa020f5562a3aff55f7db478cfd81a15b13",
+  "changed_image_part": "word/media/image18.png",
+  "comments_and_all_other_parts_byte_identical": true,
+  "only_text_change": "Figure 4 source note",
+  "old_note": "Source: Saved predictions. Line patterns identify models; grey tones identify neural seeds 17, 42 and 2026. All runs are shown. The PR reference is prevalence, 11/216.",
+  "new_note": "Source: Saved test predictions. Rows and colours identify models; solid, dashed and dotted lines identify neural seeds 17, 42 and 2026. All 13 runs are shown on common axes. Grey references indicate prevalence (11/216) for PR and the diagonal for ROC.",
+  "character_delta": 84,
+  "curves": 13,
+  "curve_data_byte_identical": true,
+  "curve_data_sha256": "451cfcb44d3f14efe8f31dafecc5c36f65d8b246581066b7ed2b43fbdab05512",
+  "all_13_previously_verified_AP_and_ROC_AUC_preserved": true,
+  "fits_rerun": 0,
+  "all_14_rendered_pages_visually_reviewed": true,
+  "full_repository_source_reproduces_embedded_png": true,
+  "figures_1_2_3_5_byte_identical": true
+}

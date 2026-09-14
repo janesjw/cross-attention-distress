@@ -1,7 +1,7 @@
 {
-  "paragraph_characters_with_spaces": 31117,
+  "paragraph_characters_with_spaces": 31201,
   "table_characters_with_spaces": 1728,
-  "total_characters_with_spaces_including_references_tables_captions": 32845,
+  "total_characters_with_spaces_including_references_tables_captions": 32929,
   "references": 14,
   "main_tables": 6,
   "main_figures": 5,
@@ -19,18 +19,18 @@
   "obsolete_empirical_numbers_scan_passed": true,
   "main_source_sha256": "18aae001feffd7fe26e1f57bb597a3d3f4b4fbc8d2190d48cbb0af6b0fc9030d",
   "rendered_pages": {
-    "main": 13,
+    "main": 14,
     "title_page": 1,
     "editable_tables": 4
   },
   "all_pages_visually_reviewed": true,
-  "visual_review_result": "All 13 newly rendered pages inspected: no clipping, overlaps, broken rows, missing glyphs or blank pages. References occupy page 13.",
+  "visual_review_result": "All 14 newly rendered pages inspected: no clipping, overlaps, broken rows, missing glyphs or blank pages. Figure 4 occupies page 10; references occupy page 14.",
   "docx_sha256": {
     "Annual_ST_Editable_Tables.docx": "aea12f92fe9b3cd5c89991425a90dc28d581a705d9b5a908e2398882002d6456",
-    "Annual_ST_Manuscript.docx": "cf80e5b015730af5fed768ee3eade0558151ccea86296b2ae3c3416c47210dee",
+    "Annual_ST_Manuscript.docx": "e3830101056eb37bc47be6351031baa020f5562a3aff55f7db478cfd81a15b13",
     "Annual_ST_Title_Page.docx": "f36de13d185e747602ebeb3eab4baa1663b1d8631f1adaaae3fa28e3ae731dd7"
   },
-  "figures_redrawn": "2026-09-14; Python/Matplotlib, black/grey serif style, 300 dpi PNG, SVG and PDF",
+  "figures_redrawn": "2026-09-14; Python/Matplotlib, serif style, 300 dpi PNG, SVG and PDF; Figure 4 revised to 5 model rows × 2 metric columns with muted model colours and seed line patterns; other four figures unchanged.",
   "reference_hyperlinks": 14,
   "link_http_200": 11,
   "link_publisher_403": 3,
